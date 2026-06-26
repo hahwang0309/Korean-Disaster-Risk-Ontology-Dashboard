@@ -15,8 +15,12 @@
   .lead{color:#9aa4b2;font-size:14px;max-width:820px}
   h2{font-size:18px;color:#cdd6e3;margin:34px 0 6px}
   .h2sub{color:#8a93a3;font-size:13px;margin-bottom:14px}
-  .schema{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:18px}
-  .schema svg{width:100%;height:auto;display:block}
+  .schema{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:18px;overflow:auto}
+  .mermaid{display:flex;justify-content:center;min-height:200px}
+  .mermaid .edgeLabel{background:#161922 !important}
+  .mermaid .edgeLabel,.mermaid .edgeLabel *{color:#6aa3e0 !important;font-style:italic;font-weight:600;font-size:12px}
+  .mermaid .nodeLabel{font-weight:700}
+  .mermaid .nodeLabel small{color:#9aa4b2;font-weight:400;font-style:normal;font-size:11px}
   .axislegend{display:flex;flex-wrap:wrap;gap:12px;margin:14px 2px 0}
   .axislegend span{font-size:12px;color:#cdd6e3;display:flex;align-items:center;gap:5px}
   .axislegend i{width:11px;height:11px;border-radius:3px;display:inline-block}
@@ -34,122 +38,51 @@
 <header><div class="wrap">
   <a class="home" href="index.html">← 목록으로</a>
   <h1>재난위험 온톨로지 스키마</h1>
-  <div class="lead">재난위험관리 온톨로지 — <b>6개 축 · 16개 엔티티 타입(+Other) · 32개 관계(+PRECEDES)</b>. 파란 이탤릭이 관계(predicate)이며, 인과·연쇄(TRIGGERS·CASCADES_INTO·CAUSES·AMPLIFIES)가 cascading 위험 전파의 골격입니다. PascalCase 영문 코드명, 인과 방향은 선행→후행 단방향 고정.</div>
+  <div class="lead">재난위험관리 온톨로지 — <b>6개 축 · 16개 엔티티 타입(+Other) · 32개 관계(+PRECEDES)</b>. 파란 이탤릭이 관계(predicate)이며, 인과·연쇄(TRIGGERS·CASCADES_INTO·CAUSES·AMPLIFIES)가 cascading 위험 전파의 골격입니다. 인과 방향은 선행→후행 단방향 고정.</div>
 </div></header>
 
 <div class="wrap">
   <h2>스키마 다이어그램</h2>
-  <div class="h2sub">노드 박스 = 엔티티 축(하위타입·필수속성 표기), 화살표 = 관계. 점선은 자기참조(같은 축 내) 관계.</div>
+  <div class="h2sub">박스 = 엔티티 축(하위타입·필수속성), 화살표 = 관계. 자기참조 화살표는 같은 축 내 관계. (전체 관계 목록은 아래 표 참조 — 다이어그램엔 주요 관계만 표시)</div>
   <div class="schema">
-  <svg viewBox="0 0 1120 1000" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
-    <defs>
-      <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
-        <path d="M0,0 L7,3 L0,6 Z" fill="#8893a6"/></marker>
-    </defs>
-    <style>
-      .box{fill:#1b1f29;stroke-width:2}
-      .ttl{fill:#fff;font-weight:700;font-size:15px}
-      .sub{fill:#cdd6e3;font-size:12.5px}
-      .ed{fill:none;stroke:#6b7a90;stroke-width:1.4}
-      .self{fill:none;stroke:#6b7a90;stroke-width:1.3;stroke-dasharray:4 3}
-      .el{fill:#6aa3e0;font-style:italic;font-weight:600;font-size:12px}
-    </style>
+  <pre class="mermaid">
+flowchart LR
+  CX["맥락 Context<br/><small>DateTime · Location · Weather · Metric · Threshold</small>"]
+  HZ["위험원 Hazard<br/><small>NaturalHazard · ManmadeHazard · RiskFactor</small>"]
+  EXP["노출 Exposure<br/><small>Region · Facility · Population</small>"]
+  EV["사건 Event<br/><small>PrimaryEvent · CascadingEvent · StateChange</small>"]
+  DMG["피해 Damage<br/><small>Human · Property · Service · Economic · Infra · Env</small>"]
+  RES["대응 Response<br/><small>ResponseAction · ResponseActor · Resilience</small>"]
 
-    <!-- ===== EDGES (behind boxes) ===== -->
-    <path class="ed" d="M120,478 C110,300 230,150 432,118" marker-end="url(#ar)"/>
-    <text class="el" x="120" y="300">PRECONDITIONS</text>
-    <path class="ed" d="M470,162 C420,225 380,255 352,298" marker-end="url(#ar)"/>
-    <text class="el" x="356" y="240">AFFECTS</text>
-    <path class="ed" d="M556,164 C560,300 552,420 543,516" marker-end="url(#ar)"/>
-    <text class="el" x="566" y="320">TRIGGERS</text>
-    <text class="el" x="566" y="338">INCREASES_RISK_OF</text>
-    <path class="self" d="M650,70 C720,40 740,110 668,128" marker-end="url(#ar)"/>
-    <text class="el" x="690" y="64">COMPOUNDS</text>
-    <text class="el" x="690" y="82">DERIVES_FROM</text>
-    <path class="ed" d="M430,330 C620,280 740,275 878,288" marker-end="url(#ar)"/>
-    <text class="el" x="600" y="285">AMPLIFIES</text>
-    <path class="ed" d="M300,420 C230,445 185,452 150,470" marker-end="url(#ar)"/>
-    <text class="el" x="175" y="462">LOCATED_IN</text>
-    <path class="ed" d="M430,575 C330,565 270,560 208,556" marker-end="url(#ar)"/>
-    <text class="el" x="270" y="545">OCCURS_AT</text>
-    <text class="el" x="270" y="600">UNDER_CONDITION</text>
-    <path class="self" d="M500,652 C470,720 600,720 572,654" marker-end="url(#ar)"/>
-    <text class="el" x="455" y="700">CASCADES_INTO</text>
-    <text class="el" x="455" y="718">TRIGGERS_SECONDARY</text>
-    <text class="el" x="455" y="736">CONCURRENT_WITH</text>
-    <path class="ed" d="M642,560 C760,470 830,415 900,362" marker-end="url(#ar)"/>
-    <text class="el" x="720" y="445">CAUSES</text>
-    <path class="ed" d="M768,600 C720,597 690,595 644,592" marker-end="url(#ar)"/>
-    <text class="el" x="650" y="572">RESPONDS_TO</text>
-    <text class="el" x="650" y="628">MODIFIES_RISK_OF</text>
-    <path class="ed" d="M915,540 C950,470 968,415 980,364" marker-end="url(#ar)"/>
-    <text class="el" x="940" y="455">MITIGATES</text>
-    <text class="el" x="940" y="473">OFFSETS</text>
-    <path class="ed" d="M900,538 C940,360 860,180 652,128" marker-end="url(#ar)"/>
-    <text class="el" x="838" y="300">PREVENTS</text>
-    <path class="self" d="M980,565 C1052,545 1052,640 982,632" marker-end="url(#ar)"/>
-    <text class="el" x="1000" y="556">PERFORMS</text>
-    <text class="el" x="1000" y="574">FAILS</text>
-    <text class="el" x="1000" y="592">COMMANDS</text>
-    <text class="el" x="1000" y="610">COORDINATES_WITH</text>
-    <text class="el" x="1000" y="628">BELONGS_TO</text>
-    <path class="ed" d="M980,452 C975,860 380,900 130,640" marker-end="url(#ar)"/>
-    <text class="el" x="540" y="905">QUANTIFIED_BY</text>
-    <path class="ed" d="M430,400 C600,470 700,520 800,540" marker-end="url(#ar)"/>
-    <text class="el" x="556" y="492">HAS_RESILIENCE</text>
+  CX -->|PRECONDITIONS| HZ
+  HZ -->|TRIGGERS / INCREASES_RISK_OF| EV
+  HZ -->|AFFECTS| EXP
+  HZ -->|COMPOUNDS / DERIVES_FROM| HZ
+  EV -->|CASCADES_INTO / TRIGGERS_SECONDARY / CONCURRENT_WITH| EV
+  EV -->|CAUSES| DMG
+  EXP -->|AMPLIFIES| DMG
+  EXP -->|LOCATED_IN| CX
+  EXP -->|HAS_RESILIENCE| RES
+  EV -->|OCCURS_AT / UNDER_CONDITION| CX
+  DMG -->|QUANTIFIED_BY| CX
+  RES -->|PREVENTS| HZ
+  RES -->|MODIFIES_RISK_OF / RESPONDS_TO| EV
+  RES -->|MITIGATES / OFFSETS| DMG
+  RES -->|PERFORMS / FAILS / COMMANDS / COORDINATES_WITH| RES
 
-    <!-- ===== BOXES ===== -->
-    <g>
-      <rect class="box" x="440" y="40" width="216" height="124" rx="11" stroke="#e15759"/>
-      <text class="ttl" x="548" y="66" text-anchor="middle">위험원 Hazard</text>
-      <line x1="456" y1="78" x2="640" y2="78" stroke="#2a2f3a"/>
-      <text class="sub" x="548" y="100" text-anchor="middle">NaturalHazard · ManmadeHazard</text>
-      <text class="sub" x="548" y="122" text-anchor="middle">RiskFactor</text>
-      <text class="sub" x="548" y="146" text-anchor="middle" fill="#8a93a3" font-size="11">origin · nature · disasterType</text>
-    </g>
-    <g>
-      <rect class="box" x="250" y="298" width="180" height="122" rx="11" stroke="#4e79a7"/>
-      <text class="ttl" x="340" y="324" text-anchor="middle">노출 Exposure</text>
-      <line x1="266" y1="336" x2="414" y2="336" stroke="#2a2f3a"/>
-      <text class="sub" x="340" y="358" text-anchor="middle">Region · Facility</text>
-      <text class="sub" x="340" y="380" text-anchor="middle">Population</text>
-      <text class="sub" x="340" y="404" text-anchor="middle" fill="#8a93a3" font-size="11">scope</text>
-    </g>
-    <g>
-      <rect class="box" x="32" y="470" width="176" height="168" rx="11" stroke="#a0cbe8"/>
-      <text class="ttl" x="120" y="496" text-anchor="middle">맥락 Context</text>
-      <line x1="48" y1="508" x2="192" y2="508" stroke="#2a2f3a"/>
-      <text class="sub" x="120" y="530" text-anchor="middle">DateTime · Location</text>
-      <text class="sub" x="120" y="552" text-anchor="middle">Weather · Metric</text>
-      <text class="sub" x="120" y="574" text-anchor="middle">Threshold</text>
-      <text class="sub" x="120" y="600" text-anchor="middle" fill="#8a93a3" font-size="11">subkind</text>
-    </g>
-    <g>
-      <rect class="box" x="430" y="518" width="212" height="134" rx="11" stroke="#f28e2b"/>
-      <text class="ttl" x="536" y="544" text-anchor="middle">사건 Event</text>
-      <line x1="446" y1="556" x2="626" y2="556" stroke="#2a2f3a"/>
-      <text class="sub" x="536" y="578" text-anchor="middle">PrimaryEvent · CascadingEvent</text>
-      <text class="sub" x="536" y="600" text-anchor="middle">StateChange (정전·붕괴·고립)</text>
-      <text class="sub" x="536" y="630" text-anchor="middle" fill="#8a93a3" font-size="11">order: primary/secondary/cascading</text>
-    </g>
-    <g>
-      <rect class="box" x="878" y="208" width="206" height="148" rx="11" stroke="#9c27b0"/>
-      <text class="ttl" x="981" y="234" text-anchor="middle">피해 Damage</text>
-      <line x1="894" y1="246" x2="1068" y2="246" stroke="#2a2f3a"/>
-      <text class="sub" x="981" y="268" text-anchor="middle">HumanDamage · PropertyDamage</text>
-      <text class="sub" x="981" y="290" text-anchor="middle">ServiceDamage</text>
-      <text class="sub" x="981" y="312" text-anchor="middle" fill="#8a93a3" font-size="11">category: human/property/</text>
-      <text class="sub" x="981" y="330" text-anchor="middle" fill="#8a93a3" font-size="11">service/economic/infra/env</text>
-    </g>
-    <g>
-      <rect class="box" x="768" y="538" width="214" height="134" rx="11" stroke="#edc948"/>
-      <text class="ttl" x="875" y="564" text-anchor="middle">대응 Response</text>
-      <line x1="784" y1="576" x2="966" y2="576" stroke="#2a2f3a"/>
-      <text class="sub" x="875" y="598" text-anchor="middle">ResponseAction · ResponseActor</text>
-      <text class="sub" x="875" y="620" text-anchor="middle">Resilience  ──BUILDS──▸</text>
-      <text class="sub" x="875" y="650" text-anchor="middle" fill="#8a93a3" font-size="11">phase · kind</text>
-    </g>
-  </svg>
+  class HZ hz
+  class EXP ex
+  class EV ev
+  class DMG dm
+  class RES rs
+  class CX cx
+  classDef hz fill:#2a1b1d,stroke:#e15759,stroke-width:2px,color:#fff
+  classDef ex fill:#16202b,stroke:#4e79a7,stroke-width:2px,color:#fff
+  classDef ev fill:#2a2113,stroke:#f28e2b,stroke-width:2px,color:#fff
+  classDef dm fill:#241026,stroke:#9c27b0,stroke-width:2px,color:#fff
+  classDef rs fill:#2a2710,stroke:#edc948,stroke-width:2px,color:#fff
+  classDef cx fill:#13202b,stroke:#a0cbe8,stroke-width:2px,color:#fff
+  </pre>
   <div class="axislegend">
     <span><i style="background:#e15759"></i>위험원 Hazard</span>
     <span><i style="background:#4e79a7"></i>노출 Exposure</span>
@@ -171,7 +104,20 @@
   재난위험관리 온톨로지 v1 · 출처: 「재난위험 온톨로지」 스키마 문서 · <a class="home" style="margin:0" href="index.html">← 대시보드 목록</a>
 </div></footer>
 
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"
+        integrity="sha384-R63zfMfSwJF4xCR11wXii+QUsbiBIdiDzDbtxia72oGWfkT7WHJfmD/I/eeHPJyT"
+        crossorigin="anonymous"></script>
 <script>
+mermaid.initialize({
+  startOnLoad:true, securityLevel:'loose', theme:'base',
+  flowchart:{curve:'basis', htmlLabels:true, nodeSpacing:55, rankSpacing:80, padding:12},
+  themeVariables:{
+    background:'#161922', primaryColor:'#1b1f29', primaryBorderColor:'#4e79a7',
+    primaryTextColor:'#e6e6e6', lineColor:'#8893a6', fontSize:'14px',
+    edgeLabelBackground:'#161922', clusterBkg:'#161922'
+  }
+});
+
 const ENT = [
   ["위험원 Hazard","NaturalHazard","자연현상 기반 위해(태풍·집중호우·산사태·지진). origin 필수"],
   ["","ManmadeHazard","인간 행위·기술·시설 운영 기반 위해(과적·용접불꽃·발파·군중밀집). origin 필수"],
