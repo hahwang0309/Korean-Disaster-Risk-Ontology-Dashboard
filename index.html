@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korean Disaster-Risk Ontology Dashboard</title>
+<style>
+  :root{color-scheme:dark}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+       margin:0;background:#0f1115;color:#e6e6e6;line-height:1.6}
+  header{padding:40px 24px 24px;background:linear-gradient(180deg,#161922,#0f1115);border-bottom:1px solid #2a2f3a}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  h1{font-size:26px;margin:0 0 8px}
+  .lead{color:#9aa4b2;font-size:15px;max-width:760px}
+  .stats{display:flex;gap:16px;margin-top:20px;flex-wrap:wrap}
+  .stat{background:#1d212b;border:1px solid #2a2f3a;border-radius:10px;padding:12px 18px}
+  .stat b{font-size:22px;color:#fff;display:block} .stat span{color:#9aa4b2;font-size:12px}
+  h2{font-size:16px;color:#cdd6e3;margin:32px 0 14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+  .card{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:18px;display:flex;flex-direction:column}
+  .card .tag{display:inline-block;font-size:11px;color:#111;background:#f28e2b;border-radius:6px;padding:2px 8px;margin-bottom:10px;align-self:flex-start}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card .src{color:#8a93a3;font-size:12px;margin-bottom:12px}
+  .metrics{display:flex;gap:14px;margin:6px 0 14px;flex-wrap:wrap}
+  .metrics div{font-size:12px;color:#b9c4d4}.metrics b{color:#fff;font-size:15px;display:block}
+  .links a{display:inline-block;font-size:13px;margin-right:14px;color:#76b7b2;text-decoration:none}
+  .links a:hover{text-decoration:underline}
+  .open{margin-top:auto;display:inline-block;background:#4e79a7;color:#fff;text-decoration:none;
+        text-align:center;padding:9px;border-radius:8px;font-size:14px;font-weight:600}
+  .open:hover{background:#5b87b8}
+  footer{color:#6b7585;font-size:12px;padding:30px 24px;border-top:1px solid #2a2f3a;margin-top:40px}
+  code{background:#1d212b;padding:1px 6px;border-radius:5px;font-size:12px}
+</style></head>
+<body>
+<header><div class="wrap">
+  <h1>재난위험 온톨로지 그래프 대시보드</h1>
+  <div class="lead">한국 재난 문서(수해백서·사고조사보고서·재난백서)에서 재난위험관리 온톨로지(위험원·노출·사건·피해·대응·맥락 16타입 + 32관계)에 따라 (subject, predicate, object) 트리플을 추출해, 재난이 어떻게 <b>발생→전파(cascading)→피해→대응</b>으로 이어지는지 예측하기 위한 그래프 데이터베이스. 각 문서별 인터랙티브 시각화 대시보드와 원본 트리플(JSON)·Neo4j 적재 스크립트(Cypher)를 제공한다.</div>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<div class="wrap">
+  <h2>문서별 대시보드</h2>
+  <div class="grid" id="cards"></div>
+</div>
+
+<footer><div class="wrap">
+  생성: <code>disaster-risk-triples</code> 스킬 · 시각화 9종(Plotly + D3) · 온톨로지 v1 (16 엔티티 + Other / 32 관계 + PRECEDES)<br>
+  각 대시보드는 자가완결 HTML이며 Plotly/D3는 공개 CDN(SRI 고정)에서 로드됩니다.
+</div></footer>
+
+<script>
+const DOCS = [
+  {tag:"풍수해 · natural_storm", title:"태풍 루사·매미 수해백서", src:"강릉시, 2005 · 510p",
+   triples:299, nodes:447, cascade:22, density:"표준",
+   html:"dashboards/01_typhoon_rusa_maemi.html",
+   json:"data/01_typhoon_rusa_maemi_triples.json", cypher:"data/01_typhoon_rusa_maemi.cypher"},
+  {tag:"산사태 · natural_landslide", title:"우면산 산사태 원인 보완조사", src:"서울시, 2014 · 63p",
+   triples:237, nodes:272, cascade:19, density:"고밀도",
+   html:"dashboards/02_umyeonsan_landslide.html",
+   json:"data/02_umyeonsan_landslide_triples.json", cypher:"data/02_umyeonsan_landslide.cypher"},
+  {tag:"해양교통 · social_transport", title:"4·16 세월호참사 백서", src:"대한변협, 2015 · ~750p",
+   triples:1172, nodes:1238, cascade:109, density:"고밀도",
+   html:"dashboards/03_sewol_ferry.html",
+   json:"data/03_sewol_ferry_triples.json", cypher:"data/03_sewol_ferry.cypher"},
+];
+const tot=DOCS.reduce((a,d)=>({t:a.t+d.triples,n:a.n+d.nodes,c:a.c+d.cascade}),{t:0,n:0,c:0});
+document.getElementById('stats').innerHTML =
+  `<div class="stat"><b>${DOCS.length}</b><span>문서 (도메인)</span></div>`+
+  `<div class="stat"><b>${tot.t.toLocaleString()}</b><span>트리플</span></div>`+
+  `<div class="stat"><b>${tot.n.toLocaleString()}</b><span>노드</span></div>`+
+  `<div class="stat"><b>${tot.c.toLocaleString()}</b><span>연쇄·촉발 관계</span></div>`;
+document.getElementById('cards').innerHTML = DOCS.map(d=>`
+  <div class="card">
+    <span class="tag">${d.tag}</span>
+    <h3>${d.title}</h3>
+    <div class="src">${d.src} · 추출밀도 ${d.density}</div>
+    <div class="metrics">
+      <div><b>${d.triples.toLocaleString()}</b>트리플</div>
+      <div><b>${d.nodes.toLocaleString()}</b>노드</div>
+      <div><b>${d.cascade}</b>연쇄·촉발</div>
+    </div>
+    <div class="links">
+      <a href="${d.json}" download>⬇ triples.json</a>
+      <a href="${d.cypher}" download>⬇ .cypher</a>
+    </div>
+    <a class="open" href="${d.html}">대시보드 열기 →</a>
+  </div>`).join('');
+</script>
+</body></html>
