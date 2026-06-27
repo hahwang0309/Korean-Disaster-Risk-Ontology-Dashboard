@@ -5,18 +5,19 @@
 <script src="https://d3js.org/d3.v7.min.js"
         integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
         crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"
+        integrity="sha384-R63zfMfSwJF4xCR11wXii+QUsbiBIdiDzDbtxia72oGWfkT7WHJfmD/I/eeHPJyT"
+        crossorigin="anonymous"></script>
 <style>
   :root{color-scheme:dark}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-       margin:0;background:#0f1115;color:#e6e6e6;line-height:1.6}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;margin:0;background:#0f1115;color:#e6e6e6;line-height:1.6}
   header{padding:24px 24px 18px;background:linear-gradient(180deg,#161922,#0f1115);border-bottom:1px solid #2a2f3a}
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-  .home{display:inline-block;margin-bottom:12px;color:#9aa4b2;text-decoration:none;font-size:13px;
-        background:#1d212b;border:1px solid #2a2f3a;border-radius:7px;padding:6px 12px}
+  .home{display:inline-block;margin-bottom:12px;color:#9aa4b2;text-decoration:none;font-size:13px;background:#1d212b;border:1px solid #2a2f3a;border-radius:7px;padding:6px 12px}
   .home:hover{color:#e6e6e6;border-color:#4e79a7}
   h1{font-size:24px;margin:0 0 8px}
   .lead{color:#9aa4b2;font-size:14px;max-width:860px}
-  .panel{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:16px 18px;margin-top:18px}
+  .panel{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:16px 18px;margin-top:14px}
   .docs{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
   .docchk{display:flex;align-items:center;gap:8px;background:#1d212b;border:1px solid #2a2f3a;border-radius:9px;padding:9px 13px;cursor:pointer;font-size:13px}
   .docchk:hover{border-color:#4e79a7}.docchk input{width:16px;height:16px;accent-color:#4e79a7}
@@ -27,13 +28,12 @@
   .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
   .stat{background:#1d212b;border:1px solid #2a2f3a;border-radius:10px;padding:10px 16px}
   .stat b{font-size:20px;color:#fff;display:block}.stat span{color:#9aa4b2;font-size:12px}
-  #graph{width:100%;height:560px;background:#0c0e13;border-radius:10px;margin-top:12px}
+  #graph{width:100%;height:520px;background:#0c0e13;border-radius:10px;margin-top:12px}
   .legend{display:flex;flex-wrap:wrap;gap:9px;margin-top:10px}
-  .legend span{font-size:11px;color:#cdd6e3;display:flex;align-items:center;gap:4px}
-  .legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
-  .interp{margin-top:12px;padding:9px 11px;background:#12161f;border-left:3px solid #4e79a7;border-radius:0 6px 6px 0;font-size:12.5px;color:#b9c4d4}
-  .interp b{color:#e6edf6}
-  h2{font-size:17px;color:#cdd6e3;margin:30px 0 4px}
+  .legend span{font-size:11px;color:#cdd6e3;display:flex;align-items:center;gap:4px}.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+  .interp{margin-top:12px;padding:9px 11px;background:#12161f;border-left:3px solid #4e79a7;border-radius:0 6px 6px 0;font-size:12.5px;color:#b9c4d4}.interp b{color:#e6edf6}
+  h2{font-size:17px;color:#cdd6e3;margin:30px 0 2px}
+  .dmg{color:#ffb3a7;font-size:12.5px;margin:2px 0 4px}
   .h2sub{color:#8a93a3;font-size:12.5px;margin-bottom:10px}
   table{border-collapse:collapse;width:100%;font-size:13px}
   th,td{border-bottom:1px solid #262b36;padding:6px 9px;text-align:left;vertical-align:top}
@@ -44,31 +44,24 @@
   .tablewrap{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:6px 16px 14px;margin-top:6px;max-height:420px;overflow:auto}
   .tip{position:absolute;background:#000c;color:#fff;padding:5px 9px;border-radius:5px;font-size:11px;pointer-events:none;opacity:0;max-width:300px}
   .muted{color:#8a93a3;font-size:12px}
-  input[type=text],select{background:#1d212b;border:1px solid #2a2f3a;color:#e6e6e6;border-radius:8px;padding:8px 11px;font-size:13px;min-width:300px}
+  input[type=text]{background:#1d212b;border:1px solid #2a2f3a;color:#e6e6e6;border-radius:8px;padding:8px 11px;font-size:13px;min-width:300px}
   input[type=number]{background:#1d212b;border:1px solid #2a2f3a;color:#e6e6e6;border-radius:7px;padding:5px 7px;font-size:13px;width:56px}
-  .sres{display:flex;flex-wrap:wrap;gap:6px}
-  .sres .chip{background:#1d212b;border:1px solid #2a2f3a;border-radius:8px;padding:5px 9px;font-size:12px;cursor:pointer}
-  .sres .chip:hover{border-color:#4e79a7;background:#222838}
-  .sres .chip.on{border-color:#ffd000}
-  .tree ul{list-style:none;margin:2px 0 2px 16px;padding-left:10px;border-left:1px solid #2a2f3a}
-  .tree li{margin:2px 0;font-size:12.5px}
-  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .sres,.chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{background:#1d212b;border:1px solid #2a2f3a;border-radius:8px;padding:5px 9px;font-size:12px;cursor:pointer}
+  .chip:hover{border-color:#4e79a7;background:#222838}.chip.on{border-color:#ffd000;background:#262a1c}
   .sub{background:#12161f;border:1px solid #232836;border-radius:9px;padding:10px 12px}
   .sub h4{margin:0 0 6px;font-size:13px;color:#cdd6e3}
-  .bridge{background:#12161f;border:1px solid #232836;border-radius:10px;padding:11px 13px;margin-bottom:10px}
-  .bridge .hd{font-weight:700;margin-bottom:4px}
-  .chain{font-size:12.5px;margin:3px 0;padding:5px 8px;background:#12161f;border:1px solid #232836;border-radius:8px}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:760px){.twocol{grid-template-columns:1fr}}
+  .mer{background:#0c0e13;border-radius:10px;padding:8px;overflow:auto}
+  .mer svg{max-width:100%}
   .tplrow{padding:8px 10px;border-bottom:1px solid #232836;cursor:pointer;border-radius:7px}
-  .tplrow:hover{background:#1d212b}
-  .tplrow.sel{background:#222a39;box-shadow:inset 3px 0 0 #9c27b0}
-  .tag{display:inline-block;font-size:10px;color:#111;background:#f28e2b;border-radius:5px;padding:0 5px;margin-left:4px}
-  @media(max-width:760px){.twocol{grid-template-columns:1fr}}
+  .tplrow:hover{background:#1d212b}.tplrow.sel{background:#222a39;box-shadow:inset 3px 0 0 #9c27b0}
 </style></head>
 <body>
 <header><div class="wrap">
   <a class="home" href="index.html">← 목록으로</a>
   <h1>통합 그래프 — 복합·연쇄 재난 시나리오</h1>
-  <div class="lead">문서를 선택해 합치면(같은 <code>이름+타입</code> 노드는 문서 간 병합) 통합 그래프와 함께 <b>복합·연쇄 시나리오 분석 뷰</b>를 제공합니다: ① 연쇄 경로 탐색기 ② 연쇄 허브·상태변화 ③ 교차재난 브릿지 ④ 위험원→피해 템플릿·차단지점.</div>
+  <div class="lead">문서를 선택해 합치면(같은 <code>이름+타입</code> 노드는 문서 간 병합) 통합 그래프와 5개 분석 뷰를 제공합니다. 각 뷰는 네트워크 중심성 개념을 재난 맥락으로 특화했습니다.</div>
 </div></header>
 
 <div class="wrap">
@@ -83,16 +76,16 @@
     </div>
     <div class="stats" id="stats"></div>
   </div>
-
   <div id="graph"></div>
   <div class="legend" id="legend"></div>
   <div class="interp" id="interp">문서를 선택하고 “통합 그래프 생성”을 누르세요.</div>
 
   <h2>① 연쇄 경로 탐색기</h2>
-  <div class="h2sub">노드를 중심으로 인과 엣지(TRIGGERS·CASCADES_INTO·CAUSES·AMPLIFIES 등)만 따라 <b>상류 원인 ← [노드] → 하류 전파(→종착 피해)</b>를 Network Map으로 표출. 좌=원인, 우=결과. = 시나리오 생성기.</div>
+  <div class="dmg">📌 재난피해 관점: 특정 위험요인·사건이 최종적으로 <b>어떤 인명·물적 피해까지 번지는지</b>(또는 그 피해가 어디서 비롯됐는지) 전체 연쇄 경로로 추적.</div>
+  <div class="h2sub">중심성: ego-network/도달성 — 키워드로 노드 검색 → 선택 → 좌(원인)·우(결과) 레이어 Network Map. 상/하류 홉 1~10 조절.</div>
   <div class="panel">
     <div class="controls">
-      <input type="text" id="nodeSearch" placeholder="🔍 노드 검색 (키워드: 정전, 유독가스, 침몰, 집중호우 …)" oninput="doSearch()" style="flex:1;min-width:280px">
+      <input type="text" id="nodeSearch" placeholder="🔍 노드 검색 (정전, 유독가스, 침몰, 집중호우 …)" oninput="doSearch()" style="flex:1;min-width:280px">
       <label class="muted">상류 <input type="number" id="upHops" min="1" max="10" value="3" onchange="renderExplore()"></label>
       <label class="muted">하류 <input type="number" id="downHops" min="1" max="10" value="3" onchange="renderExplore()"></label>
     </div>
@@ -102,24 +95,34 @@
     <div class="legend" id="exploreLegend"></div>
   </div>
 
-  <h2>② 연쇄 허브 · 상태변화 노드</h2>
-  <div class="h2sub">연쇄가 <b>들어오고 또 나가는</b> 전파 길목. 복합재난이 갈아타는 pivot이자, 끊으면 연쇄가 멈추는 지점. ⚡=상태변화(정전·고립·붕괴 등).</div>
-  <div class="tablewrap"><table id="hubTable"><tr><td class="muted">생성 후 표시</td></tr></table></div>
+  <h2>② 연쇄 허브 · 상태변화</h2>
+  <div class="dmg">📌 재난피해 관점: 여러 원인이 모였다가 다시 여러 피해로 갈라지는 길목 — <b>이 노드를 막으면 피해 확산을 가장 크게 줄일 수 있는 지점</b>.</div>
+  <div class="h2sub">중심성: 방향성 연결중심성 + 매개(브로커). 허브를 고르면 <b>무엇으로부터 수렴(좌)→무엇으로 확산(우)</b>하는지 Network Map으로. ⚡=상태변화(정전·고립·붕괴).</div>
+  <div class="panel">
+    <div class="chips" id="hubChips"></div>
+    <div id="hubFocus" class="muted" style="margin-top:8px"></div>
+    <div id="hubGraph" style="width:100%;height:440px;background:#0c0e13;border-radius:10px;margin-top:8px"></div>
+  </div>
 
-  <h2>③ 교차재난 브릿지 상세</h2>
-  <div class="h2sub">2개 이상 문서에 공통 등장하는 노드가 <b>각 문서에서 갖는 전후 연쇄</b> — 서로 다른 재난에 반복되는 일반화된 시나리오 모듈.</div>
-  <div id="bridges"><span class="muted">생성 후 표시</span></div>
+  <h2>③ 교차재난 브릿지</h2>
+  <div class="dmg">📌 재난피해 관점: 서로 다른 재난에서 <b>반복되는 공통 고리</b> — 한 재난의 교훈이 다른 재난 예방으로 전이될 수 있는 지점.</div>
+  <div class="h2sub">중심성: 계층 간 매개중심성(서로 떨어진 재난을 잇는 다리). 공유 노드를 고르면 <b>온톨로지 6축 스키마</b>에 매핑(Mermaid).</div>
+  <div class="twocol" style="grid-template-columns:minmax(220px,300px) 1fr;align-items:start">
+    <div class="tablewrap" id="bridgeList" style="max-height:520px"><span class="muted">생성 후 표시</span></div>
+    <div class="sub"><div id="bridgeTitle" class="muted" style="margin-bottom:6px">공유 노드를 선택하세요.</div><div class="mer" id="bridgeMer"></div></div>
+  </div>
 
   <h2>④ 위험원→피해 시나리오 템플릿</h2>
-  <div class="h2sub">좌측 목록에서 시나리오를 클릭하면, 그 연쇄가 <b>온톨로지 스키마(6축)에 매핑</b>되어 어떤 위험원·사건·피해·대응 슬롯을 거치는지 보여줍니다.</div>
+  <div class="dmg">📌 재난피해 관점: 특정 위험원이 어떤 사건을 거쳐 <b>어떤 피해로 귀결되는 전형적 시나리오</b> — 사전 차단 우선순위의 근거.</div>
+  <div class="h2sub">중심성: source(위험원)→sink(피해) 경로. 시나리오를 고르면 <b>위험원 → 사건 → 피해</b> 3단계로(Mermaid, 좌→우).</div>
   <div class="twocol" style="grid-template-columns:minmax(280px,380px) 1fr;align-items:start">
-    <div class="tablewrap" id="templateList" style="max-height:560px"><span class="muted">생성 후 표시</span></div>
-    <div class="sub"><div id="tplSchemaTitle" class="muted" style="margin-bottom:6px">시나리오를 선택하세요.</div>
-      <div id="templateSchema" style="background:#0c0e13;border-radius:10px"></div></div>
+    <div class="tablewrap" id="templateList" style="max-height:520px"><span class="muted">생성 후 표시</span></div>
+    <div class="sub"><div id="tplTitle" class="muted" style="margin-bottom:6px">시나리오를 선택하세요.</div><div class="mer" id="tplMer"></div></div>
   </div>
 
   <h2>⑤ 연쇄 차단 지점 (대응 개입)</h2>
-  <div class="h2sub">연쇄를 <b>끊은 대응</b>(MITIGATES·PREVENTS)과 <b>끊지 못한 지점</b>(FAILS). 어느 단계 개입이 재난을 막을 수 있었나.</div>
+  <div class="dmg">📌 재난피해 관점: 연쇄를 끊어 <b>피해를 막은 대응</b> vs 끊지 못해 <b>피해가 확대된 지점</b> — 대응 실패의 학습.</div>
+  <div class="h2sub">중심성: 절단점/엣지 매개(다리 제거). MITIGATES·PREVENTS=차단 성공, FAILS=차단 실패.</div>
   <div class="twocol">
     <div class="sub"><h4 style="color:#86bcb6">🛡 끊은 대응 (MITIGATES / PREVENTS)</h4><div class="tablewrap" style="margin:0;border:0;padding:0"><table id="cutTable"></table></div></div>
     <div class="sub"><h4 style="color:#e15759">⚠ 끊지 못함 (FAILS)</h4><div class="tablewrap" style="margin:0;border:0;padding:0"><table id="failTable"></table></div></div>
@@ -129,14 +132,11 @@
 <div class="tip" id="tip"></div>
 
 <script>
-const TYPE_COLORS={NaturalHazard:"#e15759",ManmadeHazard:"#b4453a",RiskFactor:"#ff9da7",
- Region:"#4e79a7",Facility:"#76b7b2",Population:"#59a14f",Event:"#f28e2b",Damage:"#9c27b0",
- ResponseAction:"#edc948",ResponseActor:"#bab0ac",Resilience:"#86bcb6",Context:"#a0cbe8",Other:"#cccccc"};
-const AXIS={NaturalHazard:"Hazard",ManmadeHazard:"Hazard",RiskFactor:"Hazard",Region:"Exposure",
- Facility:"Exposure",Population:"Exposure",Event:"Event",Damage:"Damage",ResponseAction:"Response",
- ResponseActor:"Response",Resilience:"Response",Context:"Context",Other:"Other"};
-const CAUSAL=new Set(["TRIGGERS","INCREASES_RISK_OF","TRIGGERS_SECONDARY","CASCADES_INTO","CAUSES",
- "AMPLIFIES","COMPOUNDS","DERIVES_FROM","MODIFIES_RISK_OF","CONCURRENT_WITH","PRECONDITIONS","AFFECTS"]);
+mermaid.initialize({startOnLoad:false,securityLevel:'loose',theme:'base',flowchart:{htmlLabels:true,curve:'basis',nodeSpacing:40,rankSpacing:70},
+  themeVariables:{background:'#0c0e13',primaryColor:'#1b1f29',primaryBorderColor:'#4e79a7',primaryTextColor:'#e6e6e6',lineColor:'#8893a6',fontSize:'13px',edgeLabelBackground:'#0c0e13'}});
+const TYPE_COLORS={NaturalHazard:"#e15759",ManmadeHazard:"#b4453a",RiskFactor:"#ff9da7",Region:"#4e79a7",Facility:"#76b7b2",Population:"#59a14f",Event:"#f28e2b",Damage:"#9c27b0",ResponseAction:"#edc948",ResponseActor:"#bab0ac",Resilience:"#86bcb6",Context:"#a0cbe8",Other:"#cccccc"};
+const AXIS={NaturalHazard:"Hazard",ManmadeHazard:"Hazard",RiskFactor:"Hazard",Region:"Exposure",Facility:"Exposure",Population:"Exposure",Event:"Event",Damage:"Damage",ResponseAction:"Response",ResponseActor:"Response",Resilience:"Response",Context:"Context",Other:"Other"};
+const CAUSAL=new Set(["TRIGGERS","INCREASES_RISK_OF","TRIGGERS_SECONDARY","CASCADES_INTO","CAUSES","AMPLIFIES","COMPOUNDS","DERIVES_FROM","MODIFIES_RISK_OF","CONCURRENT_WITH","PRECONDITIONS","AFFECTS"]);
 const STATE_RE=/정전|단전|전력\s*차단|고립|통신|두절|불통|마비|붕괴|침수|매몰|전복|좌초|탈선|폭발|확산|누출|유출|결항|고장|중단/;
 const DOC_COLORS=["#4e79a7","#59a14f","#f28e2b","#e15759","#9c27b0","#76b7b2","#edc948"];
 const DOCS=[
@@ -148,307 +148,218 @@ const DOCS=[
 ];
 const tip=document.getElementById('tip');
 const esc=s=>(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-document.getElementById('docs').innerHTML=DOCS.map((d,i)=>`
-  <label class="docchk"><input type="checkbox" value="${i}" checked>
-   <i class="dot" style="background:${DOC_COLORS[i]}"></i>${d.title}<small>(${d.triples.toLocaleString()})</small></label>`).join('');
+const mlabel=s=>(s||'').replace(/["|{}\[\]]/g,' ').replace(/</g,'(').replace(/>/g,')').replace(/\s+/g,' ').trim();
+const casDeg=n=>G.cout.get(n.id).length+G.cin.get(n.id).length;
+const docbadges=n=>[...n.docs].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('');
+const isState=n=>n.type==='Event'&&STATE_RE.test(n.name);
+document.getElementById('docs').innerHTML=DOCS.map((d,i)=>`<label class="docchk"><input type="checkbox" value="${i}" checked><i class="dot" style="background:${DOC_COLORS[i]}"></i>${d.title}<small>(${d.triples.toLocaleString()})</small></label>`).join('');
 function toggleAll(v){document.querySelectorAll('#docs input').forEach(c=>c.checked=v);}
-function docbadges(n){return [...n.docs].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('');}
-function isState(n){return n.type==='Event'&&STATE_RE.test(n.name);}
-
-let G=null, sim=null, templates=[];
+let G=null,sim=null,templates=[],bridgesList=[],hubsList=[],focusKey=null,expSim=null,hubSim=null;
+let mmid=0,mmQ=Promise.resolve();
+function mmRender(elId,def){ // serialize mermaid renders (concurrent render는 충돌)
+  mmQ=mmQ.then(async()=>{const id='mm'+(++mmid);
+    try{const{svg}=await mermaid.render(id,def);const el=document.getElementById(elId);if(el)el.innerHTML=svg;}
+    catch(e){const el=document.getElementById(elId);if(el)el.innerHTML='<span class="muted">다이어그램 렌더 오류</span>';}});
+  return mmQ;
+}
 
 async function build(){
   const sel=[...document.querySelectorAll('#docs input:checked')].map(c=>+c.value);
   if(!sel.length){document.getElementById('status').textContent="문서를 1개 이상 선택하세요.";return;}
   document.getElementById('status').textContent="불러오는 중…";
-  const nodes=new Map(), edges=new Map();
-  const key=(n,t)=>n+""+t;
+  const nodes=new Map(),edges=new Map(),key=(n,t)=>n+""+t;
   for(const i of sel){
-    let data;
-    try{ data=await (await fetch(`data/${DOCS[i].slug}_triples.json`)).json(); }
-    catch(e){ document.getElementById('status').textContent=`로드 실패: ${DOCS[i].short} (로컬은 http 서버 필요)`; return; }
-    for(const t of data.triples){
-      const s=t.subject,o=t.object; if(!s?.name||!o?.name)continue;
-      const sk=key(s.name,s.type), ok=key(o.name,o.type);
-      for(const [k,nd] of [[sk,s],[ok,o]]){
-        let m=nodes.get(k); if(!m){m={id:k,name:nd.name,type:nd.type,docs:new Set(),deg:0};nodes.set(k,m);}
-        m.docs.add(i);
-      }
-      const code=(t.predicate?.code)||"REL";
-      const ek=sk+""+code+""+ok;
-      let e=edges.get(ek); if(!e){e={source:sk,target:ok,code,docs:new Set()};edges.set(ek,e);}
-      e.docs.add(i);
-      nodes.get(sk).deg++; nodes.get(ok).deg++;
-    }
+    let data; try{data=await(await fetch(`data/${DOCS[i].slug}_triples.json`)).json();}
+    catch(e){document.getElementById('status').textContent=`로드 실패: ${DOCS[i].short} (로컬은 http 서버 필요)`;return;}
+    for(const t of data.triples){const s=t.subject,o=t.object;if(!s?.name||!o?.name)continue;
+      const sk=key(s.name,s.type),ok=key(o.name,o.type);
+      for(const[k,nd]of[[sk,s],[ok,o]]){let m=nodes.get(k);if(!m){m={id:k,name:nd.name,type:nd.type,docs:new Set(),deg:0};nodes.set(k,m);}m.docs.add(i);}
+      const code=(t.predicate?.code)||"REL",ek=sk+""+code+""+ok;
+      let e=edges.get(ek);if(!e){e={source:sk,target:ok,code,docs:new Set()};edges.set(ek,e);}e.docs.add(i);
+      nodes.get(sk).deg++;nodes.get(ok).deg++;}
   }
-  const N=[...nodes.values()], E=[...edges.values()];
-  const cout=new Map(), cin=new Map(); N.forEach(n=>{cout.set(n.id,[]);cin.set(n.id,[]);});
-  E.forEach(e=>{ if(CAUSAL.has(e.code)){ cout.get(e.source).push(e); cin.get(e.target).push(e);} });
+  const N=[...nodes.values()],E=[...edges.values()];
+  const cout=new Map(),cin=new Map();N.forEach(n=>{cout.set(n.id,[]);cin.set(n.id,[]);});
+  E.forEach(e=>{if(CAUSAL.has(e.code)){cout.get(e.source).push(e);cin.get(e.target).push(e);}});
   G={nodes,N,E,cout,cin,sel};
   const shared=N.filter(n=>n.docs.size>=2).sort((a,b)=>b.docs.size-a.docs.size||b.deg-a.deg);
   document.getElementById('status').textContent="";
   document.getElementById('stats').innerHTML=
     `<div class="stat"><b>${sel.length}</b><span>선택 문서</span></div>`+
     `<div class="stat"><b>${N.length.toLocaleString()}</b><span>노드</span></div>`+
-    `<div class="stat"><b>${E.length.toLocaleString()}</b><span>관계(엣지)</span></div>`+
-    `<div class="stat"><b style="color:#ffd000">${shared.length}</b><span>문서 간 공유 노드</span></div>`;
-  const typesUsed=[...new Set(N.map(n=>n.type))];
-  document.getElementById('legend').innerHTML=typesUsed.map(t=>`<span><i style="background:${TYPE_COLORS[t]||'#999'}"></i>${t}</span>`).join('')
-    +` <span><i style="background:#ffd000;border-radius:50%"></i>금색=문서 간 공유</span>`;
-  document.getElementById('interp').innerHTML=
-    `선택 ${sel.length}개 문서 → 노드 ${N.length.toLocaleString()}·관계 ${E.length.toLocaleString()}, 공유 노드 ${shared.length}. 아래 ①~⑤에서 복합·연쇄 시나리오를 분석하세요.`;
+    `<div class="stat"><b>${E.length.toLocaleString()}</b><span>관계</span></div>`+
+    `<div class="stat"><b style="color:#ffd000">${shared.length}</b><span>문서 간 공유</span></div>`;
+  document.getElementById('legend').innerHTML=[...new Set(N.map(n=>n.type))].map(t=>`<span><i style="background:${TYPE_COLORS[t]||'#999'}"></i>${t}</span>`).join('')+` <span><i style="background:#ffd000;border-radius:50%"></i>금색=공유</span>`;
+  document.getElementById('interp').innerHTML=`선택 ${sel.length}개 문서 → 노드 ${N.length.toLocaleString()}·관계 ${E.length.toLocaleString()}, 공유 노드 ${shared.length}. 아래 ①~⑤에서 복합·연쇄 시나리오를 분석하세요.`;
   renderGraph(N,E);
   renderHubs(); renderBridges(shared); renderTemplates(); renderInterventions();
   doSearch();
-  // auto-focus the top cascade hub (both in & out)
-  const starter=N.filter(n=>cin.get(n.id).length&&cout.get(n.id).length)
-    .sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))[0];
-  if(starter) setFocus(starter.id); else document.getElementById('exploreFocus').innerHTML='<span class="muted">연쇄 노드가 없습니다.</span>';
+  const starter=N.filter(n=>cin.get(n.id).length&&cout.get(n.id).length).sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))[0];
+  if(starter)setFocus(starter.id); else document.getElementById('exploreFocus').innerHTML='<span class="muted">연쇄 노드가 없습니다.</span>';
 }
 
-// ---- ① path explorer (Network Map: 검색 → 노드 선택 → 상/하류 N홉 레이어 그래프) ----
-let focusKey=null, expSim=null;
-const casDeg=n=>G.cout.get(n.id).length+G.cin.get(n.id).length;
-
-function doSearch(){
-  if(!G)return;
-  const kw=document.getElementById('nodeSearch').value.trim().toLowerCase();
-  const box=document.getElementById('searchResults');
-  if(!kw){box.innerHTML='<span class="muted">키워드를 입력하면 해당 노드 목록이 나옵니다. 노드를 클릭하면 그 노드 중심으로 경로가 그려집니다.</span>';return;}
-  const m=G.N.filter(n=>n.name.toLowerCase().includes(kw)).sort((a,b)=>casDeg(b)-casDeg(a)).slice(0,40);
-  if(!m.length){box.innerHTML='<span class="muted">일치하는 노드 없음.</span>';return;}
-  box.innerHTML='<div class="sres">'+m.map(n=>`<span class="chip ${n.id===focusKey?'on':''}" onclick="setFocus('${n.id.replace(/'/g,"\\'")}')">`
-    +`<i style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${TYPE_COLORS[n.type]};margin-right:5px"></i>`
-    +`${esc(n.name)} <span class="muted">${n.type}·연쇄${casDeg(n)}${n.docs.size>=2?'·공유':''}</span></span>`).join('')+'</div>';
-}
-function setFocus(key){ focusKey=key; renderExplore(); doSearch(); }
-function pick(name){ const n=G.N.filter(x=>x.name===name).sort((a,b)=>casDeg(b)-casDeg(a))[0]; if(n){setFocus(n.id);
-  document.getElementById('exploreGraph').scrollIntoView({behavior:'smooth',block:'center'});} }
-
-function renderExplore(){
-  if(!G||!focusKey)return;
-  const up=Math.max(1,Math.min(10,+document.getElementById('upHops').value||3));
-  const down=Math.max(1,Math.min(10,+document.getElementById('downHops').value||3));
-  const focus=G.nodes.get(focusKey); if(!focus)return;
-  const KPER=8, CAP=150;
-  const layer=new Map([[focusKey,0]]);
-  let fr=[focusKey];
-  for(let d=1;d<=down&&fr.length;d++){ const nf=[];
-    for(const k of fr){ const outs=G.cout.get(k).slice().sort((a,b)=>G.nodes.get(b.target).deg-G.nodes.get(a.target).deg).slice(0,KPER);
-      for(const e of outs){ if(!layer.has(e.target)&&layer.size<CAP){layer.set(e.target,d);nf.push(e.target);} } } fr=nf; }
-  fr=[focusKey];
-  for(let d=1;d<=up&&fr.length;d++){ const nf=[];
-    for(const k of fr){ const ins=G.cin.get(k).slice().sort((a,b)=>G.nodes.get(b.source).deg-G.nodes.get(a.source).deg).slice(0,KPER);
-      for(const e of ins){ if(!layer.has(e.source)&&layer.size<CAP){layer.set(e.source,-d);nf.push(e.source);} } } fr=nf; }
+// ===== shared layered builder/renderer (used by ① and ②) =====
+function buildLayers(fkey,up,down,KPER,CAP){KPER=KPER||8;CAP=CAP||150;
+  const layer=new Map([[fkey,0]]);let fr=[fkey];
+  for(let d=1;d<=down&&fr.length;d++){const nf=[];for(const k of fr){const outs=G.cout.get(k).slice().sort((a,b)=>G.nodes.get(b.target).deg-G.nodes.get(a.target).deg).slice(0,KPER);for(const e of outs){if(!layer.has(e.target)&&layer.size<CAP){layer.set(e.target,d);nf.push(e.target);}}}fr=nf;}
+  fr=[fkey];
+  for(let d=1;d<=up&&fr.length;d++){const nf=[];for(const k of fr){const ins=G.cin.get(k).slice().sort((a,b)=>G.nodes.get(b.source).deg-G.nodes.get(a.source).deg).slice(0,KPER);for(const e of ins){if(!layer.has(e.source)&&layer.size<CAP){layer.set(e.source,-d);nf.push(e.source);}}}fr=nf;}
   const keys=new Set(layer.keys());
   const edges=G.E.filter(e=>CAUSAL.has(e.code)&&keys.has(e.source)&&keys.has(e.target));
-  document.getElementById('exploreFocus').innerHTML=`중심: <b style="color:#fff">${esc(focus.name)}</b> <span class="pill" style="background:${TYPE_COLORS[focus.type]}">${focus.type}</span> ${docbadges(focus)} · 노드 ${keys.size}${keys.size>=CAP?'(상한)':''} · 상류 ${up}홉 / 하류 ${down}홉`;
-  drawExplore([...keys].map(k=>({...G.nodes.get(k),layer:layer.get(k)})), edges, focusKey);
+  return {nodes:[...keys].map(k=>({...G.nodes.get(k),layer:layer.get(k)})),edges};
 }
-
-function drawExplore(nodes, edges, fkey){
-  const el=document.getElementById('exploreGraph'); el.innerHTML=''; if(expSim)expSim.stop();
-  const W=el.clientWidth,H=560,padX=120,padY=26;
-  const svg=d3.select('#exploreGraph').append('svg').attr('width',W).attr('height',H);
-  const g=svg.append('g');
+function drawLayered(nodes,edges,fkey,elId,legId){
+  const el=document.getElementById(elId);el.innerHTML='';
+  const W=el.clientWidth,H=el.clientHeight||520,padX=120,padY=26;
+  const svg=d3.select('#'+elId).append('svg').attr('width',W).attr('height',H);const g=svg.append('g');
   svg.call(d3.zoom().scaleExtent([0.2,4]).on('zoom',e=>g.attr('transform',e.transform)));
-  svg.append('defs').append('marker').attr('id','ea').attr('viewBox','0 -5 10 10').attr('refX',17).attr('refY',0)
-    .attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto').append('path').attr('d','M0,-5L10,0L0,5').attr('fill','#8893a6');
-  // columns by layer
-  const layers=[...new Set(nodes.map(n=>n.layer))].sort((a,b)=>a-b);
-  const colX={}; layers.forEach((L,i)=>colX[L]=padX+(layers.length<=1?(W-2*padX)/2:i*((W-2*padX)/(layers.length-1))));
-  const byL={}; layers.forEach(L=>byL[L]=[]);
-  nodes.forEach(n=>byL[n.layer].push(n));
-  const pos={};
-  layers.forEach(L=>{ const arr=byL[L].sort((a,b)=>b.deg-a.deg); const c=arr.length;
-    arr.forEach((n,i)=>{ pos[n.id]={x:colX[L],y:padY+(i+1)*((H-2*padY)/(c+1))}; }); });
-  // column headers (상류 -n … 중심 … 하류 +n)
-  g.append('g').selectAll('text.col').data(layers).join('text').attr('class','col')
-    .attr('x',L=>colX[L]).attr('y',14).attr('text-anchor','middle').attr('font-size','10px')
-    .attr('fill','#6aa3e0').text(L=>L===0?'◆ 중심':(L<0?`상류 ${L}`:`하류 +${L}`));
-  g.append('g').attr('fill','none').selectAll('path').data(edges).join('path')
-    .attr('stroke','#6b7a90').attr('stroke-opacity',0.5).attr('stroke-width',1.1).attr('marker-end','url(#ea)')
+  svg.append('defs').append('marker').attr('id','ar'+elId).attr('viewBox','0 -5 10 10').attr('refX',17).attr('refY',0).attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto').append('path').attr('d','M0,-5L10,0L0,5').attr('fill','#8893a6');
+  const layers=[...new Set(nodes.map(n=>n.layer))].sort((a,b)=>a-b),colX={};
+  layers.forEach((L,i)=>colX[L]=padX+(layers.length<=1?(W-2*padX)/2:i*((W-2*padX)/(layers.length-1))));
+  const byL={};layers.forEach(L=>byL[L]=[]);nodes.forEach(n=>byL[n.layer].push(n));const pos={};
+  layers.forEach(L=>{const arr=byL[L].sort((a,b)=>b.deg-a.deg),c=arr.length;arr.forEach((n,i)=>pos[n.id]={x:colX[L],y:padY+(i+1)*((H-2*padY)/(c+1))});});
+  g.append('g').selectAll('text.col').data(layers).join('text').attr('x',L=>colX[L]).attr('y',14).attr('text-anchor','middle').attr('font-size','10px').attr('fill','#6aa3e0').text(L=>L===0?'◆ 중심':(L<0?`원인 ${L}`:`결과 +${L}`));
+  g.append('g').attr('fill','none').selectAll('path').data(edges).join('path').attr('stroke','#6b7a90').attr('stroke-opacity',0.5).attr('stroke-width',1.1).attr('marker-end',`url(#ar${elId})`)
     .attr('d',e=>{const a=pos[e.source],b=pos[e.target];if(!a||!b)return'';const mx=(a.x+b.x)/2;return `M${a.x},${a.y} C${mx},${a.y} ${mx},${b.y} ${b.x},${b.y}`;});
-  g.append('g').selectAll('text.el').data(edges).join('text').attr('class','el')
-    .attr('x',e=>{const a=pos[e.source],b=pos[e.target];return a&&b?(a.x+b.x)/2:0;})
-    .attr('y',e=>{const a=pos[e.source],b=pos[e.target];return a&&b?(a.y+b.y)/2-2:0;})
-    .attr('text-anchor','middle').attr('font-size','9px').attr('font-style','italic').attr('fill','#6aa3e0')
-    .attr('opacity',0.85).text(e=>e.code);
+  g.append('g').selectAll('text.el').data(edges).join('text').attr('x',e=>{const a=pos[e.source],b=pos[e.target];return a&&b?(a.x+b.x)/2:0;}).attr('y',e=>{const a=pos[e.source],b=pos[e.target];return a&&b?(a.y+b.y)/2-2:0;}).attr('text-anchor','middle').attr('font-size','9px').attr('font-style','italic').attr('fill','#6aa3e0').attr('opacity',.85).text(e=>e.code);
   const nd=g.append('g').selectAll('g').data(nodes).join('g').attr('transform',n=>`translate(${pos[n.id].x},${pos[n.id].y})`).style('cursor','pointer')
-    .on('click',(e,n)=>setFocus(n.id))
-    .on('mousemove',(e,n)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';
-      tip.innerHTML=`<b>${esc(n.name)}</b><br>${n.type} · ${[...n.docs].map(i=>DOCS[i].short).join(', ')}<br><i>클릭=이 노드 중심</i>`;})
-    .on('mouseout',()=>tip.style.opacity=0);
-  nd.append('circle').attr('r',n=>n.id===fkey?11:5+Math.sqrt(n.deg)*1.1)
-    .attr('fill',n=>TYPE_COLORS[n.type]||'#999')
-    .attr('stroke',n=>n.id===fkey?'#fff':(n.docs.size>=2?'#ffd000':'#0c0e13')).attr('stroke-width',n=>n.id===fkey?3:(n.docs.size>=2?2:0.8));
-  nd.append('text').text(n=>{const t=AXIS[n.type]==='Damage'?'🎯 ':'';return t+(n.name.length>20?n.name.slice(0,19)+'…':n.name);})
-    .attr('x',9).attr('y',3).attr('font-size',n=>n.id===fkey?'11px':'9.5px').attr('fill',n=>n.id===fkey?'#fff':'#cdd6e3')
-    .attr('font-weight',n=>n.id===fkey?'700':'400');
-  // type legend
-  const tu=[...new Set(nodes.map(n=>n.type))];
-  document.getElementById('exploreLegend').innerHTML=tu.map(t=>`<span><i style="background:${TYPE_COLORS[t]}"></i>${t}</span>`).join('')+' <span>🎯=피해 종착</span>';
+    .on('click',(e,n)=>{setFocus(n.id);document.getElementById('exploreGraph').scrollIntoView({behavior:'smooth',block:'center'});})
+    .on('mousemove',(e,n)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';tip.innerHTML=`<b>${esc(n.name)}</b><br>${n.type} · ${[...n.docs].map(i=>DOCS[i].short).join(', ')}`;}).on('mouseout',()=>tip.style.opacity=0);
+  nd.append('circle').attr('r',n=>n.id===fkey?11:5+Math.sqrt(n.deg)*1.1).attr('fill',n=>TYPE_COLORS[n.type]||'#999').attr('stroke',n=>n.id===fkey?'#fff':(n.docs.size>=2?'#ffd000':'#0c0e13')).attr('stroke-width',n=>n.id===fkey?3:(n.docs.size>=2?2:.8));
+  nd.append('text').text(n=>{const t=AXIS[n.type]==='Damage'?'🎯 ':'';return t+(n.name.length>20?n.name.slice(0,19)+'…':n.name);}).attr('x',9).attr('y',3).attr('font-size',n=>n.id===fkey?'11px':'9.5px').attr('fill',n=>n.id===fkey?'#fff':'#cdd6e3').attr('font-weight',n=>n.id===fkey?'700':'400');
+  if(legId)document.getElementById(legId).innerHTML=[...new Set(nodes.map(n=>n.type))].map(t=>`<span><i style="background:${TYPE_COLORS[t]}"></i>${t}</span>`).join('')+' <span>🎯=피해</span>';
 }
 
-// ---- ② hubs / state-change ----
+// ===== ① explorer =====
+function doSearch(){if(!G)return;const kw=document.getElementById('nodeSearch').value.trim().toLowerCase(),box=document.getElementById('searchResults');
+  if(!kw){box.innerHTML='<span class="muted">키워드를 입력하면 노드 목록이 나옵니다. 클릭하면 그 노드 중심으로 경로가 그려집니다.</span>';return;}
+  const m=G.N.filter(n=>n.name.toLowerCase().includes(kw)).sort((a,b)=>casDeg(b)-casDeg(a)).slice(0,40);
+  box.innerHTML=m.length?'<div class="sres">'+m.map(n=>`<span class="chip ${n.id===focusKey?'on':''}" onclick="setFocus('${n.id.replace(/'/g,"\\'")}')"><i style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${TYPE_COLORS[n.type]};margin-right:5px"></i>${esc(n.name)} <span class="muted">${n.type}·연쇄${casDeg(n)}${n.docs.size>=2?'·공유':''}</span></span>`).join('')+'</div>':'<span class="muted">일치 노드 없음.</span>';}
+function setFocus(key){focusKey=key;renderExplore();doSearch();}
+function pick(name){const n=G.N.filter(x=>x.name===name).sort((a,b)=>casDeg(b)-casDeg(a))[0];if(n)setFocus(n.id);}
+function renderExplore(){if(!G||!focusKey)return;
+  const up=Math.max(1,Math.min(10,+document.getElementById('upHops').value||3)),down=Math.max(1,Math.min(10,+document.getElementById('downHops').value||3));
+  const focus=G.nodes.get(focusKey);if(!focus)return;const{nodes,edges}=buildLayers(focusKey,up,down,8,150);
+  document.getElementById('exploreFocus').innerHTML=`중심: <b style="color:#fff">${esc(focus.name)}</b> <span class="pill" style="background:${TYPE_COLORS[focus.type]}">${focus.type}</span> ${docbadges(focus)} · 노드 ${nodes.length} · 상류 ${up}홉 / 하류 ${down}홉`;
+  drawLayered(nodes,edges,focusKey,'exploreGraph','exploreLegend');}
+
+// ===== ② hubs (degree+betweenness) =====
+let hubFocusKey=null;
 function renderHubs(){
-  const rows=G.N.map(n=>({n,i:G.cin.get(n.id).length,o:G.cout.get(n.id).length}))
-    .filter(r=>r.i>=1&&r.o>=1).sort((a,b)=>(b.i+b.o)-(a.i+a.o)).slice(0,40);
-  let h='<tr><th>#</th><th>노드</th><th>타입</th><th>연쇄 in</th><th>연쇄 out</th><th>문서</th></tr>';
-  rows.forEach((r,idx)=>{
-    const n=r.n,c=TYPE_COLORS[n.type];
-    h+=`<tr><td>${idx+1}</td><td>${isState(n)?'⚡ ':''}<a href="#" onclick="pick('${esc(n.name).replace(/'/g,"\\'")}');return false">${esc(n.name)}</a></td>`
-      +`<td><span class="pill" style="background:${c}">${n.type}</span></td><td>${r.i}</td><td>${r.o}</td>`
-      +`<td>${n.docs.size>=2?'<b style=color:#ffd000>'+n.docs.size+'</b> ':''}${docbadges(n)}</td></tr>`;
-  });
-  document.getElementById('hubTable').innerHTML=h;
+  hubsList=G.N.map(n=>({n,i:G.cin.get(n.id).length,o:G.cout.get(n.id).length})).filter(r=>r.i>=1&&r.o>=1).sort((a,b)=>(b.i+b.o)-(a.i+a.o)).slice(0,24);
+  document.getElementById('hubChips').innerHTML=hubsList.length?hubsList.map(r=>`<span class="chip" id="hub_${cssId(r.n.id)}" onclick="hubFocus('${r.n.id.replace(/'/g,"\\'")}')">${isState(r.n)?'⚡':''}${esc(r.n.name.length>22?r.n.name.slice(0,21)+'…':r.n.name)} <span class="muted">in${r.i}/out${r.o}</span></span>`).join(''):'<span class="muted">허브 없음</span>';
+  if(hubsList.length)hubFocus(hubsList[0].n.id);
 }
-function pick(name){document.getElementById('nodeInput').value=name;explore();document.getElementById('nodeInput').scrollIntoView({behavior:'smooth',block:'center'});}
+function cssId(s){return s.replace(/[^a-zA-Z0-9]/g,'_').slice(0,40);}
+function hubFocus(key){hubFocusKey=key;
+  document.querySelectorAll('#hubChips .chip').forEach(c=>c.classList.remove('on'));
+  const c=document.getElementById('hub_'+cssId(key));if(c)c.classList.add('on');
+  const n=G.nodes.get(key);
+  document.getElementById('hubFocus').innerHTML=`허브: <b style="color:#fff">${esc(n.name)}</b> <span class="pill" style="background:${TYPE_COLORS[n.type]}">${n.type}</span> · 원인 ${G.cin.get(key).length}개 수렴 → 결과 ${G.cout.get(key).length}개 확산 ${isState(n)?'· ⚡상태변화':''}`;
+  const{nodes,edges}=buildLayers(key,1,1,14,80);
+  drawLayered(nodes,edges,key,'hubGraph',null);
+}
 
-// ---- ③ cross-disaster bridges ----
+// ===== ③ cross-disaster bridges → ontology schema (Mermaid) =====
+const AXKO={Hazard:'위험원',Exposure:'노출',Event:'사건',Damage:'피해',Response:'대응',Context:'맥락'};
+const AXID={Hazard:'HZ',Exposure:'EX',Event:'EV',Damage:'DM',Response:'RS',Context:'CX'};
+const AXCSS={Hazard:'haz',Exposure:'exp',Event:'evt',Damage:'dmg',Response:'rsp',Context:'ctx'};
 function renderBridges(shared){
-  const focus=shared.filter(n=>(G.cin.get(n.id).length+G.cout.get(n.id).length)>0).slice(0,12);
-  if(!focus.length){document.getElementById('bridges').innerHTML='<span class="muted">전후 연쇄가 있는 공유 노드가 없습니다.</span>';return;}
-  let h='';
-  for(const n of focus){
-    const ins=G.cin.get(n.id).map(e=>`<span class="muted">←${e.code}─</span> ${esc(G.nodes.get(e.source).name)} ${docbadges(G.nodes.get(e.source))}`);
-    const outs=G.cout.get(n.id).map(e=>`<span class="rel">─${e.code}→</span> ${esc(G.nodes.get(e.target).name)} ${docbadges(G.nodes.get(e.target))}`);
-    h+=`<div class="bridge"><div class="hd">${esc(n.name)} <span class="pill" style="background:${TYPE_COLORS[n.type]}">${n.type}</span> ${docbadges(n)}</div>`
-      +`<div class="twocol"><div><div class="muted">원인(상류)</div>${ins.join('<br>')||'<span class=muted>—</span>'}</div>`
-      +`<div><div class="muted">결과(하류)</div>${outs.join('<br>')||'<span class=muted>—</span>'}</div></div></div>`;
+  bridgesList=shared.filter(n=>(G.cin.get(n.id).length+G.cout.get(n.id).length)>0);
+  const list=document.getElementById('bridgeList');
+  if(!bridgesList.length){list.innerHTML='<span class="muted">전후 연쇄가 있는 공유 노드가 없습니다.</span>';document.getElementById('bridgeMer').innerHTML='';return;}
+  list.innerHTML=bridgesList.map((n,i)=>`<div class="tplrow" id="brow${i}" onclick="showBridge(${i})"><div>${esc(n.name)} <span class="pill" style="background:${TYPE_COLORS[n.type]}">${n.type}</span></div><div class="muted" style="font-size:11px;margin-top:2px">${docbadges(n)} · 연쇄 ${casDeg(n)}</div></div>`).join('');
+  showBridge(0);
+}
+function repNode(axis,docsSet){ // 대표 노드: 해당 축 + 문서교집합, 연결도 최대
+  let best=null;for(const n of G.N){if(AXIS[n.type]!==axis)continue;if(docsSet&&![...n.docs].some(d=>docsSet.has(d)))continue;if(!best||n.deg>best.deg)best=n;}
+  if(!best){for(const n of G.N){if(AXIS[n.type]===axis&&(!best||n.deg>best.deg))best=n;}}
+  return best;}
+function showBridge(i){
+  document.querySelectorAll('#bridgeList .tplrow').forEach(r=>r.classList.remove('sel'));
+  const row=document.getElementById('brow'+i);if(row)row.classList.add('sel');
+  const b=bridgesList[i],bax=AXIS[b.type];
+  document.getElementById('bridgeTitle').innerHTML=`<b style="color:#cdd6e3">${esc(b.name)}</b> <span class="pill" style="background:${TYPE_COLORS[b.type]}">${b.type}</span> ${docbadges(b)} — 이 공유 노드를 6축 온톨로지에 매핑`;
+  // 각 축 콘텐츠: 브릿지 축=브릿지, 그 외=브릿지 이웃(해당 축) 우선, 없으면 대표노드
+  const inN=G.cin.get(b.id).map(e=>G.nodes.get(e.source)), outN=G.cout.get(b.id).map(e=>G.nodes.get(e.target));
+  const neigh=[...inN,...outN];
+  const content={};
+  for(const ax of Object.keys(AXKO)){
+    if(ax===bax){content[ax]={name:b.name,bridge:true};continue;}
+    let nb=neigh.find(n=>AXIS[n.type]===ax);
+    if(!nb)nb=repNode(ax,b.docs);
+    content[ax]=nb?{name:nb.name,bridge:false}:{name:'(없음)',bridge:false};
   }
-  document.getElementById('bridges').innerHTML=h;
+  // Mermaid
+  let def='flowchart LR\n';
+  for(const ax of Object.keys(AXKO)){
+    const c=content[ax];const star=c.bridge?'★ ':'';
+    def+=`  ${AXID[ax]}["<b>${AXKO[ax]}</b><br/>${star}${mlabel(c.name)}"]:::${AXCSS[ax]}\n`;
+  }
+  // 표준 온톨로지 백본 엣지
+  def+='  CX -->|PRECONDITIONS| HZ\n  HZ -->|TRIGGERS| EV\n  HZ -->|AFFECTS| EX\n  EX -->|AMPLIFIES| DM\n  EV -->|CAUSES| DM\n  RS -->|MITIGATES| DM\n  RS -->|RESPONDS_TO| EV\n  EX -->|HAS_RESILIENCE| RS\n';
+  def+='classDef haz fill:#2a1b1d,stroke:#e15759,color:#fff;\nclassDef exp fill:#16202b,stroke:#4e79a7,color:#fff;\nclassDef evt fill:#2a2113,stroke:#f28e2b,color:#fff;\nclassDef dmg fill:#241026,stroke:#9c27b0,color:#fff;\nclassDef rsp fill:#2a2710,stroke:#edc948,color:#fff;\nclassDef ctx fill:#13202b,stroke:#a0cbe8,color:#fff;\n';
+  def+=`style ${AXID[bax]} stroke:#ffd000,stroke-width:4px\n`;  // 브릿지 축 강조
+  mmRender('bridgeMer',def);
 }
 
-// ---- ④ hazard→damage templates ----
+// ===== ④ templates → 위험원→사건→피해 3-stage (Mermaid) =====
 function renderTemplates(){
-  const isSrc=n=>(AXIS[n.type]==='Hazard')&&G.cout.get(n.id).length>0;
-  const isSink=n=>AXIS[n.type]==='Damage';
-  const paths=[]; let budget=4000;
-  function dfs(key,trail,seen){
-    if(budget<=0||trail.length>6)return;
-    const node=G.nodes.get(key);
+  const isSrc=n=>AXIS[n.type]==='Hazard'&&G.cout.get(n.id).length>0,isSink=n=>AXIS[n.type]==='Damage';
+  const paths=[];let budget=4000;
+  function dfs(key,trail,seen){if(budget<=0||trail.length>6)return;const node=G.nodes.get(key);
     if(trail.length>=3&&isSink(node)){paths.push(trail.slice());budget--;return;}
-    for(const e of G.cout.get(key)){
-      if(seen.has(e.target))continue;
-      seen.add(e.target);trail.push(e);dfs(e.target,trail,seen);trail.pop();seen.delete(e.target);
-      if(budget<=0)return;
-    }
-  }
-  for(const n of G.N){ if(isSrc(n)){ dfs(n.id,[],new Set([n.id])); if(budget<=0)break; } }
-  // score: longer + node degree; dedup by (start,end,len)
-  paths.sort((a,b)=> (b.length-a.length) || (sumDeg(b)-sumDeg(a)));
-  const seen=new Set(), chosen=[];
-  for(const p of paths){ const st=G.nodes.get(p[0].source).name, en=G.nodes.get(p[p.length-1].target).name;
-    const sig=st+'|'+en+'|'+p.length; if(seen.has(sig))continue; seen.add(sig); chosen.push(p); if(chosen.length>=20)break; }
-  function sumDeg(p){let s=G.nodes.get(p[0].source).deg;for(const e of p)s+=G.nodes.get(e.target).deg;return s;}
-  templates=chosen;
+    for(const e of G.cout.get(key)){if(seen.has(e.target))continue;seen.add(e.target);trail.push(e);dfs(e.target,trail,seen);trail.pop();seen.delete(e.target);if(budget<=0)return;}}
+  for(const n of G.N){if(isSrc(n)){dfs(n.id,[],new Set([n.id]));if(budget<=0)break;}}
+  const sumDeg=p=>{let s=G.nodes.get(p[0].source).deg;for(const e of p)s+=G.nodes.get(e.target).deg;return s;};
+  paths.sort((a,b)=>(b.length-a.length)||(sumDeg(b)-sumDeg(a)));
+  const seen=new Set();templates=[];
+  for(const p of paths){const st=G.nodes.get(p[0].source).name,en=G.nodes.get(p[p.length-1].target).name,sig=st+'|'+en+'|'+p.length;if(seen.has(sig))continue;seen.add(sig);templates.push(p);if(templates.length>=20)break;}
   const list=document.getElementById('templateList');
-  if(!chosen.length){list.innerHTML='<span class="muted">위험원→피해 완결 경로가 없습니다.</span>';
-    document.getElementById('templateSchema').innerHTML='';return;}
-  list.innerHTML=chosen.map((p,i)=>{
-    const docsAll=new Set(); p.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));
-    const st=G.nodes.get(p[0].source).name, en=G.nodes.get(p[p.length-1].target).name;
-    return `<div class="tplrow" id="tpl${i}" onclick="showTpl(${i})">
-      <div><b>${esc(st.length>20?st.slice(0,19)+'…':st)}</b> <span class="muted">→…→</span> ${esc(en.length>18?en.slice(0,17)+'…':en)} 🎯</div>
-      <div class="muted" style="font-size:11px;margin-top:2px">${p.length}단계 · ${[...docsAll].map(d=>`<span class="docbadge" style="background:${DOC_COLORS[d]}">${DOCS[d].short}</span>`).join('')}</div></div>`;
-  }).join('');
+  if(!templates.length){list.innerHTML='<span class="muted">위험원→피해 경로가 없습니다.</span>';document.getElementById('tplMer').innerHTML='';return;}
+  list.innerHTML=templates.map((p,i)=>{const docsAll=new Set();p.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));const st=G.nodes.get(p[0].source).name,en=G.nodes.get(p[p.length-1].target).name;
+    return `<div class="tplrow" id="tpl${i}" onclick="showTpl(${i})"><div><b>${esc(st.length>20?st.slice(0,19)+'…':st)}</b> <span class="muted">→…→</span> ${esc(en.length>16?en.slice(0,15)+'…':en)} 🎯</div><div class="muted" style="font-size:11px;margin-top:2px">${p.length}단계 · ${[...docsAll].map(d=>`<span class="docbadge" style="background:${DOC_COLORS[d]}">${DOCS[d].short}</span>`).join('')}</div></div>`;}).join('');
   showTpl(0);
 }
 function showTpl(i){
-  document.querySelectorAll('.tplrow').forEach(r=>r.classList.remove('sel'));
-  const row=document.getElementById('tpl'+i); if(row)row.classList.add('sel');
-  renderTemplateSchema(templates[i]);
-}
-const SBOX={
-  Hazard:{x:230,y:36,w:190,h:98,c:'#e15759',ko:'위험원 Hazard'},
-  Context:{x:24,y:250,w:160,h:94,c:'#a0cbe8',ko:'맥락 Context'},
-  Exposure:{x:230,y:250,w:170,h:94,c:'#4e79a7',ko:'노출 Exposure'},
-  Event:{x:470,y:150,w:195,h:112,c:'#f28e2b',ko:'사건 Event'},
-  Response:{x:470,y:420,w:195,h:100,c:'#edc948',ko:'대응 Response'},
-  Damage:{x:768,y:218,w:200,h:120,c:'#9c27b0',ko:'피해 Damage'},
-};
-function renderTemplateSchema(path){
-  const el=document.getElementById('templateSchema'); el.innerHTML='';
-  const docsAll=new Set(); path.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));
-  let chainTxt=esc(G.nodes.get(path[0].source).name);
-  path.forEach(e=>chainTxt+=` ─${e.code}→ ${esc(G.nodes.get(e.target).name)}`);
-  document.getElementById('tplSchemaTitle').innerHTML=`<b style="color:#cdd6e3">선택 시나리오:</b> ${chainTxt} &nbsp;${[...docsAll].map(d=>`<span class="docbadge" style="background:${DOC_COLORS[d]}">${DOCS[d].short}</span>`).join('')}`;
-  // collect nodes per axis + axis-level edges
-  const byAxis={}, involved=new Set(), aedges=new Map();
-  const add=(nd)=>{const ax=AXIS[nd.type]; if(!SBOX[ax])return null; involved.add(ax); (byAxis[ax]=byAxis[ax]||[]); if(!byAxis[ax].some(x=>x.name===nd.name))byAxis[ax].push(nd); return ax;};
-  add(G.nodes.get(path[0].source));
-  path.forEach(e=>{const a=add(G.nodes.get(e.source)), b=add(G.nodes.get(e.target));
-    if(a&&b){const k=a+'>'+b; (aedges.get(k)||aedges.set(k,new Set()).get(k)).add(e.code);}});
-  const NS="http://www.w3.org/2000/svg";
-  const svg=document.createElementNS(NS,'svg'); svg.setAttribute('viewBox','0 0 1000 560'); svg.setAttribute('width','100%'); svg.style.height='auto';
-  svg.innerHTML=`<defs><marker id="ta" viewBox="0 -5 10 10" refX="9" refY="0" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,-5L10,0L0,5" fill="#cfd8e6"/></marker></defs>`;
-  const C=ax=>({x:SBOX[ax].x+SBOX[ax].w/2,y:SBOX[ax].y+SBOX[ax].h/2});
-  // edges (drawn first; boxes drawn over the ends)
-  let eg='';
-  for(const [k,codes] of aedges){
-    const [a,b]=k.split('>'); const ca=C(a),cb=C(b); const lbl=[...codes].join(' / ');
-    if(a===b){ const x=SBOX[a].x+SBOX[a].w/2, y=SBOX[a].y;
-      eg+=`<path d="M${x-18},${y} C${x-46},${y-52} ${x+46},${y-52} ${x+18},${y}" fill="none" stroke="#cfd8e6" stroke-width="2" marker-end="url(#ta)"/>`;
-      eg+=`<text x="${x}" y="${y-50}" text-anchor="middle" font-size="11" font-style="italic" fill="#9fc1ea">${lbl}</text>`;
-    } else {
-      eg+=`<path d="M${ca.x},${ca.y} L${cb.x},${cb.y}" stroke="#cfd8e6" stroke-width="2" marker-end="url(#ta)" opacity="0.9"/>`;
-      eg+=`<text x="${(ca.x+cb.x)/2}" y="${(ca.y+cb.y)/2-4}" text-anchor="middle" font-size="11" font-style="italic" fill="#9fc1ea">${lbl}</text>`;
-    }
-  }
-  // boxes
-  let bg='';
-  for(const ax in SBOX){const b=SBOX[ax], on=involved.has(ax);
-    bg+=`<g opacity="${on?1:0.28}"><rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="11" fill="#161922" stroke="${b.c}" stroke-width="${on?2.5:1.2}"/>`;
-    bg+=`<text x="${b.x+b.w/2}" y="${b.y+19}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">${b.ko}</text>`;
-    if(on){ const names=byAxis[ax].slice(0,4);
-      names.forEach((nd,i)=>{ const t=AXIS[nd.type]==='Damage'?'🎯 ':''; const nm=nd.name.length>24?nd.name.slice(0,23)+'…':nd.name;
-        bg+=`<text x="${b.x+b.w/2}" y="${b.y+38+i*15}" text-anchor="middle" font-size="10" fill="#cdd6e3">${t}${esc(nm)}</text>`; });
-      if(byAxis[ax].length>4) bg+=`<text x="${b.x+b.w/2}" y="${b.y+38+4*15}" text-anchor="middle" font-size="9.5" fill="#8a93a3">+${byAxis[ax].length-4} more</text>`;
-    }
-    bg+='</g>';
-  }
-  svg.innerHTML+=eg+bg;
-  el.appendChild(svg);
+  document.querySelectorAll('#templateList .tplrow').forEach(r=>r.classList.remove('sel'));
+  const row=document.getElementById('tpl'+i);if(row)row.classList.add('sel');
+  const p=templates[i];const seq=[G.nodes.get(p[0].source),...p.map(e=>G.nodes.get(e.target))];
+  const haz=[],evt=[],dmg=[];const codeHE=p.find(e=>AXIS[G.nodes.get(e.source).type]==='Hazard'&&AXIS[G.nodes.get(e.target).type]==='Event'),codeED=p.find(e=>AXIS[G.nodes.get(e.target).type]==='Damage');
+  seq.forEach(n=>{const ax=AXIS[n.type];if(ax==='Hazard')haz.push(n.name);else if(ax==='Damage')dmg.push(n.name);else evt.push(n.name);});
+  const uniq=a=>[...new Set(a)];
+  const box=(arr,max)=>uniq(arr).slice(0,max).map(mlabel).join('<br/>')+(uniq(arr).length>max?`<br/>+${uniq(arr).length-max}`:'');
+  const docsAll=new Set();p.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));
+  let chainTxt=esc(seq[0].name);for(const e of p)chainTxt+=` ─${e.code}→ ${esc(G.nodes.get(e.target).name)}`;
+  document.getElementById('tplTitle').innerHTML=`<b style="color:#cdd6e3">선택 시나리오:</b> ${chainTxt} ${[...docsAll].map(d=>`<span class="docbadge" style="background:${DOC_COLORS[d]}">${DOCS[d].short}</span>`).join('')}`;
+  const c1=codeHE?codeHE.code:'INCREASES_RISK_OF',c2=codeED?codeED.code:'CAUSES';
+  let def='flowchart LR\n';
+  def+=`  H["<b>위험원</b><br/>${box(haz,3)||'—'}"]:::haz -->|${c1}| E["<b>사건</b><br/>${box(evt,5)||'—'}"]:::evt -->|${c2}| D["<b>피해</b><br/>🎯 ${box(dmg,3)||'—'}"]:::dmg\n`;
+  def+='classDef haz fill:#2a1b1d,stroke:#e15759,color:#fff;\nclassDef evt fill:#2a2113,stroke:#f28e2b,color:#fff;\nclassDef dmg fill:#241026,stroke:#9c27b0,color:#fff;\n';
+  mmRender('tplMer',def);
 }
 
-// ---- ⑤ interventions ----
+// ===== ⑤ interventions =====
 function renderInterventions(){
-  const cut=G.E.filter(e=>e.code==='MITIGATES'||e.code==='PREVENTS');
-  const fail=G.E.filter(e=>e.code==='FAILS');
+  const cut=G.E.filter(e=>e.code==='MITIGATES'||e.code==='PREVENTS'),fail=G.E.filter(e=>e.code==='FAILS');
   const row=e=>`<tr><td>${esc(G.nodes.get(e.source).name)}</td><td class="rel">${e.code}</td><td>${esc(G.nodes.get(e.target).name)}</td><td>${[...e.docs].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('')}</td></tr>`;
   document.getElementById('cutTable').innerHTML='<tr><th>대응</th><th>관계</th><th>대상</th><th>문서</th></tr>'+(cut.slice(0,60).map(row).join('')||'<tr><td class=muted colspan=4>없음</td></tr>');
   document.getElementById('failTable').innerHTML='<tr><th>주체</th><th>관계</th><th>실패한 조치</th><th>문서</th></tr>'+(fail.slice(0,60).map(row).join('')||'<tr><td class=muted colspan=4>없음</td></tr>');
 }
 
-// ---- graph ----
+// ===== main integrated graph =====
 function renderGraph(N,E){
-  const el=document.getElementById('graph'); el.innerHTML=''; if(sim)sim.stop();
-  const W=el.clientWidth,H=560;
-  const svg=d3.select('#graph').append('svg').attr('width',W).attr('height',H);
-  const g=svg.append('g');
+  const el=document.getElementById('graph');el.innerHTML='';if(sim)sim.stop();
+  const W=el.clientWidth,H=520;const svg=d3.select('#graph').append('svg').attr('width',W).attr('height',H);const g=svg.append('g');
   svg.call(d3.zoom().scaleExtent([0.1,4]).on('zoom',e=>g.attr('transform',e.transform)));
-  const nodes=N.map(d=>({...d})), links=E.map(d=>({source:d.source,target:d.target}));
-  const big=N.length>1200;
-  sim=d3.forceSimulation(nodes)
-    .force('link',d3.forceLink(links).id(d=>d.id).distance(big?26:40).strength(0.32))
-    .force('charge',d3.forceManyBody().strength(big?-16:-32))
-    .force('center',d3.forceCenter(W/2,H/2))
-    .force('collide',d3.forceCollide().radius(d=>3+Math.sqrt(d.deg)*1.2));
-  const link=g.append('g').attr('stroke','#39414f').attr('stroke-opacity',0.4)
-    .selectAll('line').data(links).join('line').attr('stroke-width',0.6);
-  const node=g.append('g').selectAll('circle').data(nodes).join('circle')
-    .attr('r',d=>3+Math.sqrt(d.deg)*1.3).attr('fill',d=>TYPE_COLORS[d.type]||'#999')
-    .attr('stroke',d=>d.docs.size>=2?'#ffd000':'#0c0e13').attr('stroke-width',d=>d.docs.size>=2?2:0.5)
-    .style('cursor','pointer')
-    .call(d3.drag().on('start',(e,d)=>{if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
-      .on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;}).on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}))
-    .on('click',(e,d)=>pick(d.name))
-    .on('mousemove',(e,d)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';
-      tip.innerHTML=`<b>${d.name}</b><br>${d.type} · deg ${d.deg}<br>문서: ${[...d.docs].map(i=>DOCS[i].short).join(', ')}<br><i>클릭=경로 탐색</i>`;})
-    .on('mouseout',()=>tip.style.opacity=0);
-  sim.on('tick',()=>{link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
-    node.attr('cx',d=>d.x).attr('cy',d=>d.y);});
+  const nodes=N.map(d=>({...d})),links=E.map(d=>({source:d.source,target:d.target})),big=N.length>1200;
+  sim=d3.forceSimulation(nodes).force('link',d3.forceLink(links).id(d=>d.id).distance(big?26:40).strength(.32)).force('charge',d3.forceManyBody().strength(big?-16:-32)).force('center',d3.forceCenter(W/2,H/2)).force('collide',d3.forceCollide().radius(d=>3+Math.sqrt(d.deg)*1.2));
+  const link=g.append('g').attr('stroke','#39414f').attr('stroke-opacity',.4).selectAll('line').data(links).join('line').attr('stroke-width',.6);
+  const node=g.append('g').selectAll('circle').data(nodes).join('circle').attr('r',d=>3+Math.sqrt(d.deg)*1.3).attr('fill',d=>TYPE_COLORS[d.type]||'#999').attr('stroke',d=>d.docs.size>=2?'#ffd000':'#0c0e13').attr('stroke-width',d=>d.docs.size>=2?2:.5).style('cursor','pointer')
+    .call(d3.drag().on('start',(e,d)=>{if(!e.active)sim.alphaTarget(.3).restart();d.fx=d.x;d.fy=d.y;}).on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;}).on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}))
+    .on('click',(e,d)=>{pick(d.name);document.getElementById('exploreGraph').scrollIntoView({behavior:'smooth',block:'center'});})
+    .on('mousemove',(e,d)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';tip.innerHTML=`<b>${esc(d.name)}</b><br>${d.type} · deg ${d.deg}<br>문서: ${[...d.docs].map(i=>DOCS[i].short).join(', ')}<br><i>클릭=경로 탐색</i>`;}).on('mouseout',()=>tip.style.opacity=0);
+  sim.on('tick',()=>{link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);node.attr('cx',d=>d.x).attr('cy',d=>d.y);});
 }
 build();
 </script>
