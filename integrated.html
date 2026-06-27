@@ -45,6 +45,11 @@
   .tip{position:absolute;background:#000c;color:#fff;padding:5px 9px;border-radius:5px;font-size:11px;pointer-events:none;opacity:0;max-width:300px}
   .muted{color:#8a93a3;font-size:12px}
   input[type=text],select{background:#1d212b;border:1px solid #2a2f3a;color:#e6e6e6;border-radius:8px;padding:8px 11px;font-size:13px;min-width:300px}
+  input[type=number]{background:#1d212b;border:1px solid #2a2f3a;color:#e6e6e6;border-radius:7px;padding:5px 7px;font-size:13px;width:56px}
+  .sres{display:flex;flex-wrap:wrap;gap:6px}
+  .sres .chip{background:#1d212b;border:1px solid #2a2f3a;border-radius:8px;padding:5px 9px;font-size:12px;cursor:pointer}
+  .sres .chip:hover{border-color:#4e79a7;background:#222838}
+  .sres .chip.on{border-color:#ffd000}
   .tree ul{list-style:none;margin:2px 0 2px 16px;padding-left:10px;border-left:1px solid #2a2f3a}
   .tree li{margin:2px 0;font-size:12.5px}
   .twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -81,15 +86,17 @@
   <div class="interp" id="interp">문서를 선택하고 “통합 그래프 생성”을 누르세요.</div>
 
   <h2>① 연쇄 경로 탐색기</h2>
-  <div class="h2sub">노드를 선택하면 인과 엣지(TRIGGERS·CASCADES_INTO·CAUSES·AMPLIFIES 등)만 따라 <b>하류 전파(무엇으로 번지나→종착 피해)</b>와 <b>상류 원인</b>을 펼칩니다. = 시나리오 생성기.</div>
+  <div class="h2sub">노드를 중심으로 인과 엣지(TRIGGERS·CASCADES_INTO·CAUSES·AMPLIFIES 등)만 따라 <b>상류 원인 ← [노드] → 하류 전파(→종착 피해)</b>를 Network Map으로 표출. 좌=원인, 우=결과. = 시나리오 생성기.</div>
   <div class="panel">
-    <input type="text" id="nodeInput" list="nodeList" placeholder="노드 이름 입력/선택 (예: 정전, 유독가스, 집중호우)">
-    <datalist id="nodeList"></datalist>
-    <button onclick="explore()">경로 펼치기</button>
-    <div class="twocol" style="margin-top:12px">
-      <div class="sub"><h4>⤵ 하류 전파 (이 노드가 일으키는 연쇄·피해)</h4><div class="tree" id="downTree"><span class="muted">노드를 선택하세요.</span></div></div>
-      <div class="sub"><h4>⤴ 상류 원인 (이 노드를 일으킨 것)</h4><div class="tree" id="upTree"><span class="muted">노드를 선택하세요.</span></div></div>
+    <div class="controls">
+      <input type="text" id="nodeSearch" placeholder="🔍 노드 검색 (키워드: 정전, 유독가스, 침몰, 집중호우 …)" oninput="doSearch()" style="flex:1;min-width:280px">
+      <label class="muted">상류 <input type="number" id="upHops" min="1" max="10" value="3" onchange="renderExplore()"></label>
+      <label class="muted">하류 <input type="number" id="downHops" min="1" max="10" value="3" onchange="renderExplore()"></label>
     </div>
+    <div id="searchResults" style="margin-top:8px"></div>
+    <div id="exploreFocus" class="muted" style="margin-top:8px"></div>
+    <div id="exploreGraph" style="width:100%;height:560px;background:#0c0e13;border-radius:10px;margin-top:8px"></div>
+    <div class="legend" id="exploreLegend"></div>
   </div>
 
   <h2>② 연쇄 허브 · 상태변화 노드</h2>
@@ -183,48 +190,97 @@ async function build(){
     +` <span><i style="background:#ffd000;border-radius:50%"></i>금색=문서 간 공유</span>`;
   document.getElementById('interp').innerHTML=
     `선택 ${sel.length}개 문서 → 노드 ${N.length.toLocaleString()}·관계 ${E.length.toLocaleString()}, 공유 노드 ${shared.length}. 아래 ①~⑤에서 복합·연쇄 시나리오를 분석하세요.`;
-  // datalist
-  document.getElementById('nodeList').innerHTML=N.slice().sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))
-    .map(n=>`<option value="${esc(n.name)}">${n.type}${n.docs.size>=2?' · 공유':''}</option>`).join('');
   renderGraph(N,E);
   renderHubs(); renderBridges(shared); renderTemplates(); renderInterventions();
-  // auto-pick a good starter node for the explorer (top cascade hub)
-  const starter=N.filter(n=>cin.get(n.id).length&&cout.get(n.id).length).sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))[0];
-  if(starter){document.getElementById('nodeInput').value=starter.name; explore();}
+  doSearch();
+  // auto-focus the top cascade hub (both in & out)
+  const starter=N.filter(n=>cin.get(n.id).length&&cout.get(n.id).length)
+    .sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))[0];
+  if(starter) setFocus(starter.id); else document.getElementById('exploreFocus').innerHTML='<span class="muted">연쇄 노드가 없습니다.</span>';
 }
 
-// ---- ① path explorer ----
-function findNode(name){ // first node matching name (prefer shared/hub)
-  const cands=G.N.filter(n=>n.name===name);
-  if(!cands.length) return null;
-  return cands.sort((a,b)=>(G.cout.get(b.id).length+G.cin.get(b.id).length)-(G.cout.get(a.id).length+G.cin.get(a.id).length))[0];
+// ---- ① path explorer (Network Map: 검색 → 노드 선택 → 상/하류 N홉 레이어 그래프) ----
+let focusKey=null, expSim=null;
+const casDeg=n=>G.cout.get(n.id).length+G.cin.get(n.id).length;
+
+function doSearch(){
+  if(!G)return;
+  const kw=document.getElementById('nodeSearch').value.trim().toLowerCase();
+  const box=document.getElementById('searchResults');
+  if(!kw){box.innerHTML='<span class="muted">키워드를 입력하면 해당 노드 목록이 나옵니다. 노드를 클릭하면 그 노드 중심으로 경로가 그려집니다.</span>';return;}
+  const m=G.N.filter(n=>n.name.toLowerCase().includes(kw)).sort((a,b)=>casDeg(b)-casDeg(a)).slice(0,40);
+  if(!m.length){box.innerHTML='<span class="muted">일치하는 노드 없음.</span>';return;}
+  box.innerHTML='<div class="sres">'+m.map(n=>`<span class="chip ${n.id===focusKey?'on':''}" onclick="setFocus('${n.id.replace(/'/g,"\\'")}')">`
+    +`<i style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${TYPE_COLORS[n.type]};margin-right:5px"></i>`
+    +`${esc(n.name)} <span class="muted">${n.type}·연쇄${casDeg(n)}${n.docs.size>=2?'·공유':''}</span></span>`).join('')+'</div>';
 }
-function subtree(key,dir,depth,maxD,seen){
-  const adj=(dir==='out'?G.cout:G.cin).get(key)||[];
-  if(!adj.length||depth>maxD) return '';
-  let h='<ul>';
-  for(const e of adj){
-    const nxt=dir==='out'?e.target:e.source, nd=G.nodes.get(nxt);
-    const arrow=dir==='out'?`─${e.code}→`:`←${e.code}─`;
-    const term=dir==='out'&&AXIS[nd.type]==='Damage'?' 🎯':'';
-    const cyc=seen.has(nxt);
-    h+=`<li><span class="rel">${arrow}</span> ${esc(nd.name)} <span class="pill" style="background:${TYPE_COLORS[nd.type]}">${nd.type}</span> ${docbadges(nd)}${term}`;
-    if(!cyc&&depth<maxD){const s2=new Set(seen);s2.add(nxt);h+=subtree(nxt,dir,depth+1,maxD,s2);}
-    h+='</li>';
-  }
-  return h+'</ul>';
+function setFocus(key){ focusKey=key; renderExplore(); doSearch(); }
+function pick(name){ const n=G.N.filter(x=>x.name===name).sort((a,b)=>casDeg(b)-casDeg(a))[0]; if(n){setFocus(n.id);
+  document.getElementById('exploreGraph').scrollIntoView({behavior:'smooth',block:'center'});} }
+
+function renderExplore(){
+  if(!G||!focusKey)return;
+  const up=Math.max(1,Math.min(10,+document.getElementById('upHops').value||3));
+  const down=Math.max(1,Math.min(10,+document.getElementById('downHops').value||3));
+  const focus=G.nodes.get(focusKey); if(!focus)return;
+  const KPER=8, CAP=150;
+  const layer=new Map([[focusKey,0]]);
+  let fr=[focusKey];
+  for(let d=1;d<=down&&fr.length;d++){ const nf=[];
+    for(const k of fr){ const outs=G.cout.get(k).slice().sort((a,b)=>G.nodes.get(b.target).deg-G.nodes.get(a.target).deg).slice(0,KPER);
+      for(const e of outs){ if(!layer.has(e.target)&&layer.size<CAP){layer.set(e.target,d);nf.push(e.target);} } } fr=nf; }
+  fr=[focusKey];
+  for(let d=1;d<=up&&fr.length;d++){ const nf=[];
+    for(const k of fr){ const ins=G.cin.get(k).slice().sort((a,b)=>G.nodes.get(b.source).deg-G.nodes.get(a.source).deg).slice(0,KPER);
+      for(const e of ins){ if(!layer.has(e.source)&&layer.size<CAP){layer.set(e.source,-d);nf.push(e.source);} } } fr=nf; }
+  const keys=new Set(layer.keys());
+  const edges=G.E.filter(e=>CAUSAL.has(e.code)&&keys.has(e.source)&&keys.has(e.target));
+  document.getElementById('exploreFocus').innerHTML=`중심: <b style="color:#fff">${esc(focus.name)}</b> <span class="pill" style="background:${TYPE_COLORS[focus.type]}">${focus.type}</span> ${docbadges(focus)} · 노드 ${keys.size}${keys.size>=CAP?'(상한)':''} · 상류 ${up}홉 / 하류 ${down}홉`;
+  drawExplore([...keys].map(k=>({...G.nodes.get(k),layer:layer.get(k)})), edges, focusKey);
 }
-function explore(){
-  if(!G){return;}
-  const nm=document.getElementById('nodeInput').value.trim();
-  const node=findNode(nm);
-  const dn=document.getElementById('downTree'), up=document.getElementById('upTree');
-  if(!node){dn.innerHTML=up.innerHTML='<span class="muted">해당 노드를 찾지 못했습니다.</span>';return;}
-  const head=`<div style="margin-bottom:6px"><b>${esc(node.name)}</b> <span class="pill" style="background:${TYPE_COLORS[node.type]}">${node.type}</span> ${docbadges(node)}</div>`;
-  const d=subtree(node.id,'out',1,4,new Set([node.id]));
-  const u=subtree(node.id,'in',1,4,new Set([node.id]));
-  dn.innerHTML=head+(d||'<span class="muted">하류 연쇄 없음(종착).</span>');
-  up.innerHTML=head+(u||'<span class="muted">상류 원인 없음(시작점).</span>');
+
+function drawExplore(nodes, edges, fkey){
+  const el=document.getElementById('exploreGraph'); el.innerHTML=''; if(expSim)expSim.stop();
+  const W=el.clientWidth,H=560,padX=120,padY=26;
+  const svg=d3.select('#exploreGraph').append('svg').attr('width',W).attr('height',H);
+  const g=svg.append('g');
+  svg.call(d3.zoom().scaleExtent([0.2,4]).on('zoom',e=>g.attr('transform',e.transform)));
+  svg.append('defs').append('marker').attr('id','ea').attr('viewBox','0 -5 10 10').attr('refX',17).attr('refY',0)
+    .attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto').append('path').attr('d','M0,-5L10,0L0,5').attr('fill','#8893a6');
+  // columns by layer
+  const layers=[...new Set(nodes.map(n=>n.layer))].sort((a,b)=>a-b);
+  const colX={}; layers.forEach((L,i)=>colX[L]=padX+(layers.length<=1?(W-2*padX)/2:i*((W-2*padX)/(layers.length-1))));
+  const byL={}; layers.forEach(L=>byL[L]=[]);
+  nodes.forEach(n=>byL[n.layer].push(n));
+  const pos={};
+  layers.forEach(L=>{ const arr=byL[L].sort((a,b)=>b.deg-a.deg); const c=arr.length;
+    arr.forEach((n,i)=>{ pos[n.id]={x:colX[L],y:padY+(i+1)*((H-2*padY)/(c+1))}; }); });
+  // column headers (상류 -n … 중심 … 하류 +n)
+  g.append('g').selectAll('text.col').data(layers).join('text').attr('class','col')
+    .attr('x',L=>colX[L]).attr('y',14).attr('text-anchor','middle').attr('font-size','10px')
+    .attr('fill','#6aa3e0').text(L=>L===0?'◆ 중심':(L<0?`상류 ${L}`:`하류 +${L}`));
+  g.append('g').attr('fill','none').selectAll('path').data(edges).join('path')
+    .attr('stroke','#6b7a90').attr('stroke-opacity',0.5).attr('stroke-width',1.1).attr('marker-end','url(#ea)')
+    .attr('d',e=>{const a=pos[e.source],b=pos[e.target];if(!a||!b)return'';const mx=(a.x+b.x)/2;return `M${a.x},${a.y} C${mx},${a.y} ${mx},${b.y} ${b.x},${b.y}`;});
+  g.append('g').selectAll('text.el').data(edges).join('text').attr('class','el')
+    .attr('x',e=>{const a=pos[e.source],b=pos[e.target];return a&&b?(a.x+b.x)/2:0;})
+    .attr('y',e=>{const a=pos[e.source],b=pos[e.target];return a&&b?(a.y+b.y)/2-2:0;})
+    .attr('text-anchor','middle').attr('font-size','9px').attr('font-style','italic').attr('fill','#6aa3e0')
+    .attr('opacity',0.85).text(e=>e.code);
+  const nd=g.append('g').selectAll('g').data(nodes).join('g').attr('transform',n=>`translate(${pos[n.id].x},${pos[n.id].y})`).style('cursor','pointer')
+    .on('click',(e,n)=>setFocus(n.id))
+    .on('mousemove',(e,n)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';
+      tip.innerHTML=`<b>${esc(n.name)}</b><br>${n.type} · ${[...n.docs].map(i=>DOCS[i].short).join(', ')}<br><i>클릭=이 노드 중심</i>`;})
+    .on('mouseout',()=>tip.style.opacity=0);
+  nd.append('circle').attr('r',n=>n.id===fkey?11:5+Math.sqrt(n.deg)*1.1)
+    .attr('fill',n=>TYPE_COLORS[n.type]||'#999')
+    .attr('stroke',n=>n.id===fkey?'#fff':(n.docs.size>=2?'#ffd000':'#0c0e13')).attr('stroke-width',n=>n.id===fkey?3:(n.docs.size>=2?2:0.8));
+  nd.append('text').text(n=>{const t=AXIS[n.type]==='Damage'?'🎯 ':'';return t+(n.name.length>20?n.name.slice(0,19)+'…':n.name);})
+    .attr('x',9).attr('y',3).attr('font-size',n=>n.id===fkey?'11px':'9.5px').attr('fill',n=>n.id===fkey?'#fff':'#cdd6e3')
+    .attr('font-weight',n=>n.id===fkey?'700':'400');
+  // type legend
+  const tu=[...new Set(nodes.map(n=>n.type))];
+  document.getElementById('exploreLegend').innerHTML=tu.map(t=>`<span><i style="background:${TYPE_COLORS[t]}"></i>${t}</span>`).join('')+' <span>🎯=피해 종착</span>';
 }
 
 // ---- ② hubs / state-change ----
@@ -328,7 +384,6 @@ function renderGraph(N,E){
   sim.on('tick',()=>{link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
     node.attr('cx',d=>d.x).attr('cy',d=>d.y);});
 }
-document.getElementById('nodeInput').addEventListener('keydown',e=>{if(e.key==='Enter')explore();});
 build();
 </script>
 </body></html>
