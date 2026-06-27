@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>통합 그래프 — 재난위험 온톨로지</title>
+<title>통합 그래프 — 복합·연쇄 재난 시나리오</title>
 <script src="https://d3js.org/d3.v7.min.js"
         integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
         crossorigin="anonymous"></script>
@@ -15,43 +15,52 @@
         background:#1d212b;border:1px solid #2a2f3a;border-radius:7px;padding:6px 12px}
   .home:hover{color:#e6e6e6;border-color:#4e79a7}
   h1{font-size:24px;margin:0 0 8px}
-  .lead{color:#9aa4b2;font-size:14px;max-width:840px}
+  .lead{color:#9aa4b2;font-size:14px;max-width:860px}
   .panel{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:16px 18px;margin-top:18px}
   .docs{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
-  .docchk{display:flex;align-items:center;gap:8px;background:#1d212b;border:1px solid #2a2f3a;
-          border-radius:9px;padding:9px 13px;cursor:pointer;font-size:13px}
-  .docchk:hover{border-color:#4e79a7}
-  .docchk input{width:16px;height:16px;accent-color:#4e79a7}
-  .docchk .dot{width:10px;height:10px;border-radius:3px}
-  .docchk small{color:#8a93a3}
+  .docchk{display:flex;align-items:center;gap:8px;background:#1d212b;border:1px solid #2a2f3a;border-radius:9px;padding:9px 13px;cursor:pointer;font-size:13px}
+  .docchk:hover{border-color:#4e79a7}.docchk input{width:16px;height:16px;accent-color:#4e79a7}
+  .docchk .dot{width:10px;height:10px;border-radius:3px}.docchk small{color:#8a93a3}
   .controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
   button{background:#4e79a7;color:#fff;border:0;border-radius:9px;padding:10px 18px;font-size:14px;font-weight:600;cursor:pointer}
-  button:hover{background:#5b87b8}
-  button.sec{background:#1d212b;border:1px solid #2a2f3a;color:#cdd6e3}
+  button:hover{background:#5b87b8} button.sec{background:#1d212b;border:1px solid #2a2f3a;color:#cdd6e3}
   .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
   .stat{background:#1d212b;border:1px solid #2a2f3a;border-radius:10px;padding:10px 16px}
   .stat b{font-size:20px;color:#fff;display:block}.stat span{color:#9aa4b2;font-size:12px}
-  #graph{width:100%;height:640px;background:#0c0e13;border-radius:10px;margin-top:12px}
+  #graph{width:100%;height:560px;background:#0c0e13;border-radius:10px;margin-top:12px}
   .legend{display:flex;flex-wrap:wrap;gap:9px;margin-top:10px}
   .legend span{font-size:11px;color:#cdd6e3;display:flex;align-items:center;gap:4px}
   .legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
   .interp{margin-top:12px;padding:9px 11px;background:#12161f;border-left:3px solid #4e79a7;border-radius:0 6px 6px 0;font-size:12.5px;color:#b9c4d4}
   .interp b{color:#e6edf6}
-  h2{font-size:16px;color:#cdd6e3;margin:26px 0 4px}
-  table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+  h2{font-size:17px;color:#cdd6e3;margin:30px 0 4px}
+  .h2sub{color:#8a93a3;font-size:12.5px;margin-bottom:10px}
+  table{border-collapse:collapse;width:100%;font-size:13px}
   th,td{border-bottom:1px solid #262b36;padding:6px 9px;text-align:left;vertical-align:top}
   th{color:#9aa4b2;font-weight:600;position:sticky;top:0;background:#161922}
-  .pill{padding:1px 6px;border-radius:6px;color:#111;font-size:10px}
+  .pill{padding:1px 6px;border-radius:6px;color:#111;font-size:10px;white-space:nowrap}
   .docbadge{display:inline-block;padding:1px 6px;border-radius:6px;font-size:10px;color:#fff;margin-right:3px}
-  .tablewrap{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:6px 16px 14px;margin-top:6px;max-height:460px;overflow:auto}
+  .rel{color:#6aa3e0;font-style:italic;font-weight:600;font-size:11px}
+  .tablewrap{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:6px 16px 14px;margin-top:6px;max-height:420px;overflow:auto}
   .tip{position:absolute;background:#000c;color:#fff;padding:5px 9px;border-radius:5px;font-size:11px;pointer-events:none;opacity:0;max-width:300px}
   .muted{color:#8a93a3;font-size:12px}
+  input[type=text],select{background:#1d212b;border:1px solid #2a2f3a;color:#e6e6e6;border-radius:8px;padding:8px 11px;font-size:13px;min-width:300px}
+  .tree ul{list-style:none;margin:2px 0 2px 16px;padding-left:10px;border-left:1px solid #2a2f3a}
+  .tree li{margin:2px 0;font-size:12.5px}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .sub{background:#12161f;border:1px solid #232836;border-radius:9px;padding:10px 12px}
+  .sub h4{margin:0 0 6px;font-size:13px;color:#cdd6e3}
+  .bridge{background:#12161f;border:1px solid #232836;border-radius:10px;padding:11px 13px;margin-bottom:10px}
+  .bridge .hd{font-weight:700;margin-bottom:4px}
+  .chain{font-size:12.5px;margin:3px 0;padding:5px 8px;background:#12161f;border:1px solid #232836;border-radius:8px}
+  .tag{display:inline-block;font-size:10px;color:#111;background:#f28e2b;border-radius:5px;padding:0 5px;margin-left:4px}
+  @media(max-width:760px){.twocol{grid-template-columns:1fr}}
 </style></head>
 <body>
 <header><div class="wrap">
   <a class="home" href="index.html">← 목록으로</a>
-  <h1>통합 그래프 — 문서 선택</h1>
-  <div class="lead">아래에서 문서를 체크하고 <b>통합 그래프 생성</b>을 누르면, 선택한 문서들의 트리플을 합쳐 하나의 그래프로 그립니다. <b>같은 <code>이름+타입</code> 노드는 문서 간 병합</b>되며(전역 엔티티 해소 적용), <b>2개 이상 문서에 등장하는 노드(=문서 간 공유 노드)</b>는 금색 테두리로 강조됩니다 — 서로 다른 재난을 잇는 공통 위험원·대응·맥락입니다.</div>
+  <h1>통합 그래프 — 복합·연쇄 재난 시나리오</h1>
+  <div class="lead">문서를 선택해 합치면(같은 <code>이름+타입</code> 노드는 문서 간 병합) 통합 그래프와 함께 <b>복합·연쇄 시나리오 분석 뷰</b>를 제공합니다: ① 연쇄 경로 탐색기 ② 연쇄 허브·상태변화 ③ 교차재난 브릿지 ④ 위험원→피해 템플릿·차단지점.</div>
 </div></header>
 
 <div class="wrap">
@@ -71,9 +80,37 @@
   <div class="legend" id="legend"></div>
   <div class="interp" id="interp">문서를 선택하고 “통합 그래프 생성”을 누르세요.</div>
 
-  <h2>문서 간 공유 노드 (2개 이상 문서에 등장)</h2>
-  <div class="muted">서로 다른 재난 문서를 연결하는 교차 노드 — cross-document 예측의 핵심.</div>
-  <div class="tablewrap"><table id="sharedTable"><tr><td class="muted">아직 생성되지 않음</td></tr></table></div>
+  <h2>① 연쇄 경로 탐색기</h2>
+  <div class="h2sub">노드를 선택하면 인과 엣지(TRIGGERS·CASCADES_INTO·CAUSES·AMPLIFIES 등)만 따라 <b>하류 전파(무엇으로 번지나→종착 피해)</b>와 <b>상류 원인</b>을 펼칩니다. = 시나리오 생성기.</div>
+  <div class="panel">
+    <input type="text" id="nodeInput" list="nodeList" placeholder="노드 이름 입력/선택 (예: 정전, 유독가스, 집중호우)">
+    <datalist id="nodeList"></datalist>
+    <button onclick="explore()">경로 펼치기</button>
+    <div class="twocol" style="margin-top:12px">
+      <div class="sub"><h4>⤵ 하류 전파 (이 노드가 일으키는 연쇄·피해)</h4><div class="tree" id="downTree"><span class="muted">노드를 선택하세요.</span></div></div>
+      <div class="sub"><h4>⤴ 상류 원인 (이 노드를 일으킨 것)</h4><div class="tree" id="upTree"><span class="muted">노드를 선택하세요.</span></div></div>
+    </div>
+  </div>
+
+  <h2>② 연쇄 허브 · 상태변화 노드</h2>
+  <div class="h2sub">연쇄가 <b>들어오고 또 나가는</b> 전파 길목. 복합재난이 갈아타는 pivot이자, 끊으면 연쇄가 멈추는 지점. ⚡=상태변화(정전·고립·붕괴 등).</div>
+  <div class="tablewrap"><table id="hubTable"><tr><td class="muted">생성 후 표시</td></tr></table></div>
+
+  <h2>③ 교차재난 브릿지 상세</h2>
+  <div class="h2sub">2개 이상 문서에 공통 등장하는 노드가 <b>각 문서에서 갖는 전후 연쇄</b> — 서로 다른 재난에 반복되는 일반화된 시나리오 모듈.</div>
+  <div id="bridges"><span class="muted">생성 후 표시</span></div>
+
+  <h2>④ 위험원→피해 시나리오 템플릿</h2>
+  <div class="h2sub">위험원/위험요인 → … → 피해로 이어지는 대표 연쇄 체인(인과 경로). 재난을 가로질러 반복되는 골격.</div>
+  <div id="templates"><span class="muted">생성 후 표시</span></div>
+
+  <h2>⑤ 연쇄 차단 지점 (대응 개입)</h2>
+  <div class="h2sub">연쇄를 <b>끊은 대응</b>(MITIGATES·PREVENTS)과 <b>끊지 못한 지점</b>(FAILS). 어느 단계 개입이 재난을 막을 수 있었나.</div>
+  <div class="twocol">
+    <div class="sub"><h4 style="color:#86bcb6">🛡 끊은 대응 (MITIGATES / PREVENTS)</h4><div class="tablewrap" style="margin:0;border:0;padding:0"><table id="cutTable"></table></div></div>
+    <div class="sub"><h4 style="color:#e15759">⚠ 끊지 못함 (FAILS)</h4><div class="tablewrap" style="margin:0;border:0;padding:0"><table id="failTable"></table></div></div>
+  </div>
+  <div style="height:40px"></div>
 </div>
 <div class="tip" id="tip"></div>
 
@@ -81,19 +118,30 @@
 const TYPE_COLORS={NaturalHazard:"#e15759",ManmadeHazard:"#b4453a",RiskFactor:"#ff9da7",
  Region:"#4e79a7",Facility:"#76b7b2",Population:"#59a14f",Event:"#f28e2b",Damage:"#9c27b0",
  ResponseAction:"#edc948",ResponseActor:"#bab0ac",Resilience:"#86bcb6",Context:"#a0cbe8",Other:"#cccccc"};
+const AXIS={NaturalHazard:"Hazard",ManmadeHazard:"Hazard",RiskFactor:"Hazard",Region:"Exposure",
+ Facility:"Exposure",Population:"Exposure",Event:"Event",Damage:"Damage",ResponseAction:"Response",
+ ResponseActor:"Response",Resilience:"Response",Context:"Context",Other:"Other"};
+const CAUSAL=new Set(["TRIGGERS","INCREASES_RISK_OF","TRIGGERS_SECONDARY","CASCADES_INTO","CAUSES",
+ "AMPLIFIES","COMPOUNDS","DERIVES_FROM","MODIFIES_RISK_OF","CONCURRENT_WITH","PRECONDITIONS","AFFECTS"]);
+const STATE_RE=/정전|단전|전력\s*차단|고립|통신|두절|불통|마비|붕괴|침수|매몰|전복|좌초|탈선|폭발|확산|누출|유출|결항|고장|중단/;
 const DOC_COLORS=["#4e79a7","#59a14f","#f28e2b","#e15759","#9c27b0","#76b7b2","#edc948"];
 const DOCS=[
- {slug:"01_typhoon_rusa_maemi", title:"태풍 루사·매미 수해백서", short:"루사·매미", triples:298},
- {slug:"02_umyeonsan_landslide", title:"우면산 산사태", short:"우면산", triples:231},
- {slug:"03_sewol_ferry", title:"4·16 세월호참사", short:"세월호", triples:1170},
- {slug:"04_icheon_fire", title:"이천 냉동창고 화재", short:"이천화재", triples:221},
- {slug:"05_daegu_subway_fire", title:"대구 지하철 화재", short:"대구화재", triples:656},
+ {slug:"01_typhoon_rusa_maemi",title:"태풍 루사·매미 수해백서",short:"루사·매미",triples:298},
+ {slug:"02_umyeonsan_landslide",title:"우면산 산사태",short:"우면산",triples:231},
+ {slug:"03_sewol_ferry",title:"4·16 세월호참사",short:"세월호",triples:1170},
+ {slug:"04_icheon_fire",title:"이천 냉동창고 화재",short:"이천화재",triples:221},
+ {slug:"05_daegu_subway_fire",title:"대구 지하철 화재",short:"대구화재",triples:656},
 ];
 const tip=document.getElementById('tip');
+const esc=s=>(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 document.getElementById('docs').innerHTML=DOCS.map((d,i)=>`
   <label class="docchk"><input type="checkbox" value="${i}" checked>
    <i class="dot" style="background:${DOC_COLORS[i]}"></i>${d.title}<small>(${d.triples.toLocaleString()})</small></label>`).join('');
 function toggleAll(v){document.querySelectorAll('#docs input').forEach(c=>c.checked=v);}
+function docbadges(n){return [...n.docs].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('');}
+function isState(n){return n.type==='Event'&&STATE_RE.test(n.name);}
+
+let G=null, sim=null;
 
 async function build(){
   const sel=[...document.querySelectorAll('#docs input:checked')].map(c=>+c.value);
@@ -106,7 +154,7 @@ async function build(){
     try{ data=await (await fetch(`data/${DOCS[i].slug}_triples.json`)).json(); }
     catch(e){ document.getElementById('status').textContent=`로드 실패: ${DOCS[i].short} (로컬은 http 서버 필요)`; return; }
     for(const t of data.triples){
-      const s=t.subject, o=t.object; if(!s?.name||!o?.name) continue;
+      const s=t.subject,o=t.object; if(!s?.name||!o?.name)continue;
       const sk=key(s.name,s.type), ok=key(o.name,o.type);
       for(const [k,nd] of [[sk,s],[ok,o]]){
         let m=nodes.get(k); if(!m){m={id:k,name:nd.name,type:nd.type,docs:new Set(),deg:0};nodes.set(k,m);}
@@ -120,79 +168,167 @@ async function build(){
     }
   }
   const N=[...nodes.values()], E=[...edges.values()];
+  const cout=new Map(), cin=new Map(); N.forEach(n=>{cout.set(n.id,[]);cin.set(n.id,[]);});
+  E.forEach(e=>{ if(CAUSAL.has(e.code)){ cout.get(e.source).push(e); cin.get(e.target).push(e);} });
+  G={nodes,N,E,cout,cin,sel};
   const shared=N.filter(n=>n.docs.size>=2).sort((a,b)=>b.docs.size-a.docs.size||b.deg-a.deg);
   document.getElementById('status').textContent="";
-  // stats
   document.getElementById('stats').innerHTML=
     `<div class="stat"><b>${sel.length}</b><span>선택 문서</span></div>`+
     `<div class="stat"><b>${N.length.toLocaleString()}</b><span>노드</span></div>`+
     `<div class="stat"><b>${E.length.toLocaleString()}</b><span>관계(엣지)</span></div>`+
-    `<div class="stat"><b style="color:#ffd000">${shared.length.toLocaleString()}</b><span>문서 간 공유 노드</span></div>`;
-  // type legend
+    `<div class="stat"><b style="color:#ffd000">${shared.length}</b><span>문서 간 공유 노드</span></div>`;
   const typesUsed=[...new Set(N.map(n=>n.type))];
   document.getElementById('legend').innerHTML=typesUsed.map(t=>`<span><i style="background:${TYPE_COLORS[t]||'#999'}"></i>${t}</span>`).join('')
-    +`  <span><i style="background:#ffd000;border-radius:50%"></i>금색 테두리 = 문서 간 공유 노드</span>`;
-  document.getElementById('interp').innerHTML= shared.length
-    ? `선택한 ${sel.length}개 문서를 합치니 노드 ${N.length.toLocaleString()}개·관계 ${E.length.toLocaleString()}개. 그중 <b style="color:#ffd000">${shared.length}개 노드가 2개 이상 문서에 공통</b>으로 등장합니다 — 예: ${shared.slice(0,5).map(s=>s.name).join(', ')}. 이 공유 노드들이 서로 다른 재난을 잇는 다리이며, "한 재난의 위험요인·대응이 다른 재난에서도 작동하는가"를 예측하는 출발점입니다.`
-    : `선택 문서 간 <b>정확히 같은 이름+타입</b>의 공유 노드가 없습니다. (문서마다 명칭이 구체적이라 cross-doc 병합이 적을 수 있습니다 — 더 일반적 개념 수준 병합은 향후 과제.)`;
-  renderShared(shared, sel);
-  renderGraph(N,E,shared);
+    +` <span><i style="background:#ffd000;border-radius:50%"></i>금색=문서 간 공유</span>`;
+  document.getElementById('interp').innerHTML=
+    `선택 ${sel.length}개 문서 → 노드 ${N.length.toLocaleString()}·관계 ${E.length.toLocaleString()}, 공유 노드 ${shared.length}. 아래 ①~⑤에서 복합·연쇄 시나리오를 분석하세요.`;
+  // datalist
+  document.getElementById('nodeList').innerHTML=N.slice().sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))
+    .map(n=>`<option value="${esc(n.name)}">${n.type}${n.docs.size>=2?' · 공유':''}</option>`).join('');
+  renderGraph(N,E);
+  renderHubs(); renderBridges(shared); renderTemplates(); renderInterventions();
+  // auto-pick a good starter node for the explorer (top cascade hub)
+  const starter=N.filter(n=>cin.get(n.id).length&&cout.get(n.id).length).sort((a,b)=>(cout.get(b.id).length+cin.get(b.id).length)-(cout.get(a.id).length+cin.get(a.id).length))[0];
+  if(starter){document.getElementById('nodeInput').value=starter.name; explore();}
 }
 
-function renderShared(shared, sel){
-  const t=document.getElementById('sharedTable');
-  if(!shared.length){t.innerHTML='<tr><td class="muted">공유 노드 없음</td></tr>';return;}
-  let h='<tr><th>#</th><th>노드</th><th>타입</th><th>문서수</th><th>등장 문서</th><th>연결도</th></tr>';
-  shared.slice(0,200).forEach((n,i)=>{
-    const c=TYPE_COLORS[n.type]||'#999';
-    const badges=[...n.docs].map(di=>`<span class="docbadge" style="background:${DOC_COLORS[di]}">${DOCS[di].short}</span>`).join('');
-    h+=`<tr><td>${i+1}</td><td>${n.name}</td><td><span class="pill" style="background:${c}">${n.type}</span></td>`
-      +`<td style="color:#ffd000">${n.docs.size}</td><td>${badges}</td><td>${n.deg}</td></tr>`;
+// ---- ① path explorer ----
+function findNode(name){ // first node matching name (prefer shared/hub)
+  const cands=G.N.filter(n=>n.name===name);
+  if(!cands.length) return null;
+  return cands.sort((a,b)=>(G.cout.get(b.id).length+G.cin.get(b.id).length)-(G.cout.get(a.id).length+G.cin.get(a.id).length))[0];
+}
+function subtree(key,dir,depth,maxD,seen){
+  const adj=(dir==='out'?G.cout:G.cin).get(key)||[];
+  if(!adj.length||depth>maxD) return '';
+  let h='<ul>';
+  for(const e of adj){
+    const nxt=dir==='out'?e.target:e.source, nd=G.nodes.get(nxt);
+    const arrow=dir==='out'?`─${e.code}→`:`←${e.code}─`;
+    const term=dir==='out'&&AXIS[nd.type]==='Damage'?' 🎯':'';
+    const cyc=seen.has(nxt);
+    h+=`<li><span class="rel">${arrow}</span> ${esc(nd.name)} <span class="pill" style="background:${TYPE_COLORS[nd.type]}">${nd.type}</span> ${docbadges(nd)}${term}`;
+    if(!cyc&&depth<maxD){const s2=new Set(seen);s2.add(nxt);h+=subtree(nxt,dir,depth+1,maxD,s2);}
+    h+='</li>';
+  }
+  return h+'</ul>';
+}
+function explore(){
+  if(!G){return;}
+  const nm=document.getElementById('nodeInput').value.trim();
+  const node=findNode(nm);
+  const dn=document.getElementById('downTree'), up=document.getElementById('upTree');
+  if(!node){dn.innerHTML=up.innerHTML='<span class="muted">해당 노드를 찾지 못했습니다.</span>';return;}
+  const head=`<div style="margin-bottom:6px"><b>${esc(node.name)}</b> <span class="pill" style="background:${TYPE_COLORS[node.type]}">${node.type}</span> ${docbadges(node)}</div>`;
+  const d=subtree(node.id,'out',1,4,new Set([node.id]));
+  const u=subtree(node.id,'in',1,4,new Set([node.id]));
+  dn.innerHTML=head+(d||'<span class="muted">하류 연쇄 없음(종착).</span>');
+  up.innerHTML=head+(u||'<span class="muted">상류 원인 없음(시작점).</span>');
+}
+
+// ---- ② hubs / state-change ----
+function renderHubs(){
+  const rows=G.N.map(n=>({n,i:G.cin.get(n.id).length,o:G.cout.get(n.id).length}))
+    .filter(r=>r.i>=1&&r.o>=1).sort((a,b)=>(b.i+b.o)-(a.i+a.o)).slice(0,40);
+  let h='<tr><th>#</th><th>노드</th><th>타입</th><th>연쇄 in</th><th>연쇄 out</th><th>문서</th></tr>';
+  rows.forEach((r,idx)=>{
+    const n=r.n,c=TYPE_COLORS[n.type];
+    h+=`<tr><td>${idx+1}</td><td>${isState(n)?'⚡ ':''}<a href="#" onclick="pick('${esc(n.name).replace(/'/g,"\\'")}');return false">${esc(n.name)}</a></td>`
+      +`<td><span class="pill" style="background:${c}">${n.type}</span></td><td>${r.i}</td><td>${r.o}</td>`
+      +`<td>${n.docs.size>=2?'<b style=color:#ffd000>'+n.docs.size+'</b> ':''}${docbadges(n)}</td></tr>`;
   });
-  t.innerHTML=h;
+  document.getElementById('hubTable').innerHTML=h;
+}
+function pick(name){document.getElementById('nodeInput').value=name;explore();document.getElementById('nodeInput').scrollIntoView({behavior:'smooth',block:'center'});}
+
+// ---- ③ cross-disaster bridges ----
+function renderBridges(shared){
+  const focus=shared.filter(n=>(G.cin.get(n.id).length+G.cout.get(n.id).length)>0).slice(0,12);
+  if(!focus.length){document.getElementById('bridges').innerHTML='<span class="muted">전후 연쇄가 있는 공유 노드가 없습니다.</span>';return;}
+  let h='';
+  for(const n of focus){
+    const ins=G.cin.get(n.id).map(e=>`<span class="muted">←${e.code}─</span> ${esc(G.nodes.get(e.source).name)} ${docbadges(G.nodes.get(e.source))}`);
+    const outs=G.cout.get(n.id).map(e=>`<span class="rel">─${e.code}→</span> ${esc(G.nodes.get(e.target).name)} ${docbadges(G.nodes.get(e.target))}`);
+    h+=`<div class="bridge"><div class="hd">${esc(n.name)} <span class="pill" style="background:${TYPE_COLORS[n.type]}">${n.type}</span> ${docbadges(n)}</div>`
+      +`<div class="twocol"><div><div class="muted">원인(상류)</div>${ins.join('<br>')||'<span class=muted>—</span>'}</div>`
+      +`<div><div class="muted">결과(하류)</div>${outs.join('<br>')||'<span class=muted>—</span>'}</div></div></div>`;
+  }
+  document.getElementById('bridges').innerHTML=h;
 }
 
-let sim;
-function renderGraph(N,E,shared){
+// ---- ④ hazard→damage templates ----
+function renderTemplates(){
+  const isSrc=n=>(AXIS[n.type]==='Hazard')&&G.cout.get(n.id).length>0;
+  const isSink=n=>AXIS[n.type]==='Damage';
+  const paths=[]; let budget=4000;
+  function dfs(key,trail,seen){
+    if(budget<=0||trail.length>6)return;
+    const node=G.nodes.get(key);
+    if(trail.length>=3&&isSink(node)){paths.push(trail.slice());budget--;return;}
+    for(const e of G.cout.get(key)){
+      if(seen.has(e.target))continue;
+      seen.add(e.target);trail.push(e);dfs(e.target,trail,seen);trail.pop();seen.delete(e.target);
+      if(budget<=0)return;
+    }
+  }
+  for(const n of G.N){ if(isSrc(n)){ dfs(n.id,[],new Set([n.id])); if(budget<=0)break; } }
+  // score: longer + node degree; dedup by (start,end,len)
+  paths.sort((a,b)=> (b.length-a.length) || (sumDeg(b)-sumDeg(a)));
+  const seen=new Set(), chosen=[];
+  for(const p of paths){ const st=G.nodes.get(p[0].source).name, en=G.nodes.get(p[p.length-1].target).name;
+    const sig=st+'|'+en+'|'+p.length; if(seen.has(sig))continue; seen.add(sig); chosen.push(p); if(chosen.length>=20)break; }
+  function sumDeg(p){let s=G.nodes.get(p[0].source).deg;for(const e of p)s+=G.nodes.get(e.target).deg;return s;}
+  if(!chosen.length){document.getElementById('templates').innerHTML='<span class="muted">위험원→피해 완결 경로가 없습니다.</span>';return;}
+  let h='';
+  for(const p of chosen){
+    const docsAll=new Set(); p.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));
+    let chain=`<b>${esc(G.nodes.get(p[0].source).name)}</b>`;
+    for(const e of p) chain+=` <span class="rel">─${e.code}→</span> ${esc(G.nodes.get(e.target).name)}`;
+    h+=`<div class="chain">${chain} &nbsp;${[...docsAll].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('')}<span class="tag">${p.length}단계</span></div>`;
+  }
+  document.getElementById('templates').innerHTML=h;
+}
+
+// ---- ⑤ interventions ----
+function renderInterventions(){
+  const cut=G.E.filter(e=>e.code==='MITIGATES'||e.code==='PREVENTS');
+  const fail=G.E.filter(e=>e.code==='FAILS');
+  const row=e=>`<tr><td>${esc(G.nodes.get(e.source).name)}</td><td class="rel">${e.code}</td><td>${esc(G.nodes.get(e.target).name)}</td><td>${[...e.docs].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('')}</td></tr>`;
+  document.getElementById('cutTable').innerHTML='<tr><th>대응</th><th>관계</th><th>대상</th><th>문서</th></tr>'+(cut.slice(0,60).map(row).join('')||'<tr><td class=muted colspan=4>없음</td></tr>');
+  document.getElementById('failTable').innerHTML='<tr><th>주체</th><th>관계</th><th>실패한 조치</th><th>문서</th></tr>'+(fail.slice(0,60).map(row).join('')||'<tr><td class=muted colspan=4>없음</td></tr>');
+}
+
+// ---- graph ----
+function renderGraph(N,E){
   const el=document.getElementById('graph'); el.innerHTML=''; if(sim)sim.stop();
-  const W=el.clientWidth,H=640;
+  const W=el.clientWidth,H=560;
   const svg=d3.select('#graph').append('svg').attr('width',W).attr('height',H);
   const g=svg.append('g');
   svg.call(d3.zoom().scaleExtent([0.1,4]).on('zoom',e=>g.attr('transform',e.transform)));
   const nodes=N.map(d=>({...d})), links=E.map(d=>({source:d.source,target:d.target}));
   const big=N.length>1200;
   sim=d3.forceSimulation(nodes)
-    .force('link',d3.forceLink(links).id(d=>d.id).distance(big?28:42).strength(0.35))
-    .force('charge',d3.forceManyBody().strength(big?-18:-34))
+    .force('link',d3.forceLink(links).id(d=>d.id).distance(big?26:40).strength(0.32))
+    .force('charge',d3.forceManyBody().strength(big?-16:-32))
     .force('center',d3.forceCenter(W/2,H/2))
-    .force('collide',d3.forceCollide().radius(d=>3+Math.sqrt(d.deg)*1.3));
-  const link=g.append('g').attr('stroke','#39414f').attr('stroke-opacity',0.45)
+    .force('collide',d3.forceCollide().radius(d=>3+Math.sqrt(d.deg)*1.2));
+  const link=g.append('g').attr('stroke','#39414f').attr('stroke-opacity',0.4)
     .selectAll('line').data(links).join('line').attr('stroke-width',0.6);
   const node=g.append('g').selectAll('circle').data(nodes).join('circle')
-    .attr('r',d=>3+Math.sqrt(d.deg)*1.4)
-    .attr('fill',d=>TYPE_COLORS[d.type]||'#999')
-    .attr('stroke',d=>d.docs.size>=2?'#ffd000':'#0c0e13')
-    .attr('stroke-width',d=>d.docs.size>=2?2:0.5)
-    .call(d3.drag()
-      .on('start',(e,d)=>{if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
-      .on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;})
-      .on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}))
+    .attr('r',d=>3+Math.sqrt(d.deg)*1.3).attr('fill',d=>TYPE_COLORS[d.type]||'#999')
+    .attr('stroke',d=>d.docs.size>=2?'#ffd000':'#0c0e13').attr('stroke-width',d=>d.docs.size>=2?2:0.5)
+    .style('cursor','pointer')
+    .call(d3.drag().on('start',(e,d)=>{if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
+      .on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;}).on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}))
+    .on('click',(e,d)=>pick(d.name))
     .on('mousemove',(e,d)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';
-      tip.innerHTML=`<b>${d.name}</b><br>${d.type} · deg ${d.deg}<br>문서: ${[...d.docs].map(i=>DOCS[i].short).join(', ')}`;})
+      tip.innerHTML=`<b>${d.name}</b><br>${d.type} · deg ${d.deg}<br>문서: ${[...d.docs].map(i=>DOCS[i].short).join(', ')}<br><i>클릭=경로 탐색</i>`;})
     .on('mouseout',()=>tip.style.opacity=0);
-  // label only shared + high-degree nodes to keep it readable
-  const degThresh = nodes.map(n=>n.deg).sort((a,b)=>b-a)[Math.min(40,nodes.length-1)]||999;
-  const labeled=nodes.filter(d=>d.docs.size>=2 || d.deg>=degThresh);
-  const label=g.append('g').selectAll('text').data(labeled).join('text')
-    .text(d=>d.name.length>18?d.name.slice(0,17)+'…':d.name)
-    .attr('font-size','9px').attr('fill',d=>d.docs.size>=2?'#ffe066':'#cdd6e3').attr('pointer-events','none');
-  sim.on('tick',()=>{
-    link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
-    node.attr('cx',d=>d.x).attr('cy',d=>d.y);
-    label.attr('x',d=>d.x+6).attr('y',d=>d.y+3);
-  });
+  sim.on('tick',()=>{link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+    node.attr('cx',d=>d.x).attr('cy',d=>d.y);});
 }
-// auto-build on load
+document.getElementById('nodeInput').addEventListener('keydown',e=>{if(e.key==='Enter')explore();});
 build();
 </script>
 </body></html>
