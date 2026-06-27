@@ -16,7 +16,7 @@ https://hahwang0309.github.io/Korean-Disaster-Risk-Ontology-Dashboard/
 | 05 | 대구 지하철 중앙로역 화재사고 백서 (대구시, 2005) | 화재 `social_fire` | 656 | 661 |
 
 ## 구성
-- `index.html` — 문서별 대시보드 색인 / `schema.html` — 온톨로지 스키마(Mermaid)
+- `index.html` — 문서별 대시보드 색인 / `schema.html` — 온톨로지 스키마(Mermaid) / `integrated.html` — 문서 선택형 통합 그래프(cross-document 노드 병합)
 - `dashboards/` — 문서별 인터랙티브 시각화(9종: Network Connectivity Map · Entity/Predicate Distribution·Heatmap · Sankey · Force-directed Graph · Centrality · Community). 자가완결 HTML(Plotly + D3, 공개 CDN·SRI 고정).
 - `data/` — 원본 트리플(`*_triples.json`) 및 Neo4j 적재 스크립트(`*.cypher`)
 - `skill/` — **추출 파이프라인 코드** (Claude Code 스킬 `disaster-risk-triples`). 이 코드로 위 산출물을 생성한다.

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>통합 그래프 — 재난위험 온톨로지</title>
+<script src="https://d3js.org/d3.v7.min.js"
+        integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+        crossorigin="anonymous"></script>
+<style>
+  :root{color-scheme:dark}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+       margin:0;background:#0f1115;color:#e6e6e6;line-height:1.6}
+  header{padding:24px 24px 18px;background:linear-gradient(180deg,#161922,#0f1115);border-bottom:1px solid #2a2f3a}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .home{display:inline-block;margin-bottom:12px;color:#9aa4b2;text-decoration:none;font-size:13px;
+        background:#1d212b;border:1px solid #2a2f3a;border-radius:7px;padding:6px 12px}
+  .home:hover{color:#e6e6e6;border-color:#4e79a7}
+  h1{font-size:24px;margin:0 0 8px}
+  .lead{color:#9aa4b2;font-size:14px;max-width:840px}
+  .panel{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:16px 18px;margin-top:18px}
+  .docs{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
+  .docchk{display:flex;align-items:center;gap:8px;background:#1d212b;border:1px solid #2a2f3a;
+          border-radius:9px;padding:9px 13px;cursor:pointer;font-size:13px}
+  .docchk:hover{border-color:#4e79a7}
+  .docchk input{width:16px;height:16px;accent-color:#4e79a7}
+  .docchk .dot{width:10px;height:10px;border-radius:3px}
+  .docchk small{color:#8a93a3}
+  .controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  button{background:#4e79a7;color:#fff;border:0;border-radius:9px;padding:10px 18px;font-size:14px;font-weight:600;cursor:pointer}
+  button:hover{background:#5b87b8}
+  button.sec{background:#1d212b;border:1px solid #2a2f3a;color:#cdd6e3}
+  .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
+  .stat{background:#1d212b;border:1px solid #2a2f3a;border-radius:10px;padding:10px 16px}
+  .stat b{font-size:20px;color:#fff;display:block}.stat span{color:#9aa4b2;font-size:12px}
+  #graph{width:100%;height:640px;background:#0c0e13;border-radius:10px;margin-top:12px}
+  .legend{display:flex;flex-wrap:wrap;gap:9px;margin-top:10px}
+  .legend span{font-size:11px;color:#cdd6e3;display:flex;align-items:center;gap:4px}
+  .legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+  .interp{margin-top:12px;padding:9px 11px;background:#12161f;border-left:3px solid #4e79a7;border-radius:0 6px 6px 0;font-size:12.5px;color:#b9c4d4}
+  .interp b{color:#e6edf6}
+  h2{font-size:16px;color:#cdd6e3;margin:26px 0 4px}
+  table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+  th,td{border-bottom:1px solid #262b36;padding:6px 9px;text-align:left;vertical-align:top}
+  th{color:#9aa4b2;font-weight:600;position:sticky;top:0;background:#161922}
+  .pill{padding:1px 6px;border-radius:6px;color:#111;font-size:10px}
+  .docbadge{display:inline-block;padding:1px 6px;border-radius:6px;font-size:10px;color:#fff;margin-right:3px}
+  .tablewrap{background:#161922;border:1px solid #2a2f3a;border-radius:12px;padding:6px 16px 14px;margin-top:6px;max-height:460px;overflow:auto}
+  .tip{position:absolute;background:#000c;color:#fff;padding:5px 9px;border-radius:5px;font-size:11px;pointer-events:none;opacity:0;max-width:300px}
+  .muted{color:#8a93a3;font-size:12px}
+</style></head>
+<body>
+<header><div class="wrap">
+  <a class="home" href="index.html">← 목록으로</a>
+  <h1>통합 그래프 — 문서 선택</h1>
+  <div class="lead">아래에서 문서를 체크하고 <b>통합 그래프 생성</b>을 누르면, 선택한 문서들의 트리플을 합쳐 하나의 그래프로 그립니다. <b>같은 <code>이름+타입</code> 노드는 문서 간 병합</b>되며(전역 엔티티 해소 적용), <b>2개 이상 문서에 등장하는 노드(=문서 간 공유 노드)</b>는 금색 테두리로 강조됩니다 — 서로 다른 재난을 잇는 공통 위험원·대응·맥락입니다.</div>
+</div></header>
+
+<div class="wrap">
+  <div class="panel">
+    <div class="muted" style="margin-bottom:8px">문서 선택</div>
+    <div class="docs" id="docs"></div>
+    <div class="controls">
+      <button onclick="build()">통합 그래프 생성</button>
+      <button class="sec" onclick="toggleAll(true)">전체 선택</button>
+      <button class="sec" onclick="toggleAll(false)">전체 해제</button>
+      <span class="muted" id="status"></span>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <div id="graph"></div>
+  <div class="legend" id="legend"></div>
+  <div class="interp" id="interp">문서를 선택하고 “통합 그래프 생성”을 누르세요.</div>
+
+  <h2>문서 간 공유 노드 (2개 이상 문서에 등장)</h2>
+  <div class="muted">서로 다른 재난 문서를 연결하는 교차 노드 — cross-document 예측의 핵심.</div>
+  <div class="tablewrap"><table id="sharedTable"><tr><td class="muted">아직 생성되지 않음</td></tr></table></div>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+const TYPE_COLORS={NaturalHazard:"#e15759",ManmadeHazard:"#b4453a",RiskFactor:"#ff9da7",
+ Region:"#4e79a7",Facility:"#76b7b2",Population:"#59a14f",Event:"#f28e2b",Damage:"#9c27b0",
+ ResponseAction:"#edc948",ResponseActor:"#bab0ac",Resilience:"#86bcb6",Context:"#a0cbe8",Other:"#cccccc"};
+const DOC_COLORS=["#4e79a7","#59a14f","#f28e2b","#e15759","#9c27b0","#76b7b2","#edc948"];
+const DOCS=[
+ {slug:"01_typhoon_rusa_maemi", title:"태풍 루사·매미 수해백서", short:"루사·매미", triples:298},
+ {slug:"02_umyeonsan_landslide", title:"우면산 산사태", short:"우면산", triples:231},
+ {slug:"03_sewol_ferry", title:"4·16 세월호참사", short:"세월호", triples:1170},
+ {slug:"04_icheon_fire", title:"이천 냉동창고 화재", short:"이천화재", triples:221},
+ {slug:"05_daegu_subway_fire", title:"대구 지하철 화재", short:"대구화재", triples:656},
+];
+const tip=document.getElementById('tip');
+document.getElementById('docs').innerHTML=DOCS.map((d,i)=>`
+  <label class="docchk"><input type="checkbox" value="${i}" checked>
+   <i class="dot" style="background:${DOC_COLORS[i]}"></i>${d.title}<small>(${d.triples.toLocaleString()})</small></label>`).join('');
+function toggleAll(v){document.querySelectorAll('#docs input').forEach(c=>c.checked=v);}
+
+async function build(){
+  const sel=[...document.querySelectorAll('#docs input:checked')].map(c=>+c.value);
+  if(!sel.length){document.getElementById('status').textContent="문서를 1개 이상 선택하세요.";return;}
+  document.getElementById('status').textContent="불러오는 중…";
+  const nodes=new Map(), edges=new Map();
+  const key=(n,t)=>n+""+t;
+  for(const i of sel){
+    let data;
+    try{ data=await (await fetch(`data/${DOCS[i].slug}_triples.json`)).json(); }
+    catch(e){ document.getElementById('status').textContent=`로드 실패: ${DOCS[i].short} (로컬은 http 서버 필요)`; return; }
+    for(const t of data.triples){
+      const s=t.subject, o=t.object; if(!s?.name||!o?.name) continue;
+      const sk=key(s.name,s.type), ok=key(o.name,o.type);
+      for(const [k,nd] of [[sk,s],[ok,o]]){
+        let m=nodes.get(k); if(!m){m={id:k,name:nd.name,type:nd.type,docs:new Set(),deg:0};nodes.set(k,m);}
+        m.docs.add(i);
+      }
+      const code=(t.predicate?.code)||"REL";
+      const ek=sk+""+code+""+ok;
+      let e=edges.get(ek); if(!e){e={source:sk,target:ok,code,docs:new Set()};edges.set(ek,e);}
+      e.docs.add(i);
+      nodes.get(sk).deg++; nodes.get(ok).deg++;
+    }
+  }
+  const N=[...nodes.values()], E=[...edges.values()];
+  const shared=N.filter(n=>n.docs.size>=2).sort((a,b)=>b.docs.size-a.docs.size||b.deg-a.deg);
+  document.getElementById('status').textContent="";
+  // stats
+  document.getElementById('stats').innerHTML=
+    `<div class="stat"><b>${sel.length}</b><span>선택 문서</span></div>`+
+    `<div class="stat"><b>${N.length.toLocaleString()}</b><span>노드</span></div>`+
+    `<div class="stat"><b>${E.length.toLocaleString()}</b><span>관계(엣지)</span></div>`+
+    `<div class="stat"><b style="color:#ffd000">${shared.length.toLocaleString()}</b><span>문서 간 공유 노드</span></div>`;
+  // type legend
+  const typesUsed=[...new Set(N.map(n=>n.type))];
+  document.getElementById('legend').innerHTML=typesUsed.map(t=>`<span><i style="background:${TYPE_COLORS[t]||'#999'}"></i>${t}</span>`).join('')
+    +`  <span><i style="background:#ffd000;border-radius:50%"></i>금색 테두리 = 문서 간 공유 노드</span>`;
+  document.getElementById('interp').innerHTML= shared.length
+    ? `선택한 ${sel.length}개 문서를 합치니 노드 ${N.length.toLocaleString()}개·관계 ${E.length.toLocaleString()}개. 그중 <b style="color:#ffd000">${shared.length}개 노드가 2개 이상 문서에 공통</b>으로 등장합니다 — 예: ${shared.slice(0,5).map(s=>s.name).join(', ')}. 이 공유 노드들이 서로 다른 재난을 잇는 다리이며, "한 재난의 위험요인·대응이 다른 재난에서도 작동하는가"를 예측하는 출발점입니다.`
+    : `선택 문서 간 <b>정확히 같은 이름+타입</b>의 공유 노드가 없습니다. (문서마다 명칭이 구체적이라 cross-doc 병합이 적을 수 있습니다 — 더 일반적 개념 수준 병합은 향후 과제.)`;
+  renderShared(shared, sel);
+  renderGraph(N,E,shared);
+}
+
+function renderShared(shared, sel){
+  const t=document.getElementById('sharedTable');
+  if(!shared.length){t.innerHTML='<tr><td class="muted">공유 노드 없음</td></tr>';return;}
+  let h='<tr><th>#</th><th>노드</th><th>타입</th><th>문서수</th><th>등장 문서</th><th>연결도</th></tr>';
+  shared.slice(0,200).forEach((n,i)=>{
+    const c=TYPE_COLORS[n.type]||'#999';
+    const badges=[...n.docs].map(di=>`<span class="docbadge" style="background:${DOC_COLORS[di]}">${DOCS[di].short}</span>`).join('');
+    h+=`<tr><td>${i+1}</td><td>${n.name}</td><td><span class="pill" style="background:${c}">${n.type}</span></td>`
+      +`<td style="color:#ffd000">${n.docs.size}</td><td>${badges}</td><td>${n.deg}</td></tr>`;
+  });
+  t.innerHTML=h;
+}
+
+let sim;
+function renderGraph(N,E,shared){
+  const el=document.getElementById('graph'); el.innerHTML=''; if(sim)sim.stop();
+  const W=el.clientWidth,H=640;
+  const svg=d3.select('#graph').append('svg').attr('width',W).attr('height',H);
+  const g=svg.append('g');
+  svg.call(d3.zoom().scaleExtent([0.1,4]).on('zoom',e=>g.attr('transform',e.transform)));
+  const nodes=N.map(d=>({...d})), links=E.map(d=>({source:d.source,target:d.target}));
+  const big=N.length>1200;
+  sim=d3.forceSimulation(nodes)
+    .force('link',d3.forceLink(links).id(d=>d.id).distance(big?28:42).strength(0.35))
+    .force('charge',d3.forceManyBody().strength(big?-18:-34))
+    .force('center',d3.forceCenter(W/2,H/2))
+    .force('collide',d3.forceCollide().radius(d=>3+Math.sqrt(d.deg)*1.3));
+  const link=g.append('g').attr('stroke','#39414f').attr('stroke-opacity',0.45)
+    .selectAll('line').data(links).join('line').attr('stroke-width',0.6);
+  const node=g.append('g').selectAll('circle').data(nodes).join('circle')
+    .attr('r',d=>3+Math.sqrt(d.deg)*1.4)
+    .attr('fill',d=>TYPE_COLORS[d.type]||'#999')
+    .attr('stroke',d=>d.docs.size>=2?'#ffd000':'#0c0e13')
+    .attr('stroke-width',d=>d.docs.size>=2?2:0.5)
+    .call(d3.drag()
+      .on('start',(e,d)=>{if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
+      .on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;})
+      .on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}))
+    .on('mousemove',(e,d)=>{tip.style.opacity=1;tip.style.left=(e.pageX+10)+'px';tip.style.top=(e.pageY+10)+'px';
+      tip.innerHTML=`<b>${d.name}</b><br>${d.type} · deg ${d.deg}<br>문서: ${[...d.docs].map(i=>DOCS[i].short).join(', ')}`;})
+    .on('mouseout',()=>tip.style.opacity=0);
+  // label only shared + high-degree nodes to keep it readable
+  const degThresh = nodes.map(n=>n.deg).sort((a,b)=>b-a)[Math.min(40,nodes.length-1)]||999;
+  const labeled=nodes.filter(d=>d.docs.size>=2 || d.deg>=degThresh);
+  const label=g.append('g').selectAll('text').data(labeled).join('text')
+    .text(d=>d.name.length>18?d.name.slice(0,17)+'…':d.name)
+    .attr('font-size','9px').attr('fill',d=>d.docs.size>=2?'#ffe066':'#cdd6e3').attr('pointer-events','none');
+  sim.on('tick',()=>{
+    link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+    node.attr('cx',d=>d.x).attr('cy',d=>d.y);
+    label.attr('x',d=>d.x+6).attr('y',d=>d.y+3);
+  });
+}
+// auto-build on load
+build();
+</script>
+</body></html>
