@@ -1,0 +1,3129 @@
+{
+  "version": 1,
+  "description": "전역 마스터 메타정보 스키마",
+  "docs": [
+    "수해백서_루사매미(강릉시 2005)",
+    "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+    "4·16 세월호참사 백서(대한변협 2015)",
+    "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+  ],
+  "node_keys": {
+    "phase": {
+      "count": 1678,
+      "owners": {
+        "ResponseAction": 1672,
+        "ResponseActor": 5,
+        "Resilience": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "feature": {
+      "count": 1641,
+      "owners": {
+        "ResponseAction": 268,
+        "Event": 364,
+        "Damage": 142,
+        "ResponseActor": 62,
+        "RiskFactor": 376,
+        "Context": 62,
+        "Facility": 64,
+        "Region": 9,
+        "NaturalHazard": 15,
+        "Resilience": 112,
+        "Population": 60,
+        "Other": 48,
+        "ManmadeHazard": 59
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "unit": {
+      "count": 469,
+      "owners": {
+        "ResponseAction": 117,
+        "Event": 10,
+        "Damage": 208,
+        "ResponseActor": 25,
+        "RiskFactor": 6,
+        "Context": 45,
+        "Facility": 17,
+        "Region": 6,
+        "Resilience": 6,
+        "Population": 25,
+        "ManmadeHazard": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "mechanism": {
+      "count": 458,
+      "owners": {
+        "ResponseAction": 74,
+        "Event": 155,
+        "RiskFactor": 197,
+        "NaturalHazard": 4,
+        "Resilience": 9,
+        "Damage": 5,
+        "Context": 2,
+        "ManmadeHazard": 12
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "count": {
+      "count": 258,
+      "owners": {
+        "ResponseAction": 102,
+        "Event": 5,
+        "Damage": 48,
+        "ResponseActor": 29,
+        "RiskFactor": 3,
+        "Context": 19,
+        "Facility": 16,
+        "Region": 4,
+        "Resilience": 4,
+        "Population": 28
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "actionType": {
+      "count": 1355,
+      "owners": {
+        "ResponseAction": 1355
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "location": {
+      "count": 947,
+      "owners": {
+        "ResponseAction": 138,
+        "Event": 422,
+        "Damage": 76,
+        "ResponseActor": 20,
+        "RiskFactor": 40,
+        "Context": 89,
+        "Facility": 68,
+        "Region": 31,
+        "Population": 36,
+        "NaturalHazard": 7,
+        "Resilience": 3,
+        "ManmadeHazard": 15,
+        "Other": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "dateTime": {
+      "count": 1134,
+      "owners": {
+        "ResponseAction": 437,
+        "Event": 466,
+        "Damage": 30,
+        "Context": 107,
+        "NaturalHazard": 22,
+        "Population": 1,
+        "Resilience": 7,
+        "ManmadeHazard": 21,
+        "ResponseActor": 22,
+        "RiskFactor": 6,
+        "Facility": 5,
+        "Other": 10
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "detail": {
+      "count": 991,
+      "owners": {
+        "ResponseAction": 412,
+        "Event": 67,
+        "Damage": 247,
+        "Context": 93,
+        "Facility": 10,
+        "Resilience": 39,
+        "Region": 5,
+        "ManmadeHazard": 6,
+        "Population": 23,
+        "ResponseActor": 23,
+        "RiskFactor": 40,
+        "Other": 26
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "measures": {
+      "count": 138,
+      "owners": {
+        "ResponseAction": 138
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "duration": {
+      "count": 96,
+      "owners": {
+        "ResponseAction": 61,
+        "Event": 17,
+        "ResponseActor": 6,
+        "Context": 8,
+        "NaturalHazard": 1,
+        "Damage": 2,
+        "ManmadeHazard": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "consequence": {
+      "count": 576,
+      "owners": {
+        "ResponseAction": 188,
+        "Event": 108,
+        "Damage": 246,
+        "RiskFactor": 17,
+        "Resilience": 8,
+        "Population": 1,
+        "Facility": 2,
+        "Other": 6
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "amount": {
+      "count": 86,
+      "owners": {
+        "ResponseAction": 23,
+        "Damage": 48,
+        "Context": 11,
+        "Resilience": 2,
+        "RiskFactor": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "actor": {
+      "count": 226,
+      "owners": {
+        "ResponseAction": 59,
+        "Damage": 10,
+        "ResponseActor": 115,
+        "Facility": 4,
+        "RiskFactor": 3,
+        "Event": 22,
+        "Resilience": 4,
+        "ManmadeHazard": 6,
+        "Other": 2,
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "specialNote": {
+      "count": 276,
+      "owners": {
+        "ResponseAction": 94,
+        "Damage": 27,
+        "ResponseActor": 53,
+        "RiskFactor": 37,
+        "Context": 15,
+        "Facility": 10,
+        "Population": 3,
+        "Other": 6,
+        "Resilience": 13,
+        "Event": 12,
+        "ManmadeHazard": 6
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "rate": {
+      "count": 10,
+      "owners": {
+        "ResponseAction": 7,
+        "Context": 2,
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "year": {
+      "count": 11,
+      "owners": {
+        "ResponseAction": 7,
+        "ManmadeHazard": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "reason": {
+      "count": 25,
+      "owners": {
+        "ResponseAction": 23,
+        "RiskFactor": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "displaced": {
+      "count": 11,
+      "owners": {
+        "ResponseAction": 4,
+        "Damage": 5,
+        "Population": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "plannedAmount": {
+      "count": 4,
+      "owners": {
+        "ResponseAction": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "breakdown": {
+      "count": 37,
+      "owners": {
+        "ResponseAction": 16,
+        "Damage": 13,
+        "RiskFactor": 1,
+        "Context": 4,
+        "Other": 2,
+        "Population": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "legalBasis": {
+      "count": 107,
+      "owners": {
+        "ResponseAction": 54,
+        "Event": 2,
+        "ResponseActor": 10,
+        "RiskFactor": 18,
+        "Context": 6,
+        "Resilience": 10,
+        "Other": 6,
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "plannedCount": {
+      "count": 3,
+      "owners": {
+        "ResponseAction": 3
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "executedAmount": {
+      "count": 3,
+      "owners": {
+        "ResponseAction": 3
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "households": {
+      "count": 10,
+      "owners": {
+        "ResponseAction": 3,
+        "Resilience": 1,
+        "Population": 4,
+        "Damage": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "scale": {
+      "count": 50,
+      "owners": {
+        "ResponseAction": 9,
+        "Event": 22,
+        "ResponseActor": 7,
+        "Facility": 8,
+        "ManmadeHazard": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "objective": {
+      "count": 449,
+      "owners": {
+        "ResponseAction": 381,
+        "ResponseActor": 38,
+        "Resilience": 22,
+        "Other": 8
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "resources": {
+      "count": 8,
+      "owners": {
+        "ResponseAction": 4,
+        "ResponseActor": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "target": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "displacedUnit": {
+      "count": 2,
+      "owners": {
+        "ResponseAction": 1,
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "shelterCount": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "shelterCapacity": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "purpose": {
+      "count": 2,
+      "owners": {
+        "ResponseAction": 1,
+        "Facility": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "criteria": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "targets": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "schedule": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "funding": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "scope": {
+      "count": 52,
+      "owners": {
+        "ResponseAction": 4,
+        "Region": 43,
+        "NaturalHazard": 2,
+        "Population": 3
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "executedCount": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "category": {
+      "count": 817,
+      "owners": {
+        "ResponseAction": 1,
+        "Event": 11,
+        "Damage": 802,
+        "Facility": 3
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "plannedLength": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "totalLength": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "totalAmount": {
+      "count": 2,
+      "owners": {
+        "ResponseAction": 1,
+        "Facility": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "nationalFund": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "cityFund": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "facilityCount": {
+      "count": 2,
+      "owners": {
+        "ResponseAction": 1,
+        "Resilience": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "capacity": {
+      "count": 8,
+      "owners": {
+        "ResponseAction": 1,
+        "Facility": 5,
+        "Resilience": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "timing": {
+      "count": 40,
+      "owners": {
+        "ResponseAction": 16,
+        "Event": 10,
+        "ResponseActor": 14
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "근거규정": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "sequence": {
+      "count": 2,
+      "owners": {
+        "ResponseAction": 1,
+        "NaturalHazard": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "rescued": {
+      "count": 7,
+      "owners": {
+        "ResponseAction": 3,
+        "Damage": 2,
+        "Context": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "evacuated": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "evacuationSite": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "occupants": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "beneficiary": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "stages": {
+      "count": 2,
+      "owners": {
+        "ResponseAction": 1,
+        "Other": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "treated": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "team": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "activity": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "types": {
+      "count": 1,
+      "owners": {
+        "ResponseAction": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "area": {
+      "count": 16,
+      "owners": {
+        "ResponseAction": 3,
+        "Damage": 7,
+        "Facility": 1,
+        "Region": 3,
+        "Event": 1,
+        "RiskFactor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "order": {
+      "count": 1537,
+      "owners": {
+        "Event": 1537
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "subtype": {
+      "count": 907,
+      "owners": {
+        "Event": 883,
+        "Damage": 24
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "intensity": {
+      "count": 71,
+      "owners": {
+        "Event": 32,
+        "Damage": 1,
+        "NaturalHazard": 7,
+        "Context": 31
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "disasterType": {
+      "count": 598,
+      "owners": {
+        "Event": 491,
+        "RiskFactor": 4,
+        "NaturalHazard": 34,
+        "ManmadeHazard": 69
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "cause": {
+      "count": 164,
+      "owners": {
+        "Event": 66,
+        "Damage": 18,
+        "RiskFactor": 65,
+        "Resilience": 1,
+        "NaturalHazard": 2,
+        "ResponseAction": 2,
+        "ManmadeHazard": 10
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "recovery": {
+      "count": 10,
+      "owners": {
+        "Damage": 10
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "death": {
+      "count": 140,
+      "owners": {
+        "Damage": 129,
+        "Event": 4,
+        "Context": 3,
+        "ManmadeHazard": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "missing": {
+      "count": 31,
+      "owners": {
+        "Damage": 29,
+        "Context": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "injury": {
+      "count": 27,
+      "owners": {
+        "Damage": 26,
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "침수_동": {
+      "count": 2,
+      "owners": {
+        "Damage": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "totalCasualty": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "유실전파_동": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "반파_동": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "계_동": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "비고": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "유실매몰_전_ha": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "유실매몰_답_ha": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "계_ha": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "농작물피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "농작물피해_unit": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "도로피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "하천피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "소하천피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "상하수도": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "상하수도피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "항만피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "어항피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "학교_동": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "학교피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "철도피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "수리시설": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "사방임도피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "군시설": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "군시설피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "소규모": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "소규모피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "기타": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "기타피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "가축_두피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "축사잠사": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "축사잠사피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "수산증양식": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "수산증양식피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "어망어구_통": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "어망어구피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "비닐하우스_ha": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "비닐하우스피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "기타사유시설": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "기타사유시설피해액": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "compensation": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "areaUnit": {
+      "count": 2,
+      "owners": {
+        "Damage": 1,
+        "Facility": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "additionalCount": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "relatedCrop": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "additional": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "role": {
+      "count": 834,
+      "owners": {
+        "ResponseActor": 829,
+        "Facility": 1,
+        "Population": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "affiliation": {
+      "count": 1060,
+      "owners": {
+        "ResponseActor": 1052,
+        "Resilience": 4,
+        "Population": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "phone": {
+      "count": 9,
+      "owners": {
+        "ResponseActor": 7,
+        "ResponseAction": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "representative": {
+      "count": 30,
+      "owners": {
+        "ResponseActor": 28,
+        "ResponseAction": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "mobilizablePersonnel": {
+      "count": 13,
+      "owners": {
+        "ResponseActor": 11,
+        "ResponseAction": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "level": {
+      "count": 2,
+      "owners": {
+        "ResponseActor": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "department": {
+      "count": 2,
+      "owners": {
+        "ResponseActor": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "contact": {
+      "count": 2,
+      "owners": {
+        "ResponseActor": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "structure": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "subRebans": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "operationPeriod": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "totalPersonnel": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "actorType": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "memberCount": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "memberUnit": {
+      "count": 1,
+      "owners": {
+        "ResponseActor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "composition": {
+      "count": 191,
+      "owners": {
+        "ResponseActor": 143,
+        "Facility": 1,
+        "Region": 2,
+        "ResponseAction": 24,
+        "Resilience": 10,
+        "Population": 11
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "nature": {
+      "count": 441,
+      "owners": {
+        "RiskFactor": 437,
+        "ManmadeHazard": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "warningZone": {
+      "count": 1,
+      "owners": {
+        "RiskFactor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "management": {
+      "count": 1,
+      "owners": {
+        "RiskFactor": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "subkind": {
+      "count": 267,
+      "owners": {
+        "Context": 248,
+        "Region": 7,
+        "Other": 4,
+        "Damage": 8
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "threshold": {
+      "count": 53,
+      "owners": {
+        "Context": 48,
+        "RiskFactor": 5
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "gustThreshold": {
+      "count": 2,
+      "owners": {
+        "Context": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "강릉": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "대관령": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "속초": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "동해": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "태백": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "용강동_총강우량": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "용강동_최대시우량": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "대관령_총강우량": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "주문진_총강우량": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "경포대_총강우량": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "복구액": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "국고": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "국고_pct": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "지방비소계": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "지방비_pct": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "도비": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "시군비": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "융자": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "자부담": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "facilityKind": {
+      "count": 141,
+      "owners": {
+        "Facility": 133,
+        "ResponseActor": 4,
+        "ManmadeHazard": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "manager": {
+      "count": 37,
+      "owners": {
+        "Facility": 5,
+        "ResponseAction": 2,
+        "ResponseActor": 30
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "examples": {
+      "count": 2,
+      "owners": {
+        "Facility": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "completionDate": {
+      "count": 2,
+      "owners": {
+        "Facility": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "spec": {
+      "count": 2,
+      "owners": {
+        "Facility": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "vulnerability": {
+      "count": 1,
+      "owners": {
+        "Facility": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "riskGrade": {
+      "count": 44,
+      "owners": {
+        "Region": 7,
+        "RiskFactor": 2,
+        "Context": 1,
+        "Facility": 34
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "riskType": {
+      "count": 200,
+      "owners": {
+        "Region": 4,
+        "RiskFactor": 194,
+        "ManmadeHazard": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "monitoring": {
+      "count": 2,
+      "owners": {
+        "Region": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "comparison": {
+      "count": 1,
+      "owners": {
+        "Region": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "cityHall": {
+      "count": 1,
+      "owners": {
+        "Region": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "elevation": {
+      "count": 1,
+      "owners": {
+        "Region": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "operationStart": {
+      "count": 1,
+      "owners": {
+        "Region": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "riskFactor": {
+      "count": 1,
+      "owners": {
+        "Region": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "origin": {
+      "count": 136,
+      "owners": {
+        "NaturalHazard": 34,
+        "ManmadeHazard": 102
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "formationLocation": {
+      "count": 1,
+      "owners": {
+        "NaturalHazard": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "landfallDateTime": {
+      "count": 1,
+      "owners": {
+        "NaturalHazard": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "landfallLocation": {
+      "count": 1,
+      "owners": {
+        "NaturalHazard": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "kind": {
+      "count": 157,
+      "owners": {
+        "Resilience": 157
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "male": {
+      "count": 1,
+      "owners": {
+        "Population": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "female": {
+      "count": 1,
+      "owners": {
+        "Population": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "personsPerHousehold": {
+      "count": 1,
+      "owners": {
+        "Population": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "populationDensity": {
+      "count": 1,
+      "owners": {
+        "Population": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "yoyChange": {
+      "count": 1,
+      "owners": {
+        "Population": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "description": {
+      "count": 2,
+      "owners": {
+        "Other": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "candidate": {
+      "count": 66,
+      "owners": {
+        "Other": 66
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "legalRef": {
+      "count": 1,
+      "owners": {
+        "Other": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "description_note": {
+      "count": 1,
+      "owners": {
+        "Other": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "alias": {
+      "count": 767,
+      "owners": {
+        "ResponseAction": 26,
+        "RiskFactor": 32,
+        "NaturalHazard": 6,
+        "Facility": 24,
+        "Event": 122,
+        "Damage": 50,
+        "ResponseActor": 438,
+        "ManmadeHazard": 31,
+        "Resilience": 4,
+        "Other": 8,
+        "Population": 26
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "modelingMethod": {
+      "count": 1,
+      "owners": {
+        "Event": 1
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "maxGroundDisplacement": {
+      "count": 5,
+      "owners": {
+        "Context": 5
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "maxGroundVelocity": {
+      "count": 5,
+      "owners": {
+        "Context": 5
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "slopeResidualDisplacement": {
+      "count": 5,
+      "owners": {
+        "Context": 5
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "safetyFactorBefore": {
+      "count": 5,
+      "owners": {
+        "Context": 5
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "safetyFactorAfter": {
+      "count": 5,
+      "owners": {
+        "Context": 5
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "rainfall_1hr": {
+      "count": 2,
+      "owners": {
+        "Context": 2
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "rainfall_6hr": {
+      "count": 2,
+      "owners": {
+        "Context": 2
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "rainfall_12hr": {
+      "count": 2,
+      "owners": {
+        "Context": 2
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "rainfall_24hr": {
+      "count": 2,
+      "owners": {
+        "Context": 2
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "depth": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "sedimentVolume": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "evidenceSource": {
+      "count": 1,
+      "owners": {
+        "Context": 1
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "residualDisplacement": {
+      "count": 1,
+      "owners": {
+        "Facility": 1
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "effectiveness": {
+      "count": 11,
+      "owners": {
+        "ResponseAction": 11
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "reference": {
+      "count": 6,
+      "owners": {
+        "ResponseAction": 2,
+        "Event": 4
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "amountNote": {
+      "count": 3,
+      "owners": {
+        "ResponseAction": 2,
+        "Damage": 1
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "severity": {
+      "count": 68,
+      "owners": {
+        "Damage": 68
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "death_missing": {
+      "count": 6,
+      "owners": {
+        "Damage": 4,
+        "Context": 2
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "onboard": {
+      "count": 4,
+      "owners": {
+        "Damage": 2,
+        "Context": 2
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "route": {
+      "count": 2,
+      "owners": {
+        "ManmadeHazard": 2
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "evidence_note": {
+      "count": 1,
+      "owners": {
+        "ManmadeHazard": 1
+      },
+      "docs": [
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+    }
+  },
+  "relation_keys": {
+    "phase": {
+      "count": 1013,
+      "owners": {
+        "RESPONDS_TO": 108,
+        "PERFORMS": 666,
+        "CAUSES": 8,
+        "INCREASES_RISK_OF": 1,
+        "CASCADES_INTO": 6,
+        "PREVENTS": 11,
+        "MITIGATES": 34,
+        "LOCATED_IN": 7,
+        "MODIFIES_RISK_OF": 19,
+        "BUILDS": 14,
+        "TRIGGERS_SECONDARY": 2,
+        "GUIDED_BY": 1,
+        "AMPLIFIES": 1,
+        "COORDINATES_WITH": 7,
+        "COMMANDS": 2,
+        "OCCURS_AT": 7,
+        "OFFSETS": 3,
+        "FAILS": 108,
+        "BELONGS_TO": 8
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "scale": {
+      "count": 243,
+      "owners": {
+        "RESPONDS_TO": 24,
+        "PERFORMS": 37,
+        "CAUSES": 127,
+        "CASCADES_INTO": 5,
+        "MITIGATES": 1,
+        "TRIGGERS_SECONDARY": 1,
+        "AMPLIFIES": 14,
+        "TRIGGERS": 23,
+        "OCCURS_AT": 1,
+        "AFFECTS": 10
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "timing": {
+      "count": 1028,
+      "owners": {
+        "RESPONDS_TO": 105,
+        "PERFORMS": 453,
+        "CAUSES": 33,
+        "INCREASES_RISK_OF": 7,
+        "CASCADES_INTO": 86,
+        "PREVENTS": 6,
+        "MODIFIES_RISK_OF": 3,
+        "TRIGGERS_SECONDARY": 26,
+        "AMPLIFIES": 6,
+        "UNDER_CONDITION": 16,
+        "BELONGS_TO": 1,
+        "OCCURS_AT": 42,
+        "COMPOUNDS": 1,
+        "MITIGATES": 20,
+        "QUANTIFIED_BY": 15,
+        "TRIGGERS": 15,
+        "CONCURRENT_WITH": 15,
+        "FAILS": 82,
+        "COORDINATES_WITH": 45,
+        "OFFSETS": 4,
+        "BUILDS": 12,
+        "GUIDED_BY": 4,
+        "LOCATED_IN": 4,
+        "AFFECTS": 2,
+        "COMMANDS": 14,
+        "DEPLOYED_TO": 10,
+        "PRECONDITIONS": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "role": {
+      "count": 1239,
+      "owners": {
+        "RESPONDS_TO": 148,
+        "PERFORMS": 540,
+        "INCREASES_RISK_OF": 19,
+        "PREVENTS": 5,
+        "MITIGATES": 13,
+        "LOCATED_IN": 40,
+        "BUILDS": 38,
+        "OFFSETS": 14,
+        "GUIDED_BY": 30,
+        "COORDINATES_WITH": 96,
+        "QUANTIFIED_BY": 41,
+        "HAS_RESILIENCE": 13,
+        "COMMANDS": 17,
+        "BELONGS_TO": 12,
+        "OCCURS_AT": 64,
+        "UNDER_CONDITION": 24,
+        "AMPLIFIES": 12,
+        "AFFECTS": 19,
+        "MODIFIES_RISK_OF": 9,
+        "CONCURRENT_WITH": 15,
+        "FAILS": 28,
+        "CAUSES": 24,
+        "CASCADES_INTO": 2,
+        "TRIGGERS": 2,
+        "TRIGGERS_SECONDARY": 2,
+        "DEPLOYED_TO": 8,
+        "PRECONDITIONS": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "reason": {
+      "count": 823,
+      "owners": {
+        "RESPONDS_TO": 43,
+        "PERFORMS": 27,
+        "INCREASES_RISK_OF": 163,
+        "PREVENTS": 11,
+        "MITIGATES": 35,
+        "BUILDS": 4,
+        "OFFSETS": 27,
+        "GUIDED_BY": 7,
+        "AMPLIFIES": 59,
+        "COMPOUNDS": 5,
+        "TRIGGERS": 12,
+        "FAILS": 319,
+        "PRECONDITIONS": 12,
+        "MODIFIES_RISK_OF": 22,
+        "CONCURRENT_WITH": 7,
+        "CAUSES": 7,
+        "CASCADES_INTO": 26,
+        "COORDINATES_WITH": 6,
+        "TRIGGERS_SECONDARY": 16,
+        "AFFECTS": 2,
+        "QUANTIFIED_BY": 3,
+        "COMMANDS": 2,
+        "UNDER_CONDITION": 2,
+        "DERIVES_FROM": 4,
+        "HAS_RESILIENCE": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "effectiveness": {
+      "count": 1013,
+      "owners": {
+        "RESPONDS_TO": 104,
+        "PERFORMS": 278,
+        "INCREASES_RISK_OF": 15,
+        "PREVENTS": 23,
+        "MITIGATES": 90,
+        "MODIFIES_RISK_OF": 26,
+        "BUILDS": 52,
+        "OFFSETS": 68,
+        "AMPLIFIES": 31,
+        "FAILS": 283,
+        "HAS_RESILIENCE": 7,
+        "AFFECTS": 2,
+        "CAUSES": 2,
+        "CASCADES_INTO": 2,
+        "COORDINATES_WITH": 26,
+        "GUIDED_BY": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "count": {
+      "count": 14,
+      "owners": {
+        "RESPONDS_TO": 11,
+        "PERFORMS": 3
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "mechanism": {
+      "count": 1152,
+      "owners": {
+        "RESPONDS_TO": 11,
+        "PERFORMS": 21,
+        "CAUSES": 227,
+        "INCREASES_RISK_OF": 292,
+        "CASCADES_INTO": 167,
+        "PREVENTS": 10,
+        "MITIGATES": 51,
+        "MODIFIES_RISK_OF": 8,
+        "BUILDS": 22,
+        "OFFSETS": 32,
+        "TRIGGERS_SECONDARY": 67,
+        "AMPLIFIES": 118,
+        "TRIGGERS": 77,
+        "COORDINATES_WITH": 11,
+        "HAS_RESILIENCE": 4,
+        "COMMANDS": 1,
+        "PRECONDITIONS": 3,
+        "UNDER_CONDITION": 1,
+        "AFFECTS": 10,
+        "CONCURRENT_WITH": 6,
+        "DERIVES_FROM": 1,
+        "FAILS": 12
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "specialNote": {
+      "count": 939,
+      "owners": {
+        "RESPONDS_TO": 91,
+        "PERFORMS": 157,
+        "CAUSES": 54,
+        "INCREASES_RISK_OF": 65,
+        "CASCADES_INTO": 44,
+        "PREVENTS": 1,
+        "MITIGATES": 17,
+        "OFFSETS": 25,
+        "COMPOUNDS": 3,
+        "CONCURRENT_WITH": 29,
+        "AMPLIFIES": 37,
+        "TRIGGERS": 17,
+        "FAILS": 191,
+        "UNDER_CONDITION": 28,
+        "OCCURS_AT": 13,
+        "HAS_RESILIENCE": 3,
+        "AFFECTS": 9,
+        "MODIFIES_RISK_OF": 20,
+        "TRIGGERS_SECONDARY": 13,
+        "BUILDS": 5,
+        "LOCATED_IN": 13,
+        "COORDINATES_WITH": 40,
+        "GUIDED_BY": 20,
+        "QUANTIFIED_BY": 10,
+        "COMMANDS": 8,
+        "BELONGS_TO": 14,
+        "DEPLOYED_TO": 6,
+        "PRECONDITIONS": 2,
+        "DERIVES_FROM": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "actor": {
+      "count": 4,
+      "owners": {
+        "RESPONDS_TO": 4
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "monitoringFrequency": {
+      "count": 2,
+      "owners": {
+        "RESPONDS_TO": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "detail": {
+      "count": 47,
+      "owners": {
+        "RESPONDS_TO": 4,
+        "PERFORMS": 14,
+        "CAUSES": 6,
+        "OCCURS_AT": 6,
+        "LOCATED_IN": 3,
+        "QUANTIFIED_BY": 7,
+        "CONCURRENT_WITH": 2,
+        "COMMANDS": 2,
+        "COORDINATES_WITH": 1,
+        "HAS_RESILIENCE": 1,
+        "GUIDED_BY": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "measure": {
+      "count": 1,
+      "owners": {
+        "RESPONDS_TO": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "방류량": {
+      "count": 1,
+      "owners": {
+        "RESPONDS_TO": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "kind": {
+      "count": 3,
+      "owners": {
+        "RESPONDS_TO": 1,
+        "BUILDS": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "duration": {
+      "count": 20,
+      "owners": {
+        "PERFORMS": 18,
+        "FAILS": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "trigger": {
+      "count": 4,
+      "owners": {
+        "PERFORMS": 3,
+        "UNDER_CONDITION": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "objective": {
+      "count": 50,
+      "owners": {
+        "PERFORMS": 45,
+        "COORDINATES_WITH": 2,
+        "PREVENTS": 2,
+        "BUILDS": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "근거": {
+      "count": 1,
+      "owners": {
+        "PERFORMS": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "문서번호": {
+      "count": 1,
+      "owners": {
+        "PERFORMS": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "location": {
+      "count": 7,
+      "owners": {
+        "PERFORMS": 7
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "directCause": {
+      "count": 358,
+      "owners": {
+        "CAUSES": 220,
+        "CASCADES_INTO": 44,
+        "PREVENTS": 1,
+        "LOCATED_IN": 1,
+        "AMPLIFIES": 4,
+        "TRIGGERS": 44,
+        "INCREASES_RISK_OF": 14,
+        "TRIGGERS_SECONDARY": 9,
+        "DERIVES_FROM": 1,
+        "PERFORMS": 2,
+        "FAILS": 10,
+        "RESPONDS_TO": 4,
+        "COORDINATES_WITH": 2,
+        "COMMANDS": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "category": {
+      "count": 7,
+      "owners": {
+        "CAUSES": 7
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "consequence": {
+      "count": 34,
+      "owners": {
+        "CAUSES": 14,
+        "INCREASES_RISK_OF": 3,
+        "PREVENTS": 2,
+        "AMPLIFIES": 1,
+        "FAILS": 5,
+        "RESPONDS_TO": 5,
+        "MITIGATES": 2,
+        "AFFECTS": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "probability": {
+      "count": 592,
+      "owners": {
+        "INCREASES_RISK_OF": 357,
+        "CASCADES_INTO": 56,
+        "TRIGGERS": 59,
+        "AMPLIFIES": 42,
+        "PRECONDITIONS": 9,
+        "CAUSES": 38,
+        "TRIGGERS_SECONDARY": 19,
+        "MODIFIES_RISK_OF": 6,
+        "CONCURRENT_WITH": 2,
+        "AFFECTS": 2,
+        "COMPOUNDS": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "spreadRisk": {
+      "count": 114,
+      "owners": {
+        "INCREASES_RISK_OF": 9,
+        "PREVENTS": 1,
+        "CASCADES_INTO": 68,
+        "CAUSES": 2,
+        "MITIGATES": 2,
+        "TRIGGERS": 6,
+        "AMPLIFIES": 4,
+        "TRIGGERS_SECONDARY": 22
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "season": {
+      "count": 2,
+      "owners": {
+        "INCREASES_RISK_OF": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "shelter": {
+      "count": 2,
+      "owners": {
+        "LOCATED_IN": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "rate": {
+      "count": 1,
+      "owners": {
+        "MODIFIES_RISK_OF": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "unit": {
+      "count": 8,
+      "owners": {
+        "QUANTIFIED_BY": 2,
+        "CAUSES": 1,
+        "PERFORMS": 5
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "reportingMechanism": {
+      "count": 1,
+      "owners": {
+        "BELONGS_TO": 1
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "riskGrade": {
+      "count": 34,
+      "owners": {
+        "INCREASES_RISK_OF": 34
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "intensity": {
+      "count": 29,
+      "owners": {
+        "INCREASES_RISK_OF": 29
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "amount": {
+      "count": 3,
+      "owners": {
+        "CAUSES": 1,
+        "PERFORMS": 2
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "feature": {
+      "count": 2,
+      "owners": {
+        "OCCURS_AT": 2
+      },
+      "docs": [
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+      ],
+      "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+    },
+    "actionType": {
+      "count": 67,
+      "owners": {
+        "PERFORMS": 67
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "dateTime": {
+      "count": 16,
+      "owners": {
+        "PERFORMS": 16
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "composition": {
+      "count": 9,
+      "owners": {
+        "PERFORMS": 8,
+        "RESPONDS_TO": 1
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "measures": {
+      "count": 7,
+      "owners": {
+        "PERFORMS": 6,
+        "RESPONDS_TO": 1
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "legalBasis": {
+      "count": 6,
+      "owners": {
+        "PERFORMS": 6
+      },
+      "docs": [
+        "4·16 세월호참사 백서(대한변협 2015)"
+      ],
+      "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    }
+  }
+}

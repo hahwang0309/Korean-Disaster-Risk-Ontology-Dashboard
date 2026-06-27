@@ -1,0 +1,701 @@
+{
+  "version": 6,
+  "description": "메타정보 브릿지(별칭) 테이블. 의미가 같은 properties 키들을 하나의 canonical 키로 묶어, 문서마다 표현이 달라도 그래프에서 일관되게 질의·예측할 수 있게 한다. consolidation 단계에서 새 키가 들어올 때 Claude가 갱신한다. merge_validate.py 와 update_master_schema.py 가 이 표를 읽어 alias→canonical 로 치환한다.",
+  "node_keys": {
+    "origin": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 고정 enum 속성(Hazard)"
+    },
+    "order": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 고정 enum 속성(Event): primary/secondary/cascading/nth"
+    },
+    "subtype": {
+      "aliases": [],
+      "type": "string",
+      "note": "Event: state_change 등"
+    },
+    "category": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 고정 enum 속성(Damage)"
+    },
+    "phase": {
+      "aliases": [
+        "stage",
+        "국면"
+      ],
+      "type": "string",
+      "note": "온톨로지 고정 enum 속성(ResponseAction)"
+    },
+    "scope": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 권장 속성(Exposure): macro/meso/micro"
+    },
+    "nature": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 권장 속성(RiskFactor)"
+    },
+    "subkind": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 권장 속성(Context)"
+    },
+    "kind": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 권장 속성(Resilience)"
+    },
+    "severity": {
+      "aliases": [],
+      "type": "string",
+      "note": "온톨로지 권장 속성(Damage)"
+    },
+    "disasterType": {
+      "aliases": [
+        "disaster_type",
+        "재난유형"
+      ],
+      "type": "string",
+      "note": "natural_storm/social_fire 등"
+    },
+    "dateTime": {
+      "aliases": [
+        "datetime",
+        "date",
+        "time",
+        "occurredAt",
+        "일시"
+      ],
+      "type": "string",
+      "note": "ISO8601 권장"
+    },
+    "location": {
+      "aliases": [
+        "loc",
+        "place",
+        "region",
+        "위치",
+        "지역"
+      ],
+      "type": "string"
+    },
+    "mechanism": {
+      "aliases": [
+        "mech",
+        "메커니즘",
+        "작동기제"
+      ],
+      "type": "string"
+    },
+    "cause": {
+      "aliases": [
+        "reason_cause",
+        "원인"
+      ],
+      "type": "string"
+    },
+    "feature": {
+      "aliases": [
+        "features",
+        "characteristic",
+        "특징"
+      ],
+      "type": "string"
+    },
+    "scale": {
+      "aliases": [
+        "size",
+        "규모"
+      ],
+      "type": "string"
+    },
+    "intensity": {
+      "aliases": [
+        "magnitude",
+        "강도"
+      ],
+      "type": "string"
+    },
+    "consequence": {
+      "aliases": [
+        "result",
+        "outcome",
+        "결과"
+      ],
+      "type": "string"
+    },
+    "death": {
+      "aliases": [
+        "deaths",
+        "deathCount",
+        "dead",
+        "사망",
+        "사망자수"
+      ],
+      "type": "integer",
+      "unit_hint": "명"
+    },
+    "injury": {
+      "aliases": [
+        "injuries",
+        "injured",
+        "injuryCount",
+        "부상",
+        "부상자수"
+      ],
+      "type": "integer",
+      "unit_hint": "명"
+    },
+    "missing": {
+      "aliases": [
+        "missingCount",
+        "실종",
+        "실종자수"
+      ],
+      "type": "integer",
+      "unit_hint": "명"
+    },
+    "displaced": {
+      "aliases": [
+        "displacedCount",
+        "evacuees",
+        "이재민",
+        "이재민수"
+      ],
+      "type": "integer",
+      "unit_hint": "명"
+    },
+    "amount": {
+      "aliases": [
+        "cost",
+        "value",
+        "money",
+        "금액",
+        "피해액"
+      ],
+      "type": "number"
+    },
+    "area": {
+      "aliases": [
+        "areaHa",
+        "면적"
+      ],
+      "type": "number",
+      "unit_hint": "ha"
+    },
+    "count": {
+      "aliases": [
+        "num",
+        "qty",
+        "quantity",
+        "total",
+        "개소",
+        "동수"
+      ],
+      "type": "number"
+    },
+    "unit": {
+      "aliases": [
+        "amountUnit",
+        "amount_unit",
+        "capacityUnit",
+        "lengthUnit",
+        "units",
+        "단위"
+      ],
+      "type": "string"
+    },
+    "actor": {
+      "aliases": [
+        "agency",
+        "organization",
+        "org",
+        "주체"
+      ],
+      "type": "string"
+    },
+    "affiliation": {
+      "aliases": [
+        "belongsTo",
+        "소속"
+      ],
+      "type": "string"
+    },
+    "duration": {
+      "aliases": [
+        "period",
+        "지속기간"
+      ],
+      "type": "string"
+    },
+    "candidate": {
+      "aliases": [
+        "other_candidate",
+        "후보"
+      ],
+      "type": "string",
+      "note": "Other 타입 분류 후보 메모"
+    },
+    "alias": {
+      "aliases": [
+        "aliases",
+        "altName",
+        "별칭"
+      ],
+      "type": "string",
+      "note": "같은 개체의 다른 표기. 엔티티 해소(resolve_entities)의 입력 단서"
+    },
+    "specialNote": {
+      "aliases": [
+        "note",
+        "특기사항",
+        "evidence_note"
+      ],
+      "type": "string"
+    },
+    "detail": {
+      "aliases": [
+        "detail_note",
+        "세부"
+      ],
+      "type": "string"
+    },
+    "role": {
+      "aliases": [
+        "역할"
+      ],
+      "type": "string"
+    },
+    "reason": {
+      "aliases": [
+        "이유"
+      ],
+      "type": "string"
+    },
+    "actionType": {
+      "aliases": [
+        "action_type",
+        "조치유형"
+      ],
+      "type": "string"
+    },
+    "facilityKind": {
+      "aliases": [
+        "type",
+        "facility_type",
+        "시설종류"
+      ],
+      "type": "string",
+      "note": "노드 type 과 혼동되는 시설 종류 속성"
+    },
+    "measures": {
+      "aliases": [
+        "measureList",
+        "조치사항"
+      ],
+      "type": "string"
+    },
+    "breakdown": {
+      "aliases": [
+        "내역"
+      ],
+      "type": "string"
+    },
+    "households": {
+      "aliases": [
+        "household",
+        "세대수"
+      ],
+      "type": "integer",
+      "unit_hint": "세대"
+    },
+    "recovery": {
+      "aliases": [
+        "recoveryPlan",
+        "복구"
+      ],
+      "type": "string"
+    },
+    "capacity": {
+      "aliases": [
+        "용량"
+      ],
+      "type": "string"
+    },
+    "phone": {
+      "aliases": [
+        "tel",
+        "연락처",
+        "전화"
+      ],
+      "type": "string"
+    },
+    "threshold": {
+      "aliases": [
+        "기준값",
+        "임계값"
+      ],
+      "type": "string"
+    },
+    "riskGrade": {
+      "aliases": [
+        "risk_grade",
+        "위험등급"
+      ],
+      "type": "string"
+    },
+    "riskType": {
+      "aliases": [
+        "risk_type",
+        "위험유형"
+      ],
+      "type": "string"
+    },
+    "year": {
+      "aliases": [
+        "연도"
+      ],
+      "type": "string"
+    },
+    "rate": {
+      "aliases": [
+        "executionRate",
+        "ratio",
+        "비율",
+        "집행률"
+      ],
+      "type": "string"
+    },
+    "plannedAmount": {
+      "aliases": [
+        "planned_amount",
+        "계획금액"
+      ],
+      "type": "number"
+    },
+    "executedAmount": {
+      "aliases": [
+        "executed_amount",
+        "집행금액"
+      ],
+      "type": "number"
+    },
+    "plannedCount": {
+      "aliases": [
+        "planned_count",
+        "계획건수"
+      ],
+      "type": "number"
+    },
+    "legalBasis": {
+      "aliases": [
+        "legal_basis",
+        "근거법령"
+      ],
+      "type": "string"
+    },
+    "representative": {
+      "aliases": [
+        "rep",
+        "대표"
+      ],
+      "type": "string"
+    },
+    "manager": {
+      "aliases": [
+        "책임자"
+      ],
+      "type": "string"
+    },
+    "mobilizablePersonnel": {
+      "aliases": [
+        "mobilizable_personnel",
+        "동원가능인력"
+      ],
+      "type": "integer"
+    },
+    "composition": {
+      "aliases": [
+        "구성"
+      ],
+      "type": "string"
+    },
+    "objective": {
+      "aliases": [
+        "goal",
+        "목적"
+      ],
+      "type": "string"
+    },
+    "resources": {
+      "aliases": [
+        "자원"
+      ],
+      "type": "string"
+    },
+    "formationLocation": {
+      "aliases": [
+        "발생위치"
+      ],
+      "type": "string"
+    },
+    "landfallLocation": {
+      "aliases": [
+        "상륙지점"
+      ],
+      "type": "string"
+    },
+    "landfallDateTime": {
+      "aliases": [
+        "상륙일시"
+      ],
+      "type": "string"
+    },
+    "safetyFactorBefore": {
+      "aliases": [
+        "안전율_전"
+      ],
+      "type": "number",
+      "note": "사면 안전율(대책 전) — 산사태 도메인"
+    },
+    "safetyFactorAfter": {
+      "aliases": [
+        "안전율_후"
+      ],
+      "type": "number",
+      "note": "사면 안전율(대책 후)"
+    },
+    "maxGroundDisplacement": {
+      "aliases": [
+        "최대지반변위"
+      ],
+      "type": "number",
+      "note": "발파 영향 등 지반변위"
+    },
+    "maxGroundVelocity": {
+      "aliases": [
+        "최대지반진동속도"
+      ],
+      "type": "number"
+    },
+    "slopeResidualDisplacement": {
+      "aliases": [],
+      "type": "number"
+    },
+    "rainfallByDuration": {
+      "aliases": [
+        "rainfall_1hr",
+        "rainfall_6hr",
+        "rainfall_12hr",
+        "rainfall_24hr",
+        "지속시간별강우"
+      ],
+      "type": "string",
+      "note": "지속시간별 최대강우량(1/6/12/24hr)"
+    },
+    "timing": {
+      "aliases": [
+        "시점",
+        "when"
+      ],
+      "type": "string"
+    },
+    "effectiveness": {
+      "aliases": [
+        "효과"
+      ],
+      "type": "string",
+      "note": "High/Med/Low"
+    },
+    "reference": {
+      "aliases": [
+        "근거조항",
+        "ref"
+      ],
+      "type": "string"
+    },
+    "rescued": {
+      "aliases": [
+        "구조자수"
+      ],
+      "type": "integer",
+      "unit_hint": "명"
+    },
+    "onboard": {
+      "aliases": [
+        "탑승자수"
+      ],
+      "type": "integer",
+      "unit_hint": "명"
+    },
+    "death_missing": {
+      "aliases": [
+        "사망실종"
+      ],
+      "type": "string",
+      "note": "사망·실종 합산 표기"
+    },
+    "route": {
+      "aliases": [
+        "항로"
+      ],
+      "type": "string"
+    },
+    "amountNote": {
+      "aliases": [],
+      "type": "string"
+    }
+  },
+  "relation_keys": {
+    "role": {
+      "aliases": [
+        "function",
+        "역할"
+      ],
+      "type": "string"
+    },
+    "scale": {
+      "aliases": [
+        "size",
+        "규모"
+      ],
+      "type": "string"
+    },
+    "probability": {
+      "aliases": [
+        "prob",
+        "likelihood",
+        "확률"
+      ],
+      "type": "string",
+      "note": "High/Med/Low"
+    },
+    "directCause": {
+      "aliases": [
+        "direct_cause",
+        "directcause",
+        "직접원인"
+      ],
+      "type": "string"
+    },
+    "mechanism": {
+      "aliases": [
+        "mech",
+        "메커니즘"
+      ],
+      "type": "string"
+    },
+    "reason": {
+      "aliases": [
+        "why",
+        "이유"
+      ],
+      "type": "string"
+    },
+    "effectiveness": {
+      "aliases": [
+        "effect",
+        "efficacy",
+        "효과"
+      ],
+      "type": "string",
+      "note": "High/Med/Low"
+    },
+    "spreadRisk": {
+      "aliases": [
+        "spread_risk",
+        "propagationRisk",
+        "확산위험"
+      ],
+      "type": "string"
+    },
+    "specialNote": {
+      "aliases": [
+        "special_note",
+        "note",
+        "특기사항"
+      ],
+      "type": "string"
+    },
+    "timing": {
+      "aliases": [
+        "time",
+        "when",
+        "시점"
+      ],
+      "type": "string"
+    },
+    "phase": {
+      "aliases": [
+        "stage",
+        "국면"
+      ],
+      "type": "string"
+    },
+    "actionType": {
+      "aliases": [],
+      "type": "string"
+    },
+    "objective": {
+      "aliases": [],
+      "type": "string"
+    },
+    "consequence": {
+      "aliases": [],
+      "type": "string"
+    },
+    "detail": {
+      "aliases": [],
+      "type": "string"
+    },
+    "dateTime": {
+      "aliases": [],
+      "type": "string"
+    },
+    "duration": {
+      "aliases": [],
+      "type": "string"
+    },
+    "composition": {
+      "aliases": [],
+      "type": "string"
+    },
+    "location": {
+      "aliases": [],
+      "type": "string"
+    },
+    "measures": {
+      "aliases": [],
+      "type": "string"
+    },
+    "legalBasis": {
+      "aliases": [],
+      "type": "string"
+    },
+    "amount": {
+      "aliases": [],
+      "type": "string"
+    },
+    "unit": {
+      "aliases": [],
+      "type": "string"
+    },
+    "reference": {
+      "aliases": [],
+      "type": "string"
+    },
+    "count": {
+      "aliases": [],
+      "type": "string"
+    },
+    "category": {
+      "aliases": [],
+      "type": "string"
+    }
+  }
+}

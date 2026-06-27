@@ -1,0 +1,81 @@
+{
+  "version": "v1",
+  "source": "재난위험 온톨로지.docx — 재난위험관리 온톨로지 엔티티·관계 스키마",
+  "axes": ["Hazard(위험원)", "Exposure(노출)", "Event(사건)", "Damage(피해)", "Response(대응)", "Context(맥락)"],
+  "entity_types": [
+    "NaturalHazard", "ManmadeHazard", "RiskFactor",
+    "Region", "Facility", "Population",
+    "Event",
+    "Damage",
+    "ResponseAction", "ResponseActor", "Resilience",
+    "Context",
+    "Other"
+  ],
+  "entity_axis": {
+    "NaturalHazard": "Hazard", "ManmadeHazard": "Hazard", "RiskFactor": "Hazard",
+    "Region": "Exposure", "Facility": "Exposure", "Population": "Exposure",
+    "Event": "Event",
+    "Damage": "Damage",
+    "ResponseAction": "Response", "ResponseActor": "Response", "Resilience": "Response",
+    "Context": "Context",
+    "Other": "Other"
+  },
+  "enum_attributes": {
+    "NaturalHazard": {"origin": ["meteorological", "geological", "hydrological", "biological", "climatological"]},
+    "ManmadeHazard": {"origin": ["fire", "explosion", "structural", "chemical", "transport", "infra_failure", "crowd", "cyber"]},
+    "RiskFactor": {"nature": ["latent", "emerging", "recurring", "unquantified"]},
+    "Region": {"scope": ["macro", "meso", "micro"]},
+    "Facility": {"scope": ["macro", "meso", "micro"]},
+    "Population": {"scope": ["macro", "meso", "micro"]},
+    "Event": {"order": ["primary", "secondary", "cascading", "nth"], "subtype": ["state_change"]},
+    "Damage": {"category": ["human", "property", "service", "economic", "infra", "environmental"], "severity": ["Money", "Count", "Ratio", "Area", "Duration"]},
+    "ResponseAction": {"phase": ["prevention", "mitigation", "preparedness", "response", "recovery"]},
+    "Resilience": {"kind": ["absorbing", "buffering", "recovery"]},
+    "Context": {"subkind": ["DateTime", "Location", "Weather", "Metric", "Threshold"]}
+  },
+  "required_attributes": {
+    "NaturalHazard": ["origin"],
+    "ManmadeHazard": ["origin"],
+    "Event": ["order"],
+    "Damage": ["category"],
+    "ResponseAction": ["phase"]
+  },
+  "disaster_types": [
+    "natural_storm", "natural_quake", "natural_landslide", "natural_climate", "natural_epidemic",
+    "social_fire", "social_collapse", "social_transport", "social_crowd", "social_chemical", "social_infra", "social_cyber"
+  ],
+  "relations_phase1": [
+    {"code": "TRIGGERS", "ko": "촉발", "from": ["NaturalHazard", "ManmadeHazard", "RiskFactor"], "to": ["Event"]},
+    {"code": "AFFECTS", "ko": "작용", "from": ["NaturalHazard", "ManmadeHazard", "RiskFactor"], "to": ["Region", "Facility", "Population"]},
+    {"code": "INCREASES_RISK_OF", "ko": "위험증가", "from": ["RiskFactor", "NaturalHazard", "ManmadeHazard"], "to": ["Event"]},
+    {"code": "PRECONDITIONS", "ko": "전제조건", "from": ["Context", "RiskFactor"], "to": ["NaturalHazard", "ManmadeHazard", "RiskFactor"]},
+    {"code": "COMPOUNDS", "ko": "복합", "from": ["NaturalHazard", "ManmadeHazard", "RiskFactor"], "to": ["NaturalHazard", "ManmadeHazard", "RiskFactor"]},
+    {"code": "DERIVES_FROM", "ko": "파생", "from": ["NaturalHazard", "ManmadeHazard", "RiskFactor"], "to": ["NaturalHazard", "ManmadeHazard", "RiskFactor"]},
+    {"code": "CASCADES_INTO", "ko": "연쇄", "from": ["Event"], "to": ["Event"], "note": "동일 청크 내 양 엔티티 명시 필수. 선행→후행 단방향."},
+    {"code": "TRIGGERS_SECONDARY", "ko": "2차촉발", "from": ["Event"], "to": ["Event"], "note": "동일 청크 필수"},
+    {"code": "CONCURRENT_WITH", "ko": "동시발생", "from": ["Event"], "to": ["Event"], "note": "동일 청크 필수"},
+    {"code": "CAUSES", "ko": "초래", "from": ["Event"], "to": ["Damage"]},
+    {"code": "AMPLIFIES", "ko": "증폭", "from": ["Region", "Facility", "Population"], "to": ["Damage"]},
+    {"code": "HAS_RESILIENCE", "ko": "회복역량", "from": ["Region", "Facility", "Population"], "to": ["Resilience"]},
+    {"code": "LOCATED_IN", "ko": "소재", "from": ["Region", "Facility", "Population"], "to": ["Context", "Region"]},
+    {"code": "OCCURS_AT", "ko": "발생일시", "from": ["NaturalHazard", "ManmadeHazard", "Event"], "to": ["Context"]},
+    {"code": "UNDER_CONDITION", "ko": "조건", "from": ["NaturalHazard", "ManmadeHazard", "Event"], "to": ["Context"]},
+    {"code": "PREVENTS", "ko": "예방", "from": ["ResponseAction"], "to": ["NaturalHazard", "ManmadeHazard", "RiskFactor"]},
+    {"code": "MODIFIES_RISK_OF", "ko": "위험조정", "from": ["ResponseAction"], "to": ["Event"]},
+    {"code": "MITIGATES", "ko": "경감", "from": ["ResponseAction"], "to": ["Damage"]},
+    {"code": "RESPONDS_TO", "ko": "대응", "from": ["ResponseAction"], "to": ["Event", "NaturalHazard", "ManmadeHazard"]},
+    {"code": "BUILDS", "ko": "구축", "from": ["ResponseAction"], "to": ["Resilience"]},
+    {"code": "OFFSETS", "ko": "상쇄", "from": ["Resilience"], "to": ["Damage"]},
+    {"code": "PERFORMS", "ko": "수행", "from": ["ResponseActor"], "to": ["ResponseAction"]},
+    {"code": "FAILS", "ko": "실패", "from": ["ResponseActor"], "to": ["ResponseAction"]},
+    {"code": "COMMANDS", "ko": "지휘", "from": ["ResponseActor"], "to": ["ResponseActor"]},
+    {"code": "COORDINATES_WITH", "ko": "협업", "from": ["ResponseActor"], "to": ["ResponseActor"]},
+    {"code": "BELONGS_TO", "ko": "소속", "from": ["ResponseActor"], "to": ["ResponseActor"]},
+    {"code": "DEPLOYED_TO", "ko": "배치", "from": ["ResponseActor"], "to": ["Context"]},
+    {"code": "QUANTIFIED_BY", "ko": "정량기준", "from": ["Damage"], "to": ["Context"]},
+    {"code": "GUIDED_BY", "ko": "근거", "from": ["ResponseAction"], "to": ["Other"]}
+  ],
+  "relations_phase2": [
+    {"code": "PRECEDES", "ko": "선후", "from": ["Event", "ResponseAction"], "to": ["Event", "ResponseAction"], "note": "후처리 추론. timestamp/order 기반. 청크 내 직접 추출 금지."}
+  ]
+}
