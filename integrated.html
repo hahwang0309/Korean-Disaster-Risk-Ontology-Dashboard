@@ -58,6 +58,9 @@
   .bridge{background:#12161f;border:1px solid #232836;border-radius:10px;padding:11px 13px;margin-bottom:10px}
   .bridge .hd{font-weight:700;margin-bottom:4px}
   .chain{font-size:12.5px;margin:3px 0;padding:5px 8px;background:#12161f;border:1px solid #232836;border-radius:8px}
+  .tplrow{padding:8px 10px;border-bottom:1px solid #232836;cursor:pointer;border-radius:7px}
+  .tplrow:hover{background:#1d212b}
+  .tplrow.sel{background:#222a39;box-shadow:inset 3px 0 0 #9c27b0}
   .tag{display:inline-block;font-size:10px;color:#111;background:#f28e2b;border-radius:5px;padding:0 5px;margin-left:4px}
   @media(max-width:760px){.twocol{grid-template-columns:1fr}}
 </style></head>
@@ -108,8 +111,12 @@
   <div id="bridges"><span class="muted">생성 후 표시</span></div>
 
   <h2>④ 위험원→피해 시나리오 템플릿</h2>
-  <div class="h2sub">위험원/위험요인 → … → 피해로 이어지는 대표 연쇄 체인(인과 경로). 재난을 가로질러 반복되는 골격.</div>
-  <div id="templates"><span class="muted">생성 후 표시</span></div>
+  <div class="h2sub">좌측 목록에서 시나리오를 클릭하면, 그 연쇄가 <b>온톨로지 스키마(6축)에 매핑</b>되어 어떤 위험원·사건·피해·대응 슬롯을 거치는지 보여줍니다.</div>
+  <div class="twocol" style="grid-template-columns:minmax(280px,380px) 1fr;align-items:start">
+    <div class="tablewrap" id="templateList" style="max-height:560px"><span class="muted">생성 후 표시</span></div>
+    <div class="sub"><div id="tplSchemaTitle" class="muted" style="margin-bottom:6px">시나리오를 선택하세요.</div>
+      <div id="templateSchema" style="background:#0c0e13;border-radius:10px"></div></div>
+  </div>
 
   <h2>⑤ 연쇄 차단 지점 (대응 개입)</h2>
   <div class="h2sub">연쇄를 <b>끊은 대응</b>(MITIGATES·PREVENTS)과 <b>끊지 못한 지점</b>(FAILS). 어느 단계 개입이 재난을 막을 수 있었나.</div>
@@ -148,7 +155,7 @@ function toggleAll(v){document.querySelectorAll('#docs input').forEach(c=>c.chec
 function docbadges(n){return [...n.docs].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('');}
 function isState(n){return n.type==='Event'&&STATE_RE.test(n.name);}
 
-let G=null, sim=null;
+let G=null, sim=null, templates=[];
 
 async function build(){
   const sel=[...document.querySelectorAll('#docs input:checked')].map(c=>+c.value);
@@ -335,15 +342,74 @@ function renderTemplates(){
   for(const p of paths){ const st=G.nodes.get(p[0].source).name, en=G.nodes.get(p[p.length-1].target).name;
     const sig=st+'|'+en+'|'+p.length; if(seen.has(sig))continue; seen.add(sig); chosen.push(p); if(chosen.length>=20)break; }
   function sumDeg(p){let s=G.nodes.get(p[0].source).deg;for(const e of p)s+=G.nodes.get(e.target).deg;return s;}
-  if(!chosen.length){document.getElementById('templates').innerHTML='<span class="muted">위험원→피해 완결 경로가 없습니다.</span>';return;}
-  let h='';
-  for(const p of chosen){
+  templates=chosen;
+  const list=document.getElementById('templateList');
+  if(!chosen.length){list.innerHTML='<span class="muted">위험원→피해 완결 경로가 없습니다.</span>';
+    document.getElementById('templateSchema').innerHTML='';return;}
+  list.innerHTML=chosen.map((p,i)=>{
     const docsAll=new Set(); p.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));
-    let chain=`<b>${esc(G.nodes.get(p[0].source).name)}</b>`;
-    for(const e of p) chain+=` <span class="rel">─${e.code}→</span> ${esc(G.nodes.get(e.target).name)}`;
-    h+=`<div class="chain">${chain} &nbsp;${[...docsAll].map(i=>`<span class="docbadge" style="background:${DOC_COLORS[i]}">${DOCS[i].short}</span>`).join('')}<span class="tag">${p.length}단계</span></div>`;
+    const st=G.nodes.get(p[0].source).name, en=G.nodes.get(p[p.length-1].target).name;
+    return `<div class="tplrow" id="tpl${i}" onclick="showTpl(${i})">
+      <div><b>${esc(st.length>20?st.slice(0,19)+'…':st)}</b> <span class="muted">→…→</span> ${esc(en.length>18?en.slice(0,17)+'…':en)} 🎯</div>
+      <div class="muted" style="font-size:11px;margin-top:2px">${p.length}단계 · ${[...docsAll].map(d=>`<span class="docbadge" style="background:${DOC_COLORS[d]}">${DOCS[d].short}</span>`).join('')}</div></div>`;
+  }).join('');
+  showTpl(0);
+}
+function showTpl(i){
+  document.querySelectorAll('.tplrow').forEach(r=>r.classList.remove('sel'));
+  const row=document.getElementById('tpl'+i); if(row)row.classList.add('sel');
+  renderTemplateSchema(templates[i]);
+}
+const SBOX={
+  Hazard:{x:230,y:36,w:190,h:98,c:'#e15759',ko:'위험원 Hazard'},
+  Context:{x:24,y:250,w:160,h:94,c:'#a0cbe8',ko:'맥락 Context'},
+  Exposure:{x:230,y:250,w:170,h:94,c:'#4e79a7',ko:'노출 Exposure'},
+  Event:{x:470,y:150,w:195,h:112,c:'#f28e2b',ko:'사건 Event'},
+  Response:{x:470,y:420,w:195,h:100,c:'#edc948',ko:'대응 Response'},
+  Damage:{x:768,y:218,w:200,h:120,c:'#9c27b0',ko:'피해 Damage'},
+};
+function renderTemplateSchema(path){
+  const el=document.getElementById('templateSchema'); el.innerHTML='';
+  const docsAll=new Set(); path.forEach(e=>e.docs.forEach(d=>docsAll.add(d)));
+  let chainTxt=esc(G.nodes.get(path[0].source).name);
+  path.forEach(e=>chainTxt+=` ─${e.code}→ ${esc(G.nodes.get(e.target).name)}`);
+  document.getElementById('tplSchemaTitle').innerHTML=`<b style="color:#cdd6e3">선택 시나리오:</b> ${chainTxt} &nbsp;${[...docsAll].map(d=>`<span class="docbadge" style="background:${DOC_COLORS[d]}">${DOCS[d].short}</span>`).join('')}`;
+  // collect nodes per axis + axis-level edges
+  const byAxis={}, involved=new Set(), aedges=new Map();
+  const add=(nd)=>{const ax=AXIS[nd.type]; if(!SBOX[ax])return null; involved.add(ax); (byAxis[ax]=byAxis[ax]||[]); if(!byAxis[ax].some(x=>x.name===nd.name))byAxis[ax].push(nd); return ax;};
+  add(G.nodes.get(path[0].source));
+  path.forEach(e=>{const a=add(G.nodes.get(e.source)), b=add(G.nodes.get(e.target));
+    if(a&&b){const k=a+'>'+b; (aedges.get(k)||aedges.set(k,new Set()).get(k)).add(e.code);}});
+  const NS="http://www.w3.org/2000/svg";
+  const svg=document.createElementNS(NS,'svg'); svg.setAttribute('viewBox','0 0 1000 560'); svg.setAttribute('width','100%'); svg.style.height='auto';
+  svg.innerHTML=`<defs><marker id="ta" viewBox="0 -5 10 10" refX="9" refY="0" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,-5L10,0L0,5" fill="#cfd8e6"/></marker></defs>`;
+  const C=ax=>({x:SBOX[ax].x+SBOX[ax].w/2,y:SBOX[ax].y+SBOX[ax].h/2});
+  // edges (drawn first; boxes drawn over the ends)
+  let eg='';
+  for(const [k,codes] of aedges){
+    const [a,b]=k.split('>'); const ca=C(a),cb=C(b); const lbl=[...codes].join(' / ');
+    if(a===b){ const x=SBOX[a].x+SBOX[a].w/2, y=SBOX[a].y;
+      eg+=`<path d="M${x-18},${y} C${x-46},${y-52} ${x+46},${y-52} ${x+18},${y}" fill="none" stroke="#cfd8e6" stroke-width="2" marker-end="url(#ta)"/>`;
+      eg+=`<text x="${x}" y="${y-50}" text-anchor="middle" font-size="11" font-style="italic" fill="#9fc1ea">${lbl}</text>`;
+    } else {
+      eg+=`<path d="M${ca.x},${ca.y} L${cb.x},${cb.y}" stroke="#cfd8e6" stroke-width="2" marker-end="url(#ta)" opacity="0.9"/>`;
+      eg+=`<text x="${(ca.x+cb.x)/2}" y="${(ca.y+cb.y)/2-4}" text-anchor="middle" font-size="11" font-style="italic" fill="#9fc1ea">${lbl}</text>`;
+    }
   }
-  document.getElementById('templates').innerHTML=h;
+  // boxes
+  let bg='';
+  for(const ax in SBOX){const b=SBOX[ax], on=involved.has(ax);
+    bg+=`<g opacity="${on?1:0.28}"><rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="11" fill="#161922" stroke="${b.c}" stroke-width="${on?2.5:1.2}"/>`;
+    bg+=`<text x="${b.x+b.w/2}" y="${b.y+19}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">${b.ko}</text>`;
+    if(on){ const names=byAxis[ax].slice(0,4);
+      names.forEach((nd,i)=>{ const t=AXIS[nd.type]==='Damage'?'🎯 ':''; const nm=nd.name.length>24?nd.name.slice(0,23)+'…':nd.name;
+        bg+=`<text x="${b.x+b.w/2}" y="${b.y+38+i*15}" text-anchor="middle" font-size="10" fill="#cdd6e3">${t}${esc(nm)}</text>`; });
+      if(byAxis[ax].length>4) bg+=`<text x="${b.x+b.w/2}" y="${b.y+38+4*15}" text-anchor="middle" font-size="9.5" fill="#8a93a3">+${byAxis[ax].length-4} more</text>`;
+    }
+    bg+='</g>';
+  }
+  svg.innerHTML+=eg+bg;
+  el.appendChild(svg);
 }
 
 // ---- ⑤ interventions ----
