@@ -4220,41 +4220,6 @@
         "type": "NaturalHazard",
         "properties": {
           "origin": "meteorological",
-          "disasterType": "natural_storm",
-          "dateTime": "2002-08-29~2002-09-01",
-          "feature": "북상하며 강원 영동 강타",
-          "sequence": "제15호"
-        }
-      },
-      "predicate": {
-        "code": "TRIGGERS",
-        "properties": {
-          "scale": "대형",
-          "probability": "High",
-          "mechanism": "집중호우 유발"
-        }
-      },
-      "object": {
-        "name": "강릉지방 집중호우",
-        "type": "Event",
-        "properties": {
-          "order": "primary",
-          "dateTime": "2002-08-31~2002-09-02",
-          "intensity": "강릉시 강우량 897.5mm(9.1 02:00)",
-          "location": "강원도 영동, 강릉시",
-          "consequence": "저지대 침수 다발"
-        }
-      },
-      "evidence": "제 15 호 태풍 \"루사\" 대처계획 수립 ... 강릉시 강우량 897.5mm",
-      "source_chunk": "05"
-    },
-    {
-      "id": "T0124",
-      "subject": {
-        "name": "2002년 제15호 태풍 루사(RUSA)",
-        "type": "NaturalHazard",
-        "properties": {
-          "origin": "meteorological",
           "disasterType": "natural_storm"
         }
       },
@@ -4277,9 +4242,9 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0125",
+      "id": "T0124",
       "subject": {
-        "name": "강릉지방 집중호우",
+        "name": "강릉지방 집중호우(2002)",
         "type": "Event",
         "properties": {
           "order": "primary",
@@ -4310,9 +4275,9 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0126",
+      "id": "T0125",
       "subject": {
-        "name": "강릉지방 집중호우",
+        "name": "강릉지방 집중호우(2002)",
         "type": "Event",
         "properties": {
           "order": "primary",
@@ -4341,7 +4306,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0127",
+      "id": "T0126",
       "subject": {
         "name": "강릉 저지대 침수",
         "type": "Event",
@@ -4372,7 +4337,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0128",
+      "id": "T0127",
       "subject": {
         "name": "장현저수지 제당 붕괴",
         "type": "Event",
@@ -4409,7 +4374,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0129",
+      "id": "T0128",
       "subject": {
         "name": "저수지 만수 상태",
         "type": "RiskFactor",
@@ -4440,7 +4405,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0130",
+      "id": "T0129",
       "subject": {
         "name": "오봉댐(오봉저수지)",
         "type": "Facility",
@@ -4472,7 +4437,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0131",
+      "id": "T0130",
       "subject": {
         "name": "오봉댐 수문 작동 중 정전",
         "type": "Event",
@@ -4503,7 +4468,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0132",
+      "id": "T0131",
       "subject": {
         "name": "성덕동·하시동 등 정전·통신두절",
         "type": "Event",
@@ -4535,7 +4500,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0133",
+      "id": "T0132",
       "subject": {
         "name": "남대천 저지대 주민",
         "type": "Population",
@@ -4564,7 +4529,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0134",
+      "id": "T0133",
       "subject": {
         "name": "강릉시 재해대책본부",
         "type": "ResponseActor",
@@ -4595,7 +4560,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0135",
+      "id": "T0134",
       "subject": {
         "name": "재해대책본부 운영",
         "type": "ResponseAction",
@@ -4622,7 +4587,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0136",
+      "id": "T0135",
       "subject": {
         "name": "강릉시 재해대책본부",
         "type": "ResponseActor",
@@ -4652,7 +4617,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0137",
+      "id": "T0136",
       "subject": {
         "name": "군부대(육군 1901부대·특전사·23사단)",
         "type": "ResponseActor",
@@ -4683,7 +4648,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0138",
+      "id": "T0137",
       "subject": {
         "name": "구조 작업 중 군인 실종",
         "type": "Damage",
@@ -4715,7 +4680,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0139",
+      "id": "T0138",
       "subject": {
         "name": "이재민 수용·구호",
         "type": "ResponseAction",
@@ -4745,7 +4710,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0140",
+      "id": "T0139",
       "subject": {
         "name": "오봉댐 붕괴우려 대책회의",
         "type": "ResponseAction",
@@ -4775,7 +4740,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0141",
+      "id": "T0140",
       "subject": {
         "name": "행정자치부",
         "type": "ResponseActor",
@@ -4805,7 +4770,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0142",
+      "id": "T0141",
       "subject": {
         "name": "강릉시 수해(태풍 루사)",
         "type": "Event",
@@ -4839,7 +4804,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0143",
+      "id": "T0142",
       "subject": {
         "name": "강릉시 수해(태풍 루사)",
         "type": "Event",
@@ -4871,7 +4836,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0144",
+      "id": "T0143",
       "subject": {
         "name": "강릉 수해 잠정 총피해액",
         "type": "Damage",
@@ -4903,7 +4868,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0145",
+      "id": "T0144",
       "subject": {
         "name": "강릉 수해 확정 총피해액",
         "type": "Damage",
@@ -4935,7 +4900,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0146",
+      "id": "T0145",
       "subject": {
         "name": "강릉 수해 총복구액",
         "type": "Damage",
@@ -4967,7 +4932,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0147",
+      "id": "T0146",
       "subject": {
         "name": "중앙정부",
         "type": "ResponseActor",
@@ -4997,7 +4962,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0148",
+      "id": "T0147",
       "subject": {
         "name": "강릉시",
         "type": "Region",
@@ -5025,7 +4990,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0149",
+      "id": "T0148",
       "subject": {
         "name": "강릉수력 방류",
         "type": "Event",
@@ -5057,7 +5022,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0150",
+      "id": "T0149",
       "subject": {
         "name": "도암댐 방류",
         "type": "RiskFactor",
@@ -5088,7 +5053,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0151",
+      "id": "T0150",
       "subject": {
         "name": "강릉시 왕산면 왕산리 산사태",
         "type": "Event",
@@ -5122,7 +5087,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0152",
+      "id": "T0151",
       "subject": {
         "name": "하천 범람",
         "type": "Event",
@@ -5154,7 +5119,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0153",
+      "id": "T0152",
       "subject": {
         "name": "강릉시 강동면 언별리 고립",
         "type": "Event",
@@ -5190,7 +5155,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0154",
+      "id": "T0153",
       "subject": {
         "name": "내곡동 유성탕·남산초교 인근 고립",
         "type": "Event",
@@ -5226,7 +5191,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0155",
+      "id": "T0154",
       "subject": {
         "name": "월호평동 마을회관 인근 고립",
         "type": "Event",
@@ -5262,7 +5227,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0156",
+      "id": "T0155",
       "subject": {
         "name": "강릉시 장현저수지 붕괴우려",
         "type": "Event",
@@ -5301,7 +5266,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0157",
+      "id": "T0156",
       "subject": {
         "name": "노암동 합동이발소·범아아파트 고립",
         "type": "Event",
@@ -5337,7 +5302,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0158",
+      "id": "T0157",
       "subject": {
         "name": "성산면 오봉저수지 부근 고립",
         "type": "Event",
@@ -5373,7 +5338,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0159",
+      "id": "T0158",
       "subject": {
         "name": "연곡면 방내리 주택 매몰",
         "type": "Event",
@@ -5411,7 +5376,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0160",
+      "id": "T0159",
       "subject": {
         "name": "노암동 자력수목욕탕·노암연립주택 고립",
         "type": "Event",
@@ -5448,7 +5413,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0161",
+      "id": "T0160",
       "subject": {
         "name": "내곡동 장수경로당 옥상 고립",
         "type": "Event",
@@ -5484,7 +5449,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0162",
+      "id": "T0161",
       "subject": {
         "name": "주문진 읍구 도축장 인근 고립",
         "type": "Event",
@@ -5520,7 +5485,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0163",
+      "id": "T0162",
       "subject": {
         "name": "긴급구호 (이재민)",
         "type": "ResponseAction",
@@ -5556,7 +5521,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0164",
+      "id": "T0163",
       "subject": {
         "name": "컨테이너하우스 공급",
         "type": "ResponseAction",
@@ -5590,7 +5555,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0165",
+      "id": "T0164",
       "subject": {
         "name": "주택피해",
         "type": "Damage",
@@ -5621,7 +5586,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0166",
+      "id": "T0165",
       "subject": {
         "name": "특별위로금 배정 지원",
         "type": "ResponseAction",
@@ -5649,7 +5614,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0167",
+      "id": "T0166",
       "subject": {
         "name": "사망·실종 특별위로금",
         "type": "Damage",
@@ -5682,7 +5647,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0168",
+      "id": "T0167",
       "subject": {
         "name": "생계구호비 지원",
         "type": "ResponseAction",
@@ -5714,7 +5679,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0169",
+      "id": "T0168",
       "subject": {
         "name": "주택 복구 위로금 지원",
         "type": "ResponseAction",
@@ -5747,7 +5712,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0170",
+      "id": "T0169",
       "subject": {
         "name": "피해농가 위로금 지원",
         "type": "ResponseAction",
@@ -5779,7 +5744,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0171",
+      "id": "T0170",
       "subject": {
         "name": "소상공인 위로금 지원",
         "type": "ResponseAction",
@@ -5811,7 +5776,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0172",
+      "id": "T0171",
       "subject": {
         "name": "응급복구 단계별 추진계획",
         "type": "ResponseAction",
@@ -5840,7 +5805,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0173",
+      "id": "T0172",
       "subject": {
         "name": "인력 동원 (복구)",
         "type": "ResponseAction",
@@ -5872,7 +5837,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0174",
+      "id": "T0173",
       "subject": {
         "name": "장비 동원 (복구)",
         "type": "ResponseAction",
@@ -5904,7 +5869,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0175",
+      "id": "T0174",
       "subject": {
         "name": "강릉시 보건소",
         "type": "ResponseActor",
@@ -5937,7 +5902,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0176",
+      "id": "T0175",
       "subject": {
         "name": "순회 무료진료 (의료기동반)",
         "type": "ResponseAction",
@@ -5973,7 +5938,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0177",
+      "id": "T0176",
       "subject": {
         "name": "고립지역 헬기 의료지원",
         "type": "ResponseAction",
@@ -6007,7 +5972,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0178",
+      "id": "T0177",
       "subject": {
         "name": "보건복지부장관",
         "type": "ResponseActor",
@@ -6042,7 +6007,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0179",
+      "id": "T0178",
       "subject": {
         "name": "구호의약품 지원",
         "type": "ResponseAction",
@@ -6073,7 +6038,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0180",
+      "id": "T0179",
       "subject": {
         "name": "감염병 차단 (전염병 미발생)",
         "type": "Resilience",
@@ -6102,7 +6067,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0181",
+      "id": "T0180",
       "subject": {
         "name": "강릉아산병원·동인병원·강릉의료원·강릉국군병원",
         "type": "ResponseActor",
@@ -6133,7 +6098,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0182",
+      "id": "T0181",
       "subject": {
         "name": "강릉시의사회",
         "type": "ResponseActor",
@@ -6165,7 +6130,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0183",
+      "id": "T0182",
       "subject": {
         "name": "구호물품 지원 (식품·취사·의류)",
         "type": "ResponseAction",
@@ -6194,7 +6159,7 @@
       "source_chunk": "06"
     },
     {
-      "id": "T0184",
+      "id": "T0183",
       "subject": {
         "name": "오봉댐 원수관 유실",
         "type": "Event",
@@ -6227,7 +6192,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0185",
+      "id": "T0184",
       "subject": {
         "name": "시 전역 단수 사태",
         "type": "Event",
@@ -6256,7 +6221,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0186",
+      "id": "T0185",
       "subject": {
         "name": "이재민 23,384명(7,155세대)",
         "type": "Population",
@@ -6286,7 +6251,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0187",
+      "id": "T0186",
       "subject": {
         "name": "강릉시 보건소 방역기동반",
         "type": "ResponseActor",
@@ -6319,7 +6284,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0188",
+      "id": "T0187",
       "subject": {
         "name": "방역소독 실적(9.1~11.30)",
         "type": "ResponseAction",
@@ -6351,7 +6316,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0189",
+      "id": "T0188",
       "subject": {
         "name": "전염성질환자 미발생",
         "type": "Resilience",
@@ -6379,7 +6344,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0190",
+      "id": "T0189",
       "subject": {
         "name": "급성 출혈성 결막염 확산",
         "type": "Event",
@@ -6410,7 +6375,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0191",
+      "id": "T0190",
       "subject": {
         "name": "강릉시",
         "type": "ResponseActor",
@@ -6441,7 +6406,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0192",
+      "id": "T0191",
       "subject": {
         "name": "사천 강릉공원묘원 묘지 유실",
         "type": "Damage",
@@ -6474,7 +6439,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0193",
+      "id": "T0192",
       "subject": {
         "name": "비상급수(소방차)",
         "type": "ResponseAction",
@@ -6506,7 +6471,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0194",
+      "id": "T0193",
       "subject": {
         "name": "홍제정수장 도수관로 유실",
         "type": "Damage",
@@ -6539,7 +6504,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0195",
+      "id": "T0194",
       "subject": {
         "name": "상수도 배수관 유실(28개소)",
         "type": "Damage",
@@ -6572,7 +6537,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0196",
+      "id": "T0195",
       "subject": {
         "name": "수해쓰레기 발생",
         "type": "Damage",
@@ -6604,7 +6569,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0197",
+      "id": "T0196",
       "subject": {
         "name": "강릉 하수/분뇨처리시설 침수",
         "type": "Damage",
@@ -6639,7 +6604,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0198",
+      "id": "T0197",
       "subject": {
         "name": "동해고속도로 1,2터널 입구 산사태",
         "type": "Event",
@@ -6671,7 +6636,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0199",
+      "id": "T0198",
       "subject": {
         "name": "영동선 철도 유실",
         "type": "Damage",
@@ -6702,7 +6667,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0200",
+      "id": "T0199",
       "subject": {
         "name": "농어촌도로(시외곽) 유실·붕괴",
         "type": "Damage",
@@ -6731,7 +6696,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0201",
+      "id": "T0200",
       "subject": {
         "name": "유실·침수차량 발생",
         "type": "Damage",
@@ -6763,7 +6728,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0202",
+      "id": "T0201",
       "subject": {
         "name": "정전(배전장비 8,903본)",
         "type": "Event",
@@ -6799,7 +6764,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0203",
+      "id": "T0202",
       "subject": {
         "name": "한국전력(한전 강릉지사)",
         "type": "ResponseActor",
@@ -6828,7 +6793,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0204",
+      "id": "T0203",
       "subject": {
         "name": "일반전화 선로두절·정전장애",
         "type": "Event",
@@ -6864,7 +6829,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0205",
+      "id": "T0204",
       "subject": {
         "name": "한국통신(KT)",
         "type": "ResponseActor",
@@ -6893,7 +6858,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0206",
+      "id": "T0205",
       "subject": {
         "name": "행정통신망 장애(KT 선로 유실)",
         "type": "Event",
@@ -6927,7 +6892,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0207",
+      "id": "T0206",
       "subject": {
         "name": "강릉↔정선 광케이블 유실",
         "type": "Event",
@@ -6960,7 +6925,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0208",
+      "id": "T0207",
       "subject": {
         "name": "회선 이원화 우회망",
         "type": "Resilience",
@@ -6988,7 +6953,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0209",
+      "id": "T0208",
       "subject": {
         "name": "무인국사 예비전원 부재",
         "type": "RiskFactor",
@@ -7018,7 +6983,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0210",
+      "id": "T0209",
       "subject": {
         "name": "SK텔레콤 강릉지점",
         "type": "ResponseActor",
@@ -7047,7 +7012,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0211",
+      "id": "T0210",
       "subject": {
         "name": "도청지식정보기획관실 정보통신계",
         "type": "ResponseActor",
@@ -7076,7 +7041,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0212",
+      "id": "T0211",
       "subject": {
         "name": "한국통신(KT) 강릉지사",
         "type": "ResponseActor",
@@ -7105,7 +7070,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0213",
+      "id": "T0212",
       "subject": {
         "name": "주택침수 누전위험(전기설비피해 7,492호)",
         "type": "RiskFactor",
@@ -7136,7 +7101,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0214",
+      "id": "T0213",
       "subject": {
         "name": "LP가스 누출위험",
         "type": "RiskFactor",
@@ -7168,7 +7133,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0215",
+      "id": "T0214",
       "subject": {
         "name": "동막·칠성·장현저수지 붕괴 우려",
         "type": "RiskFactor",
@@ -7201,7 +7166,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0216",
+      "id": "T0215",
       "subject": {
         "name": "시내 곳곳 정전",
         "type": "Event",
@@ -7232,7 +7197,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0217",
+      "id": "T0216",
       "subject": {
         "name": "강릉시",
         "type": "ResponseActor",
@@ -7259,7 +7224,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0218",
+      "id": "T0217",
       "subject": {
         "name": "강릉시",
         "type": "ResponseActor",
@@ -7287,7 +7252,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0219",
+      "id": "T0218",
       "subject": {
         "name": "특별재해지역 선포",
         "type": "ResponseAction",
@@ -7318,7 +7283,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0220",
+      "id": "T0219",
       "subject": {
         "name": "산림 산사태 피해",
         "type": "Damage",
@@ -7350,7 +7315,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0221",
+      "id": "T0220",
       "subject": {
         "name": "농경지 유실·매몰",
         "type": "Damage",
@@ -7382,7 +7347,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0222",
+      "id": "T0221",
       "subject": {
         "name": "지역경제 침수피해(제조·소상공업체)",
         "type": "Damage",
@@ -7411,7 +7376,7 @@
       "source_chunk": "07"
     },
     {
-      "id": "T0223",
+      "id": "T0222",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7441,7 +7406,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0224",
+      "id": "T0223",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7470,7 +7435,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0225",
+      "id": "T0224",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7499,7 +7464,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0226",
+      "id": "T0225",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7528,7 +7493,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0227",
+      "id": "T0226",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7558,7 +7523,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0228",
+      "id": "T0227",
       "subject": {
         "name": "장현저수지 수위 상승 및 범람",
         "type": "Event",
@@ -7589,7 +7554,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0229",
+      "id": "T0228",
       "subject": {
         "name": "장현저수지 제방 붕괴",
         "type": "Event",
@@ -7621,7 +7586,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0230",
+      "id": "T0229",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7652,7 +7617,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0231",
+      "id": "T0230",
       "subject": {
         "name": "오봉댐 붕괴위기",
         "type": "Event",
@@ -7681,7 +7646,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0232",
+      "id": "T0231",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7710,7 +7675,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0233",
+      "id": "T0232",
       "subject": {
         "name": "오봉댐 원수관 파열·강릉 전역 단수",
         "type": "Event",
@@ -7739,7 +7704,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0234",
+      "id": "T0233",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7771,7 +7736,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0235",
+      "id": "T0234",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7800,7 +7765,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0236",
+      "id": "T0235",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7828,7 +7793,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0237",
+      "id": "T0236",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7858,7 +7823,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0238",
+      "id": "T0237",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7888,7 +7853,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0239",
+      "id": "T0238",
       "subject": {
         "name": "강릉지역 집중호우",
         "type": "Event",
@@ -7917,7 +7882,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0240",
+      "id": "T0239",
       "subject": {
         "name": "장현저수지",
         "type": "Facility",
@@ -7944,7 +7909,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0241",
+      "id": "T0240",
       "subject": {
         "name": "긴급대피방송 및 사이렌 발령",
         "type": "ResponseAction",
@@ -7972,7 +7937,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0242",
+      "id": "T0241",
       "subject": {
         "name": "공무원·군인·소방대원",
         "type": "ResponseActor",
@@ -8000,7 +7965,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0243",
+      "id": "T0242",
       "subject": {
         "name": "오봉댐 원수관 복구공사",
         "type": "ResponseAction",
@@ -8028,7 +7993,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0244",
+      "id": "T0243",
       "subject": {
         "name": "소방차·헬기 동원 식수·구호품 공급",
         "type": "ResponseAction",
@@ -8056,7 +8021,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0245",
+      "id": "T0244",
       "subject": {
         "name": "읍면동별 방역작업",
         "type": "ResponseAction",
@@ -8085,7 +8050,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0246",
+      "id": "T0245",
       "subject": {
         "name": "민관군 합동 복구작업",
         "type": "ResponseAction",
@@ -8114,7 +8079,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0247",
+      "id": "T0246",
       "subject": {
         "name": "제1야전군 장병",
         "type": "ResponseActor",
@@ -8143,7 +8108,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0248",
+      "id": "T0247",
       "subject": {
         "name": "행정자치부",
         "type": "ResponseActor",
@@ -8174,7 +8139,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0249",
+      "id": "T0248",
       "subject": {
         "name": "대통령 김대중",
         "type": "ResponseActor",
@@ -8205,7 +8170,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0250",
+      "id": "T0249",
       "subject": {
         "name": "태풍 루사 특별재해지역 선포",
         "type": "ResponseAction",
@@ -8232,7 +8197,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0251",
+      "id": "T0250",
       "subject": {
         "name": "2002년 제15호 태풍 루사(RUSA)",
         "type": "NaturalHazard",
@@ -8266,7 +8231,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0252",
+      "id": "T0251",
       "subject": {
         "name": "강릉시",
         "type": "ResponseActor",
@@ -8296,7 +8261,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0253",
+      "id": "T0252",
       "subject": {
         "name": "모든 시설물 안전기준 강화",
         "type": "ResponseAction",
@@ -8326,7 +8291,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0254",
+      "id": "T0253",
       "subject": {
         "name": "조기 주민대피 미흡",
         "type": "RiskFactor",
@@ -8354,7 +8319,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0255",
+      "id": "T0254",
       "subject": {
         "name": "강원도 자연순응 산간계곡형 복구지침",
         "type": "Other",
@@ -8383,7 +8348,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0256",
+      "id": "T0255",
       "subject": {
         "name": "장마기·집중호우 대비 2차 피해 예방대책",
         "type": "ResponseAction",
@@ -8414,7 +8379,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0257",
+      "id": "T0256",
       "subject": {
         "name": "단기간 항구개량복구 부실시공",
         "type": "RiskFactor",
@@ -8442,7 +8407,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0258",
+      "id": "T0257",
       "subject": {
         "name": "태풍 루사 피해복구대책 특별위원회",
         "type": "ResponseActor",
@@ -8472,7 +8437,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0259",
+      "id": "T0258",
       "subject": {
         "name": "2003년 제14호 태풍 매미",
         "type": "NaturalHazard",
@@ -8507,7 +8472,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0260",
+      "id": "T0259",
       "subject": {
         "name": "고립된 산간마을 주민",
         "type": "Population",
@@ -8534,7 +8499,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0261",
+      "id": "T0260",
       "subject": {
         "name": "이재민 임시거처 제공(마을회관·학교·컨테이너집)",
         "type": "ResponseAction",
@@ -8562,7 +8527,7 @@
       "source_chunk": "08"
     },
     {
-      "id": "T0262",
+      "id": "T0261",
       "subject": {
         "name": "강릉지역 극한강우(태풍 루사)",
         "type": "Event",
@@ -8596,7 +8561,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0263",
+      "id": "T0262",
       "subject": {
         "name": "유목(流木) 대량 유입",
         "type": "RiskFactor",
@@ -8628,7 +8593,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0264",
+      "id": "T0263",
       "subject": {
         "name": "강릉지역 대형 산불",
         "type": "Event",
@@ -8657,7 +8622,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0265",
+      "id": "T0264",
       "subject": {
         "name": "저수지 측구여수로 형식",
         "type": "RiskFactor",
@@ -8690,7 +8655,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0266",
+      "id": "T0265",
       "subject": {
         "name": "동해안 고파고(하구 수면상승)",
         "type": "Event",
@@ -8722,7 +8687,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0267",
+      "id": "T0266",
       "subject": {
         "name": "토사·수목 해양 유입",
         "type": "Event",
@@ -8753,7 +8718,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0268",
+      "id": "T0267",
       "subject": {
         "name": "홍수 저류기능 시설·면적 절대 부족",
         "type": "RiskFactor",
@@ -8781,7 +8746,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0269",
+      "id": "T0268",
       "subject": {
         "name": "하천부지 인위적 변경·부적절한 하천시설 건설",
         "type": "RiskFactor",
@@ -8811,7 +8776,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0270",
+      "id": "T0269",
       "subject": {
         "name": "도심 배수·유수지·하수관거 통수능 부족",
         "type": "RiskFactor",
@@ -8840,7 +8805,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0271",
+      "id": "T0270",
       "subject": {
         "name": "유목차단 스크린댐·토사유출 저감 사방댐 설치",
         "type": "ResponseAction",
@@ -8870,7 +8835,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0272",
+      "id": "T0271",
       "subject": {
         "name": "교량 개선(교각 제거·경간 확대·내진보강)",
         "type": "ResponseAction",
@@ -8901,7 +8866,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0273",
+      "id": "T0272",
       "subject": {
         "name": "하천준설 및 유로재조정",
         "type": "ResponseAction",
@@ -8931,7 +8896,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0274",
+      "id": "T0273",
       "subject": {
         "name": "국가 안전관리 시스템·통합지휘본부 구축",
         "type": "ResponseAction",
@@ -8962,7 +8927,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0275",
+      "id": "T0274",
       "subject": {
         "name": "인명구조 작업",
         "type": "ResponseAction",
@@ -8992,7 +8957,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0276",
+      "id": "T0275",
       "subject": {
         "name": "비상연락망(무전기·수신호) 확보",
         "type": "Resilience",
@@ -9023,7 +8988,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0277",
+      "id": "T0276",
       "subject": {
         "name": "교통·통신·전기 두절",
         "type": "Event",
@@ -9055,7 +9020,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0278",
+      "id": "T0277",
       "subject": {
         "name": "긴급구호물품 선취득·복구장비 불시동원 지정",
         "type": "ResponseAction",
@@ -9086,7 +9051,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0279",
+      "id": "T0278",
       "subject": {
         "name": "고립지역 해소 및 교통소통 확보",
         "type": "ResponseAction",
@@ -9117,7 +9082,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0280",
+      "id": "T0279",
       "subject": {
         "name": "이재민 지원(컨테이너하우스·구호품)",
         "type": "ResponseAction",
@@ -9150,7 +9115,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0281",
+      "id": "T0280",
       "subject": {
         "name": "강릉시",
         "type": "ResponseActor",
@@ -9177,7 +9142,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0282",
+      "id": "T0281",
       "subject": {
         "name": "철저한 위생관리·방역소독·보건교육",
         "type": "ResponseAction",
@@ -9209,7 +9174,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0283",
+      "id": "T0282",
       "subject": {
         "name": "최소부락단위 응급의료체계 구축",
         "type": "ResponseAction",
@@ -9239,7 +9204,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0284",
+      "id": "T0283",
       "subject": {
         "name": "사유시설 복구비 지원기준 불명확·형평성 논란",
         "type": "RiskFactor",
@@ -9270,7 +9235,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0285",
+      "id": "T0284",
       "subject": {
         "name": "하천제방 개량복구(원인 근본 차단)",
         "type": "ResponseAction",
@@ -9301,7 +9266,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0286",
+      "id": "T0285",
       "subject": {
         "name": "잦은 집중호우(루사·매미·메기 반복)",
         "type": "RiskFactor",
@@ -9333,7 +9298,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0287",
+      "id": "T0286",
       "subject": {
         "name": "침수지역 대책사업(펌프장·관로확장·암거연장)",
         "type": "ResponseAction",
@@ -9366,7 +9331,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0288",
+      "id": "T0287",
       "subject": {
         "name": "남대천 수위상승 역류현상",
         "type": "Event",
@@ -9396,7 +9361,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0289",
+      "id": "T0288",
       "subject": {
         "name": "전답(저류조 역할) 소실",
         "type": "RiskFactor",
@@ -9426,7 +9391,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0290",
+      "id": "T0289",
       "subject": {
         "name": "주택복구",
         "type": "ResponseAction",
@@ -9461,7 +9426,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0291",
+      "id": "T0290",
       "subject": {
         "name": "농작물·농경지 복구",
         "type": "ResponseAction",
@@ -9495,7 +9460,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0292",
+      "id": "T0291",
       "subject": {
         "name": "태풍피해주택 신축 자매결연 지원",
         "type": "ResponseAction",
@@ -9526,7 +9491,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0293",
+      "id": "T0292",
       "subject": {
         "name": "관광지 피해복구·쓰레기 수거",
         "type": "ResponseAction",
@@ -9560,7 +9525,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0294",
+      "id": "T0293",
       "subject": {
         "name": "관광객 유치 마케팅(보은세일·특별열차·현지홍보)",
         "type": "ResponseAction",
@@ -9592,7 +9557,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0295",
+      "id": "T0294",
       "subject": {
         "name": "강원도 자연순응 산간계곡형 복구지침",
         "type": "Other",
@@ -9620,7 +9585,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0296",
+      "id": "T0295",
       "subject": {
         "name": "강원도",
         "type": "ResponseActor",
@@ -9647,7 +9612,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0297",
+      "id": "T0296",
       "subject": {
         "name": "자원봉사자",
         "type": "ResponseActor",
@@ -9676,7 +9641,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0298",
+      "id": "T0297",
       "subject": {
         "name": "대한적십자사",
         "type": "ResponseActor",
@@ -9703,7 +9668,7 @@
       "source_chunk": "09"
     },
     {
-      "id": "T0299",
+      "id": "T0298",
       "subject": {
         "name": "육군 제1901부대",
         "type": "ResponseActor",

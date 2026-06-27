@@ -1367,7 +1367,7 @@
     {
       "id": "T0026",
       "subject": {
-        "name": "세월호 무리한 증·개축(복원성 악화)",
+        "name": "세월호 무리한 증·개축",
         "type": "RiskFactor",
         "properties": {
           "nature": "latent",
@@ -3849,8 +3849,8 @@
     {
       "id": "T0107",
       "subject": {
-        "name": "여야 원내대표 합의사항(8.7)",
-        "type": "Other",
+        "name": "여야 원내대표 합의사항(2014-08-07)",
+        "type": "ResponseAction",
         "properties": {
           "candidate": "[후보: ResponseAction, Event / 이유: 정치적 합의 산물 — 사회적 갈등 촉발 사건으로도 볼 수 있음]",
           "dateTime": "2014-08-07",
@@ -5011,8 +5011,8 @@
     {
       "id": "T0145",
       "subject": {
-        "name": "세월호 침몰사고(4·16 세월호 참사)",
-        "type": "ManmadeHazard",
+        "name": "세월호 침몰사고",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_sinking",
@@ -5107,7 +5107,7 @@
       "id": "T0148",
       "subject": {
         "name": "선내 대기 방송",
-        "type": "Event",
+        "type": "ResponseAction",
         "properties": {
           "order": "cascading",
           "subtype": "state_change",
@@ -5195,7 +5195,7 @@
     {
       "id": "T0151",
       "subject": {
-        "name": "해양경찰 123정(정장 김경일)",
+        "name": "해양경찰 123정",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "해양경찰",
@@ -5225,8 +5225,8 @@
     {
       "id": "T0152",
       "subject": {
-        "name": "세월호 침몰사고(4·16 세월호 참사)",
-        "type": "ManmadeHazard",
+        "name": "세월호 침몰사고",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_sinking"
@@ -5316,8 +5316,8 @@
     {
       "id": "T0155",
       "subject": {
-        "name": "세월호 침몰사고(4·16 세월호 참사)",
-        "type": "ManmadeHazard",
+        "name": "세월호 침몰사고",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_sinking"
@@ -5422,8 +5422,8 @@
         }
       },
       "object": {
-        "name": "세월호 침몰사고(4·16 세월호 참사)",
-        "type": "ManmadeHazard",
+        "name": "세월호 침몰사고",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_sinking"
@@ -5744,7 +5744,7 @@
     {
       "id": "T0169",
       "subject": {
-        "name": "해양경찰 123정(정장 김경일)",
+        "name": "해양경찰 123정",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "해양경찰",
@@ -8423,8 +8423,8 @@
     {
       "id": "T0260",
       "subject": {
-        "name": "세월호 침몰 사고",
-        "type": "ManmadeHazard",
+        "name": "세월호 침몰사고",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine",
@@ -8457,7 +8457,7 @@
     {
       "id": "T0261",
       "subject": {
-        "name": "악화된 수색여건",
+        "name": "악화된 수색여건(조류·파고·격벽 붕괴)",
         "type": "RiskFactor",
         "properties": {
           "nature": "recurring",
@@ -9285,7 +9285,7 @@
     {
       "id": "T0288",
       "subject": {
-        "name": "이주영 장관",
+        "name": "이주영 장관(범정부사고대책본부장)",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "해양수산부 장관, 범대본 부본부장",
@@ -11370,7 +11370,7 @@
         }
       },
       "object": {
-        "name": "수중수색 중단 결단",
+        "name": "수중수색 중단 결단(11.10)",
         "type": "Event",
         "properties": {
           "order": "cascading",
@@ -11386,7 +11386,7 @@
     {
       "id": "T0359",
       "subject": {
-        "name": "이주영 장관(해양수산부)",
+        "name": "이주영 장관(범정부사고대책본부장)",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "해양수산부",
@@ -12648,7 +12648,7 @@
     {
       "id": "T0400",
       "subject": {
-        "name": "이주영 해양수산부 장관(범대본 본부장)",
+        "name": "이주영 해양수산부 장관",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "해양수산부 장관, 범대본 본부장",
@@ -12680,7 +12680,7 @@
     {
       "id": "T0401",
       "subject": {
-        "name": "이주영 해양수산부 장관(범대본 본부장)",
+        "name": "이주영 해양수산부 장관",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "해양수산부 장관, 범대본 본부장"
@@ -13076,38 +13076,6 @@
     {
       "id": "T0414",
       "subject": {
-        "name": "세월호 무리한 증·개축",
-        "type": "RiskFactor",
-        "properties": {
-          "nature": "latent",
-          "feature": "갤러리룸 천정칸막이·도색, 자판기·CCTV 추가설치 등 100여건 작업",
-          "dateTime": "2012-10~2013-03",
-          "riskType": "구조 변경",
-          "specialNote": "복원성 저하 의혹의 잠재 조건"
-        }
-      },
-      "predicate": {
-        "code": "INCREASES_RISK_OF",
-        "properties": {
-          "reason": "선체 구조 변경으로 운항 위험성 증대 의혹",
-          "probability": "Med",
-          "specialNote": "증·개축 과정에 국정원 개입 의혹 제기"
-        }
-      },
-      "object": {
-        "name": "세월호 침몰사고",
-        "type": "Event",
-        "properties": {
-          "order": "primary",
-          "disasterType": "social_transport"
-        }
-      },
-      "evidence": "세월호의 증·개축 후 출항한 ... 100여건에 이르는 매우 상세한 작업내용이 기록",
-      "source_chunk": "11"
-    },
-    {
-      "id": "T0415",
-      "subject": {
         "name": "세월호 대각도 변침",
         "type": "Event",
         "properties": {
@@ -13141,7 +13109,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0416",
+      "id": "T0415",
       "subject": {
         "name": "세월호 CCTV/DVR 전원 차단",
         "type": "Event",
@@ -13173,7 +13141,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0417",
+      "id": "T0416",
       "subject": {
         "name": "세월호 대각도 변침",
         "type": "Event",
@@ -13201,7 +13169,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0418",
+      "id": "T0417",
       "subject": {
         "name": "세월호 DVR",
         "type": "Facility",
@@ -13229,7 +13197,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0419",
+      "id": "T0418",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13262,7 +13230,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0420",
+      "id": "T0419",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13293,7 +13261,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0421",
+      "id": "T0420",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -13326,7 +13294,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0422",
+      "id": "T0421",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -13355,7 +13323,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0423",
+      "id": "T0422",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -13386,7 +13354,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0424",
+      "id": "T0423",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -13416,7 +13384,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0425",
+      "id": "T0424",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13447,7 +13415,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0426",
+      "id": "T0425",
       "subject": {
         "name": "DVR 하드디스크 부식 진행",
         "type": "Event",
@@ -13479,7 +13447,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0427",
+      "id": "T0426",
       "subject": {
         "name": "DVR 하드디스크 부식방지 조치",
         "type": "Resilience",
@@ -13508,7 +13476,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0428",
+      "id": "T0427",
       "subject": {
         "name": "주식회사 명정보기술·김인성 교수",
         "type": "ResponseActor",
@@ -13541,7 +13509,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0429",
+      "id": "T0428",
       "subject": {
         "name": "DVR/CCTV 하드디스크 복원",
         "type": "ResponseAction",
@@ -13569,7 +13537,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0430",
+      "id": "T0429",
       "subject": {
         "name": "DVR 인양 해군 잠수기록지",
         "type": "Other",
@@ -13598,7 +13566,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0431",
+      "id": "T0430",
       "subject": {
         "name": "실종자 가족의 진도 고립",
         "type": "Event",
@@ -13632,7 +13600,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0432",
+      "id": "T0431",
       "subject": {
         "name": "복원 CCTV 영상 가족 공개(검증기일)",
         "type": "Event",
@@ -13664,7 +13632,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0433",
+      "id": "T0432",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13693,7 +13661,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0434",
+      "id": "T0433",
       "subject": {
         "name": "국민·시민사회 연대(수색 지속 동력)",
         "type": "Resilience",
@@ -13719,7 +13687,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0435",
+      "id": "T0434",
       "subject": {
         "name": "세월호 참사 진도군 피해",
         "type": "Damage",
@@ -13753,7 +13721,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0436",
+      "id": "T0435",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -13784,7 +13752,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0437",
+      "id": "T0436",
       "subject": {
         "name": "국회 세월호 국정조사 특별위원회",
         "type": "ResponseActor",
@@ -13813,7 +13781,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0438",
+      "id": "T0437",
       "subject": {
         "name": "여야 국조특위 위원(김명연·부좌현 의원)",
         "type": "ResponseActor",
@@ -13846,7 +13814,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0439",
+      "id": "T0438",
       "subject": {
         "name": "여야 국조특위 위원(김명연·부좌현 의원)",
         "type": "ResponseActor",
@@ -13874,7 +13842,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0440",
+      "id": "T0439",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13903,7 +13871,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0441",
+      "id": "T0440",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13930,7 +13898,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0442",
+      "id": "T0441",
       "subject": {
         "name": "국정원 세월호 증·개축 개입 의혹",
         "type": "Other",
@@ -13958,7 +13926,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0443",
+      "id": "T0442",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -13988,7 +13956,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0444",
+      "id": "T0443",
       "subject": {
         "name": "정홍원 국무총리·안전행정부 장관",
         "type": "ResponseActor",
@@ -14021,7 +13989,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0445",
+      "id": "T0444",
       "subject": {
         "name": "DVR 이동경로 추적 및 증거보전 조치",
         "type": "ResponseAction",
@@ -14048,7 +14016,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0446",
+      "id": "T0445",
       "subject": {
         "name": "맹골수도",
         "type": "Context",
@@ -14076,7 +14044,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0447",
+      "id": "T0446",
       "subject": {
         "name": "단원고 학생·교사 실종자",
         "type": "Population",
@@ -14103,7 +14071,7 @@
       "source_chunk": "11"
     },
     {
-      "id": "T0448",
+      "id": "T0447",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -14139,7 +14107,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0449",
+      "id": "T0448",
       "subject": {
         "name": "진도지역 경제적 손실",
         "type": "Damage",
@@ -14169,7 +14137,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0450",
+      "id": "T0449",
       "subject": {
         "name": "세월호 사고 수습 장기화",
         "type": "Event",
@@ -14200,7 +14168,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0451",
+      "id": "T0450",
       "subject": {
         "name": "대한민국 정부",
         "type": "ResponseActor",
@@ -14231,7 +14199,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0452",
+      "id": "T0451",
       "subject": {
         "name": "진도군을 특별재난지역으로 선포",
         "type": "ResponseAction",
@@ -14258,7 +14226,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0453",
+      "id": "T0452",
       "subject": {
         "name": "세월호 참사 범군민대책위원회",
         "type": "ResponseActor",
@@ -14289,7 +14257,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0454",
+      "id": "T0453",
       "subject": {
         "name": "진도군민 고통 증대",
         "type": "Damage",
@@ -14319,7 +14287,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0455",
+      "id": "T0454",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -14350,7 +14318,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0456",
+      "id": "T0455",
       "subject": {
         "name": "조도 주민 고립(뱃길 차단)",
         "type": "Event",
@@ -14380,7 +14348,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0457",
+      "id": "T0456",
       "subject": {
         "name": "조도 주민",
         "type": "Population",
@@ -14410,7 +14378,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0458",
+      "id": "T0457",
       "subject": {
         "name": "실종자 가족",
         "type": "Population",
@@ -14441,7 +14409,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0459",
+      "id": "T0458",
       "subject": {
         "name": "팽목항 항구 일부 개방 결정",
         "type": "ResponseAction",
@@ -14471,7 +14439,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0460",
+      "id": "T0459",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -14501,7 +14469,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0461",
+      "id": "T0460",
       "subject": {
         "name": "사고해역 유실방지 저인망·채낚기 어선 조업",
         "type": "ManmadeHazard",
@@ -14531,7 +14499,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0462",
+      "id": "T0461",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -14561,7 +14529,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0463",
+      "id": "T0462",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -14591,7 +14559,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0464",
+      "id": "T0463",
       "subject": {
         "name": "진도체육관 사용 차질(군 행사 취소)",
         "type": "Damage",
@@ -14622,7 +14590,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0465",
+      "id": "T0464",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -14653,7 +14621,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0466",
+      "id": "T0465",
       "subject": {
         "name": "진도체육관 문제 3자 협의 제안·개최",
         "type": "ResponseAction",
@@ -14682,7 +14650,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0467",
+      "id": "T0466",
       "subject": {
         "name": "이주영 해양수산부 장관",
         "type": "ResponseActor",
@@ -14712,7 +14680,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0468",
+      "id": "T0467",
       "subject": {
         "name": "3자(정부·실종자가족·진도군민)",
         "type": "ResponseActor",
@@ -14741,7 +14709,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0469",
+      "id": "T0468",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -14770,7 +14738,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0470",
+      "id": "T0469",
       "subject": {
         "name": "정홍원 국무총리",
         "type": "ResponseActor",
@@ -14799,7 +14767,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0471",
+      "id": "T0470",
       "subject": {
         "name": "정종섭 안전행정부 장관",
         "type": "ResponseActor",
@@ -14827,7 +14795,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0472",
+      "id": "T0471",
       "subject": {
         "name": "세월호 참사 국민대책회의",
         "type": "ResponseActor",
@@ -14860,7 +14828,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0473",
+      "id": "T0472",
       "subject": {
         "name": "기다림의 버스 운행",
         "type": "ResponseAction",
@@ -14889,7 +14857,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0474",
+      "id": "T0473",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -14920,7 +14888,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0475",
+      "id": "T0474",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -14950,7 +14918,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0476",
+      "id": "T0475",
       "subject": {
         "name": "세월호 광주대책위",
         "type": "ResponseActor",
@@ -14980,7 +14948,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0477",
+      "id": "T0476",
       "subject": {
         "name": "해남군민·목포시민",
         "type": "ResponseActor",
@@ -15009,7 +14977,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0478",
+      "id": "T0477",
       "subject": {
         "name": "프란치스코 교황",
         "type": "ResponseActor",
@@ -15041,7 +15009,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0479",
+      "id": "T0478",
       "subject": {
         "name": "교황의 세월호 유가족·실종자가족 위로",
         "type": "ResponseAction",
@@ -15070,7 +15038,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0480",
+      "id": "T0479",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -15100,7 +15068,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0481",
+      "id": "T0480",
       "subject": {
         "name": "이성효 주교·김건태 신부",
         "type": "ResponseActor",
@@ -15133,7 +15101,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0482",
+      "id": "T0481",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -15165,7 +15133,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0483",
+      "id": "T0482",
       "subject": {
         "name": "세월호 유가족-대리기사 사건(2014.09.16)",
         "type": "Event",
@@ -15197,7 +15165,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0484",
+      "id": "T0483",
       "subject": {
         "name": "진도군 민주시민단체",
         "type": "ResponseActor",
@@ -15228,7 +15196,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0485",
+      "id": "T0484",
       "subject": {
         "name": "진도체육관",
         "type": "Facility",
@@ -15258,7 +15226,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0486",
+      "id": "T0485",
       "subject": {
         "name": "조도 주민",
         "type": "Population",
@@ -15285,7 +15253,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0487",
+      "id": "T0486",
       "subject": {
         "name": "교황에게 실종자 가족 서신 작성·전달",
         "type": "ResponseAction",
@@ -15312,7 +15280,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0488",
+      "id": "T0487",
       "subject": {
         "name": "실종자 가족",
         "type": "Population",
@@ -15338,7 +15306,7 @@
       "source_chunk": "12"
     },
     {
-      "id": "T0489",
+      "id": "T0488",
       "subject": {
         "name": "세월호 실종자 수중수색",
         "type": "Event",
@@ -15369,7 +15337,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0490",
+      "id": "T0489",
       "subject": {
         "name": "동절기 수색환경 악화",
         "type": "RiskFactor",
@@ -15400,7 +15368,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0491",
+      "id": "T0490",
       "subject": {
         "name": "잠수사 안전 위험",
         "type": "RiskFactor",
@@ -15431,7 +15399,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0492",
+      "id": "T0491",
       "subject": {
         "name": "잠수 인력 및 장비 축소",
         "type": "Event",
@@ -15463,7 +15431,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0493",
+      "id": "T0492",
       "subject": {
         "name": "세월호 실종자 수중수색",
         "type": "Event",
@@ -15492,7 +15460,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0494",
+      "id": "T0493",
       "subject": {
         "name": "실종자 가족 건강 악화",
         "type": "Damage",
@@ -15521,7 +15489,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0495",
+      "id": "T0494",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -15557,7 +15525,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0496",
+      "id": "T0495",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -15588,7 +15556,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0497",
+      "id": "T0496",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -15617,7 +15585,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0498",
+      "id": "T0497",
       "subject": {
         "name": "실종자 가족 대표 선출 실패",
         "type": "Event",
@@ -15646,7 +15614,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0499",
+      "id": "T0498",
       "subject": {
         "name": "세월호 특위 변호사",
         "type": "ResponseActor",
@@ -15679,7 +15647,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0500",
+      "id": "T0499",
       "subject": {
         "name": "세월호 특위 변호사",
         "type": "ResponseActor",
@@ -15709,7 +15677,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0501",
+      "id": "T0500",
       "subject": {
         "name": "실종자 가족 내부 갈등·의사결정 곤란",
         "type": "Event",
@@ -15738,7 +15706,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0502",
+      "id": "T0501",
       "subject": {
         "name": "유가족과 실종자 가족 간 입장 차이",
         "type": "RiskFactor",
@@ -15768,7 +15736,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0503",
+      "id": "T0502",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -15798,7 +15766,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0504",
+      "id": "T0503",
       "subject": {
         "name": "청와대 대변인 발언(잠수사 사기 저하)",
         "type": "Event",
@@ -15830,7 +15798,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0505",
+      "id": "T0504",
       "subject": {
         "name": "민간구조팀(언딘) 철수 발언",
         "type": "Event",
@@ -15860,7 +15828,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0506",
+      "id": "T0505",
       "subject": {
         "name": "범정부사고대책본부",
         "type": "ResponseActor",
@@ -15892,7 +15860,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0507",
+      "id": "T0506",
       "subject": {
         "name": "범정부사고대책본부",
         "type": "ResponseActor",
@@ -15921,7 +15889,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0508",
+      "id": "T0507",
       "subject": {
         "name": "이주영 해양수산부 장관",
         "type": "ResponseActor",
@@ -15952,7 +15920,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0509",
+      "id": "T0508",
       "subject": {
         "name": "세월호 선체 인양",
         "type": "ResponseAction",
@@ -15984,7 +15952,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0510",
+      "id": "T0509",
       "subject": {
         "name": "정홍원 국무총리",
         "type": "ResponseActor",
@@ -16012,7 +15980,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0511",
+      "id": "T0510",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16039,7 +16007,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0512",
+      "id": "T0511",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16068,7 +16036,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0513",
+      "id": "T0512",
       "subject": {
         "name": "진도체육관 갈등(가족 거점 이전)",
         "type": "Event",
@@ -16102,7 +16070,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0514",
+      "id": "T0513",
       "subject": {
         "name": "9월 16일 세월호 유가족-대리기사 사건",
         "type": "Event",
@@ -16132,7 +16100,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0515",
+      "id": "T0514",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16166,7 +16134,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0516",
+      "id": "T0515",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16198,7 +16166,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0517",
+      "id": "T0516",
       "subject": {
         "name": "진도실내체육관 피해가족 대표",
         "type": "ResponseActor",
@@ -16229,7 +16197,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0518",
+      "id": "T0517",
       "subject": {
         "name": "언론의 오보·정부 초기 부실 대응",
         "type": "RiskFactor",
@@ -16259,7 +16227,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0519",
+      "id": "T0518",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16291,7 +16259,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0520",
+      "id": "T0519",
       "subject": {
         "name": "변협 세월호 참사 장단기 활동 제안",
         "type": "ResponseAction",
@@ -16321,7 +16289,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0521",
+      "id": "T0520",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16354,7 +16322,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0522",
+      "id": "T0521",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16386,7 +16354,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0523",
+      "id": "T0522",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -16417,7 +16385,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0524",
+      "id": "T0523",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -16450,7 +16418,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0525",
+      "id": "T0524",
       "subject": {
         "name": "정부 초기 대응 미비(생계지원·진상규명)",
         "type": "ResponseAction",
@@ -16480,7 +16448,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0526",
+      "id": "T0525",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -16510,7 +16478,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0527",
+      "id": "T0526",
       "subject": {
         "name": "맹골수도",
         "type": "Context",
@@ -16539,7 +16507,7 @@
       "source_chunk": "13"
     },
     {
-      "id": "T0528",
+      "id": "T0527",
       "subject": {
         "name": "세월호 선령 연장",
         "type": "RiskFactor",
@@ -16573,7 +16541,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0529",
+      "id": "T0528",
       "subject": {
         "name": "세월호 부실 운항",
         "type": "ManmadeHazard",
@@ -16605,7 +16573,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0530",
+      "id": "T0529",
       "subject": {
         "name": "세월호(여객선)",
         "type": "Facility",
@@ -16635,7 +16603,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0531",
+      "id": "T0530",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -16664,7 +16632,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0532",
+      "id": "T0531",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -16699,7 +16667,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0533",
+      "id": "T0532",
       "subject": {
         "name": "세월호 구조·구난 대응",
         "type": "ResponseAction",
@@ -16730,7 +16698,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0534",
+      "id": "T0533",
       "subject": {
         "name": "세월호 구조·구난 대응",
         "type": "ResponseAction",
@@ -16760,7 +16728,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0535",
+      "id": "T0534",
       "subject": {
         "name": "단원고 2학년 학생 등 승객",
         "type": "Population",
@@ -16789,7 +16757,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0536",
+      "id": "T0535",
       "subject": {
         "name": "세월호 대형참사",
         "type": "Event",
@@ -16823,7 +16791,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0537",
+      "id": "T0536",
       "subject": {
         "name": "선내 잔류 승객",
         "type": "Population",
@@ -16855,7 +16823,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0538",
+      "id": "T0537",
       "subject": {
         "name": "'가만히 있으라' 선내 대기 지시",
         "type": "ResponseAction",
@@ -16888,7 +16856,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0539",
+      "id": "T0538",
       "subject": {
         "name": "단원고 전원구조 오보",
         "type": "Event",
@@ -16920,7 +16888,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0540",
+      "id": "T0539",
       "subject": {
         "name": "세월호 대형참사",
         "type": "Event",
@@ -16949,7 +16917,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0541",
+      "id": "T0540",
       "subject": {
         "name": "세월호 대형참사",
         "type": "Event",
@@ -16978,7 +16946,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0542",
+      "id": "T0541",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -17010,7 +16978,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0543",
+      "id": "T0542",
       "subject": {
         "name": "세월호 구조·수색 과정",
         "type": "Event",
@@ -17042,7 +17010,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0544",
+      "id": "T0543",
       "subject": {
         "name": "세월호 참사 인명피해",
         "type": "Damage",
@@ -17073,7 +17041,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0545",
+      "id": "T0544",
       "subject": {
         "name": "4·16 세월호 참사 진상규명 특별법",
         "type": "ResponseAction",
@@ -17104,7 +17072,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0546",
+      "id": "T0545",
       "subject": {
         "name": "4·16 세월호참사 특별조사위원회",
         "type": "ResponseActor",
@@ -17135,7 +17103,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0547",
+      "id": "T0546",
       "subject": {
         "name": "세월호 특위 진상조사단 진상조사 활동",
         "type": "ResponseAction",
@@ -17164,7 +17132,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0548",
+      "id": "T0547",
       "subject": {
         "name": "재난대응 매뉴얼 및 위기대응협력시스템",
         "type": "Resilience",
@@ -17196,7 +17164,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0549",
+      "id": "T0548",
       "subject": {
         "name": "세월호 특위 진상조사단 진상조사 활동",
         "type": "ResponseAction",
@@ -17224,7 +17192,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0550",
+      "id": "T0549",
       "subject": {
         "name": "세월호 피해자 법률지원 활동",
         "type": "ResponseAction",
@@ -17253,7 +17221,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0551",
+      "id": "T0550",
       "subject": {
         "name": "세월호 대형참사",
         "type": "Event",
@@ -17282,7 +17250,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0552",
+      "id": "T0551",
       "subject": {
         "name": "대한변협과 가족대책위 협약",
         "type": "ResponseAction",
@@ -17312,7 +17280,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0553",
+      "id": "T0552",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -17341,7 +17309,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0554",
+      "id": "T0553",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -17372,7 +17340,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0555",
+      "id": "T0554",
       "subject": {
         "name": "단원고 2학년 학생 등 승객",
         "type": "Population",
@@ -17399,7 +17367,7 @@
       "source_chunk": "14"
     },
     {
-      "id": "T0556",
+      "id": "T0555",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -17435,7 +17403,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0557",
+      "id": "T0556",
       "subject": {
         "name": "세월호 특별법 제정 추진",
         "type": "ResponseAction",
@@ -17464,7 +17432,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0558",
+      "id": "T0557",
       "subject": {
         "name": "특별검사제도",
         "type": "Other",
@@ -17495,7 +17463,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0559",
+      "id": "T0558",
       "subject": {
         "name": "국정조사 및 청문회",
         "type": "Other",
@@ -17525,7 +17493,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0560",
+      "id": "T0559",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -17558,7 +17526,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0561",
+      "id": "T0560",
       "subject": {
         "name": "세월호 사고 희생자·실종자·생존자 및 가족대책위원회",
         "type": "ResponseActor",
@@ -17588,7 +17556,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0562",
+      "id": "T0561",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -17619,7 +17587,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0563",
+      "id": "T0562",
       "subject": {
         "name": "세월호 특별법 제정 요구 서명 운동",
         "type": "ResponseAction",
@@ -17648,7 +17616,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0564",
+      "id": "T0563",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -17677,7 +17645,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0565",
+      "id": "T0564",
       "subject": {
         "name": "박종운 변호사",
         "type": "ResponseActor",
@@ -17708,7 +17676,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0566",
+      "id": "T0565",
       "subject": {
         "name": "신현호 변호사",
         "type": "ResponseActor",
@@ -17737,7 +17705,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0567",
+      "id": "T0566",
       "subject": {
         "name": "김희수 변호사",
         "type": "ResponseActor",
@@ -17767,7 +17735,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0568",
+      "id": "T0567",
       "subject": {
         "name": "민주사회를 위한 변호사 모임",
         "type": "ResponseActor",
@@ -17799,7 +17767,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0569",
+      "id": "T0568",
       "subject": {
         "name": "민주사회를 위한 변호사 모임",
         "type": "ResponseActor",
@@ -17828,7 +17796,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0570",
+      "id": "T0569",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -17859,7 +17827,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0571",
+      "id": "T0570",
       "subject": {
         "name": "대한변협 통합안 작성 제1차 전체회의",
         "type": "ResponseAction",
@@ -17892,7 +17860,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0572",
+      "id": "T0571",
       "subject": {
         "name": "김희수 변호사",
         "type": "ResponseActor",
@@ -17922,7 +17890,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0573",
+      "id": "T0572",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -17953,7 +17921,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0574",
+      "id": "T0573",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -17984,7 +17952,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0575",
+      "id": "T0574",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -18012,7 +17980,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0576",
+      "id": "T0575",
       "subject": {
         "name": "김희수 변호사",
         "type": "ResponseActor",
@@ -18043,7 +18011,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0577",
+      "id": "T0576",
       "subject": {
         "name": "세월호 특위 특별법 제정팀 6월 29일 회의",
         "type": "ResponseAction",
@@ -18075,7 +18043,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0578",
+      "id": "T0577",
       "subject": {
         "name": "세월호 특별법 제정 추진",
         "type": "ResponseAction",
@@ -18108,7 +18076,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0579",
+      "id": "T0578",
       "subject": {
         "name": "김희수 변호사",
         "type": "ResponseActor",
@@ -18137,7 +18105,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0580",
+      "id": "T0579",
       "subject": {
         "name": "전해철 국회의원(새정치민주연합)",
         "type": "ResponseActor",
@@ -18167,7 +18135,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0581",
+      "id": "T0580",
       "subject": {
         "name": "전명선 세월호 가족대책위 부위원장",
         "type": "ResponseActor",
@@ -18197,7 +18165,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0582",
+      "id": "T0581",
       "subject": {
         "name": "이태호 참여연대 사무처장",
         "type": "ResponseActor",
@@ -18227,7 +18195,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0583",
+      "id": "T0582",
       "subject": {
         "name": "김택수 변호사(민변)",
         "type": "ResponseActor",
@@ -18257,7 +18225,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0584",
+      "id": "T0583",
       "subject": {
         "name": "4·16 참사 진실규명 및 안전사회 건설 등을 위한 특별법(안)",
         "type": "Other",
@@ -18289,7 +18257,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0585",
+      "id": "T0584",
       "subject": {
         "name": "4·16 참사 진실규명 및 안전사회 건설 등을 위한 특별법(안)",
         "type": "Other",
@@ -18317,7 +18285,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0586",
+      "id": "T0585",
       "subject": {
         "name": "4·16 안전재단",
         "type": "Resilience",
@@ -18348,7 +18316,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0587",
+      "id": "T0586",
       "subject": {
         "name": "대한변협 세월호 특위 초안(특별법)의 진상규명 시스템",
         "type": "ResponseAction",
@@ -18379,7 +18347,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0588",
+      "id": "T0587",
       "subject": {
         "name": "장완익 변호사",
         "type": "ResponseActor",
@@ -18406,7 +18374,7 @@
       "source_chunk": "15"
     },
     {
-      "id": "T0589",
+      "id": "T0588",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -18441,7 +18409,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0590",
+      "id": "T0589",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -18474,7 +18442,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0591",
+      "id": "T0590",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -18505,7 +18473,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0592",
+      "id": "T0591",
       "subject": {
         "name": "수사 및 기소권 위원회 부여 쟁점",
         "type": "Other",
@@ -18536,7 +18504,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0593",
+      "id": "T0592",
       "subject": {
         "name": "특별법 제정팀장",
         "type": "ResponseActor",
@@ -18568,7 +18536,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0594",
+      "id": "T0593",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -18601,7 +18569,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0595",
+      "id": "T0594",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -18631,7 +18599,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0596",
+      "id": "T0595",
       "subject": {
         "name": "4·16 특별법 청원 국민대표단",
         "type": "ResponseActor",
@@ -18663,7 +18631,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0597",
+      "id": "T0596",
       "subject": {
         "name": "특별법 제정 촉구 천만인(350여만명) 서명운동",
         "type": "ResponseAction",
@@ -18698,7 +18666,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0598",
+      "id": "T0597",
       "subject": {
         "name": "조속입법 TF",
         "type": "ResponseActor",
@@ -18733,7 +18701,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0599",
+      "id": "T0598",
       "subject": {
         "name": "조속입법 TF",
         "type": "ResponseActor",
@@ -18763,7 +18731,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0600",
+      "id": "T0599",
       "subject": {
         "name": "여당측 위원(새누리당)",
         "type": "ResponseActor",
@@ -18793,7 +18761,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0601",
+      "id": "T0600",
       "subject": {
         "name": "5대 쟁점(수사·기소권, 특별사법경찰리 지위, 청문회, 특위 구성 추천비율, 보·배상)",
         "type": "Other",
@@ -18823,7 +18791,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0602",
+      "id": "T0601",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -18854,7 +18822,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0603",
+      "id": "T0602",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -18884,7 +18852,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0604",
+      "id": "T0603",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -18915,7 +18883,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0605",
+      "id": "T0604",
       "subject": {
         "name": "조속입법 TF 거부·밀실협상 우려",
         "type": "Other",
@@ -18945,7 +18913,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0606",
+      "id": "T0605",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -18975,7 +18943,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0607",
+      "id": "T0606",
       "subject": {
         "name": "단원고 생존학생",
         "type": "Population",
@@ -19006,7 +18974,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0608",
+      "id": "T0607",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -19035,7 +19003,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0609",
+      "id": "T0608",
       "subject": {
         "name": "세월호 특위 현장대응지원단",
         "type": "ResponseActor",
@@ -19065,7 +19033,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0610",
+      "id": "T0609",
       "subject": {
         "name": "세월호 특위 현장대응지원단",
         "type": "ResponseActor",
@@ -19094,7 +19062,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0611",
+      "id": "T0610",
       "subject": {
         "name": "새누리당 김무성 신임 대표",
         "type": "ResponseActor",
@@ -19123,7 +19091,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0612",
+      "id": "T0611",
       "subject": {
         "name": "특별법 입법 공청회",
         "type": "ResponseAction",
@@ -19158,7 +19126,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0613",
+      "id": "T0612",
       "subject": {
         "name": "4·16 안전재단",
         "type": "Resilience",
@@ -19189,7 +19157,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0614",
+      "id": "T0613",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -19217,7 +19185,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0615",
+      "id": "T0614",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -19246,7 +19214,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0616",
+      "id": "T0615",
       "subject": {
         "name": "4·16 참사 진실규명 및 안전사회 건설 등을 위한 특별법(안) 입법청원",
         "type": "ResponseAction",
@@ -19274,7 +19242,7 @@
       "source_chunk": "16"
     },
     {
-      "id": "T0617",
+      "id": "T0616",
       "subject": {
         "name": "세월호 특위 현장대응지원단",
         "type": "ResponseActor",
@@ -19302,7 +19270,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0618",
+      "id": "T0617",
       "subject": {
         "name": "유언비어·허위사실 유포",
         "type": "RiskFactor",
@@ -19332,7 +19300,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0619",
+      "id": "T0618",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -19362,7 +19330,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0620",
+      "id": "T0619",
       "subject": {
         "name": "조속입법 TF",
         "type": "ResponseActor",
@@ -19393,7 +19361,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0621",
+      "id": "T0620",
       "subject": {
         "name": "조속입법 TF 해체",
         "type": "Event",
@@ -19426,7 +19394,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0622",
+      "id": "T0621",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -19457,7 +19425,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0623",
+      "id": "T0622",
       "subject": {
         "name": "황필규·배의철 변호사",
         "type": "ResponseActor",
@@ -19489,7 +19457,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0624",
+      "id": "T0623",
       "subject": {
         "name": "박종운 변호사 등 자원 변호사",
         "type": "ResponseActor",
@@ -19520,7 +19488,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0625",
+      "id": "T0624",
       "subject": {
         "name": "공익법률지원변호사단",
         "type": "ResponseActor",
@@ -19551,7 +19519,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0626",
+      "id": "T0625",
       "subject": {
         "name": "변호사 1043인",
         "type": "ResponseActor",
@@ -19588,7 +19556,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0627",
+      "id": "T0626",
       "subject": {
         "name": "여당의 반대와 대안 부재, 야당의 정치력 부족",
         "type": "RiskFactor",
@@ -19621,7 +19589,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0628",
+      "id": "T0627",
       "subject": {
         "name": "여야 특별법 협상",
         "type": "ResponseAction",
@@ -19651,7 +19619,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0629",
+      "id": "T0628",
       "subject": {
         "name": "새누리당",
         "type": "ResponseActor",
@@ -19680,7 +19648,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0630",
+      "id": "T0629",
       "subject": {
         "name": "‘2+2 회담’",
         "type": "ResponseActor",
@@ -19710,7 +19678,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0631",
+      "id": "T0630",
       "subject": {
         "name": "7·30 재보궐선거 야당 참패",
         "type": "Event",
@@ -19743,7 +19711,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0632",
+      "id": "T0631",
       "subject": {
         "name": "특별법 제정 협상 위기 및 협상 결과물 후퇴",
         "type": "Damage",
@@ -19772,7 +19740,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0633",
+      "id": "T0632",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -19804,7 +19772,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0634",
+      "id": "T0633",
       "subject": {
         "name": "여야 원내대표",
         "type": "ResponseActor",
@@ -19837,7 +19805,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0635",
+      "id": "T0634",
       "subject": {
         "name": "새정치민주연합 원내대표",
         "type": "ResponseActor",
@@ -19866,7 +19834,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0636",
+      "id": "T0635",
       "subject": {
         "name": "여야 원내대표 합의사항(2014-08-07)",
         "type": "ResponseAction",
@@ -19895,7 +19863,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0637",
+      "id": "T0636",
       "subject": {
         "name": "시민 동조 단식·문화행사·서명운동",
         "type": "ResponseAction",
@@ -19927,7 +19895,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0638",
+      "id": "T0637",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -19956,7 +19924,7 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0639",
+      "id": "T0638",
       "subject": {
         "name": "세월호 특별법 제정 추진",
         "type": "ResponseAction",
@@ -19983,10 +19951,10 @@
       "source_chunk": "17"
     },
     {
-      "id": "T0640",
+      "id": "T0639",
       "subject": {
         "name": "세월호 침몰사고",
-        "type": "ManmadeHazard",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_transport",
@@ -20018,10 +19986,10 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0641",
+      "id": "T0640",
       "subject": {
         "name": "세월호 침몰사고",
-        "type": "ManmadeHazard",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_transport",
@@ -20049,7 +20017,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0642",
+      "id": "T0641",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -20083,7 +20051,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0643",
+      "id": "T0642",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -20109,7 +20077,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0644",
+      "id": "T0643",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -20138,7 +20106,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0645",
+      "id": "T0644",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -20169,7 +20137,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0646",
+      "id": "T0645",
       "subject": {
         "name": "세월호 가족대책위 단식자",
         "type": "Population",
@@ -20199,7 +20167,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0647",
+      "id": "T0646",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -20230,7 +20198,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0648",
+      "id": "T0647",
       "subject": {
         "name": "세월호 특별법 제정 추진",
         "type": "ResponseAction",
@@ -20247,7 +20215,7 @@
       },
       "object": {
         "name": "세월호 침몰사고",
-        "type": "ManmadeHazard",
+        "type": "Event",
         "properties": {
           "origin": "transport",
           "disasterType": "social_marine_transport"
@@ -20257,7 +20225,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0649",
+      "id": "T0648",
       "subject": {
         "name": "세월호 가족대책위와 일반인 대책위 간 갈등",
         "type": "Event",
@@ -20291,7 +20259,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0650",
+      "id": "T0649",
       "subject": {
         "name": "세월호 특별법 관련 조직적 악성 댓글 확산",
         "type": "Event",
@@ -20325,7 +20293,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0651",
+      "id": "T0650",
       "subject": {
         "name": "리얼미터 세월호 특별호 추가협상 여론조사",
         "type": "Context",
@@ -20354,7 +20322,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0652",
+      "id": "T0651",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -20385,7 +20353,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0653",
+      "id": "T0652",
       "subject": {
         "name": "세월호 가족대책위 총회",
         "type": "Context",
@@ -20414,7 +20382,7 @@
       "source_chunk": "18"
     },
     {
-      "id": "T0654",
+      "id": "T0653",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -20449,7 +20417,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0655",
+      "id": "T0654",
       "subject": {
         "name": "정부의 부실한 초동대처 및 구조활동",
         "type": "Event",
@@ -20477,7 +20445,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0656",
+      "id": "T0655",
       "subject": {
         "name": "언론사의 부정확한 보도",
         "type": "ManmadeHazard",
@@ -20505,7 +20473,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0657",
+      "id": "T0656",
       "subject": {
         "name": "탑승객 숫자·명단 발표 오류",
         "type": "Event",
@@ -20538,7 +20506,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0658",
+      "id": "T0657",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -20569,7 +20537,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0659",
+      "id": "T0658",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -20597,7 +20565,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0660",
+      "id": "T0659",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -20630,7 +20598,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0661",
+      "id": "T0660",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -20660,7 +20628,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0662",
+      "id": "T0661",
       "subject": {
         "name": "외부세력에 의한 증거 조작·권력 개입 우려",
         "type": "RiskFactor",
@@ -20689,7 +20657,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0663",
+      "id": "T0662",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -20717,7 +20685,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0664",
+      "id": "T0663",
       "subject": {
         "name": "국회 세월호 국정조사 특별위원회",
         "type": "ResponseActor",
@@ -20749,7 +20717,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0665",
+      "id": "T0664",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -20776,7 +20744,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0666",
+      "id": "T0665",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -20805,7 +20773,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0667",
+      "id": "T0666",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -20832,7 +20800,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0668",
+      "id": "T0667",
       "subject": {
         "name": "세월호 특위 진상조사단 자원봉사 운영체계",
         "type": "RiskFactor",
@@ -20860,7 +20828,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0669",
+      "id": "T0668",
       "subject": {
         "name": "진상조사 업무 연속성 저하·정보 편중",
         "type": "Damage",
@@ -20886,7 +20854,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0670",
+      "id": "T0669",
       "subject": {
         "name": "변호사 단체 개별·비통일 활동",
         "type": "RiskFactor",
@@ -20914,7 +20882,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0671",
+      "id": "T0670",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -20946,7 +20914,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0672",
+      "id": "T0671",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -20974,7 +20942,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0673",
+      "id": "T0672",
       "subject": {
         "name": "여·야 원내대표",
         "type": "ResponseActor",
@@ -21005,7 +20973,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0674",
+      "id": "T0673",
       "subject": {
         "name": "국회(농해수위 중심)",
         "type": "ResponseActor",
@@ -21036,7 +21004,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0675",
+      "id": "T0674",
       "subject": {
         "name": "4·16세월호참사 진상규명 및 안전사회 건설 등을 위한 특별법 제정",
         "type": "ResponseAction",
@@ -21064,7 +21032,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0676",
+      "id": "T0675",
       "subject": {
         "name": "여당·보수 진영의 수사·기소권 집중 공격",
         "type": "RiskFactor",
@@ -21092,7 +21060,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0677",
+      "id": "T0676",
       "subject": {
         "name": "세월호 특위 특별법 제정팀",
         "type": "ResponseActor",
@@ -21121,7 +21089,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0678",
+      "id": "T0677",
       "subject": {
         "name": "보수단체(어버이연합 등)의 방해 행위",
         "type": "ManmadeHazard",
@@ -21151,7 +21119,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0679",
+      "id": "T0678",
       "subject": {
         "name": "대리운전기사 다툼 사건(2014-09-17)",
         "type": "Event",
@@ -21183,7 +21151,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0680",
+      "id": "T0679",
       "subject": {
         "name": "대한변협 상임이사회 활동비 지원 중단 협의(2014-09-23)",
         "type": "Event",
@@ -21213,7 +21181,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0681",
+      "id": "T0680",
       "subject": {
         "name": "변호사 진도 파견 및 현장 법률지원",
         "type": "ResponseAction",
@@ -21244,7 +21212,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0682",
+      "id": "T0681",
       "subject": {
         "name": "민주사회를 위한 변호사 모임",
         "type": "ResponseActor",
@@ -21272,7 +21240,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0683",
+      "id": "T0682",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -21301,7 +21269,7 @@
       "source_chunk": "19"
     },
     {
-      "id": "T0684",
+      "id": "T0683",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -21334,7 +21302,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0685",
+      "id": "T0684",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -21364,7 +21332,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0686",
+      "id": "T0685",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -21397,7 +21365,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0687",
+      "id": "T0686",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -21427,7 +21395,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0688",
+      "id": "T0687",
       "subject": {
         "name": "세월호 특위 자원봉사 운영구조",
         "type": "RiskFactor",
@@ -21459,7 +21427,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0689",
+      "id": "T0688",
       "subject": {
         "name": "세월호 특위 자원봉사 운영구조",
         "type": "RiskFactor",
@@ -21490,7 +21458,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0690",
+      "id": "T0689",
       "subject": {
         "name": "진상조사단 구성원 잦은 인사 변동 및 이탈",
         "type": "Event",
@@ -21519,7 +21487,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0691",
+      "id": "T0690",
       "subject": {
         "name": "진상조사단 구성원 잦은 인사 변동 및 이탈",
         "type": "Event",
@@ -21548,7 +21516,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0692",
+      "id": "T0691",
       "subject": {
         "name": "비상근 변호사의 팀 이탈",
         "type": "Event",
@@ -21579,7 +21547,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0693",
+      "id": "T0692",
       "subject": {
         "name": "비상근 변호사의 팀 이탈",
         "type": "Event",
@@ -21608,7 +21576,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0694",
+      "id": "T0693",
       "subject": {
         "name": "진상조사단 상근변호사",
         "type": "ResponseActor",
@@ -21640,7 +21608,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0695",
+      "id": "T0694",
       "subject": {
         "name": "연수변호사 모집",
         "type": "ResponseAction",
@@ -21672,7 +21640,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0696",
+      "id": "T0695",
       "subject": {
         "name": "자료 분류체계 미확립",
         "type": "RiskFactor",
@@ -21705,7 +21673,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0697",
+      "id": "T0696",
       "subject": {
         "name": "진상조사단 구성원 잦은 인사 변동 및 이탈",
         "type": "Event",
@@ -21733,7 +21701,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0698",
+      "id": "T0697",
       "subject": {
         "name": "연수변호사 웹하드 자료 인덱스·정리 작업",
         "type": "ResponseAction",
@@ -21765,7 +21733,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0699",
+      "id": "T0698",
       "subject": {
         "name": "자료 신속 공유 실패",
         "type": "Event",
@@ -21797,7 +21765,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0700",
+      "id": "T0699",
       "subject": {
         "name": "정보 공유 매체 불일치",
         "type": "RiskFactor",
@@ -21827,7 +21795,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0701",
+      "id": "T0700",
       "subject": {
         "name": "세월호 참사 초기 신뢰관계 형성 실패",
         "type": "Event",
@@ -21859,7 +21827,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0702",
+      "id": "T0701",
       "subject": {
         "name": "언론·정부의 미흡한 대응",
         "type": "Event",
@@ -21891,7 +21859,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0703",
+      "id": "T0702",
       "subject": {
         "name": "세월호 가족대책위의 대화 단절·고립",
         "type": "Event",
@@ -21918,7 +21886,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0704",
+      "id": "T0703",
       "subject": {
         "name": "컨트롤 타워 부재 및 책임소재 불명확",
         "type": "RiskFactor",
@@ -21951,7 +21919,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0705",
+      "id": "T0704",
       "subject": {
         "name": "진상조사단 적극성 결여 및 진상규명 미실현",
         "type": "Damage",
@@ -21981,7 +21949,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0706",
+      "id": "T0705",
       "subject": {
         "name": "활동 변호사 인원의 절대적 부족",
         "type": "Damage",
@@ -22007,7 +21975,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0707",
+      "id": "T0706",
       "subject": {
         "name": "진술청취카드 기반 피해자 가족 면담",
         "type": "ResponseAction",
@@ -22040,7 +22008,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0708",
+      "id": "T0707",
       "subject": {
         "name": "정보 회람·관리 전담 인력 배치",
         "type": "Resilience",
@@ -22068,7 +22036,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0709",
+      "id": "T0708",
       "subject": {
         "name": "유급 상근 변호사 사전 배정 체계",
         "type": "Resilience",
@@ -22096,7 +22064,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0710",
+      "id": "T0709",
       "subject": {
         "name": "심리상담가·교섭전문가 자문 활용",
         "type": "Resilience",
@@ -22124,10 +22092,10 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0711",
+      "id": "T0710",
       "subject": {
         "name": "세월호 가족대책위",
-        "type": "Population",
+        "type": "ResponseActor",
         "properties": {
           "alias": "세월호 가족대책위, 세월호 피해자 가족, 피해자 가족들",
           "scope": "meso",
@@ -22152,7 +22120,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0712",
+      "id": "T0711",
       "subject": {
         "name": "진상조사단 자료조사 업무 구체화·다양화",
         "type": "Event",
@@ -22182,7 +22150,7 @@
       "source_chunk": "20"
     },
     {
-      "id": "T0713",
+      "id": "T0712",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -22210,7 +22178,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0714",
+      "id": "T0713",
       "subject": {
         "name": "해양경찰 123정",
         "type": "ResponseActor",
@@ -22242,7 +22210,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0715",
+      "id": "T0714",
       "subject": {
         "name": "해양경찰 123정",
         "type": "ResponseActor",
@@ -22273,7 +22241,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0716",
+      "id": "T0715",
       "subject": {
         "name": "목포해양경찰서장",
         "type": "ResponseActor",
@@ -22301,7 +22269,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0717",
+      "id": "T0716",
       "subject": {
         "name": "김 모 경위(123정 정장·현장지휘관 OSC)",
         "type": "ResponseActor",
@@ -22333,7 +22301,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0718",
+      "id": "T0717",
       "subject": {
         "name": "김 모 경위(123정 정장·현장지휘관 OSC)",
         "type": "ResponseActor",
@@ -22361,7 +22329,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0719",
+      "id": "T0718",
       "subject": {
         "name": "해양경찰청 본청 상황실",
         "type": "ResponseActor",
@@ -22392,7 +22360,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0720",
+      "id": "T0719",
       "subject": {
         "name": "경찰청",
         "type": "ResponseActor",
@@ -22420,7 +22388,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0721",
+      "id": "T0720",
       "subject": {
         "name": "중앙119구조본부",
         "type": "ResponseActor",
@@ -22451,7 +22419,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0722",
+      "id": "T0721",
       "subject": {
         "name": "중앙119구조본부 인명구조 헬기·장비",
         "type": "Resilience",
@@ -22481,7 +22449,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0723",
+      "id": "T0722",
       "subject": {
         "name": "문화재청",
         "type": "ResponseActor",
@@ -22513,7 +22481,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0724",
+      "id": "T0723",
       "subject": {
         "name": "수중탐사선 씨뮤즈호·누리안호",
         "type": "Resilience",
@@ -22542,7 +22510,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0725",
+      "id": "T0724",
       "subject": {
         "name": "해양경찰청 본청 상황실",
         "type": "ResponseActor",
@@ -22570,7 +22538,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0726",
+      "id": "T0725",
       "subject": {
         "name": "해양경찰청",
         "type": "ResponseActor",
@@ -22601,7 +22569,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0727",
+      "id": "T0726",
       "subject": {
         "name": "사복경찰 투입(피해자 가족 감시)",
         "type": "ManmadeHazard",
@@ -22633,7 +22601,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0728",
+      "id": "T0727",
       "subject": {
         "name": "사복경찰 투입(피해자 가족 감시)",
         "type": "ManmadeHazard",
@@ -22661,7 +22629,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0729",
+      "id": "T0728",
       "subject": {
         "name": "세월호 특위 진상조사단 변호사",
         "type": "ResponseActor",
@@ -22694,7 +22662,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0730",
+      "id": "T0729",
       "subject": {
         "name": "진술청취카드 작성·집단면담",
         "type": "ResponseAction",
@@ -22723,7 +22691,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0731",
+      "id": "T0730",
       "subject": {
         "name": "세월호 특위 진상조사단 변호사",
         "type": "ResponseActor",
@@ -22752,7 +22720,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0732",
+      "id": "T0731",
       "subject": {
         "name": "변호사 인력 부족·컨트롤타워 부재",
         "type": "RiskFactor",
@@ -22783,7 +22751,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0733",
+      "id": "T0732",
       "subject": {
         "name": "컨트롤타워",
         "type": "Resilience",
@@ -22812,7 +22780,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0734",
+      "id": "T0733",
       "subject": {
         "name": "세월호 특위 진상조사단 변호사",
         "type": "ResponseActor",
@@ -22844,7 +22812,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0735",
+      "id": "T0734",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -22873,7 +22841,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0736",
+      "id": "T0735",
       "subject": {
         "name": "세월호 가족대책위 신뢰 상실",
         "type": "RiskFactor",
@@ -22902,7 +22870,7 @@
       "source_chunk": "21"
     },
     {
-      "id": "T0737",
+      "id": "T0736",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -22932,7 +22900,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0738",
+      "id": "T0737",
       "subject": {
         "name": "전자기기 침수 손상",
         "type": "Event",
@@ -22960,7 +22928,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0739",
+      "id": "T0738",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -22986,7 +22954,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0740",
+      "id": "T0739",
       "subject": {
         "name": "한양대 김인성 교수",
         "type": "ResponseActor",
@@ -23018,7 +22986,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0741",
+      "id": "T0740",
       "subject": {
         "name": "전자기기 복원 및 포렌식 작업",
         "type": "ResponseAction",
@@ -23047,7 +23015,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0742",
+      "id": "T0741",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23074,7 +23042,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0743",
+      "id": "T0742",
       "subject": {
         "name": "삼성·엘지·팬택 서비스센터",
         "type": "ResponseActor",
@@ -23099,7 +23067,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0744",
+      "id": "T0743",
       "subject": {
         "name": "주식회사 명정보기술",
         "type": "ResponseActor",
@@ -23130,7 +23098,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0745",
+      "id": "T0744",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23157,7 +23125,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0746",
+      "id": "T0745",
       "subject": {
         "name": "전자기기 복원 및 포렌식 작업",
         "type": "ResponseAction",
@@ -23184,7 +23152,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0747",
+      "id": "T0746",
       "subject": {
         "name": "전자기기 복원 및 포렌식 작업",
         "type": "ResponseAction",
@@ -23215,7 +23183,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0748",
+      "id": "T0747",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -23242,7 +23210,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0749",
+      "id": "T0748",
       "subject": {
         "name": "DVR 인양 및 포렌식",
         "type": "Event",
@@ -23273,7 +23241,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0750",
+      "id": "T0749",
       "subject": {
         "name": "전자기기 복원 및 포렌식 작업",
         "type": "ResponseAction",
@@ -23303,7 +23271,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0751",
+      "id": "T0750",
       "subject": {
         "name": "전자기기 복원 및 포렌식 작업",
         "type": "ResponseAction",
@@ -23333,7 +23301,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0752",
+      "id": "T0751",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23361,7 +23329,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0753",
+      "id": "T0752",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23390,7 +23358,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0754",
+      "id": "T0753",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23418,7 +23386,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0755",
+      "id": "T0754",
       "subject": {
         "name": "넉넉하지 않은 예산",
         "type": "RiskFactor",
@@ -23449,7 +23417,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0756",
+      "id": "T0755",
       "subject": {
         "name": "정치적 이슈화 및 국민 감정 악화",
         "type": "RiskFactor",
@@ -23480,7 +23448,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0757",
+      "id": "T0756",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23508,7 +23476,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0758",
+      "id": "T0757",
       "subject": {
         "name": "초기 자료분류체계 미확립",
         "type": "RiskFactor",
@@ -23539,7 +23507,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0759",
+      "id": "T0758",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23566,7 +23534,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0760",
+      "id": "T0759",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23593,7 +23561,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0761",
+      "id": "T0760",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -23621,7 +23589,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0762",
+      "id": "T0761",
       "subject": {
         "name": "다양한 시민단체 통일 창구 부재",
         "type": "RiskFactor",
@@ -23652,7 +23620,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0763",
+      "id": "T0762",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -23680,7 +23648,7 @@
       "source_chunk": "22"
     },
     {
-      "id": "T0764",
+      "id": "T0763",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -23715,7 +23683,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0765",
+      "id": "T0764",
       "subject": {
         "name": "정부의 미비한 재난 대응 체계",
         "type": "RiskFactor",
@@ -23746,7 +23714,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0766",
+      "id": "T0765",
       "subject": {
         "name": "해양경찰청",
         "type": "ResponseActor",
@@ -23778,7 +23746,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0767",
+      "id": "T0766",
       "subject": {
         "name": "해양경찰청",
         "type": "ResponseActor",
@@ -23812,7 +23780,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0768",
+      "id": "T0767",
       "subject": {
         "name": "통영함",
         "type": "Facility",
@@ -23843,7 +23811,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0769",
+      "id": "T0768",
       "subject": {
         "name": "방위사업청 관급장비 구매 관행",
         "type": "RiskFactor",
@@ -23874,7 +23842,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0770",
+      "id": "T0769",
       "subject": {
         "name": "방위사업비리 합동수사단",
         "type": "ResponseActor",
@@ -23905,7 +23873,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0771",
+      "id": "T0770",
       "subject": {
         "name": "세월호 참사 국민대책회의",
         "type": "ResponseActor",
@@ -23938,7 +23906,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0772",
+      "id": "T0771",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -23969,7 +23937,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0773",
+      "id": "T0772",
       "subject": {
         "name": "세월호 참사의 정치적 변질",
         "type": "RiskFactor",
@@ -24001,7 +23969,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0774",
+      "id": "T0773",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -24032,7 +24000,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0775",
+      "id": "T0774",
       "subject": {
         "name": "민주사회를 위한 변호사 모임",
         "type": "ResponseActor",
@@ -24065,7 +24033,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0776",
+      "id": "T0775",
       "subject": {
         "name": "뉴스타파 등 대안언론",
         "type": "ResponseActor",
@@ -24095,7 +24063,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0777",
+      "id": "T0776",
       "subject": {
         "name": "박주민 변호사",
         "type": "ResponseActor",
@@ -24126,7 +24094,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0778",
+      "id": "T0777",
       "subject": {
         "name": "진상규명 보고서 작성단(연수 변호사 4명)",
         "type": "ResponseActor",
@@ -24160,7 +24128,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0779",
+      "id": "T0778",
       "subject": {
         "name": "관련 정부기관(해양경찰·해양수산부·국가정보원 등)",
         "type": "ResponseActor",
@@ -24192,7 +24160,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0780",
+      "id": "T0779",
       "subject": {
         "name": "세월호 국정조사",
         "type": "ResponseAction",
@@ -24221,7 +24189,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0781",
+      "id": "T0780",
       "subject": {
         "name": "4·16 세월호참사 특별조사위원회",
         "type": "ResponseActor",
@@ -24252,7 +24220,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0782",
+      "id": "T0781",
       "subject": {
         "name": "공식 협의체·창구 일원화",
         "type": "Resilience",
@@ -24282,7 +24250,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0783",
+      "id": "T0782",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -24314,7 +24282,7 @@
       "source_chunk": "23"
     },
     {
-      "id": "T0784",
+      "id": "T0783",
       "subject": {
         "name": "세월호",
         "type": "ManmadeHazard",
@@ -24351,7 +24319,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0785",
+      "id": "T0784",
       "subject": {
         "name": "세월호 대각도 변침",
         "type": "Event",
@@ -24385,7 +24353,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0786",
+      "id": "T0785",
       "subject": {
         "name": "세월호 선원",
         "type": "ResponseActor",
@@ -24417,7 +24385,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0787",
+      "id": "T0786",
       "subject": {
         "name": "세월호 선원",
         "type": "ResponseActor",
@@ -24447,7 +24415,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0788",
+      "id": "T0787",
       "subject": {
         "name": "진도VTS",
         "type": "ResponseActor",
@@ -24480,7 +24448,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0789",
+      "id": "T0788",
       "subject": {
         "name": "진도VTS 관제 소홀",
         "type": "RiskFactor",
@@ -24511,7 +24479,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0790",
+      "id": "T0789",
       "subject": {
         "name": "검찰",
         "type": "ResponseActor",
@@ -24543,7 +24511,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0791",
+      "id": "T0790",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -24577,7 +24545,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0792",
+      "id": "T0791",
       "subject": {
         "name": "진도VTS",
         "type": "Facility",
@@ -24606,7 +24574,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0793",
+      "id": "T0792",
       "subject": {
         "name": "둘라에이스호",
         "type": "ResponseActor",
@@ -24635,7 +24603,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0794",
+      "id": "T0793",
       "subject": {
         "name": "해양수산부",
         "type": "ResponseActor",
@@ -24667,7 +24635,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0795",
+      "id": "T0794",
       "subject": {
         "name": "해양경찰청 123정 및 헬기(B511·B512·B513)",
         "type": "ResponseActor",
@@ -24699,7 +24667,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0796",
+      "id": "T0795",
       "subject": {
         "name": "전남도청 어업지도선 201호",
         "type": "ResponseActor",
@@ -24731,7 +24699,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0797",
+      "id": "T0796",
       "subject": {
         "name": "골든타임 내 구조·퇴선명령 부재",
         "type": "RiskFactor",
@@ -24762,7 +24730,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0798",
+      "id": "T0797",
       "subject": {
         "name": "가천대학교 박형주 교수",
         "type": "ResponseActor",
@@ -24793,7 +24761,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0799",
+      "id": "T0798",
       "subject": {
         "name": "세월호 DVR",
         "type": "Facility",
@@ -24823,7 +24791,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0800",
+      "id": "T0799",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -24855,7 +24823,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0801",
+      "id": "T0800",
       "subject": {
         "name": "2014-04-16 08:48 사고발생시각",
         "type": "Context",
@@ -24884,7 +24852,7 @@
       "source_chunk": "24"
     },
     {
-      "id": "T0802",
+      "id": "T0801",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -24911,7 +24879,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0803",
+      "id": "T0802",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -24941,7 +24909,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0804",
+      "id": "T0803",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -24974,7 +24942,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0805",
+      "id": "T0804",
       "subject": {
         "name": "세월호 DVR",
         "type": "Facility",
@@ -25002,7 +24970,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0806",
+      "id": "T0805",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -25032,7 +25000,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0807",
+      "id": "T0806",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -25064,7 +25032,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0808",
+      "id": "T0807",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -25093,7 +25061,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0809",
+      "id": "T0808",
       "subject": {
         "name": "주식회사 명정보기술",
         "type": "ResponseActor",
@@ -25125,7 +25093,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0810",
+      "id": "T0809",
       "subject": {
         "name": "세월호 노트북·디지털카메라 복구작업",
         "type": "ResponseAction",
@@ -25154,7 +25122,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0811",
+      "id": "T0810",
       "subject": {
         "name": "세월호 DVR 복구 장기화",
         "type": "Event",
@@ -25185,7 +25153,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0812",
+      "id": "T0811",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -25215,7 +25183,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0813",
+      "id": "T0812",
       "subject": {
         "name": "세월호 DVR 하드디스크 복구작업",
         "type": "ResponseAction",
@@ -25241,7 +25209,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0814",
+      "id": "T0813",
       "subject": {
         "name": "세월호 DVR 하드디스크 복구작업",
         "type": "ResponseAction",
@@ -25267,7 +25235,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0815",
+      "id": "T0814",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -25297,7 +25265,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0816",
+      "id": "T0815",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -25327,7 +25295,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0817",
+      "id": "T0816",
       "subject": {
         "name": "디지털카메라 증거보전",
         "type": "ResponseAction",
@@ -25356,7 +25324,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0818",
+      "id": "T0817",
       "subject": {
         "name": "디지털카메라 증거보전",
         "type": "ResponseAction",
@@ -25382,7 +25350,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0819",
+      "id": "T0818",
       "subject": {
         "name": "노트북 증거보전",
         "type": "ResponseAction",
@@ -25410,7 +25378,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0820",
+      "id": "T0819",
       "subject": {
         "name": "국정원 지적사항.hwp 파일 발견",
         "type": "Event",
@@ -25440,7 +25408,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0821",
+      "id": "T0820",
       "subject": {
         "name": "국가정보원",
         "type": "ResponseActor",
@@ -25471,7 +25439,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0822",
+      "id": "T0821",
       "subject": {
         "name": "검찰",
         "type": "ResponseActor",
@@ -25503,7 +25471,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0823",
+      "id": "T0822",
       "subject": {
         "name": "세월호 CCTV 일제 종료",
         "type": "Event",
@@ -25535,7 +25503,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0824",
+      "id": "T0823",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -25564,7 +25532,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0825",
+      "id": "T0824",
       "subject": {
         "name": "검찰",
         "type": "ResponseActor",
@@ -25593,7 +25561,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0826",
+      "id": "T0825",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -25625,7 +25593,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0827",
+      "id": "T0826",
       "subject": {
         "name": "해군",
         "type": "ResponseActor",
@@ -25656,7 +25624,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0828",
+      "id": "T0827",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -25687,7 +25655,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0829",
+      "id": "T0828",
       "subject": {
         "name": "국가정보원",
         "type": "ResponseActor",
@@ -25716,7 +25684,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0830",
+      "id": "T0829",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -25747,7 +25715,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0831",
+      "id": "T0830",
       "subject": {
         "name": "세월호 DVR 감정료 분쟁",
         "type": "Event",
@@ -25780,7 +25748,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0832",
+      "id": "T0831",
       "subject": {
         "name": "광주지방법원 목포지원",
         "type": "ResponseActor",
@@ -25812,7 +25780,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0833",
+      "id": "T0832",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -25842,7 +25810,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0834",
+      "id": "T0833",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -25872,7 +25840,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0835",
+      "id": "T0834",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -25902,7 +25870,7 @@
       "source_chunk": "25"
     },
     {
-      "id": "T0836",
+      "id": "T0835",
       "subject": {
         "name": "세월호(여객선)",
         "type": "Facility",
@@ -25937,7 +25905,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0837",
+      "id": "T0836",
       "subject": {
         "name": "화물 과적 및 미흡한 고박",
         "type": "RiskFactor",
@@ -25970,7 +25938,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0838",
+      "id": "T0837",
       "subject": {
         "name": "지그재그 운항",
         "type": "Event",
@@ -26006,7 +25974,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0839",
+      "id": "T0838",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -26040,7 +26008,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0840",
+      "id": "T0839",
       "subject": {
         "name": "세월호 선내 정전(CCTV 데이터 저장 중단)",
         "type": "Event",
@@ -26069,7 +26037,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0841",
+      "id": "T0840",
       "subject": {
         "name": "비상발전기 작동",
         "type": "ResponseAction",
@@ -26102,7 +26070,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0842",
+      "id": "T0841",
       "subject": {
         "name": "기관장 박 모",
         "type": "ResponseActor",
@@ -26130,7 +26098,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0843",
+      "id": "T0842",
       "subject": {
         "name": "세월호 운항관리규정 보고계통도",
         "type": "Facility",
@@ -26160,7 +26128,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0844",
+      "id": "T0843",
       "subject": {
         "name": "청해진해운",
         "type": "ResponseActor",
@@ -26191,7 +26159,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0845",
+      "id": "T0844",
       "subject": {
         "name": "국가정보원",
         "type": "ResponseActor",
@@ -26222,7 +26190,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0846",
+      "id": "T0845",
       "subject": {
         "name": "세월호 AIS 항적 기록 누락",
         "type": "RiskFactor",
@@ -26253,7 +26221,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0847",
+      "id": "T0846",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -26284,7 +26252,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0848",
+      "id": "T0847",
       "subject": {
         "name": "3등 기관사 이 모의 청테이프 작업",
         "type": "Event",
@@ -26319,7 +26287,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0849",
+      "id": "T0848",
       "subject": {
         "name": "70톤 이상 거대 화물(군용화물 의혹)",
         "type": "RiskFactor",
@@ -26352,7 +26320,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0850",
+      "id": "T0849",
       "subject": {
         "name": "오하마나호",
         "type": "Facility",
@@ -26382,7 +26350,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0851",
+      "id": "T0850",
       "subject": {
         "name": "세월호 참사 인명피해",
         "type": "Damage",
@@ -26411,7 +26379,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0852",
+      "id": "T0851",
       "subject": {
         "name": "선내 대기 방송",
         "type": "ResponseAction",
@@ -26443,7 +26411,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0853",
+      "id": "T0852",
       "subject": {
         "name": "KRISO 세월호 침몰사고 원인 분석 보고서",
         "type": "Facility",
@@ -26475,7 +26443,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0854",
+      "id": "T0853",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -26505,7 +26473,7 @@
       "source_chunk": "26"
     },
     {
-      "id": "T0855",
+      "id": "T0854",
       "subject": {
         "name": "세월호 화물 고박 부실",
         "type": "RiskFactor",
@@ -26536,7 +26504,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0856",
+      "id": "T0855",
       "subject": {
         "name": "세월호 지그재그 조타",
         "type": "Event",
@@ -26569,7 +26537,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0857",
+      "id": "T0856",
       "subject": {
         "name": "세월호 대각도 변침",
         "type": "Event",
@@ -26600,7 +26568,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0858",
+      "id": "T0857",
       "subject": {
         "name": "세월호 정전",
         "type": "Event",
@@ -26632,7 +26600,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0859",
+      "id": "T0858",
       "subject": {
         "name": "세월호 CCTV 영상시각 오차",
         "type": "Context",
@@ -26660,7 +26628,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0860",
+      "id": "T0859",
       "subject": {
         "name": "기관장 박모 비상발전기 작동 여부",
         "type": "ResponseAction",
@@ -26691,7 +26659,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0861",
+      "id": "T0860",
       "subject": {
         "name": "해양경찰 123정",
         "type": "ResponseActor",
@@ -26721,7 +26689,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0862",
+      "id": "T0861",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -26753,7 +26721,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0863",
+      "id": "T0862",
       "subject": {
         "name": "KRISO(한국해양과학기술원 부설 선박해양플랜트 연구소)",
         "type": "ResponseActor",
@@ -26786,7 +26754,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0864",
+      "id": "T0863",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -26817,7 +26785,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0865",
+      "id": "T0864",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -26847,7 +26815,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0866",
+      "id": "T0865",
       "subject": {
         "name": "해양수산부",
         "type": "ResponseActor",
@@ -26878,7 +26846,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0867",
+      "id": "T0866",
       "subject": {
         "name": "세월호 AIS 항적 기록 누락",
         "type": "RiskFactor",
@@ -26909,7 +26877,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0868",
+      "id": "T0867",
       "subject": {
         "name": "세월호 AIS 서버 이중화 작업",
         "type": "RiskFactor",
@@ -26941,7 +26909,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0869",
+      "id": "T0868",
       "subject": {
         "name": "세월호 AIS 송신 간격 제한",
         "type": "RiskFactor",
@@ -26971,7 +26939,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0870",
+      "id": "T0869",
       "subject": {
         "name": "허용범 단장",
         "type": "ResponseActor",
@@ -27002,7 +26970,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0871",
+      "id": "T0870",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -27030,7 +26998,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0872",
+      "id": "T0871",
       "subject": {
         "name": "세월호 자이로콤파스 순간 오류",
         "type": "Event",
@@ -27063,7 +27031,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0873",
+      "id": "T0872",
       "subject": {
         "name": "세월호 AIS 선회각 이상 수치",
         "type": "Damage",
@@ -27092,7 +27060,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0874",
+      "id": "T0873",
       "subject": {
         "name": "세월호 AIS 기록",
         "type": "Context",
@@ -27120,7 +27088,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0875",
+      "id": "T0874",
       "subject": {
         "name": "세월호 AIS 기록 누락 구간",
         "type": "Context",
@@ -27148,7 +27116,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0876",
+      "id": "T0875",
       "subject": {
         "name": "해양수산부",
         "type": "ResponseActor",
@@ -27175,7 +27143,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0877",
+      "id": "T0876",
       "subject": {
         "name": "3등기관사 이모 청테이프 작업",
         "type": "ResponseAction",
@@ -27208,7 +27176,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0878",
+      "id": "T0877",
       "subject": {
         "name": "세월호",
         "type": "ManmadeHazard",
@@ -27236,7 +27204,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0879",
+      "id": "T0878",
       "subject": {
         "name": "AIS 서버 이중화",
         "type": "Resilience",
@@ -27265,7 +27233,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0880",
+      "id": "T0879",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -27296,7 +27264,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0881",
+      "id": "T0880",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -27325,7 +27293,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0882",
+      "id": "T0881",
       "subject": {
         "name": "선원 사건 증거자료 방대성",
         "type": "RiskFactor",
@@ -27355,7 +27323,7 @@
       "source_chunk": "27"
     },
     {
-      "id": "T0883",
+      "id": "T0882",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -27391,7 +27359,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0884",
+      "id": "T0883",
       "subject": {
         "name": "세월호 참사 원인의 복합성(비리·과실 누적)",
         "type": "RiskFactor",
@@ -27421,7 +27389,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0885",
+      "id": "T0884",
       "subject": {
         "name": "지휘체계·정보공유 시스템 미비",
         "type": "RiskFactor",
@@ -27453,7 +27421,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0886",
+      "id": "T0885",
       "subject": {
         "name": "진상조사단-형사재판지원팀 정보공유 단절",
         "type": "Event",
@@ -27483,7 +27451,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0887",
+      "id": "T0886",
       "subject": {
         "name": "진상조사단-형사재판지원팀 정보공유 단절",
         "type": "Event",
@@ -27512,7 +27480,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0888",
+      "id": "T0887",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -27541,7 +27509,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0889",
+      "id": "T0888",
       "subject": {
         "name": "검찰",
         "type": "ResponseActor",
@@ -27570,7 +27538,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0890",
+      "id": "T0889",
       "subject": {
         "name": "전문가 집단과의 연계 부재",
         "type": "RiskFactor",
@@ -27601,7 +27569,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0891",
+      "id": "T0890",
       "subject": {
         "name": "전문가 분석 프로젝트 발주 비용",
         "type": "Damage",
@@ -27632,7 +27600,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0892",
+      "id": "T0891",
       "subject": {
         "name": "세월호 침몰 원인 음모론·낭설",
         "type": "RiskFactor",
@@ -27665,7 +27633,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0893",
+      "id": "T0892",
       "subject": {
         "name": "잠수함 충돌 침몰 의혹",
         "type": "RiskFactor",
@@ -27697,7 +27665,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0894",
+      "id": "T0893",
       "subject": {
         "name": "해양수산부",
         "type": "ResponseActor",
@@ -27728,7 +27696,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0895",
+      "id": "T0894",
       "subject": {
         "name": "AIS 항적 발표 잦은 번복",
         "type": "Context",
@@ -27756,7 +27724,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0896",
+      "id": "T0895",
       "subject": {
         "name": "해양수산부·해양경찰·검찰·국방부",
         "type": "ResponseActor",
@@ -27787,7 +27755,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0897",
+      "id": "T0896",
       "subject": {
         "name": "정부의 AIS 기록 편중·비전문적 분석",
         "type": "RiskFactor",
@@ -27818,7 +27786,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0898",
+      "id": "T0897",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -27849,7 +27817,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0899",
+      "id": "T0898",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -27879,7 +27847,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0900",
+      "id": "T0899",
       "subject": {
         "name": "진도VTS 분석 프로그램 설치 비용·기술 장벽",
         "type": "RiskFactor",
@@ -27909,7 +27877,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0901",
+      "id": "T0900",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -27941,7 +27909,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0902",
+      "id": "T0901",
       "subject": {
         "name": "세월호 마지막 29초 항적 규명",
         "type": "ResponseAction",
@@ -27970,7 +27938,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0903",
+      "id": "T0902",
       "subject": {
         "name": "세월호 특위 진상조사단·가족대책위",
         "type": "ResponseActor",
@@ -28000,7 +27968,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0904",
+      "id": "T0903",
       "subject": {
         "name": "해군",
         "type": "ResponseActor",
@@ -28028,7 +27996,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0905",
+      "id": "T0904",
       "subject": {
         "name": "진도VTS 저장장치 2개 분리·기록 불일치",
         "type": "RiskFactor",
@@ -28059,7 +28027,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0906",
+      "id": "T0905",
       "subject": {
         "name": "진상조사단 차원의 가족대책위 재판 결과 보고",
         "type": "ResponseAction",
@@ -28089,7 +28057,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0907",
+      "id": "T0906",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -28116,7 +28084,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0908",
+      "id": "T0907",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -28147,7 +28115,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0909",
+      "id": "T0908",
       "subject": {
         "name": "재판부",
         "type": "ResponseActor",
@@ -28175,7 +28143,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0910",
+      "id": "T0909",
       "subject": {
         "name": "세월호 마지막 29초 항적 규명",
         "type": "ResponseAction",
@@ -28204,7 +28172,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0911",
+      "id": "T0910",
       "subject": {
         "name": "AIS 항적 누락 구간(29초)",
         "type": "Context",
@@ -28232,7 +28200,7 @@
       "source_chunk": "28"
     },
     {
-      "id": "T0912",
+      "id": "T0911",
       "subject": {
         "name": "세월호 과적",
         "type": "RiskFactor",
@@ -28268,9 +28236,9 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0913",
+      "id": "T0912",
       "subject": {
-        "name": "안전 점검·감독 소홀",
+        "name": "안전 점검·감독 소홀(안전불감증)",
         "type": "RiskFactor",
         "properties": {
           "nature": "latent",
@@ -28302,7 +28270,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0914",
+      "id": "T0913",
       "subject": {
         "name": "불량 고박",
         "type": "RiskFactor",
@@ -28334,7 +28302,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0915",
+      "id": "T0914",
       "subject": {
         "name": "세월호 참사 인명피해",
         "type": "Damage",
@@ -28367,7 +28335,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0916",
+      "id": "T0915",
       "subject": {
         "name": "선장 이준석 등 선원",
         "type": "ResponseActor",
@@ -28403,7 +28371,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0917",
+      "id": "T0916",
       "subject": {
         "name": "선내대기 안내방송",
         "type": "ResponseAction",
@@ -28435,7 +28403,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0918",
+      "id": "T0917",
       "subject": {
         "name": "수학여행 고등학생 승객",
         "type": "Population",
@@ -28466,7 +28434,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0919",
+      "id": "T0918",
       "subject": {
         "name": "언론 오보 및 관계당국 미숙 대응",
         "type": "Event",
@@ -28497,7 +28465,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0920",
+      "id": "T0919",
       "subject": {
         "name": "남영호 침몰사고",
         "type": "Event",
@@ -28529,7 +28497,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0921",
+      "id": "T0920",
       "subject": {
         "name": "서해훼리호 침몰사고",
         "type": "Event",
@@ -28561,7 +28529,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0922",
+      "id": "T0921",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -28594,7 +28562,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0923",
+      "id": "T0922",
       "subject": {
         "name": "형사재판 피해자 지원 활동",
         "type": "ResponseAction",
@@ -28623,7 +28591,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0924",
+      "id": "T0923",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -28654,7 +28622,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0925",
+      "id": "T0924",
       "subject": {
         "name": "검경 합동수사본부",
         "type": "ResponseActor",
@@ -28689,7 +28657,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0926",
+      "id": "T0925",
       "subject": {
         "name": "세월호 참사 형사 수사·기소",
         "type": "ResponseAction",
@@ -28719,7 +28687,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0927",
+      "id": "T0926",
       "subject": {
         "name": "청해진해운 대표이사 김한식 등 임직원",
         "type": "ResponseActor",
@@ -28752,7 +28720,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0928",
+      "id": "T0927",
       "subject": {
         "name": "한국선급·한국해양안전설비 점검업체",
         "type": "ResponseActor",
@@ -28784,7 +28752,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0929",
+      "id": "T0928",
       "subject": {
         "name": "세월호 특위 휴대폰 포렌식 증거수집",
         "type": "ResponseAction",
@@ -28816,7 +28784,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0930",
+      "id": "T0929",
       "subject": {
         "name": "수사기관 휴대폰 수거·통화기록 처리",
         "type": "Event",
@@ -28845,7 +28813,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0931",
+      "id": "T0930",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -28874,7 +28842,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0932",
+      "id": "T0931",
       "subject": {
         "name": "형사재판 피해자 지원 활동",
         "type": "ResponseAction",
@@ -28905,7 +28873,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0933",
+      "id": "T0932",
       "subject": {
         "name": "선장 이준석",
         "type": "ResponseActor",
@@ -28939,7 +28907,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0934",
+      "id": "T0933",
       "subject": {
         "name": "진도VTS",
         "type": "Facility",
@@ -28968,7 +28936,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0935",
+      "id": "T0934",
       "subject": {
         "name": "정부 세월호 침몰 원인 조사·수사",
         "type": "ResponseAction",
@@ -29002,7 +28970,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0936",
+      "id": "T0935",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -29030,7 +28998,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0937",
+      "id": "T0936",
       "subject": {
         "name": "법정외 신문·재판 중계 제도",
         "type": "Resilience",
@@ -29059,7 +29027,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0938",
+      "id": "T0937",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -29086,7 +29054,7 @@
       "source_chunk": "29"
     },
     {
-      "id": "T0939",
+      "id": "T0938",
       "subject": {
         "name": "세월호 무리한 증·개축",
         "type": "RiskFactor",
@@ -29122,7 +29090,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0940",
+      "id": "T0939",
       "subject": {
         "name": "세월호 화물 과적(1,065톤 초과)",
         "type": "RiskFactor",
@@ -29158,7 +29126,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0941",
+      "id": "T0940",
       "subject": {
         "name": "세월호 화물 고박불량(허술한 라싱)",
         "type": "RiskFactor",
@@ -29190,7 +29158,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0942",
+      "id": "T0941",
       "subject": {
         "name": "세월호 대각도 변침",
         "type": "Event",
@@ -29228,7 +29196,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0943",
+      "id": "T0942",
       "subject": {
         "name": "선장 이준석 및 선원",
         "type": "ResponseActor",
@@ -29261,7 +29229,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0944",
+      "id": "T0943",
       "subject": {
         "name": "승객 구조 및 퇴선 조치 실패(구호의무 방치)",
         "type": "Event",
@@ -29292,7 +29260,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0945",
+      "id": "T0944",
       "subject": {
         "name": "한국선급 직원",
         "type": "ResponseActor",
@@ -29323,7 +29291,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0946",
+      "id": "T0945",
       "subject": {
         "name": "한국해양안전설비 주식회사 직원",
         "type": "ResponseActor",
@@ -29353,7 +29321,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0947",
+      "id": "T0946",
       "subject": {
         "name": "선박안전법 제28조(복원성 유지 기준)",
         "type": "Context",
@@ -29383,7 +29351,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0948",
+      "id": "T0947",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -29415,7 +29383,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0949",
+      "id": "T0948",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -29449,7 +29417,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0950",
+      "id": "T0949",
       "subject": {
         "name": "법원 직원 트라우마 사전교육",
         "type": "ResponseAction",
@@ -29480,7 +29448,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0951",
+      "id": "T0950",
       "subject": {
         "name": "서해훼리호 침몰사고",
         "type": "Event",
@@ -29510,7 +29478,7 @@
       "source_chunk": "30"
     },
     {
-      "id": "T0952",
+      "id": "T0951",
       "subject": {
         "name": "세월호 선원의 구호조치 부작위(퇴선명령 미실시)",
         "type": "ManmadeHazard",
@@ -29542,7 +29510,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0953",
+      "id": "T0952",
       "subject": {
         "name": "비상벨 미작동(퇴선신호 미발신)",
         "type": "RiskFactor",
@@ -29572,7 +29540,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0954",
+      "id": "T0953",
       "subject": {
         "name": "세월호 승객",
         "type": "Population",
@@ -29601,7 +29569,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0955",
+      "id": "T0954",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -29620,7 +29588,7 @@
       },
       "object": {
         "name": "피해자 외상후 스트레스 장애(PTSD)",
-        "type": "Event",
+        "type": "Damage",
         "properties": {
           "order": "cascading",
           "subtype": "state_change",
@@ -29631,7 +29599,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0956",
+      "id": "T0955",
       "subject": {
         "name": "해경의 사고 피해자(전병삼) 명예훼손 고소",
         "type": "ManmadeHazard",
@@ -29664,7 +29632,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0957",
+      "id": "T0956",
       "subject": {
         "name": "재판 증거영상·동영상 상영(법정 노출)",
         "type": "ManmadeHazard",
@@ -29695,7 +29663,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0958",
+      "id": "T0957",
       "subject": {
         "name": "형사재판지원팀(세월호 특위 변호사)",
         "type": "ResponseActor",
@@ -29727,7 +29695,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0959",
+      "id": "T0958",
       "subject": {
         "name": "피해자 재판 지원·심리 배려 조치",
         "type": "ResponseAction",
@@ -29756,7 +29724,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0960",
+      "id": "T0959",
       "subject": {
         "name": "트라우마 사전교육·심리전문가 협력",
         "type": "ResponseAction",
@@ -29786,7 +29754,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0961",
+      "id": "T0960",
       "subject": {
         "name": "담당 재판부(광주지방법원)",
         "type": "ResponseActor",
@@ -29817,7 +29785,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0962",
+      "id": "T0961",
       "subject": {
         "name": "안산지원 재판 중계",
         "type": "ResponseAction",
@@ -29849,7 +29817,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0963",
+      "id": "T0962",
       "subject": {
         "name": "법정외 신문(안산지원)",
         "type": "ResponseAction",
@@ -29880,7 +29848,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0964",
+      "id": "T0963",
       "subject": {
         "name": "재판 설명회 미흡(재판내용 미전달)",
         "type": "RiskFactor",
@@ -29909,7 +29877,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0965",
+      "id": "T0964",
       "subject": {
         "name": "재판 설명회 개최",
         "type": "ResponseAction",
@@ -29941,7 +29909,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0966",
+      "id": "T0965",
       "subject": {
         "name": "검찰",
         "type": "ResponseActor",
@@ -29972,7 +29940,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0967",
+      "id": "T0966",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -30000,7 +29968,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0968",
+      "id": "T0967",
       "subject": {
         "name": "선장 이준석의 퇴선지시(2등항해사 경유)",
         "type": "ResponseAction",
@@ -30032,7 +30000,7 @@
       "source_chunk": "31"
     },
     {
-      "id": "T0969",
+      "id": "T0968",
       "subject": {
         "name": "세월호 자체 복원력 상실",
         "type": "RiskFactor",
@@ -30061,7 +30029,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0970",
+      "id": "T0969",
       "subject": {
         "name": "생존 피해자 정신적 상해",
         "type": "Damage",
@@ -30091,7 +30059,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0971",
+      "id": "T0970",
       "subject": {
         "name": "사고 해역 저수온",
         "type": "Context",
@@ -30120,7 +30088,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0972",
+      "id": "T0971",
       "subject": {
         "name": "사고 지점 조류",
         "type": "Context",
@@ -30150,7 +30118,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0973",
+      "id": "T0972",
       "subject": {
         "name": "선장 이준석",
         "type": "ResponseActor",
@@ -30181,7 +30149,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0974",
+      "id": "T0973",
       "subject": {
         "name": "세월호 선원",
         "type": "ResponseActor",
@@ -30211,7 +30179,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0975",
+      "id": "T0974",
       "subject": {
         "name": "퇴선명령 및 승객 구호조치",
         "type": "ResponseAction",
@@ -30239,7 +30207,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0976",
+      "id": "T0975",
       "subject": {
         "name": "기관장 박기호",
         "type": "ResponseActor",
@@ -30270,7 +30238,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0977",
+      "id": "T0976",
       "subject": {
         "name": "조리부 직원 구조조치",
         "type": "ResponseAction",
@@ -30300,7 +30268,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0978",
+      "id": "T0977",
       "subject": {
         "name": "해경 123정 정장 김경일",
         "type": "ResponseActor",
@@ -30332,7 +30300,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0979",
+      "id": "T0978",
       "subject": {
         "name": "해경 현장 구조활동",
         "type": "ResponseAction",
@@ -30361,7 +30329,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0980",
+      "id": "T0979",
       "subject": {
         "name": "해양경찰청",
         "type": "ResponseActor",
@@ -30390,7 +30358,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0981",
+      "id": "T0980",
       "subject": {
         "name": "구명뗏목·초계기·어선·헬기 등 구조 동원 자원",
         "type": "Resilience",
@@ -30417,7 +30385,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0982",
+      "id": "T0981",
       "subject": {
         "name": "선원법 제11조 등 보호의무 규정",
         "type": "Other",
@@ -30445,7 +30413,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0983",
+      "id": "T0982",
       "subject": {
         "name": "형사재판 피해자 지원 활동",
         "type": "ResponseAction",
@@ -30474,7 +30442,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0984",
+      "id": "T0983",
       "subject": {
         "name": "다중 인명피해 상상적 경합 1죄 처벌",
         "type": "Other",
@@ -30503,7 +30471,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0985",
+      "id": "T0984",
       "subject": {
         "name": "해경사건 공판 절차",
         "type": "Other",
@@ -30532,7 +30500,7 @@
       "source_chunk": "32"
     },
     {
-      "id": "T0986",
+      "id": "T0985",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -30566,7 +30534,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0987",
+      "id": "T0986",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -30595,7 +30563,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0988",
+      "id": "T0987",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -30624,7 +30592,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0989",
+      "id": "T0988",
       "subject": {
         "name": "피해자 트라우마",
         "type": "Damage",
@@ -30651,7 +30619,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0990",
+      "id": "T0989",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -30680,7 +30648,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0991",
+      "id": "T0990",
       "subject": {
         "name": "유가족 대상 명예훼손(악성 댓글·유언비어)",
         "type": "Damage",
@@ -30710,7 +30678,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0992",
+      "id": "T0991",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -30739,7 +30707,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0993",
+      "id": "T0992",
       "subject": {
         "name": "한부모가정 상속·보험금 분쟁",
         "type": "Damage",
@@ -30769,7 +30737,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0994",
+      "id": "T0993",
       "subject": {
         "name": "한부모가정 소송지원팀(여성변호사 14명)",
         "type": "ResponseActor",
@@ -30797,7 +30765,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0995",
+      "id": "T0994",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -30830,7 +30798,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0996",
+      "id": "T0995",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -30861,7 +30829,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0997",
+      "id": "T0996",
       "subject": {
         "name": "세월호 특위 법률상담팀",
         "type": "ResponseActor",
@@ -30895,7 +30863,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0998",
+      "id": "T0997",
       "subject": {
         "name": "안산 합동분향소 법률상담 텐트 운영",
         "type": "ResponseAction",
@@ -30922,7 +30890,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T0999",
+      "id": "T0998",
       "subject": {
         "name": "세월호 특위 법률상담팀",
         "type": "ResponseActor",
@@ -30950,7 +30918,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1000",
+      "id": "T0999",
       "subject": {
         "name": "김시곤 KBS 보도국장 세월호 교통사고 비유 발언",
         "type": "ManmadeHazard",
@@ -30984,7 +30952,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1001",
+      "id": "T1000",
       "subject": {
         "name": "대한변협 세월호 특위 변호사단",
         "type": "ResponseActor",
@@ -31012,7 +30980,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1002",
+      "id": "T1001",
       "subject": {
         "name": "형사재판 피해자 지원 활동",
         "type": "ResponseAction",
@@ -31039,7 +31007,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1003",
+      "id": "T1002",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -31068,7 +31036,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1004",
+      "id": "T1003",
       "subject": {
         "name": "대한변협 공익법률지원단",
         "type": "ResponseActor",
@@ -31097,7 +31065,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1005",
+      "id": "T1004",
       "subject": {
         "name": "자원봉사 형식 변호인 활동",
         "type": "RiskFactor",
@@ -31127,7 +31095,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1006",
+      "id": "T1005",
       "subject": {
         "name": "참여 변호사 확보 실패",
         "type": "Damage",
@@ -31154,7 +31122,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1007",
+      "id": "T1006",
       "subject": {
         "name": "진상조사단 협업구조 미확립",
         "type": "RiskFactor",
@@ -31183,7 +31151,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1008",
+      "id": "T1007",
       "subject": {
         "name": "광주지원단 카톡방 미참여(단장 외)",
         "type": "RiskFactor",
@@ -31212,7 +31180,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1009",
+      "id": "T1008",
       "subject": {
         "name": "재판내용 전달체계 미비",
         "type": "RiskFactor",
@@ -31241,7 +31209,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1010",
+      "id": "T1009",
       "subject": {
         "name": "세월호 특위 형사재판지원팀",
         "type": "ResponseActor",
@@ -31270,7 +31238,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1011",
+      "id": "T1010",
       "subject": {
         "name": "조준기(조타수)",
         "type": "ResponseActor",
@@ -31301,7 +31269,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1012",
+      "id": "T1011",
       "subject": {
         "name": "신정춘(1등 항해사)",
         "type": "ResponseActor",
@@ -31332,7 +31300,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1013",
+      "id": "T1012",
       "subject": {
         "name": "박기호(기관장)",
         "type": "ResponseActor",
@@ -31363,7 +31331,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1014",
+      "id": "T1013",
       "subject": {
         "name": "나머지 피고인(선원)",
         "type": "ResponseActor",
@@ -31393,7 +31361,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1015",
+      "id": "T1014",
       "subject": {
         "name": "안산 합동분향소 법률상담 텐트 운영",
         "type": "ResponseAction",
@@ -31420,7 +31388,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1016",
+      "id": "T1015",
       "subject": {
         "name": "세월호 특위 법률상담팀",
         "type": "ResponseActor",
@@ -31447,7 +31415,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1017",
+      "id": "T1016",
       "subject": {
         "name": "인천 법률지원팀(김상하·박소영 변호사)",
         "type": "ResponseActor",
@@ -31477,7 +31445,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1018",
+      "id": "T1017",
       "subject": {
         "name": "일반인 피해자 식별·접촉 곤란",
         "type": "RiskFactor",
@@ -31506,7 +31474,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1019",
+      "id": "T1018",
       "subject": {
         "name": "여러 법률상담 단체 분산 운영",
         "type": "RiskFactor",
@@ -31536,7 +31504,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1020",
+      "id": "T1019",
       "subject": {
         "name": "대한변협-세월호 가족대책위원회 협약",
         "type": "Resilience",
@@ -31565,7 +31533,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1021",
+      "id": "T1020",
       "subject": {
         "name": "이명숙 위원장",
         "type": "ResponseActor",
@@ -31595,7 +31563,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1022",
+      "id": "T1021",
       "subject": {
         "name": "상담텐트 철수 결정",
         "type": "ResponseAction",
@@ -31625,7 +31593,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1023",
+      "id": "T1022",
       "subject": {
         "name": "단원고 반별 담임변호사제",
         "type": "Resilience",
@@ -31656,7 +31624,7 @@
       "source_chunk": "33"
     },
     {
-      "id": "T1024",
+      "id": "T1023",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -31689,7 +31657,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1025",
+      "id": "T1024",
       "subject": {
         "name": "유가족 대상 악성댓글·유언비어·명예훼손 사건",
         "type": "Event",
@@ -31718,7 +31686,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1026",
+      "id": "T1025",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -31751,7 +31719,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1027",
+      "id": "T1026",
       "subject": {
         "name": "악성댓글 작성자 형사고소 지원",
         "type": "ResponseAction",
@@ -31780,7 +31748,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1028",
+      "id": "T1027",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -31813,7 +31781,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1029",
+      "id": "T1028",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -31842,7 +31810,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1030",
+      "id": "T1029",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -31873,9 +31841,9 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1031",
+      "id": "T1030",
       "subject": {
-        "name": "한부모가정 소송지원팀",
+        "name": "한부모가정 소송지원팀(여성변호사 14명)",
         "type": "ResponseActor",
         "properties": {
           "affiliation": "대한변협 세월호 특별위원회",
@@ -31904,7 +31872,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1032",
+      "id": "T1031",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -31935,7 +31903,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1033",
+      "id": "T1032",
       "subject": {
         "name": "한국인터넷진흥원",
         "type": "ResponseActor",
@@ -31961,7 +31929,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1034",
+      "id": "T1033",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -31993,7 +31961,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1035",
+      "id": "T1034",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -32025,7 +31993,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1036",
+      "id": "T1035",
       "subject": {
         "name": "세월호참사 시민기록위원회",
         "type": "ResponseActor",
@@ -32055,7 +32023,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1037",
+      "id": "T1036",
       "subject": {
         "name": "4·16기록단",
         "type": "ResponseActor",
@@ -32083,7 +32051,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1038",
+      "id": "T1037",
       "subject": {
         "name": "뉴스타파",
         "type": "ResponseActor",
@@ -32111,7 +32079,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1039",
+      "id": "T1038",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -32143,7 +32111,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1040",
+      "id": "T1039",
       "subject": {
         "name": "현장 상주 무료 법률상담",
         "type": "ResponseAction",
@@ -32173,7 +32141,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1041",
+      "id": "T1040",
       "subject": {
         "name": "공익법률단",
         "type": "ResponseActor",
@@ -32206,7 +32174,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1042",
+      "id": "T1041",
       "subject": {
         "name": "공익법률단",
         "type": "ResponseActor",
@@ -32237,7 +32205,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1043",
+      "id": "T1042",
       "subject": {
         "name": "생명안전위원회(집단재난대책위원회)",
         "type": "Resilience",
@@ -32269,7 +32237,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1044",
+      "id": "T1043",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -32297,7 +32265,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1045",
+      "id": "T1044",
       "subject": {
         "name": "광주지법 세월호 선장 1심 재판",
         "type": "Other",
@@ -32328,7 +32296,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1046",
+      "id": "T1045",
       "subject": {
         "name": "4·16세월호참사 진상규명 및 안전사회 건설 등을 위한 특별법",
         "type": "Other",
@@ -32359,7 +32327,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1047",
+      "id": "T1046",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -32389,7 +32357,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1048",
+      "id": "T1047",
       "subject": {
         "name": "실종자 수색 중단",
         "type": "Event",
@@ -32419,7 +32387,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1049",
+      "id": "T1048",
       "subject": {
         "name": "추모관·추모비 건립",
         "type": "ResponseAction",
@@ -32449,7 +32417,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1050",
+      "id": "T1049",
       "subject": {
         "name": "세월호 참사 배상·보상",
         "type": "ResponseAction",
@@ -32479,7 +32447,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1051",
+      "id": "T1050",
       "subject": {
         "name": "서울시 공익변호사단 상담 후 수임 준수규정",
         "type": "Resilience",
@@ -32509,7 +32477,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1052",
+      "id": "T1051",
       "subject": {
         "name": "세월호 참사 인명피해",
         "type": "Damage",
@@ -32539,7 +32507,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1053",
+      "id": "T1052",
       "subject": {
         "name": "법무부",
         "type": "ResponseActor",
@@ -32568,7 +32536,7 @@
       "source_chunk": "34"
     },
     {
-      "id": "T1054",
+      "id": "T1053",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -32600,7 +32568,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1055",
+      "id": "T1054",
       "subject": {
         "name": "쌍방향 IT·SNS 미디어 환경",
         "type": "RiskFactor",
@@ -32629,7 +32597,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1056",
+      "id": "T1055",
       "subject": {
         "name": "재난보도 매뉴얼 부재",
         "type": "RiskFactor",
@@ -32658,7 +32626,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1057",
+      "id": "T1056",
       "subject": {
         "name": "받아쓰기식 보도 행태",
         "type": "RiskFactor",
@@ -32690,7 +32658,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1058",
+      "id": "T1057",
       "subject": {
         "name": "언론사 시청률 경쟁",
         "type": "RiskFactor",
@@ -32719,7 +32687,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1059",
+      "id": "T1058",
       "subject": {
         "name": "세월호 보도 오보·왜곡·편파보도",
         "type": "Event",
@@ -32750,7 +32718,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1060",
+      "id": "T1059",
       "subject": {
         "name": "메인 언론(KBS·MBC) 세월호 뉴스",
         "type": "Event",
@@ -32781,7 +32749,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1061",
+      "id": "T1060",
       "subject": {
         "name": "MBC",
         "type": "ResponseActor",
@@ -32813,7 +32781,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1062",
+      "id": "T1061",
       "subject": {
         "name": "단원고 전원구조 오보",
         "type": "Event",
@@ -32844,7 +32812,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1063",
+      "id": "T1062",
       "subject": {
         "name": "정부·해경 '사상 최대 구조' 발표",
         "type": "Event",
@@ -32876,7 +32844,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1064",
+      "id": "T1063",
       "subject": {
         "name": "MBC",
         "type": "ResponseActor",
@@ -32907,7 +32875,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1065",
+      "id": "T1064",
       "subject": {
         "name": "MBC",
         "type": "ResponseActor",
@@ -32938,7 +32906,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1066",
+      "id": "T1065",
       "subject": {
         "name": "유족 폄훼·왜곡 보도",
         "type": "ResponseAction",
@@ -32968,7 +32936,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1067",
+      "id": "T1066",
       "subject": {
         "name": "방송통신심의위원회",
         "type": "ResponseActor",
@@ -32999,7 +32967,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1068",
+      "id": "T1067",
       "subject": {
         "name": "방송통신위원회",
         "type": "ResponseActor",
@@ -33031,7 +32999,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1069",
+      "id": "T1068",
       "subject": {
         "name": "세월호 특위 법률상담팀",
         "type": "ResponseActor",
@@ -33064,7 +33032,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1070",
+      "id": "T1069",
       "subject": {
         "name": "유가족 법률상담 및 현장지원",
         "type": "ResponseAction",
@@ -33092,7 +33060,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1071",
+      "id": "T1070",
       "subject": {
         "name": "재난방송 및 민방위경보방송 실시 기준(방통위 고시)",
         "type": "Other",
@@ -33121,7 +33089,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1072",
+      "id": "T1071",
       "subject": {
         "name": "진도실내체육관",
         "type": "Facility",
@@ -33150,7 +33118,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1073",
+      "id": "T1072",
       "subject": {
         "name": "언론사 취재차량 사고현장 주차",
         "type": "Event",
@@ -33182,7 +33150,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1074",
+      "id": "T1073",
       "subject": {
         "name": "KBS 보도국장(김시준)",
         "type": "ResponseActor",
@@ -33213,7 +33181,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1075",
+      "id": "T1074",
       "subject": {
         "name": "광화문 단식 농성에 대한 편파·홍미위주 보도",
         "type": "ResponseAction",
@@ -33243,7 +33211,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1076",
+      "id": "T1075",
       "subject": {
         "name": "서울시 공익변호사단",
         "type": "ResponseActor",
@@ -33273,7 +33241,7 @@
       "source_chunk": "35"
     },
     {
-      "id": "T1077",
+      "id": "T1076",
       "subject": {
         "name": "세월호 보도 오보·왜곡·편파보도",
         "type": "Event",
@@ -33306,7 +33274,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1078",
+      "id": "T1077",
       "subject": {
         "name": "단원고 전원구조 오보",
         "type": "Event",
@@ -33337,7 +33305,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1079",
+      "id": "T1078",
       "subject": {
         "name": "방송통신위원회",
         "type": "ResponseActor",
@@ -33369,7 +33337,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1080",
+      "id": "T1079",
       "subject": {
         "name": "방송통신위원회",
         "type": "ResponseActor",
@@ -33401,7 +33369,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1081",
+      "id": "T1080",
       "subject": {
         "name": "재난보도준칙 제정 토론회",
         "type": "ResponseAction",
@@ -33431,7 +33399,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1082",
+      "id": "T1081",
       "subject": {
         "name": "방송사 재난사고 보도 관행",
         "type": "RiskFactor",
@@ -33462,7 +33430,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1083",
+      "id": "T1082",
       "subject": {
         "name": "KBS 기자 '릴레이 반성'",
         "type": "ResponseAction",
@@ -33494,7 +33462,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1084",
+      "id": "T1083",
       "subject": {
         "name": "인터넷 익명성·비대면성",
         "type": "RiskFactor",
@@ -33525,7 +33493,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1085",
+      "id": "T1084",
       "subject": {
         "name": "유가족 대상 악성댓글·허위사실 유포",
         "type": "Event",
@@ -33557,7 +33525,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1086",
+      "id": "T1085",
       "subject": {
         "name": "세월호 희생자 부모 연령대(40대)",
         "type": "RiskFactor",
@@ -33586,7 +33554,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1087",
+      "id": "T1086",
       "subject": {
         "name": "권은희 의원 SNS 허위사실 게시",
         "type": "Event",
@@ -33619,7 +33587,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1088",
+      "id": "T1087",
       "subject": {
         "name": "권은희 국회의원",
         "type": "ResponseActor",
@@ -33649,7 +33617,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1089",
+      "id": "T1088",
       "subject": {
         "name": "유가족 가족대책위 댓글 모니터링팀",
         "type": "ResponseActor",
@@ -33680,7 +33648,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1090",
+      "id": "T1089",
       "subject": {
         "name": "세월호 특위 언론대응팀",
         "type": "ResponseActor",
@@ -33714,7 +33682,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1091",
+      "id": "T1090",
       "subject": {
         "name": "안산 단원경찰서 사이버수사팀",
         "type": "ResponseActor",
@@ -33747,7 +33715,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1092",
+      "id": "T1091",
       "subject": {
         "name": "세월호 특위 언론대응팀",
         "type": "ResponseActor",
@@ -33777,7 +33745,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1093",
+      "id": "T1092",
       "subject": {
         "name": "유가족",
         "type": "ResponseActor",
@@ -33807,7 +33775,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1094",
+      "id": "T1093",
       "subject": {
         "name": "세월호 특위 언론대응팀",
         "type": "ResponseActor",
@@ -33835,7 +33803,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1095",
+      "id": "T1094",
       "subject": {
         "name": "세월호 마타도어(흑색선전)",
         "type": "Event",
@@ -33868,7 +33836,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1096",
+      "id": "T1095",
       "subject": {
         "name": "유가족 허위 특혜설 유포",
         "type": "Event",
@@ -33898,7 +33866,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1097",
+      "id": "T1096",
       "subject": {
         "name": "세월호 특위 언론대응팀",
         "type": "ResponseActor",
@@ -33928,7 +33896,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1098",
+      "id": "T1097",
       "subject": {
         "name": "국가기관(정부)",
         "type": "ResponseActor",
@@ -33960,7 +33928,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1099",
+      "id": "T1098",
       "subject": {
         "name": "부실한 운항관리규정 승인 및 안전점검 감독 해태",
         "type": "RiskFactor",
@@ -33989,7 +33957,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1100",
+      "id": "T1099",
       "subject": {
         "name": "컨트롤타워 미작동(미숙한 대처)",
         "type": "Event",
@@ -34023,7 +33991,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1101",
+      "id": "T1100",
       "subject": {
         "name": "국가기관(정부)",
         "type": "ResponseActor",
@@ -34053,7 +34021,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1102",
+      "id": "T1101",
       "subject": {
         "name": "유병언 일가의 무분별한 이윤추구",
         "type": "RiskFactor",
@@ -34083,7 +34051,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1103",
+      "id": "T1102",
       "subject": {
         "name": "세월호 가족대책위",
         "type": "ResponseActor",
@@ -34115,7 +34083,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1104",
+      "id": "T1103",
       "subject": {
         "name": "세월호 특별법(가족대책위안) 청원",
         "type": "ResponseAction",
@@ -34144,7 +34112,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1105",
+      "id": "T1104",
       "subject": {
         "name": "4.16 재단(가칭)",
         "type": "Resilience",
@@ -34173,7 +34141,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1106",
+      "id": "T1105",
       "subject": {
         "name": "기존 강제력 없는 조사위원회 한계",
         "type": "RiskFactor",
@@ -34204,7 +34172,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1107",
+      "id": "T1106",
       "subject": {
         "name": "서울중앙지검",
         "type": "ResponseActor",
@@ -34233,7 +34201,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1108",
+      "id": "T1107",
       "subject": {
         "name": "서울시선거관리위원회",
         "type": "ResponseActor",
@@ -34265,7 +34233,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1109",
+      "id": "T1108",
       "subject": {
         "name": "어버이연합 문화일보 광고·전단지",
         "type": "Event",
@@ -34298,7 +34266,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1110",
+      "id": "T1109",
       "subject": {
         "name": "방통위 보도통제 의혹 문건",
         "type": "Event",
@@ -34330,7 +34298,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1111",
+      "id": "T1110",
       "subject": {
         "name": "세월호 피해자 가족",
         "type": "Population",
@@ -34359,7 +34327,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1112",
+      "id": "T1111",
       "subject": {
         "name": "이준석 선장 등 세월호 선원·청해진해운",
         "type": "ResponseActor",
@@ -34389,7 +34357,7 @@
       "source_chunk": "36"
     },
     {
-      "id": "T1113",
+      "id": "T1112",
       "subject": {
         "name": "여객선 세월호",
         "type": "ManmadeHazard",
@@ -34426,7 +34394,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1114",
+      "id": "T1113",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -34455,7 +34423,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1115",
+      "id": "T1114",
       "subject": {
         "name": "세월호 참사 인명피해",
         "type": "Damage",
@@ -34486,7 +34454,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1116",
+      "id": "T1115",
       "subject": {
         "name": "정부(중앙재난대응체계)",
         "type": "ResponseActor",
@@ -34516,7 +34484,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1117",
+      "id": "T1116",
       "subject": {
         "name": "세월호 초기 구조 대응",
         "type": "ResponseAction",
@@ -34543,7 +34511,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1118",
+      "id": "T1117",
       "subject": {
         "name": "언론(부정확한 정보 제공)",
         "type": "ResponseActor",
@@ -34573,7 +34541,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1119",
+      "id": "T1118",
       "subject": {
         "name": "세월호 구조 실패",
         "type": "Event",
@@ -34603,7 +34571,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1120",
+      "id": "T1119",
       "subject": {
         "name": "가족들의 2차 피해 발생",
         "type": "Event",
@@ -34632,7 +34600,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1121",
+      "id": "T1120",
       "subject": {
         "name": "세월호 화물 적재 사업자(물적 피해)",
         "type": "Population",
@@ -34660,7 +34628,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1122",
+      "id": "T1121",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34691,7 +34659,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1123",
+      "id": "T1122",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34719,7 +34687,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1124",
+      "id": "T1123",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34749,7 +34717,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1125",
+      "id": "T1124",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34779,7 +34747,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1126",
+      "id": "T1125",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34810,7 +34778,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1127",
+      "id": "T1126",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34841,7 +34809,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1128",
+      "id": "T1127",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34872,7 +34840,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1129",
+      "id": "T1128",
       "subject": {
         "name": "언론 대응 및 모니터링 활동",
         "type": "ResponseAction",
@@ -34902,7 +34870,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1130",
+      "id": "T1129",
       "subject": {
         "name": "세월호 특별법 허위사실·오보 확산",
         "type": "Event",
@@ -34932,7 +34900,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1131",
+      "id": "T1130",
       "subject": {
         "name": "대한변협 공익법률지원단 협업 시스템",
         "type": "Resilience",
@@ -34960,7 +34928,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1132",
+      "id": "T1131",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -34986,7 +34954,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1133",
+      "id": "T1132",
       "subject": {
         "name": "어버이연합",
         "type": "ResponseActor",
@@ -35018,7 +34986,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1134",
+      "id": "T1133",
       "subject": {
         "name": "세월호 특별법 반대 허위 광고 게재",
         "type": "ResponseAction",
@@ -35047,7 +35015,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1135",
+      "id": "T1134",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -35075,7 +35043,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1136",
+      "id": "T1135",
       "subject": {
         "name": "세월호 사고 피해자 및 유가족",
         "type": "Population",
@@ -35103,7 +35071,7 @@
       "source_chunk": "37"
     },
     {
-      "id": "T1137",
+      "id": "T1136",
       "subject": {
         "name": "세월호 참사 진도 실종자 수색",
         "type": "Event",
@@ -35131,7 +35099,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1138",
+      "id": "T1137",
       "subject": {
         "name": "해경 초기 구조작업 실패",
         "type": "Event",
@@ -35161,7 +35129,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1139",
+      "id": "T1138",
       "subject": {
         "name": "해양경찰청",
         "type": "ResponseActor",
@@ -35187,7 +35155,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1140",
+      "id": "T1139",
       "subject": {
         "name": "경찰의 세월호 피해자 인권침해(2차 가해)",
         "type": "Event",
@@ -35219,7 +35187,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1141",
+      "id": "T1140",
       "subject": {
         "name": "경찰",
         "type": "ResponseActor",
@@ -35247,7 +35215,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1142",
+      "id": "T1141",
       "subject": {
         "name": "해양경찰청",
         "type": "ResponseActor",
@@ -35275,7 +35243,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1143",
+      "id": "T1142",
       "subject": {
         "name": "해경의 피해자 명예훼손 고소(2차 가해)",
         "type": "Event",
@@ -35305,7 +35273,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1144",
+      "id": "T1143",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35336,7 +35304,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1145",
+      "id": "T1144",
       "subject": {
         "name": "대한변협 공익법률지원단",
         "type": "ResponseActor",
@@ -35370,7 +35338,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1146",
+      "id": "T1145",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35402,7 +35370,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1147",
+      "id": "T1146",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35432,7 +35400,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1148",
+      "id": "T1147",
       "subject": {
         "name": "경찰 인권침해 중단 촉구 성명 발표",
         "type": "ResponseAction",
@@ -35458,7 +35426,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1149",
+      "id": "T1148",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35488,7 +35456,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1150",
+      "id": "T1149",
       "subject": {
         "name": "해경 2차 가해 중단 촉구 성명 발표",
         "type": "ResponseAction",
@@ -35513,7 +35481,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1151",
+      "id": "T1150",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35543,7 +35511,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1152",
+      "id": "T1151",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -35576,7 +35544,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1153",
+      "id": "T1152",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -35607,7 +35575,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1154",
+      "id": "T1153",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -35638,7 +35606,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1155",
+      "id": "T1154",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -35672,7 +35640,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1156",
+      "id": "T1155",
       "subject": {
         "name": "세월호 특위 진상조사단",
         "type": "ResponseActor",
@@ -35702,7 +35670,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1157",
+      "id": "T1156",
       "subject": {
         "name": "세월호 특위 언론대응팀",
         "type": "ResponseActor",
@@ -35733,7 +35701,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1158",
+      "id": "T1157",
       "subject": {
         "name": "세월호 특위 현장대응지원단",
         "type": "ResponseActor",
@@ -35764,7 +35732,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1159",
+      "id": "T1158",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35796,7 +35764,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1160",
+      "id": "T1159",
       "subject": {
         "name": "유가족 비방·허위사실 유포(2차 가해)",
         "type": "Event",
@@ -35826,7 +35794,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1161",
+      "id": "T1160",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35857,7 +35825,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1162",
+      "id": "T1161",
       "subject": {
         "name": "세월호 특별법 제정 추진",
         "type": "ResponseAction",
@@ -35884,7 +35852,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1163",
+      "id": "T1162",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35914,7 +35882,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1164",
+      "id": "T1163",
       "subject": {
         "name": "김앤장 사회공헌위원회",
         "type": "ResponseActor",
@@ -35945,7 +35913,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1165",
+      "id": "T1164",
       "subject": {
         "name": "대한변호사협회",
         "type": "ResponseActor",
@@ -35975,7 +35943,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1166",
+      "id": "T1165",
       "subject": {
         "name": "국회 세월호 국정조사 특별위원회",
         "type": "ResponseActor",
@@ -36002,7 +35970,7 @@
       "source_chunk": "38"
     },
     {
-      "id": "T1167",
+      "id": "T1166",
       "subject": {
         "name": "세월호 침몰사고",
         "type": "Event",
@@ -36038,7 +36006,7 @@
       "source_chunk": "39"
     },
     {
-      "id": "T1168",
+      "id": "T1167",
       "subject": {
         "name": "공권력·행정조직의 무능·무책임",
         "type": "RiskFactor",
@@ -36070,7 +36038,7 @@
       "source_chunk": "39"
     },
     {
-      "id": "T1169",
+      "id": "T1168",
       "subject": {
         "name": "대한변협 공익법률지원단",
         "type": "ResponseActor",
@@ -36101,7 +36069,7 @@
       "source_chunk": "39"
     },
     {
-      "id": "T1170",
+      "id": "T1169",
       "subject": {
         "name": "4·16 세월호참사 특별조사위원회",
         "type": "ResponseActor",
@@ -36133,7 +36101,7 @@
       "source_chunk": "39"
     },
     {
-      "id": "T1171",
+      "id": "T1170",
       "subject": {
         "name": "대한변협 세월호참사대응 특별위원회",
         "type": "ResponseActor",
@@ -36161,40 +36129,6 @@
         }
       },
       "evidence": "세월호 업무용 노트북의 증거보전 신청 이후 세월호 특위 자체적으로 침수된 노트북을 복구, 국정원 지적사항을 발견하고 여러 의문점을 제시",
-      "source_chunk": "39"
-    },
-    {
-      "id": "T1172",
-      "subject": {
-        "name": "4·16 세월호 참사",
-        "type": "ManmadeHazard",
-        "properties": {
-          "origin": "transport",
-          "disasterType": "transport",
-          "alias": "세월호 사고, 세월호 참사",
-          "feature": "거대한 여객선 침몰 + 구조 실패",
-          "cause": "배후의 거악·비리·행정 무능"
-        }
-      },
-      "predicate": {
-        "code": "TRIGGERS",
-        "properties": {
-          "mechanism": "여객선 침몰 발현",
-          "scale": "대형",
-          "probability": "High"
-        }
-      },
-      "object": {
-        "name": "세월호 침몰사고",
-        "type": "Event",
-        "properties": {
-          "order": "primary",
-          "subtype": "침몰",
-          "dateTime": "2014-04-16",
-          "disasterType": "transport"
-        }
-      },
-      "evidence": "4·16 세월호 참사를 돌이켜 보면 ... 거대한 배가 침몰하였고",
       "source_chunk": "39"
     }
   ]

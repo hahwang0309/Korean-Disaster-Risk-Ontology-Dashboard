@@ -436,7 +436,7 @@
         }
       },
       "object": {
-        "name": "우면산 산사태 인명피해(사망 16명)",
+        "name": "우면산 산사태 인명피해",
         "type": "Damage",
         "properties": {
           "category": "human",
@@ -1001,7 +1001,7 @@
     {
       "id": "T0022",
       "subject": {
-        "name": "강우빈도해석",
+        "name": "강우빈도해석(우면산 산사태 강우특성)",
         "type": "ResponseAction",
         "properties": {
           "phase": "recovery",
@@ -1104,7 +1104,7 @@
         }
       },
       "object": {
-        "name": "우면산 산사태 인명피해(사망 16명)",
+        "name": "우면산 산사태 인명피해",
         "type": "Damage",
         "properties": {
           "category": "human",
@@ -4600,7 +4600,7 @@
     {
       "id": "T0139",
       "subject": {
-        "name": "공군부대 하단부 세굴",
+        "name": "공군부대 하단부 세굴(기반암 노출)",
         "type": "Event",
         "properties": {
           "order": "cascading",
@@ -4811,38 +4811,7 @@
     {
       "id": "T0146",
       "subject": {
-        "name": "강우빈도해석(우면산 산사태 강우특성)",
-        "type": "ResponseAction",
-        "properties": {
-          "phase": "recovery",
-          "actionType": "강우분석",
-          "actor": "문영일 교수(서울시립대)",
-          "objective": "산사태 발생 강우특성 규명",
-          "specialNote": "대표 기준시간 09시 적용, 1시간 최대강우량 20-120년 빈도 산출"
-        }
-      },
-      "predicate": {
-        "code": "RESPONDS_TO",
-        "properties": {
-          "role": "강우 빈도 해석",
-          "effectiveness": "Med",
-          "specialNote": "지역별 발생시간 고려 시 결과 상이"
-        }
-      },
-      "object": {
-        "name": "2011년 우면산 산사태",
-        "type": "Event",
-        "properties": {
-          "order": "primary"
-        }
-      },
-      "evidence": "제3장 제2절 강우특성 및 분석의 강우 빈도해석 / 하나의 대표 기준시간으로 09시를 적용하였고 우면산 전역의 1시간 최대 강우량을 20-120년 빈도라고 산출",
-      "source_chunk": "03"
-    },
-    {
-      "id": "T0147",
-      "subject": {
-        "name": "남현관측소 1시간 최대강우량 빈도(8시40분 기준)",
+        "name": "남현관측소 1시간 최대강우량 빈도(7시40분 기준)",
         "type": "Context",
         "properties": {
           "subkind": "Threshold",
@@ -4870,9 +4839,9 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0148",
+      "id": "T0147",
       "subject": {
-        "name": "서초관측소 1시간 최대강우량 빈도(8시40분 기준)",
+        "name": "서초관측소 1시간 최대강우량 빈도(7시40분 기준)",
         "type": "Context",
         "properties": {
           "subkind": "Threshold",
@@ -4900,97 +4869,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0149",
-      "subject": {
-        "name": "남현관측소 1시간 최대강우량 빈도(8시00분 기준)",
-        "type": "Context",
-        "properties": {
-          "subkind": "Threshold",
-          "intensity": "86.5mm",
-          "threshold": "20년 빈도",
-          "location": "남현관측소",
-          "dateTime": "2011-07-27 08:00"
-        }
-      },
-      "predicate": {
-        "code": "QUANTIFIED_BY",
-        "properties": {
-          "role": "강우 빈도 기준",
-          "timing": "8시00분 기준시간"
-        }
-      },
-      "object": {
-        "name": "2011년 우면산 산사태",
-        "type": "Event",
-        "properties": {
-          "order": "primary"
-        }
-      },
-      "evidence": "8시00분 남현관측소 86.5 (20년)",
-      "source_chunk": "03"
-    },
-    {
-      "id": "T0150",
-      "subject": {
-        "name": "서초관측소 1시간 최대강우량 빈도(7시40분 기준)",
-        "type": "Context",
-        "properties": {
-          "subkind": "Threshold",
-          "intensity": "42.0mm",
-          "threshold": "5년 이하 빈도",
-          "location": "서초관측소",
-          "dateTime": "2011-07-27 07:40"
-        }
-      },
-      "predicate": {
-        "code": "QUANTIFIED_BY",
-        "properties": {
-          "role": "강우 빈도 기준",
-          "timing": "7시40분 기준시간"
-        }
-      },
-      "object": {
-        "name": "2011년 우면산 산사태",
-        "type": "Event",
-        "properties": {
-          "order": "primary"
-        }
-      },
-      "evidence": "7시40분 서초관측소 42.0 (5년이하)",
-      "source_chunk": "03"
-    },
-    {
-      "id": "T0151",
-      "subject": {
-        "name": "남현관측소 1시간 최대강우량 빈도(7시40분 기준)",
-        "type": "Context",
-        "properties": {
-          "subkind": "Threshold",
-          "intensity": "53.5mm",
-          "threshold": "5년 이하 빈도",
-          "location": "남현관측소",
-          "dateTime": "2011-07-27 07:40"
-        }
-      },
-      "predicate": {
-        "code": "QUANTIFIED_BY",
-        "properties": {
-          "role": "강우 빈도 기준",
-          "timing": "7시40분 기준시간"
-        }
-      },
-      "object": {
-        "name": "2011년 우면산 산사태",
-        "type": "Event",
-        "properties": {
-          "order": "primary"
-        }
-      },
-      "evidence": "7시40분 남현관측소 53.5 (5년이하)",
-      "source_chunk": "03"
-    },
-    {
-      "id": "T0152",
+      "id": "T0148",
       "subject": {
         "name": "2011년 우면산 산사태",
         "type": "Event",
@@ -5022,7 +4901,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0153",
+      "id": "T0149",
       "subject": {
         "name": "조기경보 필요 산사태 위험지역(30개 유역)",
         "type": "RiskFactor",
@@ -5054,7 +4933,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0154",
+      "id": "T0150",
       "subject": {
         "name": "1차 학계·전문가 토론회",
         "type": "ResponseAction",
@@ -5087,7 +4966,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0155",
+      "id": "T0151",
       "subject": {
         "name": "2차 학계·전문가 토론회",
         "type": "ResponseAction",
@@ -5120,7 +4999,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0156",
+      "id": "T0152",
       "subject": {
         "name": "조사단(우면산 산사태 보완조사)",
         "type": "ResponseActor",
@@ -5151,7 +5030,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0157",
+      "id": "T0153",
       "subject": {
         "name": "공군부대 절개면",
         "type": "RiskFactor",
@@ -5182,7 +5061,7 @@
       "source_chunk": "03"
     },
     {
-      "id": "T0158",
+      "id": "T0154",
       "subject": {
         "name": "2011년 우면산 산사태",
         "type": "Event",
@@ -5215,7 +5094,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0159",
+      "id": "T0155",
       "subject": {
         "name": "남쪽 사면 수로형 토석류",
         "type": "Event",
@@ -5244,7 +5123,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0160",
+      "id": "T0156",
       "subject": {
         "name": "북쪽 사면 사면형 토석류",
         "type": "Event",
@@ -5273,7 +5152,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0161",
+      "id": "T0157",
       "subject": {
         "name": "2011년 우면산 집중호우",
         "type": "NaturalHazard",
@@ -5302,7 +5181,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0162",
+      "id": "T0158",
       "subject": {
         "name": "산정상부 강우 저평가(관측소 평지 위치)",
         "type": "RiskFactor",
@@ -5331,7 +5210,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0163",
+      "id": "T0159",
       "subject": {
         "name": "강우에 의한 함수비 증가·지반 전단강도 약화",
         "type": "RiskFactor",
@@ -5360,7 +5239,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0164",
+      "id": "T0160",
       "subject": {
         "name": "24시간 80㎜ 이상 강우 임계조건",
         "type": "Context",
@@ -5390,7 +5269,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0165",
+      "id": "T0161",
       "subject": {
         "name": "강우강도 투수계수 5배 초과(시간당 80㎜ 이상)",
         "type": "RiskFactor",
@@ -5422,7 +5301,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0166",
+      "id": "T0162",
       "subject": {
         "name": "우면산 세굴",
         "type": "Event",
@@ -5452,7 +5331,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0167",
+      "id": "T0163",
       "subject": {
         "name": "공군부대 내부 사면·집수정 배수불량",
         "type": "RiskFactor",
@@ -5484,7 +5363,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0168",
+      "id": "T0164",
       "subject": {
         "name": "공군부대 석축 부분파괴(간극수압 상승)",
         "type": "Event",
@@ -5516,7 +5395,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0169",
+      "id": "T0165",
       "subject": {
         "name": "공군부대 하단부 세굴(기반암 노출)",
         "type": "Event",
@@ -5546,7 +5425,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0170",
+      "id": "T0166",
       "subject": {
         "name": "절개지",
         "type": "RiskFactor",
@@ -5575,7 +5454,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0171",
+      "id": "T0167",
       "subject": {
         "name": "등산로(배수로 부재)",
         "type": "RiskFactor",
@@ -5605,7 +5484,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0172",
+      "id": "T0168",
       "subject": {
         "name": "도로(배수체계 변경)",
         "type": "RiskFactor",
@@ -5634,7 +5513,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0173",
+      "id": "T0169",
       "subject": {
         "name": "철탑(침투영향)",
         "type": "RiskFactor",
@@ -5663,7 +5542,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0174",
+      "id": "T0170",
       "subject": {
         "name": "전원마을 주말농장(텃밭)",
         "type": "RiskFactor",
@@ -5693,7 +5572,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0175",
+      "id": "T0171",
       "subject": {
         "name": "생태저수지",
         "type": "Facility",
@@ -5723,7 +5602,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0176",
+      "id": "T0172",
       "subject": {
         "name": "생태저수지 토석류 저장 완충능력",
         "type": "Resilience",
@@ -5753,7 +5632,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0177",
+      "id": "T0173",
       "subject": {
         "name": "생태저수지 규모 축소(하류 배수 악화)",
         "type": "RiskFactor",
@@ -5782,7 +5661,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0178",
+      "id": "T0174",
       "subject": {
         "name": "사방댐(2개소)",
         "type": "Facility",
@@ -5812,7 +5691,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0179",
+      "id": "T0175",
       "subject": {
         "name": "터널발파(인근 터널)",
         "type": "ManmadeHazard",
@@ -5841,7 +5720,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0180",
+      "id": "T0176",
       "subject": {
         "name": "암반-흙 경계부 점토 협재(CL 토질)",
         "type": "RiskFactor",
@@ -5870,7 +5749,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0181",
+      "id": "T0177",
       "subject": {
         "name": "임광/신동아 아파트 산사태",
         "type": "Event",
@@ -5902,7 +5781,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0182",
+      "id": "T0178",
       "subject": {
         "name": "래미안 아파트 산사태",
         "type": "Event",
@@ -5935,7 +5814,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0183",
+      "id": "T0179",
       "subject": {
         "name": "전원마을 산사태",
         "type": "Event",
@@ -5966,7 +5845,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0184",
+      "id": "T0180",
       "subject": {
         "name": "양재자동차학원 산사태",
         "type": "Event",
@@ -5999,7 +5878,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0185",
+      "id": "T0181",
       "subject": {
         "name": "형촌마을·송동마을·보덕사 산사태",
         "type": "Event",
@@ -6031,7 +5910,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0186",
+      "id": "T0182",
       "subject": {
         "name": "윗성뒤마을 산사태",
         "type": "Event",
@@ -6063,7 +5942,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0187",
+      "id": "T0183",
       "subject": {
         "name": "남부순환로 물·토사 유출",
         "type": "Event",
@@ -6096,7 +5975,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0188",
+      "id": "T0184",
       "subject": {
         "name": "남부순환로 토사 유출",
         "type": "Event",
@@ -6129,7 +6008,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0189",
+      "id": "T0185",
       "subject": {
         "name": "초단기 집중강우 누적급증",
         "type": "Event",
@@ -6159,7 +6038,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0190",
+      "id": "T0186",
       "subject": {
         "name": "서울연구원",
         "type": "ResponseActor",
@@ -6188,7 +6067,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0191",
+      "id": "T0187",
       "subject": {
         "name": "대한토목학회 조사단",
         "type": "ResponseActor",
@@ -6220,7 +6099,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0192",
+      "id": "T0188",
       "subject": {
         "name": "대한토목학회 강우빈도 120년 산정(대표시간 09시)",
         "type": "RiskFactor",
@@ -6250,7 +6129,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0193",
+      "id": "T0189",
       "subject": {
         "name": "레이더 영상 강우분석기법",
         "type": "ResponseAction",
@@ -6282,7 +6161,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0194",
+      "id": "T0190",
       "subject": {
         "name": "위험사면 상시 모니터링·현장조사 기법 제도화",
         "type": "ResponseAction",
@@ -6314,7 +6193,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0195",
+      "id": "T0191",
       "subject": {
         "name": "산사태 직전·직후 계측자료 부재",
         "type": "RiskFactor",
@@ -6343,7 +6222,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0196",
+      "id": "T0192",
       "subject": {
         "name": "초단기 집중강우 80분 지속(2011)",
         "type": "RiskFactor",
@@ -6372,7 +6251,7 @@
       "source_chunk": "04"
     },
     {
-      "id": "T0197",
+      "id": "T0193",
       "subject": {
         "name": "2011년 우면산 산사태",
         "type": "Event",
@@ -6407,7 +6286,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0198",
+      "id": "T0194",
       "subject": {
         "name": "2011년 우면산 토석류",
         "type": "Event",
@@ -6437,7 +6316,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0199",
+      "id": "T0195",
       "subject": {
         "name": "2011년 우면산 토석류",
         "type": "Event",
@@ -6467,41 +6346,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0200",
-      "subject": {
-        "name": "2011년 우면산 토석류",
-        "type": "Event",
-        "properties": {
-          "order": "cascading",
-          "disasterType": "natural_landslide",
-          "dateTime": "2011-07-27"
-        }
-      },
-      "predicate": {
-        "code": "CAUSES",
-        "properties": {
-          "directCause": "토석류 매몰·휩쓸림",
-          "scale": "인명피해 67명",
-          "probability": "High"
-        }
-      },
-      "object": {
-        "name": "우면산 산사태 인명피해",
-        "type": "Damage",
-        "properties": {
-          "category": "human",
-          "death": 16,
-          "injury": 51,
-          "count": 67,
-          "unit": "명",
-          "breakdown": "사망 16, 부상 51"
-        }
-      },
-      "evidence": "우면산 산사태로 인해 인명피해 67명(사망 16, 부상 51)",
-      "source_chunk": "05"
-    },
-    {
-      "id": "T0201",
+      "id": "T0196",
       "subject": {
         "name": "2011년 우면산 토석류",
         "type": "Event",
@@ -6532,7 +6377,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0202",
+      "id": "T0197",
       "subject": {
         "name": "2011년 우면산 토석류",
         "type": "Event",
@@ -6561,7 +6406,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0203",
+      "id": "T0198",
       "subject": {
         "name": "2011년 우면산 토석류",
         "type": "Event",
@@ -6593,7 +6438,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0204",
+      "id": "T0199",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6626,7 +6471,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0205",
+      "id": "T0200",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6657,7 +6502,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0206",
+      "id": "T0201",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6688,7 +6533,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0207",
+      "id": "T0202",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6719,7 +6564,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0208",
+      "id": "T0203",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6750,7 +6595,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0209",
+      "id": "T0204",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6781,7 +6626,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0210",
+      "id": "T0205",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6812,7 +6657,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0211",
+      "id": "T0206",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6843,7 +6688,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0212",
+      "id": "T0207",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6874,7 +6719,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0213",
+      "id": "T0208",
       "subject": {
         "name": "2011년 우면산 산사태 강우",
         "type": "Event",
@@ -6905,7 +6750,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0214",
+      "id": "T0209",
       "subject": {
         "name": "2011년 우면산 산사태",
         "type": "Event",
@@ -6934,7 +6779,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0215",
+      "id": "T0210",
       "subject": {
         "name": "임광/신동아아파트 산사태",
         "type": "Event",
@@ -6965,7 +6810,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0216",
+      "id": "T0211",
       "subject": {
         "name": "래미안아파트 산사태",
         "type": "Event",
@@ -6997,7 +6842,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0217",
+      "id": "T0212",
       "subject": {
         "name": "전원마을 산사태",
         "type": "Event",
@@ -7029,7 +6874,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0218",
+      "id": "T0213",
       "subject": {
         "name": "양재자동차학원 산사태",
         "type": "Event",
@@ -7060,7 +6905,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0219",
+      "id": "T0214",
       "subject": {
         "name": "형촌마을 산사태",
         "type": "Event",
@@ -7090,7 +6935,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0220",
+      "id": "T0215",
       "subject": {
         "name": "송동마을 산사태",
         "type": "Event",
@@ -7121,7 +6966,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0221",
+      "id": "T0216",
       "subject": {
         "name": "보덕사 산사태",
         "type": "Event",
@@ -7153,7 +6998,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0222",
+      "id": "T0217",
       "subject": {
         "name": "윗성뒤마을 산사태",
         "type": "Event",
@@ -7185,7 +7030,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0223",
+      "id": "T0218",
       "subject": {
         "name": "전원마을 산사태",
         "type": "Event",
@@ -7217,7 +7062,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0224",
+      "id": "T0219",
       "subject": {
         "name": "공군부대 내부 산사태",
         "type": "Event",
@@ -7252,7 +7097,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0225",
+      "id": "T0220",
       "subject": {
         "name": "공군부대 저류수",
         "type": "RiskFactor",
@@ -7285,7 +7130,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0226",
+      "id": "T0221",
       "subject": {
         "name": "공군부대 영외 배출수",
         "type": "RiskFactor",
@@ -7316,7 +7161,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0227",
+      "id": "T0222",
       "subject": {
         "name": "터널발파",
         "type": "RiskFactor",
@@ -7348,7 +7193,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0228",
+      "id": "T0223",
       "subject": {
         "name": "등산로",
         "type": "RiskFactor",
@@ -7380,7 +7225,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0229",
+      "id": "T0224",
       "subject": {
         "name": "생태저수지",
         "type": "Facility",
@@ -7410,7 +7255,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0230",
+      "id": "T0225",
       "subject": {
         "name": "생태저수지의 토석류 저장 완충역량",
         "type": "Resilience",
@@ -7437,7 +7282,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0231",
+      "id": "T0226",
       "subject": {
         "name": "생태저수지 둑 붕괴",
         "type": "Event",
@@ -7469,7 +7314,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0232",
+      "id": "T0227",
       "subject": {
         "name": "위험사면 상시 모니터링 기술 개발",
         "type": "ResponseAction",
@@ -7501,7 +7346,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0233",
+      "id": "T0228",
       "subject": {
         "name": "산사태 원인조사 방법론 연구개발",
         "type": "ResponseAction",
@@ -7533,7 +7378,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0234",
+      "id": "T0229",
       "subject": {
         "name": "대한토목학회",
         "type": "ResponseActor",
@@ -7565,7 +7410,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0235",
+      "id": "T0230",
       "subject": {
         "name": "서울시립대 문영일 교수",
         "type": "ResponseActor",
@@ -7597,7 +7442,7 @@
       "source_chunk": "05"
     },
     {
-      "id": "T0236",
+      "id": "T0231",
       "subject": {
         "name": "2011년 우면산 산사태",
         "type": "Event",
@@ -7621,36 +7466,6 @@
         }
       },
       "evidence": "어머니가 매몰됐다고 들었는데 연락이 안 됨 / 절이 무너져서 사람이 갇혀있음 / 산쪽에서 흘러나온 급류에 2명이 휩쓸려 떠내려 감",
-      "source_chunk": "05"
-    },
-    {
-      "id": "T0237",
-      "subject": {
-        "name": "우면산 인근 주민",
-        "type": "Population",
-        "properties": {
-          "feature": "우면산 하류부 거주 주민"
-        }
-      },
-      "predicate": {
-        "code": "AMPLIFIES",
-        "properties": {
-          "role": "노출",
-          "specialNote": "하류부에 인구·시설이 노출되어 인명·재산피해 가중"
-        }
-      },
-      "object": {
-        "name": "우면산 산사태 인명피해",
-        "type": "Damage",
-        "properties": {
-          "category": "human",
-          "death": 16,
-          "injury": 51,
-          "count": 67,
-          "unit": "명"
-        }
-      },
-      "evidence": "산사태가 하류부의 인명 및 재산피해를 가중시켰다고 판단되나",
       "source_chunk": "05"
     }
   ]

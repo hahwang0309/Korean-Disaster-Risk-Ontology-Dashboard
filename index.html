@@ -69,17 +69,21 @@
 <script>
 const DOCS = [
   {tag:"풍수해 · natural_storm", title:"태풍 루사·매미 수해백서", src:"강릉시, 2005 · 510p",
-   triples:299, nodes:447, cascade:22, density:"표준",
+   triples:298, nodes:446, cascade:21, density:"표준",
    html:"dashboards/01_typhoon_rusa_maemi.html",
    json:"data/01_typhoon_rusa_maemi_triples.json", cypher:"data/01_typhoon_rusa_maemi.cypher"},
   {tag:"산사태 · natural_landslide", title:"우면산 산사태 원인 보완조사", src:"서울시, 2014 · 63p",
-   triples:237, nodes:272, cascade:19, density:"고밀도",
+   triples:231, nodes:266, cascade:19, density:"고밀도",
    html:"dashboards/02_umyeonsan_landslide.html",
    json:"data/02_umyeonsan_landslide_triples.json", cypher:"data/02_umyeonsan_landslide.cypher"},
   {tag:"해양교통 · social_transport", title:"4·16 세월호참사 백서", src:"대한변협, 2015 · ~750p",
-   triples:1172, nodes:1238, cascade:109, density:"고밀도",
+   triples:1170, nodes:1221, cascade:108, density:"고밀도",
    html:"dashboards/03_sewol_ferry.html",
    json:"data/03_sewol_ferry_triples.json", cypher:"data/03_sewol_ferry.cypher"},
+  {tag:"화재 · social_fire", title:"이천 코리아2000 냉동창고 화재", src:"경기소방, 2008 · 화재 40명 사망",
+   triples:221, nodes:244, cascade:26, density:"중밀도",
+   html:"dashboards/04_icheon_fire.html",
+   json:"data/04_icheon_fire_triples.json", cypher:"data/04_icheon_fire.cypher"},
 ];
 const tot=DOCS.reduce((a,d)=>({t:a.t+d.triples,n:a.n+d.nodes,c:a.c+d.cascade}),{t:0,n:0,c:0});
 document.getElementById('stats').innerHTML =
