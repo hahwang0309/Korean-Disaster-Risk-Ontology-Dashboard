@@ -84,6 +84,10 @@ const DOCS = [
    triples:221, nodes:244, cascade:26, density:"중밀도",
    html:"dashboards/04_icheon_fire.html",
    json:"data/04_icheon_fire_triples.json", cypher:"data/04_icheon_fire.cypher"},
+  {tag:"화재 · social_fire", title:"대구 지하철 중앙로역 화재", src:"대구시, 2005 · 방화 192명 사망",
+   triples:656, nodes:661, cascade:57, density:"중밀도",
+   html:"dashboards/05_daegu_subway_fire.html",
+   json:"data/05_daegu_subway_fire_triples.json", cypher:"data/05_daegu_subway_fire.cypher"},
 ];
 const tot=DOCS.reduce((a,d)=>({t:a.t+d.triples,n:a.n+d.nodes,c:a.c+d.cascade}),{t:0,n:0,c:0});
 document.getElementById('stats').innerHTML =

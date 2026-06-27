@@ -5,13 +5,14 @@
     "수해백서_루사매미(강릉시 2005)",
     "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
     "4·16 세월호참사 백서(대한변협 2015)",
-    "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+    "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+    "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
   ],
   "node_keys": {
     "phase": {
-      "count": 1678,
+      "count": 2049,
       "owners": {
-        "ResponseAction": 1672,
+        "ResponseAction": 2043,
         "ResponseActor": 5,
         "Resilience": 1
       },
@@ -19,226 +20,238 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "feature": {
-      "count": 1641,
+      "count": 1870,
       "owners": {
-        "ResponseAction": 268,
-        "Event": 364,
-        "Damage": 142,
-        "ResponseActor": 62,
-        "RiskFactor": 376,
-        "Context": 62,
-        "Facility": 64,
+        "ResponseAction": 284,
+        "Event": 413,
+        "Damage": 161,
+        "ResponseActor": 69,
+        "RiskFactor": 462,
+        "Context": 67,
+        "Facility": 71,
         "Region": 9,
         "NaturalHazard": 15,
-        "Resilience": 112,
-        "Population": 60,
+        "Resilience": 135,
+        "Population": 68,
         "Other": 48,
-        "ManmadeHazard": 59
+        "ManmadeHazard": 68
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "unit": {
-      "count": 469,
+      "count": 624,
       "owners": {
-        "ResponseAction": 117,
-        "Event": 10,
-        "Damage": 208,
+        "ResponseAction": 172,
+        "Event": 15,
+        "Damage": 276,
         "ResponseActor": 25,
         "RiskFactor": 6,
-        "Context": 45,
+        "Context": 67,
         "Facility": 17,
         "Region": 6,
-        "Resilience": 6,
-        "Population": 25,
+        "Resilience": 9,
+        "Population": 27,
         "ManmadeHazard": 4
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "mechanism": {
-      "count": 458,
+      "count": 550,
       "owners": {
-        "ResponseAction": 74,
-        "Event": 155,
-        "RiskFactor": 197,
+        "ResponseAction": 76,
+        "Event": 189,
+        "RiskFactor": 239,
         "NaturalHazard": 4,
-        "Resilience": 9,
-        "Damage": 5,
+        "Resilience": 10,
+        "Damage": 8,
         "Context": 2,
-        "ManmadeHazard": 12
+        "ManmadeHazard": 22
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "count": {
-      "count": 258,
+      "count": 317,
       "owners": {
-        "ResponseAction": 102,
-        "Event": 5,
-        "Damage": 48,
+        "ResponseAction": 128,
+        "Event": 11,
+        "Damage": 63,
         "ResponseActor": 29,
         "RiskFactor": 3,
-        "Context": 19,
-        "Facility": 16,
+        "Context": 27,
+        "Facility": 17,
         "Region": 4,
         "Resilience": 4,
-        "Population": 28
+        "Population": 31
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "actionType": {
-      "count": 1355,
+      "count": 1587,
       "owners": {
-        "ResponseAction": 1355
+        "ResponseAction": 1587
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "location": {
-      "count": 947,
+      "count": 1134,
       "owners": {
-        "ResponseAction": 138,
-        "Event": 422,
-        "Damage": 76,
-        "ResponseActor": 20,
-        "RiskFactor": 40,
-        "Context": 89,
-        "Facility": 68,
+        "ResponseAction": 188,
+        "Event": 514,
+        "Damage": 82,
+        "ResponseActor": 21,
+        "RiskFactor": 41,
+        "Context": 97,
+        "Facility": 70,
         "Region": 31,
-        "Population": 36,
+        "Population": 41,
         "NaturalHazard": 7,
-        "Resilience": 3,
-        "ManmadeHazard": 15,
+        "Resilience": 4,
+        "ManmadeHazard": 36,
         "Other": 2
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "dateTime": {
-      "count": 1134,
+      "count": 1276,
       "owners": {
-        "ResponseAction": 437,
-        "Event": 466,
-        "Damage": 30,
-        "Context": 107,
+        "ResponseAction": 492,
+        "Event": 503,
+        "Damage": 34,
+        "Context": 123,
         "NaturalHazard": 22,
         "Population": 1,
-        "Resilience": 7,
-        "ManmadeHazard": 21,
-        "ResponseActor": 22,
+        "Resilience": 8,
+        "ManmadeHazard": 36,
+        "ResponseActor": 35,
         "RiskFactor": 6,
         "Facility": 5,
-        "Other": 10
+        "Other": 11
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "detail": {
-      "count": 991,
+      "count": 1245,
       "owners": {
-        "ResponseAction": 412,
-        "Event": 67,
-        "Damage": 247,
-        "Context": 93,
-        "Facility": 10,
-        "Resilience": 39,
+        "ResponseAction": 543,
+        "Event": 74,
+        "Damage": 313,
+        "Context": 119,
+        "Facility": 12,
+        "Resilience": 51,
         "Region": 5,
         "ManmadeHazard": 6,
-        "Population": 23,
-        "ResponseActor": 23,
-        "RiskFactor": 40,
-        "Other": 26
+        "Population": 24,
+        "ResponseActor": 26,
+        "RiskFactor": 44,
+        "Other": 28
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "measures": {
-      "count": 138,
+      "count": 234,
       "owners": {
-        "ResponseAction": 138
+        "ResponseAction": 233,
+        "Resilience": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "duration": {
-      "count": 96,
+      "count": 125,
       "owners": {
-        "ResponseAction": 61,
-        "Event": 17,
-        "ResponseActor": 6,
+        "ResponseAction": 82,
+        "Event": 19,
+        "ResponseActor": 10,
         "Context": 8,
         "NaturalHazard": 1,
-        "Damage": 2,
+        "Damage": 4,
         "ManmadeHazard": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "consequence": {
-      "count": 576,
+      "count": 658,
       "owners": {
-        "ResponseAction": 188,
-        "Event": 108,
-        "Damage": 246,
-        "RiskFactor": 17,
-        "Resilience": 8,
+        "ResponseAction": 213,
+        "Event": 130,
+        "Damage": 277,
+        "RiskFactor": 20,
+        "Resilience": 9,
         "Population": 1,
         "Facility": 2,
         "Other": 6
@@ -247,38 +260,41 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "amount": {
-      "count": 86,
+      "count": 160,
       "owners": {
-        "ResponseAction": 23,
-        "Damage": 48,
-        "Context": 11,
-        "Resilience": 2,
-        "RiskFactor": 2
+        "ResponseAction": 66,
+        "Damage": 59,
+        "Context": 27,
+        "Resilience": 5,
+        "RiskFactor": 2,
+        "ResponseActor": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "actor": {
-      "count": 226,
+      "count": 263,
       "owners": {
-        "ResponseAction": 59,
+        "ResponseAction": 73,
         "Damage": 10,
-        "ResponseActor": 115,
+        "ResponseActor": 128,
         "Facility": 4,
         "RiskFactor": 3,
-        "Event": 22,
-        "Resilience": 4,
-        "ManmadeHazard": 6,
+        "Event": 24,
+        "Resilience": 5,
+        "ManmadeHazard": 13,
         "Other": 2,
         "Context": 1
       },
@@ -286,70 +302,78 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "specialNote": {
-      "count": 276,
+      "count": 351,
       "owners": {
-        "ResponseAction": 94,
-        "Damage": 27,
-        "ResponseActor": 53,
+        "ResponseAction": 121,
+        "Damage": 55,
+        "ResponseActor": 57,
         "RiskFactor": 37,
-        "Context": 15,
-        "Facility": 10,
-        "Population": 3,
+        "Context": 26,
+        "Facility": 11,
+        "Population": 4,
         "Other": 6,
-        "Resilience": 13,
-        "Event": 12,
+        "Resilience": 15,
+        "Event": 13,
         "ManmadeHazard": 6
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "rate": {
-      "count": 10,
+      "count": 14,
       "owners": {
-        "ResponseAction": 7,
+        "ResponseAction": 9,
         "Context": 2,
-        "Damage": 1
+        "Damage": 3
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "year": {
-      "count": 11,
+      "count": 14,
       "owners": {
         "ResponseAction": 7,
-        "ManmadeHazard": 4
+        "ManmadeHazard": 4,
+        "Event": 1,
+        "RiskFactor": 1,
+        "Context": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "reason": {
-      "count": 25,
+      "count": 26,
       "owners": {
-        "ResponseAction": 23,
+        "ResponseAction": 24,
         "RiskFactor": 2
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -377,12 +401,12 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "breakdown": {
-      "count": 37,
+      "count": 75,
       "owners": {
-        "ResponseAction": 16,
-        "Damage": 13,
+        "ResponseAction": 26,
+        "Damage": 31,
         "RiskFactor": 1,
-        "Context": 4,
+        "Context": 14,
         "Other": 2,
         "Population": 1
       },
@@ -390,26 +414,29 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "legalBasis": {
-      "count": 107,
+      "count": 131,
       "owners": {
-        "ResponseAction": 54,
+        "ResponseAction": 70,
         "Event": 2,
-        "ResponseActor": 10,
-        "RiskFactor": 18,
+        "ResponseActor": 14,
+        "RiskFactor": 19,
         "Context": 6,
-        "Resilience": 10,
-        "Other": 6,
-        "Damage": 1
+        "Resilience": 11,
+        "Other": 7,
+        "Damage": 1,
+        "ManmadeHazard": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -448,47 +475,51 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "scale": {
-      "count": 50,
+      "count": 57,
       "owners": {
-        "ResponseAction": 9,
-        "Event": 22,
-        "ResponseActor": 7,
+        "ResponseAction": 10,
+        "Event": 26,
+        "ResponseActor": 8,
         "Facility": 8,
-        "ManmadeHazard": 4
+        "ManmadeHazard": 4,
+        "Population": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "objective": {
-      "count": 449,
+      "count": 537,
       "owners": {
-        "ResponseAction": 381,
-        "ResponseActor": 38,
-        "Resilience": 22,
-        "Other": 8
+        "ResponseAction": 465,
+        "ResponseActor": 39,
+        "Resilience": 24,
+        "Other": 9
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "resources": {
-      "count": 8,
+      "count": 9,
       "owners": {
-        "ResponseAction": 4,
+        "ResponseAction": 5,
         "ResponseActor": 4
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -585,18 +616,19 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "scope": {
-      "count": 52,
+      "count": 54,
       "owners": {
         "ResponseAction": 4,
-        "Region": 43,
+        "Region": 44,
         "NaturalHazard": 2,
-        "Population": 3
+        "Population": 4
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -611,18 +643,19 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "category": {
-      "count": 817,
+      "count": 1038,
       "owners": {
         "ResponseAction": 1,
         "Event": 11,
-        "Damage": 802,
+        "Damage": 1023,
         "Facility": 3
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -689,29 +722,31 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "capacity": {
-      "count": 8,
+      "count": 9,
       "owners": {
         "ResponseAction": 1,
         "Facility": 5,
-        "Resilience": 2
+        "Resilience": 3
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "timing": {
-      "count": 40,
+      "count": 62,
       "owners": {
-        "ResponseAction": 16,
-        "Event": 10,
-        "ResponseActor": 14
+        "ResponseAction": 36,
+        "Event": 11,
+        "ResponseActor": 15
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -860,80 +895,85 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "order": {
-      "count": 1537,
+      "count": 1809,
       "owners": {
-        "Event": 1537
+        "Event": 1809
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "subtype": {
-      "count": 907,
+      "count": 1051,
       "owners": {
-        "Event": 883,
-        "Damage": 24
+        "Event": 1019,
+        "Damage": 32
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "intensity": {
-      "count": 71,
+      "count": 74,
       "owners": {
-        "Event": 32,
+        "Event": 34,
         "Damage": 1,
         "NaturalHazard": 7,
-        "Context": 31
+        "Context": 32
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "disasterType": {
-      "count": 598,
+      "count": 710,
       "owners": {
-        "Event": 491,
+        "Event": 546,
         "RiskFactor": 4,
         "NaturalHazard": 34,
-        "ManmadeHazard": 69
+        "ManmadeHazard": 126
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "cause": {
-      "count": 164,
+      "count": 215,
       "owners": {
-        "Event": 66,
-        "Damage": 18,
-        "RiskFactor": 65,
+        "Event": 86,
+        "Damage": 20,
+        "RiskFactor": 82,
         "Resilience": 1,
         "NaturalHazard": 2,
-        "ResponseAction": 2,
-        "ManmadeHazard": 10
+        "ResponseAction": 3,
+        "ManmadeHazard": 21
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -949,9 +989,9 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "death": {
-      "count": 140,
+      "count": 173,
       "owners": {
-        "Damage": 129,
+        "Damage": 162,
         "Event": 4,
         "Context": 3,
         "ManmadeHazard": 4
@@ -960,33 +1000,36 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "missing": {
-      "count": 31,
+      "count": 38,
       "owners": {
-        "Damage": 29,
-        "Context": 2
+        "Damage": 35,
+        "Context": 3
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "injury": {
-      "count": 27,
+      "count": 54,
       "owners": {
-        "Damage": 26,
-        "Context": 1
+        "Damage": 51,
+        "Context": 3
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -1442,57 +1485,62 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "role": {
-      "count": 834,
+      "count": 1031,
       "owners": {
-        "ResponseActor": 829,
+        "ResponseActor": 1025,
         "Facility": 1,
-        "Population": 4
+        "Population": 5
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "affiliation": {
-      "count": 1060,
+      "count": 1254,
       "owners": {
-        "ResponseActor": 1052,
+        "ResponseActor": 1245,
         "Resilience": 4,
-        "Population": 4
+        "Population": 4,
+        "ManmadeHazard": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "phone": {
-      "count": 9,
+      "count": 10,
       "owners": {
-        "ResponseActor": 7,
-        "ResponseAction": 2
-      },
-      "docs": [
-        "수해백서_루사매미(강릉시 2005)",
-        "4·16 세월호참사 백서(대한변협 2015)"
-      ],
-      "first_seen": "수해백서_루사매미(강릉시 2005)"
-    },
-    "representative": {
-      "count": 30,
-      "owners": {
-        "ResponseActor": 28,
+        "ResponseActor": 8,
         "ResponseAction": 2
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "수해백서_루사매미(강릉시 2005)"
+    },
+    "representative": {
+      "count": 48,
+      "owners": {
+        "ResponseActor": 46,
+        "ResponseAction": 2
+      },
+      "docs": [
+        "수해백서_루사매미(강릉시 2005)",
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -1610,34 +1658,36 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "composition": {
-      "count": 191,
+      "count": 245,
       "owners": {
-        "ResponseActor": 143,
+        "ResponseActor": 185,
         "Facility": 1,
         "Region": 2,
-        "ResponseAction": 24,
-        "Resilience": 10,
+        "ResponseAction": 34,
+        "Resilience": 12,
         "Population": 11
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "nature": {
-      "count": 441,
+      "count": 546,
       "owners": {
-        "RiskFactor": 437,
+        "RiskFactor": 542,
         "ManmadeHazard": 4
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -1662,32 +1712,34 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "subkind": {
-      "count": 267,
+      "count": 321,
       "owners": {
-        "Context": 248,
+        "Context": 300,
         "Region": 7,
-        "Other": 4,
+        "Other": 6,
         "Damage": 8
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "threshold": {
-      "count": 53,
+      "count": 56,
       "owners": {
-        "Context": 48,
+        "Context": 51,
         "RiskFactor": 5
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -1892,31 +1944,34 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "facilityKind": {
-      "count": 141,
+      "count": 155,
       "owners": {
-        "Facility": 133,
+        "Facility": 145,
         "ResponseActor": 4,
-        "ManmadeHazard": 4
+        "ManmadeHazard": 4,
+        "Resilience": 2
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "manager": {
-      "count": 37,
+      "count": 60,
       "owners": {
         "Facility": 5,
-        "ResponseAction": 2,
-        "ResponseActor": 30
+        "ResponseAction": 3,
+        "ResponseActor": 52
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -1961,31 +2016,34 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "riskGrade": {
-      "count": 44,
+      "count": 49,
       "owners": {
         "Region": 7,
         "RiskFactor": 2,
         "Context": 1,
-        "Facility": 34
+        "Facility": 34,
+        "Damage": 5
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
+        "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "riskType": {
-      "count": 200,
+      "count": 238,
       "owners": {
         "Region": 4,
-        "RiskFactor": 194,
+        "RiskFactor": 232,
         "ManmadeHazard": 2
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2050,16 +2108,17 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "origin": {
-      "count": 136,
+      "count": 202,
       "owners": {
         "NaturalHazard": 34,
-        "ManmadeHazard": 102
+        "ManmadeHazard": 168
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2094,15 +2153,16 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "kind": {
-      "count": 157,
+      "count": 201,
       "owners": {
-        "Resilience": 157
+        "Resilience": 201
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2167,13 +2227,14 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "candidate": {
-      "count": 66,
+      "count": 69,
       "owners": {
-        "Other": 66
+        "Other": 69
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2198,24 +2259,26 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "alias": {
-      "count": 767,
+      "count": 871,
       "owners": {
-        "ResponseAction": 26,
-        "RiskFactor": 32,
+        "ResponseAction": 30,
+        "RiskFactor": 40,
         "NaturalHazard": 6,
-        "Facility": 24,
-        "Event": 122,
-        "Damage": 50,
-        "ResponseActor": 438,
-        "ManmadeHazard": 31,
-        "Resilience": 4,
+        "Facility": 27,
+        "Event": 144,
+        "Damage": 62,
+        "ResponseActor": 466,
+        "ManmadeHazard": 55,
+        "Resilience": 6,
         "Other": 8,
-        "Population": 26
+        "Population": 26,
+        "Region": 1
       },
       "docs": [
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
     },
@@ -2371,47 +2434,52 @@
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "reference": {
-      "count": 6,
+      "count": 9,
       "owners": {
-        "ResponseAction": 2,
+        "ResponseAction": 5,
         "Event": 4
       },
       "docs": [
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "amountNote": {
-      "count": 3,
+      "count": 13,
       "owners": {
-        "ResponseAction": 2,
-        "Damage": 1
+        "ResponseAction": 6,
+        "Damage": 4,
+        "Context": 3
       },
       "docs": [
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "severity": {
-      "count": 68,
+      "count": 71,
       "owners": {
-        "Damage": 68
+        "Damage": 71
       },
       "docs": [
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "death_missing": {
-      "count": 6,
+      "count": 11,
       "owners": {
-        "Damage": 4,
-        "Context": 2
+        "Damage": 8,
+        "Context": 3
       },
       "docs": [
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
@@ -2445,51 +2513,94 @@
         "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
       ],
       "first_seen": "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+    },
+    "countUnit": {
+      "count": 4,
+      "owners": {
+        "ResponseAction": 2,
+        "Damage": 1,
+        "Facility": 1
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+    },
+    "casualties": {
+      "count": 2,
+      "owners": {
+        "Damage": 2
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+    },
+    "buildingDamage": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+    },
+    "vehicleDamage": {
+      "count": 1,
+      "owners": {
+        "Damage": 1
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
     }
   },
   "relation_keys": {
     "phase": {
-      "count": 1013,
+      "count": 1263,
       "owners": {
-        "RESPONDS_TO": 108,
-        "PERFORMS": 666,
-        "CAUSES": 8,
+        "RESPONDS_TO": 142,
+        "PERFORMS": 835,
+        "CAUSES": 10,
         "INCREASES_RISK_OF": 1,
         "CASCADES_INTO": 6,
-        "PREVENTS": 11,
-        "MITIGATES": 34,
+        "PREVENTS": 14,
+        "MITIGATES": 46,
         "LOCATED_IN": 7,
-        "MODIFIES_RISK_OF": 19,
-        "BUILDS": 14,
+        "MODIFIES_RISK_OF": 20,
+        "BUILDS": 25,
         "TRIGGERS_SECONDARY": 2,
         "GUIDED_BY": 1,
         "AMPLIFIES": 1,
-        "COORDINATES_WITH": 7,
-        "COMMANDS": 2,
+        "COORDINATES_WITH": 9,
+        "COMMANDS": 4,
         "OCCURS_AT": 7,
         "OFFSETS": 3,
-        "FAILS": 108,
+        "FAILS": 122,
         "BELONGS_TO": 8
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "scale": {
-      "count": 243,
+      "count": 294,
       "owners": {
-        "RESPONDS_TO": 24,
-        "PERFORMS": 37,
-        "CAUSES": 127,
+        "RESPONDS_TO": 25,
+        "PERFORMS": 40,
+        "CAUSES": 159,
         "CASCADES_INTO": 5,
         "MITIGATES": 1,
         "TRIGGERS_SECONDARY": 1,
-        "AMPLIFIES": 14,
-        "TRIGGERS": 23,
+        "AMPLIFIES": 17,
+        "TRIGGERS": 35,
         "OCCURS_AT": 1,
         "AFFECTS": 10
       },
@@ -2497,38 +2608,39 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "timing": {
-      "count": 1028,
+      "count": 1198,
       "owners": {
-        "RESPONDS_TO": 105,
-        "PERFORMS": 453,
-        "CAUSES": 33,
+        "RESPONDS_TO": 121,
+        "PERFORMS": 546,
+        "CAUSES": 40,
         "INCREASES_RISK_OF": 7,
-        "CASCADES_INTO": 86,
-        "PREVENTS": 6,
+        "CASCADES_INTO": 102,
+        "PREVENTS": 7,
         "MODIFIES_RISK_OF": 3,
-        "TRIGGERS_SECONDARY": 26,
+        "TRIGGERS_SECONDARY": 30,
         "AMPLIFIES": 6,
         "UNDER_CONDITION": 16,
         "BELONGS_TO": 1,
-        "OCCURS_AT": 42,
+        "OCCURS_AT": 43,
         "COMPOUNDS": 1,
-        "MITIGATES": 20,
-        "QUANTIFIED_BY": 15,
-        "TRIGGERS": 15,
-        "CONCURRENT_WITH": 15,
-        "FAILS": 82,
-        "COORDINATES_WITH": 45,
+        "MITIGATES": 23,
+        "QUANTIFIED_BY": 18,
+        "TRIGGERS": 17,
+        "CONCURRENT_WITH": 16,
+        "FAILS": 91,
+        "COORDINATES_WITH": 52,
         "OFFSETS": 4,
-        "BUILDS": 12,
+        "BUILDS": 15,
         "GUIDED_BY": 4,
         "LOCATED_IN": 4,
         "AFFECTS": 2,
-        "COMMANDS": 14,
+        "COMMANDS": 18,
         "DEPLOYED_TO": 10,
         "PRECONDITIONS": 1
       },
@@ -2536,199 +2648,211 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "role": {
-      "count": 1239,
+      "count": 1399,
       "owners": {
-        "RESPONDS_TO": 148,
-        "PERFORMS": 540,
-        "INCREASES_RISK_OF": 19,
-        "PREVENTS": 5,
-        "MITIGATES": 13,
-        "LOCATED_IN": 40,
-        "BUILDS": 38,
-        "OFFSETS": 14,
-        "GUIDED_BY": 30,
-        "COORDINATES_WITH": 96,
-        "QUANTIFIED_BY": 41,
-        "HAS_RESILIENCE": 13,
-        "COMMANDS": 17,
+        "RESPONDS_TO": 174,
+        "PERFORMS": 576,
+        "INCREASES_RISK_OF": 25,
+        "PREVENTS": 8,
+        "MITIGATES": 20,
+        "LOCATED_IN": 42,
+        "BUILDS": 46,
+        "OFFSETS": 15,
+        "GUIDED_BY": 32,
+        "COORDINATES_WITH": 106,
+        "QUANTIFIED_BY": 52,
+        "HAS_RESILIENCE": 15,
+        "COMMANDS": 20,
         "BELONGS_TO": 12,
-        "OCCURS_AT": 64,
-        "UNDER_CONDITION": 24,
-        "AMPLIFIES": 12,
-        "AFFECTS": 19,
-        "MODIFIES_RISK_OF": 9,
+        "OCCURS_AT": 71,
+        "UNDER_CONDITION": 26,
+        "AMPLIFIES": 25,
+        "AFFECTS": 21,
+        "MODIFIES_RISK_OF": 12,
         "CONCURRENT_WITH": 15,
         "FAILS": 28,
-        "CAUSES": 24,
+        "CAUSES": 32,
         "CASCADES_INTO": 2,
-        "TRIGGERS": 2,
-        "TRIGGERS_SECONDARY": 2,
+        "TRIGGERS": 5,
+        "TRIGGERS_SECONDARY": 3,
         "DEPLOYED_TO": 8,
-        "PRECONDITIONS": 4
+        "PRECONDITIONS": 6,
+        "DERIVES_FROM": 1,
+        "COMPOUNDS": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "reason": {
-      "count": 823,
+      "count": 964,
       "owners": {
-        "RESPONDS_TO": 43,
-        "PERFORMS": 27,
-        "INCREASES_RISK_OF": 163,
-        "PREVENTS": 11,
-        "MITIGATES": 35,
-        "BUILDS": 4,
-        "OFFSETS": 27,
+        "RESPONDS_TO": 55,
+        "PERFORMS": 35,
+        "INCREASES_RISK_OF": 191,
+        "PREVENTS": 14,
+        "MITIGATES": 45,
+        "BUILDS": 9,
+        "OFFSETS": 30,
         "GUIDED_BY": 7,
-        "AMPLIFIES": 59,
+        "AMPLIFIES": 76,
         "COMPOUNDS": 5,
-        "TRIGGERS": 12,
-        "FAILS": 319,
-        "PRECONDITIONS": 12,
-        "MODIFIES_RISK_OF": 22,
+        "TRIGGERS": 13,
+        "FAILS": 346,
+        "PRECONDITIONS": 13,
+        "MODIFIES_RISK_OF": 26,
         "CONCURRENT_WITH": 7,
-        "CAUSES": 7,
-        "CASCADES_INTO": 26,
-        "COORDINATES_WITH": 6,
-        "TRIGGERS_SECONDARY": 16,
+        "CAUSES": 12,
+        "CASCADES_INTO": 31,
+        "COORDINATES_WITH": 9,
+        "TRIGGERS_SECONDARY": 19,
         "AFFECTS": 2,
-        "QUANTIFIED_BY": 3,
-        "COMMANDS": 2,
-        "UNDER_CONDITION": 2,
+        "QUANTIFIED_BY": 5,
+        "COMMANDS": 3,
+        "UNDER_CONDITION": 4,
         "DERIVES_FROM": 4,
-        "HAS_RESILIENCE": 2
+        "HAS_RESILIENCE": 3
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "effectiveness": {
-      "count": 1013,
+      "count": 1182,
       "owners": {
-        "RESPONDS_TO": 104,
-        "PERFORMS": 278,
-        "INCREASES_RISK_OF": 15,
-        "PREVENTS": 23,
-        "MITIGATES": 90,
-        "MODIFIES_RISK_OF": 26,
-        "BUILDS": 52,
-        "OFFSETS": 68,
-        "AMPLIFIES": 31,
-        "FAILS": 283,
+        "RESPONDS_TO": 127,
+        "PERFORMS": 305,
+        "INCREASES_RISK_OF": 16,
+        "PREVENTS": 34,
+        "MITIGATES": 123,
+        "MODIFIES_RISK_OF": 33,
+        "BUILDS": 69,
+        "OFFSETS": 83,
+        "AMPLIFIES": 55,
+        "FAILS": 293,
         "HAS_RESILIENCE": 7,
         "AFFECTS": 2,
         "CAUSES": 2,
         "CASCADES_INTO": 2,
         "COORDINATES_WITH": 26,
-        "GUIDED_BY": 4
+        "GUIDED_BY": 4,
+        "UNDER_CONDITION": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "count": {
-      "count": 14,
+      "count": 21,
       "owners": {
         "RESPONDS_TO": 11,
-        "PERFORMS": 3
+        "PERFORMS": 9,
+        "COORDINATES_WITH": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "mechanism": {
-      "count": 1152,
+      "count": 1401,
       "owners": {
         "RESPONDS_TO": 11,
-        "PERFORMS": 21,
-        "CAUSES": 227,
-        "INCREASES_RISK_OF": 292,
-        "CASCADES_INTO": 167,
-        "PREVENTS": 10,
-        "MITIGATES": 51,
-        "MODIFIES_RISK_OF": 8,
-        "BUILDS": 22,
-        "OFFSETS": 32,
-        "TRIGGERS_SECONDARY": 67,
-        "AMPLIFIES": 118,
-        "TRIGGERS": 77,
+        "PERFORMS": 25,
+        "CAUSES": 282,
+        "INCREASES_RISK_OF": 319,
+        "CASCADES_INTO": 212,
+        "PREVENTS": 15,
+        "MITIGATES": 66,
+        "MODIFIES_RISK_OF": 10,
+        "BUILDS": 28,
+        "OFFSETS": 44,
+        "TRIGGERS_SECONDARY": 73,
+        "AMPLIFIES": 161,
+        "TRIGGERS": 94,
         "COORDINATES_WITH": 11,
         "HAS_RESILIENCE": 4,
         "COMMANDS": 1,
-        "PRECONDITIONS": 3,
-        "UNDER_CONDITION": 1,
-        "AFFECTS": 10,
-        "CONCURRENT_WITH": 6,
-        "DERIVES_FROM": 1,
-        "FAILS": 12
+        "PRECONDITIONS": 5,
+        "UNDER_CONDITION": 2,
+        "AFFECTS": 12,
+        "CONCURRENT_WITH": 7,
+        "DERIVES_FROM": 2,
+        "FAILS": 16,
+        "COMPOUNDS": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "specialNote": {
-      "count": 939,
+      "count": 1058,
       "owners": {
-        "RESPONDS_TO": 91,
-        "PERFORMS": 157,
-        "CAUSES": 54,
-        "INCREASES_RISK_OF": 65,
-        "CASCADES_INTO": 44,
-        "PREVENTS": 1,
-        "MITIGATES": 17,
-        "OFFSETS": 25,
+        "RESPONDS_TO": 114,
+        "PERFORMS": 175,
+        "CAUSES": 69,
+        "INCREASES_RISK_OF": 74,
+        "CASCADES_INTO": 52,
+        "PREVENTS": 3,
+        "MITIGATES": 20,
+        "OFFSETS": 30,
         "COMPOUNDS": 3,
         "CONCURRENT_WITH": 29,
-        "AMPLIFIES": 37,
-        "TRIGGERS": 17,
-        "FAILS": 191,
-        "UNDER_CONDITION": 28,
+        "AMPLIFIES": 43,
+        "TRIGGERS": 18,
+        "FAILS": 202,
+        "UNDER_CONDITION": 30,
         "OCCURS_AT": 13,
-        "HAS_RESILIENCE": 3,
+        "HAS_RESILIENCE": 4,
         "AFFECTS": 9,
-        "MODIFIES_RISK_OF": 20,
-        "TRIGGERS_SECONDARY": 13,
-        "BUILDS": 5,
+        "MODIFIES_RISK_OF": 23,
+        "TRIGGERS_SECONDARY": 15,
+        "BUILDS": 7,
         "LOCATED_IN": 13,
-        "COORDINATES_WITH": 40,
-        "GUIDED_BY": 20,
-        "QUANTIFIED_BY": 10,
-        "COMMANDS": 8,
+        "COORDINATES_WITH": 43,
+        "GUIDED_BY": 21,
+        "QUANTIFIED_BY": 12,
+        "COMMANDS": 9,
         "BELONGS_TO": 14,
         "DEPLOYED_TO": 6,
-        "PRECONDITIONS": 2,
+        "PRECONDITIONS": 3,
         "DERIVES_FROM": 4
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2753,24 +2877,29 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "detail": {
-      "count": 47,
+      "count": 132,
       "owners": {
-        "RESPONDS_TO": 4,
-        "PERFORMS": 14,
+        "RESPONDS_TO": 17,
+        "PERFORMS": 49,
         "CAUSES": 6,
-        "OCCURS_AT": 6,
+        "OCCURS_AT": 7,
         "LOCATED_IN": 3,
-        "QUANTIFIED_BY": 7,
+        "QUANTIFIED_BY": 26,
         "CONCURRENT_WITH": 2,
-        "COMMANDS": 2,
-        "COORDINATES_WITH": 1,
+        "COMMANDS": 4,
+        "COORDINATES_WITH": 5,
         "HAS_RESILIENCE": 1,
-        "GUIDED_BY": 1
+        "GUIDED_BY": 6,
+        "CASCADES_INTO": 1,
+        "MITIGATES": 3,
+        "BUILDS": 1,
+        "PREVENTS": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2806,14 +2935,15 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "duration": {
-      "count": 20,
+      "count": 29,
       "owners": {
-        "PERFORMS": 18,
+        "PERFORMS": 27,
         "FAILS": 2
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2829,17 +2959,20 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "objective": {
-      "count": 50,
+      "count": 101,
       "owners": {
-        "PERFORMS": 45,
+        "PERFORMS": 87,
         "COORDINATES_WITH": 2,
-        "PREVENTS": 2,
-        "BUILDS": 1
+        "PREVENTS": 4,
+        "BUILDS": 5,
+        "RESPONDS_TO": 2,
+        "COMMANDS": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -2864,81 +2997,93 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "location": {
-      "count": 7,
+      "count": 12,
       "owners": {
-        "PERFORMS": 7
+        "PERFORMS": 12
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "directCause": {
-      "count": 358,
+      "count": 431,
       "owners": {
-        "CAUSES": 220,
-        "CASCADES_INTO": 44,
+        "CAUSES": 256,
+        "CASCADES_INTO": 65,
         "PREVENTS": 1,
         "LOCATED_IN": 1,
         "AMPLIFIES": 4,
-        "TRIGGERS": 44,
+        "TRIGGERS": 58,
         "INCREASES_RISK_OF": 14,
-        "TRIGGERS_SECONDARY": 9,
+        "TRIGGERS_SECONDARY": 10,
         "DERIVES_FROM": 1,
         "PERFORMS": 2,
         "FAILS": 10,
         "RESPONDS_TO": 4,
         "COORDINATES_WITH": 2,
-        "COMMANDS": 2
+        "COMMANDS": 2,
+        "MODIFIES_RISK_OF": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "category": {
-      "count": 7,
+      "count": 12,
       "owners": {
-        "CAUSES": 7
+        "CAUSES": 8,
+        "QUANTIFIED_BY": 4
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "consequence": {
-      "count": 34,
+      "count": 87,
       "owners": {
-        "CAUSES": 14,
+        "CAUSES": 28,
         "INCREASES_RISK_OF": 3,
         "PREVENTS": 2,
         "AMPLIFIES": 1,
-        "FAILS": 5,
-        "RESPONDS_TO": 5,
-        "MITIGATES": 2,
-        "AFFECTS": 2
+        "FAILS": 14,
+        "RESPONDS_TO": 21,
+        "MITIGATES": 3,
+        "AFFECTS": 2,
+        "PERFORMS": 6,
+        "CASCADES_INTO": 1,
+        "TRIGGERS": 1,
+        "BUILDS": 2,
+        "COORDINATES_WITH": 2,
+        "TRIGGERS_SECONDARY": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "probability": {
-      "count": 592,
+      "count": 678,
       "owners": {
-        "INCREASES_RISK_OF": 357,
-        "CASCADES_INTO": 56,
-        "TRIGGERS": 59,
-        "AMPLIFIES": 42,
-        "PRECONDITIONS": 9,
-        "CAUSES": 38,
+        "INCREASES_RISK_OF": 395,
+        "CASCADES_INTO": 72,
+        "TRIGGERS": 77,
+        "AMPLIFIES": 53,
+        "PRECONDITIONS": 11,
+        "CAUSES": 39,
         "TRIGGERS_SECONDARY": 19,
         "MODIFIES_RISK_OF": 6,
         "CONCURRENT_WITH": 2,
@@ -2949,27 +3094,29 @@
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "spreadRisk": {
-      "count": 114,
+      "count": 142,
       "owners": {
-        "INCREASES_RISK_OF": 9,
+        "INCREASES_RISK_OF": 11,
         "PREVENTS": 1,
-        "CASCADES_INTO": 68,
+        "CASCADES_INTO": 90,
         "CAUSES": 2,
         "MITIGATES": 2,
         "TRIGGERS": 6,
-        "AMPLIFIES": 4,
-        "TRIGGERS_SECONDARY": 22
+        "AMPLIFIES": 7,
+        "TRIGGERS_SECONDARY": 23
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -3004,17 +3151,20 @@
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
     "unit": {
-      "count": 8,
+      "count": 15,
       "owners": {
         "QUANTIFIED_BY": 2,
         "CAUSES": 1,
-        "PERFORMS": 5
+        "PERFORMS": 10,
+        "MITIGATES": 1,
+        "PREVENTS": 1
       },
       "docs": [
         "수해백서_루사매미(강릉시 2005)",
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "수해백서_루사매미(강릉시 2005)"
     },
@@ -3049,14 +3199,17 @@
       "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
     },
     "amount": {
-      "count": 3,
+      "count": 10,
       "owners": {
         "CAUSES": 1,
-        "PERFORMS": 2
+        "PERFORMS": 7,
+        "MITIGATES": 1,
+        "PREVENTS": 1
       },
       "docs": [
         "우면산 산사태 원인 보완조사 요약본(서울시 2014)",
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
     },
@@ -3071,59 +3224,107 @@
       "first_seen": "우면산 산사태 원인 보완조사 요약본(서울시 2014)"
     },
     "actionType": {
-      "count": 67,
+      "count": 95,
       "owners": {
-        "PERFORMS": 67
+        "PERFORMS": 95
       },
       "docs": [
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "dateTime": {
-      "count": 16,
+      "count": 24,
       "owners": {
-        "PERFORMS": 16
+        "PERFORMS": 22,
+        "QUANTIFIED_BY": 2
       },
       "docs": [
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "composition": {
-      "count": 9,
+      "count": 15,
       "owners": {
-        "PERFORMS": 8,
+        "PERFORMS": 14,
         "RESPONDS_TO": 1
       },
       "docs": [
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "measures": {
-      "count": 7,
+      "count": 9,
       "owners": {
-        "PERFORMS": 6,
-        "RESPONDS_TO": 1
+        "PERFORMS": 7,
+        "RESPONDS_TO": 1,
+        "COORDINATES_WITH": 1
       },
       "docs": [
         "4·16 세월호참사 백서(대한변협 2015)",
-        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)"
+        "이천 코리아2000 냉동창고 화재사고 백서(경기소방, 2008)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
     },
     "legalBasis": {
-      "count": 6,
+      "count": 12,
       "owners": {
-        "PERFORMS": 6
+        "PERFORMS": 12
       },
       "docs": [
-        "4·16 세월호참사 백서(대한변협 2015)"
+        "4·16 세월호참사 백서(대한변협 2015)",
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
       ],
       "first_seen": "4·16 세월호참사 백서(대한변협 2015)"
+    },
+    "reference": {
+      "count": 7,
+      "owners": {
+        "PERFORMS": 3,
+        "GUIDED_BY": 4
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+    },
+    "mobilizablePersonnel": {
+      "count": 1,
+      "owners": {
+        "PERFORMS": 1
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+    },
+    "severity": {
+      "count": 1,
+      "owners": {
+        "CAUSES": 1
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+    },
+    "breakdown": {
+      "count": 1,
+      "owners": {
+        "MITIGATES": 1
+      },
+      "docs": [
+        "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
+      ],
+      "first_seen": "대구 지하철 중앙로역 화재사고 백서 (대구시, 2005)"
     }
   }
 }
